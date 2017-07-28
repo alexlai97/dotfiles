@@ -1,14 +1,13 @@
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
-Plug '~/.local/share/nvim/plugged/calendar-vim'
+"Plug '~/.local/share/nvim/plugged/calendar-vim'
 Plug 'DataWraith/auto_mkdir'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
 Plug 'chriskempson/base16-vim'
-
-Plug 'vimwiki/vimwiki'
+"Plug 'vimwiki/vimwiki'
 call plug#end()
 
 
@@ -73,11 +72,12 @@ let g:airline_symbols.whitespace = 'Ξ'
 
 
 
-"""{{{ Vimwiki 
-let g:vimwiki_list = [
-			\{'path': '~/Documents/VimWiki/personal.wiki'}
-		\]
-au BufRead,BufNewFile *.wiki set filetype=vimwiki
-:autocmd FileType vimwiki map d : VimWikiMakeDiaryNote
-let g:vimwiki_use_calendar=1
-"""}}}
+""""{{{ Vimwiki 
+"let g:vimwiki_list = [
+"			\{'path': '~/Documents/VimWiki/personal.wiki'},
+"			\{'path': '~/Documents/VimWiki/business.wiki'}
+"		\]
+"au BufRead,BufNewFile *.wiki set filetype=vimwiki
+"":autocmd FileType vimwiki map d : VimWikiMakeDiaryNote
+"let g:vimwiki_use_calendar=1
+""""}}}
