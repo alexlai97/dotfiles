@@ -1,2 +1,2 @@
 # dotfiles
-configuration files for .vimrc .bashrc ,etc..
+configuration files for vim bash zsh neovim
