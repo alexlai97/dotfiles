@@ -23,7 +23,6 @@ alias sudo='sudo '
 
 alias g++14="g++-5 -std=c++14"
 
-EDITOR=nvim
 alias vi=${EDITOR}
 alias dotzshrc="${EDITOR} ${HOME}/.zshrc"
 alias dotvimrc="${EDITOR} ${HOME}/.vimrc"
@@ -31,7 +30,8 @@ alias dotbashrc="${EDITOR} ${HOME}/.bashrc"
 alias dotneorc="${EDITOR} ${HOME}/.config/nvim/init.vim"
 alias dotaliases="${EDITOR} ${HOME}/.aliases"
 alias dottmux="${EDITOR} ${HOME}/.tmux.conf"
-alias sshcs="ssh x7lai@linux.student.cs.uwaterloo.ca"
+alias doti3="${EDITOR} ${HOME}/.config/i3/config"
+alias sshcs="ssh -Y x7lai@linux.student.cs.uwaterloo.ca"
 
 
 export SSH="x7lai@linux.student.cs.uwaterloo.ca"

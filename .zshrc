@@ -10,7 +10,7 @@ export ZSH=/home/alex/.oh-my-zsh
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="arrow"
 
-# export EDITOR=nvim
+export EDITOR=nvim
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -54,8 +54,9 @@ ZSH_THEME="arrow"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+# plugins=(git)
 # plugins=(z)
+plugins=(tmux)
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH/plugins/z/z.sh
@@ -98,3 +99,7 @@ function cs() {
 	fi;
 	builtin cd "${new_directory}" && ls
 }
+
+export LANG="en_US.utf8"
+export LC_ALL="en_US.utf8"
+export LC_CTYPE="en_US.utf8" 

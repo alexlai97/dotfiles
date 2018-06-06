@@ -129,3 +129,6 @@ set backspace=indent,eol,start
 " """ Leader Mapping
 " nmap <leader>md :%!/usr/local/bin/Markdown.pl --html4tags <cr>
 " nmap <leader>rc :edit $MYVIMRC <cr>
+"
+autocmd Filetype c,cpp nnoremap <C-m> :!g++ -std=c++14 -Wall -Werror -g % -o %:r<CR>
+autocmd Filetype c,cpp nnoremap <C-r> :!./%:r <CR>
