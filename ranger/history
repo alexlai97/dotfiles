@@ -1,0 +1,50 @@
+find No
+rename June14Lecture11-12.md
+shell termite -e tmux
+shell ls
+shell 
+shell termite -e ls
+shell echo 2
+newtab
+tab
+tab_new BIOL
+touch June21Lecture13.md
+find Not
+touch June26Lecture13.md
+rename June26Lecture14.md
+cat *.pdf | grep cuticle
+touch June28Lecture15.md
+touch MidtermReview.md
+tabnew
+tab_new
+shell termite -e nvim
+mkdir Notes
+unzip
+shell unzip
+shell termite
+mkdir Exams
+rename 
+rename Lecture_notes
+touch July05Lecture16.md
+rename July05Lecture15-16.md
+mkdir A8
+cd /mnt/alex/Documents/
+w
+rename Lbin
+find TUT
+find Lec
+find Bo
+help
+shell diff %s
+shell diff %c %s
+shell vimdiff %c %s
+open_with t
+open_with vim t
+find WLP4
+find 
+cd /m
+search
+find med
+
+open_with 
+delete
