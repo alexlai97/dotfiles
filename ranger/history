@@ -1,33 +1,3 @@
-find No
-rename June14Lecture11-12.md
-shell termite -e tmux
-shell ls
-shell 
-shell termite -e ls
-shell echo 2
-newtab
-tab
-tab_new BIOL
-touch June21Lecture13.md
-find Not
-touch June26Lecture13.md
-rename June26Lecture14.md
-cat *.pdf | grep cuticle
-touch June28Lecture15.md
-touch MidtermReview.md
-tabnew
-tab_new
-shell termite -e nvim
-mkdir Notes
-unzip
-shell unzip
-shell termite
-mkdir Exams
-rename 
-rename Lecture_notes
-touch July05Lecture16.md
-rename July05Lecture15-16.md
-mkdir A8
 cd /mnt/alex/Documents/
 w
 rename Lbin
@@ -41,10 +11,40 @@ shell vimdiff %c %s
 open_with t
 open_with vim t
 find WLP4
-find 
 cd /m
 search
-find med
-
+rename Multimedia
+rename 
+tabnew 
+cd /home/alexlai/google-drive/
+rename_append 
+rename MTHEL 131
+rename Spring 2018
+mkdir Math
+mkdir Linear_Algebra
+mkdir Rub
+rename Books
+mkdir Rubic's_cube
+mkdir Backwards_planning
+tabnew
+cd
+rename Books_and_pdfs
+shell wal -i %f
+rename Buddhism
+tabnew $HOME
+cd ~
 open_with 
+shell 
+tab_new 
+open_with un
+find ru
+find med
+find 
+find mo
+find media
+tab_new
+find me
+find mea
+mkdir Videos
 delete
+

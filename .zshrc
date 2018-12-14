@@ -1,21 +1,17 @@
-export PATH=$HOME/.local/bin:$HOME/.texlive/2018/bin/x86_64-linux:$PATH
-# :$HOME/sys161/bin:$HOME/sys161/tools/bin:
-export MANPATH=$HOME/.texlive/2018/texmf-dist/doc/man:$MANPATH
-export INFOPATH=$HOME/.texlive/2018/texmf-dist/doc/info:$INFOPATH
+(cat $HOME/.cache/wpgtk.sequences & )
+#clear
+
 export ZSH=/home/alexlai/.oh-my-zsh
+#export RUST_SRC_PATH=/home/alexlai/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src
 
-# ZSH_THEME="robbyrussell"
-# ZSH_THEME="random"
- ZSH_THEME="arrow"
-# ZSH_THEME="agnoster"
 
-export EDITOR=nvim
-export TERMCMD=termite
+#ZSH_TMUX_AUTOSTART=true
+ZSH_THEME="arrow"
 
 # CASE_SENSITIVE="true"
 # HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_UPDATE="true"
-export UPDATE_ZSH_DAYS=60
+export UPDATE_ZSH_DAYS=120
 # DISABLE_LS_COLORS="true"
 # DISABLE_AUTO_TITLE="true"
 ENABLE_CORRECTION="true"
@@ -32,26 +28,13 @@ source $ZSH/oh-my-zsh.sh
 
 
 # User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-# export LANG=en_US.UTF-8
-# export ARCHFLAGS="-arch x86_64"
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # Aliases
 if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# vim-mode keybinding in terminal
+bindkey -v
 
 # Functions
 function cs() {

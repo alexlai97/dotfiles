@@ -2,16 +2,18 @@
 
 set number
 set relativenumber
-set cursorline
+" set cursorline
 set timeoutlen=1000 ttimeoutlen=0
 set mouse=a
-execute pathogen#infect()
+execute pathogen#infect('common-bundle/{}','tex-bundle/{}','rust-bundle/{}')
+Helptags
 syntax on
 filetype plugin indent on
 
 " Tab
 set tabstop=2 " length of one tab length
 set softtabstop=2 " length of how ch BackSpace delete
+set expandtab     " Expand tabs to spaces
 set shiftwidth=2 " << and >> moves 4 whitespaces
 
 " Split windows moving around
@@ -36,23 +38,14 @@ map <A-7> :buffer 7<cr>
 map <A-8> :buffer 8<cr>
 map <A-9> :buffer 9<cr>
 
-
 " set termguicolors
-set background=dark
-"colorscheme gruvbox
+" set background=dark
+colorscheme wal
 
-let mapleader = '\'
-"let maplocalleader = "\\"
-nmap <leader>rc :edit $MYVIMRC<cr>
+" leader
+nnoremap <SPACE> <Nop>
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
 
-
+" multi cursor
 let g:multi_cursor_exit_from_insert_mode=0
-
-" vimtex
-let g:vimtex_view_method='zathura'
-
-" c type file key commands
-autocmd Filetype c,cpp nnoremap <leader>m :!g++ -std=c++14 -Wall -Werror -g % -o %:r<CR>
-autocmd Filetype c,cpp nnoremap <leader>r :!./%:r <CR>
-
-
