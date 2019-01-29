@@ -1,0 +1,15 @@
+#!/bin/dash
+
+usage() {
+  echo "Usage: set_color_with program" >&2
+  exit 1
+}
+
+if [ ${#} -ne 1 ]; then
+  usage
+fi
+
+(cat $HOME/.cache/wpgtk.sequences &)
+$(which $1)
+
+#TODO add set title

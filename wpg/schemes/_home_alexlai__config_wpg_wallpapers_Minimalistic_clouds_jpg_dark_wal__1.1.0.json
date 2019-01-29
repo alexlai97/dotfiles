@@ -1,0 +1,28 @@
+{
+    "wallpaper": "Minimalistic_clouds.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1c4057",
+        "foreground": "#f4ffff",
+        "cursor": "#f4ffff"
+    },
+    "colors": {
+        "color0": "#1c4057",
+        "color1": "#9EC8DC",
+        "color2": "#71ACC9",
+        "color3": "#B3D4E5",
+        "color4": "#639EC0",
+        "color5": "#8BB9D1",
+        "color6": "#54A5C7",
+        "color7": "#d9e5ec",
+        "color8": "#255675",
+        "color9": "#b4ffff",
+        "color10": "#7ee6ff",
+        "color11": "#c6ffff",
+        "color12": "#6dd2ff",
+        "color13": "#9ef7ff",
+        "color14": "#5adeff",
+        "color15": "#f4ffff"
+    }
+}

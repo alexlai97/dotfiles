@@ -1,0 +1,28 @@
+{
+    "wallpaper": "Sunset_Sky.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#100b20",
+        "foreground": "#ffe7ff",
+        "cursor": "#ffe7ff"
+    },
+    "colors": {
+        "color0": "#100b20",
+        "color1": "#A05E69",
+        "color2": "#354EA5",
+        "color3": "#D29273",
+        "color4": "#24318F",
+        "color5": "#595BA0",
+        "color6": "#4D65B4",
+        "color7": "#c1afc5",
+        "color8": "#1e143e",
+        "color9": "#e0697d",
+        "color10": "#365de4",
+        "color11": "#ffb680",
+        "color12": "#2336c5",
+        "color13": "#6367e0",
+        "color14": "#537afa",
+        "color15": "#ffe7ff"
+    }
+}

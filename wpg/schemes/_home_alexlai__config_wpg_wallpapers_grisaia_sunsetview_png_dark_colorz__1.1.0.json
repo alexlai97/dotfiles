@@ -1,0 +1,28 @@
+{
+    "wallpaper": "grisaia_sunsetview.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#23201c",
+        "foreground": "#c8c7c6",
+        "cursor": "#c8c7c6"
+    },
+    "colors": {
+        "color0": "#23201c",
+        "color1": "#c7806c",
+        "color2": "#c7b08f",
+        "color3": "#c7a94d",
+        "color4": "#5f64aa",
+        "color5": "#9b7da4",
+        "color6": "#ac6777",
+        "color7": "#c8c7c6",
+        "color8": "#5a5754",
+        "color9": "#c7806c",
+        "color10": "#c7b08f",
+        "color11": "#c7a94d",
+        "color12": "#5f64aa",
+        "color13": "#9b7da4",
+        "color14": "#ac6777",
+        "color15": "#c8c7c6"
+    }
+}

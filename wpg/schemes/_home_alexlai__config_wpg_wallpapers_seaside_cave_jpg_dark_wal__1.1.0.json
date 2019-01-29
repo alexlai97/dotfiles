@@ -1,0 +1,28 @@
+{
+    "wallpaper": "seaside_cave.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0F1010",
+        "foreground": "#d7ffff",
+        "cursor": "#d7ffff"
+    },
+    "colors": {
+        "color0": "#0F1010",
+        "color1": "#2EB1CB",
+        "color2": "#2C9BB3",
+        "color3": "#56B8CA",
+        "color4": "#17728E",
+        "color5": "#5D9BA3",
+        "color6": "#37C5DE",
+        "color7": "#a8dde6",
+        "color8": "#464b4b",
+        "color9": "#2bf0ff",
+        "color10": "#2ad2f7",
+        "color11": "#5dfcff",
+        "color12": "#1399c3",
+        "color13": "#68d6e4",
+        "color14": "#35ffff",
+        "color15": "#d7ffff"
+    }
+}

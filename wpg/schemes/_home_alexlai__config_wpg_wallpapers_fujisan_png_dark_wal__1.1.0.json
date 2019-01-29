@@ -1,0 +1,28 @@
+{
+    "wallpaper": "fujisan.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1f3724",
+        "foreground": "#b2d8e5",
+        "cursor": "#b2d8e5"
+    },
+    "colors": {
+        "color0": "#1f3724",
+        "color1": "#3B8387",
+        "color2": "#598FA9",
+        "color3": "#5294D0",
+        "color4": "#5AA8D7",
+        "color5": "#70ABD3",
+        "color6": "#69B5D9",
+        "color7": "#b2d8e5",
+        "color8": "#7c97a0",
+        "color9": "#3B8387",
+        "color10": "#598FA9",
+        "color11": "#5294D0",
+        "color12": "#5AA8D7",
+        "color13": "#70ABD3",
+        "color14": "#69B5D9",
+        "color15": "#b2d8e5"
+    }
+}

@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "startled_kitten.jpg"
+let background = "#202123"
+let foreground = "#fefeff"
+let cursor     = "#fefeff"
+
+" Colors
+let color0  = "#202123"
+let color1  = "#a96974"
+let color2  = "#acb5c7"
+let color3  = "#a498a7"
+let color4  = "#8b94ac"
+let color5  = "#a98394"
+let color6  = "#7189aa"
+let color7  = "#c7c7c8"
+let color8  = "#6d6f76"
+let color9  = "#ed768b"
+let color10 = "#c7e3ff"
+let color11 = "#e1b0ed"
+let color12 = "#a0b7f3"
+let color13 = "#ef96be"
+let color14 = "#80afef"
+let color15 = "#fefeff"

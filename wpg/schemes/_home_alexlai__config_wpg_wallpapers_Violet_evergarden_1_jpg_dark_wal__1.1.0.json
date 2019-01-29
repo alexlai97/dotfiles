@@ -1,0 +1,28 @@
+{
+    "wallpaper": "Violet_evergarden_1.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#281a21",
+        "foreground": "#fff7ff",
+        "cursor": "#fff7ff"
+    },
+    "colors": {
+        "color0": "#281a21",
+        "color1": "#DB946D",
+        "color2": "#AB8F91",
+        "color3": "#F5C17B",
+        "color4": "#656192",
+        "color5": "#9D7098",
+        "color6": "#5CB6A6",
+        "color7": "#cbbfc5",
+        "color8": "#99637f",
+        "color9": "#ffba78",
+        "color10": "#f2a5ab",
+        "color11": "#fffe87",
+        "color12": "#766ecd",
+        "color13": "#dd80d3",
+        "color14": "#65fee3",
+        "color15": "#fff7ff"
+    }
+}

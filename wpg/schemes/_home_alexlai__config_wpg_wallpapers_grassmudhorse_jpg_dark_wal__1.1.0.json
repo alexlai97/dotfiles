@@ -1,0 +1,28 @@
+{
+    "wallpaper": "grassmudhorse.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#19190c",
+        "foreground": "#d4ccbe",
+        "cursor": "#d4ccbe"
+    },
+    "colors": {
+        "color0": "#19190c",
+        "color1": "#4894B5",
+        "color2": "#1197CB",
+        "color3": "#38A3D3",
+        "color4": "#51ABD6",
+        "color5": "#6EBADE",
+        "color6": "#70B7D9",
+        "color7": "#d4ccbe",
+        "color8": "#948e85",
+        "color9": "#4894B5",
+        "color10": "#1197CB",
+        "color11": "#38A3D3",
+        "color12": "#51ABD6",
+        "color13": "#6EBADE",
+        "color14": "#70B7D9",
+        "color15": "#d4ccbe"
+    }
+}

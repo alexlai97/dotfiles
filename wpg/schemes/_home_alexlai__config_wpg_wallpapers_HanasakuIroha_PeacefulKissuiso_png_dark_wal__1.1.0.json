@@ -1,0 +1,28 @@
+{
+    "wallpaper": "HanasakuIroha_PeacefulKissuiso.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0a0404",
+        "foreground": "#bfabc7",
+        "cursor": "#bfabc7"
+    },
+    "colors": {
+        "color0": "#0a0404",
+        "color1": "#66575C",
+        "color2": "#886F6B",
+        "color3": "#748955",
+        "color4": "#9CA56A",
+        "color5": "#683D84",
+        "color6": "#75588D",
+        "color7": "#bfabc7",
+        "color8": "#85778b",
+        "color9": "#66575C",
+        "color10": "#886F6B",
+        "color11": "#748955",
+        "color12": "#9CA56A",
+        "color13": "#683D84",
+        "color14": "#75588D",
+        "color15": "#bfabc7"
+    }
+}

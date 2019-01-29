@@ -1,0 +1,28 @@
+{
+    "wallpaper": "digitalocean-linux.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#010201",
+        "foreground": "#b6ffb7",
+        "cursor": "#b6ffb7"
+    },
+    "colors": {
+        "color0": "#010201",
+        "color1": "#615C50",
+        "color2": "#264D3A",
+        "color3": "#1D2341",
+        "color4": "#2B2847",
+        "color5": "#271F41",
+        "color6": "#294642",
+        "color7": "#86c587",
+        "color8": "#047504",
+        "color9": "#897c5c",
+        "color10": "#296b4b",
+        "color11": "#1f295a",
+        "color12": "#322c63",
+        "color13": "#2f225a",
+        "color14": "#2e625b",
+        "color15": "#b6ffb7"
+    }
+}

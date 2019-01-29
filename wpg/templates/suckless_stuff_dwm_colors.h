@@ -1,0 +1,1 @@
+/mnt/alex/myrepos/suckless_stuff/dwm/colors.h

@@ -5,8 +5,14 @@ set relativenumber
 " set cursorline
 set timeoutlen=1000 ttimeoutlen=0
 set mouse=a
-execute pathogen#infect('common-bundle/{}','tex-bundle/{}','rust-bundle/{}')
-Helptags
+if has('nvim')
+  execute pathogen#infect('light-bundle/{}','common-bundle/{}','nvim-bundle/{}','tex-bundle/{}','rust-bundle/{}')
+else
+  execute pathogen#infect('light-bundle/{}')
+endif
+packloadall
+
+"Helptags
 syntax on
 filetype plugin indent on
 
@@ -23,24 +29,24 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 
 " Buffers/Tab shortcuts
-map <A-h> :bprevious<cr>
-map <A-l> :bnext<cr>
-map <A-j> :tabnext<cr>
-map <A-k> :tabprev<cr>
-map <A-b> :buffers<cr>
-map <A-1> :buffer 1<cr>
-map <A-2> :buffer 2<cr>
-map <A-3> :buffer 3<cr>
-map <A-4> :buffer 4<cr>
-map <A-5> :buffer 5<cr>
-map <A-6> :buffer 6<cr>
-map <A-7> :buffer 7<cr>
-map <A-8> :buffer 8<cr>
-map <A-9> :buffer 9<cr>
+nnoremap <A-h> :bprevious<cr>
+nnoremap <A-l> :bnext<cr>
+nnoremap <A-j> :tabnext<cr>
+nnoremap <A-k> :tabprev<cr>
+nnoremap <A-b> :buffers<cr>
+nnoremap <A-1> :buffer 1<cr>
+nnoremap <A-2> :buffer 2<cr>
+nnoremap <A-3> :buffer 3<cr>
+nnoremap <A-4> :buffer 4<cr>
+nnoremap <A-5> :buffer 5<cr>
+nnoremap <A-6> :buffer 6<cr>
+nnoremap <A-7> :buffer 7<cr>
+nnoremap <A-8> :buffer 8<cr>
+nnoremap <A-9> :buffer 9<cr>
 
 " set termguicolors
 " set background=dark
-colorscheme wal
+" colorscheme wal
 
 " leader
 nnoremap <SPACE> <Nop>
@@ -49,3 +55,8 @@ let g:maplocalleader = ','
 
 " multi cursor
 let g:multi_cursor_exit_from_insert_mode=0
+
+" netrw
+let g:netrw_winsize=20
+
+nnoremap <F3> :Lexplore<CR>

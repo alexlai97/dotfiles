@@ -1,0 +1,28 @@
+{
+    "wallpaper": "startled_kitten.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0d090c",
+        "foreground": "#e5ffff",
+        "cursor": "#e5ffff"
+    },
+    "colors": {
+        "color0": "#0d090c",
+        "color1": "#5B5B68",
+        "color2": "#6B6974",
+        "color3": "#6A768A",
+        "color4": "#34728D",
+        "color5": "#837A88",
+        "color6": "#738DA4",
+        "color7": "#b0c9d7",
+        "color8": "#5a3d50",
+        "color9": "#696993",
+        "color10": "#827aa5",
+        "color11": "#7a95c3",
+        "color12": "#3799c3",
+        "color13": "#af8dc1",
+        "color14": "#83b8e7",
+        "color15": "#e5ffff"
+    }
+}

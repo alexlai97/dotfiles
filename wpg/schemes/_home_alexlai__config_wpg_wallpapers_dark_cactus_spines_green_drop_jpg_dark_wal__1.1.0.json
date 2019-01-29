@@ -1,0 +1,28 @@
+{
+    "wallpaper": "dark_cactus_spines_green_drop.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0C0B0B",
+        "foreground": "#ffffc9",
+        "cursor": "#ffffc9"
+    },
+    "colors": {
+        "color0": "#0C0B0B",
+        "color1": "#8E6E2D",
+        "color2": "#608538",
+        "color3": "#8C7659",
+        "color4": "#39594B",
+        "color5": "#616950",
+        "color6": "#688C62",
+        "color7": "#d1c297",
+        "color8": "#403c3c",
+        "color9": "#c4932e",
+        "color10": "#7db93c",
+        "color11": "#c49b64",
+        "color12": "#407d62",
+        "color13": "#82945c",
+        "color14": "#7cc56f",
+        "color15": "#ffffc9"
+    }
+}

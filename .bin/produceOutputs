@@ -1,0 +1,46 @@
+#!/bin/bash
+# produceOutputs suite-file ./program
+# produceOutputs runs program (takes in the args if there is)
+# on each test in the test suite and,
+# for each test, creates a file that contains the output produced 
+# for that test. 
+# prints an informative error message to stderr and
+#  abort with 1 when:
+# 	incorrect number of command line arguments
+#  abort with 2 when:
+# 	missing .in files
+#  abort with 3 when:
+#  	.in is not a regular file
+#  abort with 4 when:
+#	.in is unreadable
+usage () {
+	echo -e "Incorrect number of command line arugments.\nUsage: produceOutputs suite-file program" >&2
+	exit 1
+}	
+	
+if [ ${#} -ne 2 ]; then
+	usage
+fi
+
+# echo here_2
+for word in $(cat "$1"); do
+#	echo $word
+	if [ ! -e ${word}.in ]; then 
+		echo "The file ${word}.in does not exist." >&2
+		exit 2
+	elif [ ! -f ${word}.in ]; then
+		echo "The file ${word}.in is not a regular file." >&2
+		exit 3
+	elif [ ! -r ${word}.in ]; then
+		echo "The file ${word}.in is not readable." >&2
+		exit 4
+#	echo here_4	
+	else
+		ARGS=''
+		if [ -e ${word}.args ]; then ARGS=$(cat ${word}.args); fi 
+		"$2" $ARGS < "${word}.in" > ${word}.out
+#	echo here_5
+	fi
+
+done
+# echo here_6

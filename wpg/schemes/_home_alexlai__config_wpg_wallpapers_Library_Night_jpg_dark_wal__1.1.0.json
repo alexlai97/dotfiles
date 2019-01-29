@@ -1,0 +1,28 @@
+{
+    "wallpaper": "Library_Night.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0c0706",
+        "foreground": "#ffe8d1",
+        "cursor": "#ffe8d1"
+    },
+    "colors": {
+        "color0": "#0c0706",
+        "color1": "#6E4C34",
+        "color2": "#58452B",
+        "color3": "#916038",
+        "color4": "#6C564A",
+        "color5": "#393648",
+        "color6": "#C3793E",
+        "color7": "#c2ad9c",
+        "color8": "#271612",
+        "color9": "#996039",
+        "color10": "#7a5b2f",
+        "color11": "#c97b3b",
+        "color12": "#986c54",
+        "color13": "#443e65",
+        "color14": "#ff9b3f",
+        "color15": "#ffe8d1"
+    }
+}

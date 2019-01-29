@@ -1,0 +1,60 @@
+#!/bin/bash
+# runSuite suite-file program
+# runSuite runs program on each test in the test suite and 
+# (takes in the args if there is .args)
+# reports on any tests whose output does not match the expected output.
+# prints an informative error message to stderr and
+#  abort with 1 when:
+#       incorrect number of command line arguments
+#  abort with 2 when:
+#       missing .in files
+#  abort with 3 when:
+#       .in is not a regular file
+#  abort with 4 when:
+#       .in is unreadable
+MASK="Ulalaulalaulaulau"
+usage () {
+        echo "Incorrect number of command line arugments.
+Usage: runSuite suite-file program" >&2
+        exit 1
+}
+
+if [ ${#} -ne 2 ]; then
+	usage
+fi
+for word in $(cat $1); do
+	
+	 if [ ! -e ${word}.in -o ! -e ${word}.out ]; then
+		if [ ! -e ${word}.in ]; then
+                echo "The file ${word}.in does not exist." >&2;fi
+		if [ ! -e ${word}.out ]; then
+		echo "The file ${word}.out does not exist." >&2;fi
+		exit 2
+        elif [ ! -f ${word}.in -o ! -f ${word}.out ]; then
+		if [ ! -f ${word}.in ]; then
+                echo "The file ${word}.in is not a regular file." >&2;fi
+		if [ ! -f ${word}.out ]; then
+                echo "The file ${word}.out is not a regular file." >&2;fi
+                exit 3
+        elif [ ! -r ${word}.in -o ! -r ${word}.out ]; then
+		if [ ! -r ${word}.in ]; then
+                echo "The file ${word}.in is not readable." >&2;fi
+		if [ ! -r ${word}.out ]; then
+                echo "The file ${word}.out is not readable." >&2;fi
+                exit 4
+	else
+		add1=/tmp/$MASK$word.tmp
+		touch $add1
+		ARGS=''
+                if [ -e ${word}.args ]; then ARGS=$(cat ${word}.args); fi
+		"$2" $ARGS < "${word}.in" > $add1
+		if ! diff -q $add1 "$word".out &>/dev/null; then
+			echo -e "Test failed: $word\nInput:\n$(cat $word.in)"
+			echo -e "Expected:\n$(cat $word.out)"
+			echo -e "Actual:\n$(cat $add1)"
+		fi
+		rm $add1
+	fi
+done
+			
+		 	

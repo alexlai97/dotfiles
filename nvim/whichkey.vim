@@ -76,26 +76,41 @@ let g:which_key_map.S = {
 
 
 " Rust , racer, cargo
-au FileType rust nmap gd <Plug>(rust-def)
-au FileType rust nmap gs <Plug>(rust-def-split)
-au FileType rust nmap gx <Plug>(rust-def-vertical)
-au FileType rust nmap <leader>gd <Plug>(rust-doc)
+au FileType rust nmap <leader>gs <Plug>(rust-def-split)
+au FileType rust nmap <leader>gx <Plug>(rust-def-vertical)
+au FileType rust nmap <leader>gd <Plug>(rust-def)
+au FileType rust nmap <leader>gD <Plug>(rust-doc)
 au FileType rust nnoremap<leader>cb :!cargo build <CR>
 au FileType rust nnoremap<leader>cr :!cargo run <CR>
 au FileType rust nnoremap<leader>ct :!cargo test <CR>
+au FileType rust nnoremap<leader>cc :!cargo check <CR>
+au FileType rust nnoremap<leader>cp :!cargo-clippy <CR>
 let g:which_key_map.g = {
   \ 'name' : '+goto',
-  \ 'd' : 'rust-doc',
+  \ 'd' : 'rust-def',
+  \ 'D' : 'rust-doc',
+  \ 's' : 'rust-def-split',
+  \ 'x' : 'rust-def-vertical',
   \ }
 let g:which_key_map.c = {
   \ 'name' : '+cargo',
   \ 'b' : 'cargo build',
   \ 'r' : 'cargo run',
   \ 't' : 'cargo test',
+  \ 'p' : 'cargo clippy',
   \ }
 
 
 " c type file key commands
 autocmd Filetype c,cpp nnoremap <leader>m :!g++ -std=c++14 -Wall -Werror -g % -o %:r<CR>
 autocmd Filetype c,cpp nnoremap <leader>r :!./%:r <CR>
+
+
+" tagbar
+nnoremap <leader>tb :TagbarOpenAutoClose<CR>
+nnoremap <F8> :TagbarToggle<CR>
+let g:which_key_map.t = {
+  \ 'name' : '+tagbar',
+  \ 'b' : 'TagbarOpenAutoClose',
+  \ }
 

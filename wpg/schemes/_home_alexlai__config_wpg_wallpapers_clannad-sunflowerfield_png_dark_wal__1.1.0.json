@@ -1,0 +1,28 @@
+{
+    "wallpaper": "clannad-sunflowerfield.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#210301",
+        "foreground": "#ffffb9",
+        "cursor": "#ffffb9"
+    },
+    "colors": {
+        "color0": "#210301",
+        "color1": "#EA4B74",
+        "color2": "#D4C361",
+        "color3": "#CBDF5A",
+        "color4": "#B41A94",
+        "color5": "#F30F95",
+        "color6": "#ee88c6",
+        "color7": "#F1DE8D",
+        "color8": "#490501",
+        "color9": "#ff4d8d",
+        "color10": "#ffff6a",
+        "color11": "#ffff60",
+        "color12": "#f714c8",
+        "color13": "#ff02c4",
+        "color14": "#ff98ff",
+        "color15": "#ffffb9"
+    }
+}

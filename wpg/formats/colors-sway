@@ -1,0 +1,21 @@
+set $wallpaper startled_kitten.jpg
+
+set $background #202123
+set $foreground #fefeff
+
+set $color0 #202123
+set $color1 #a96974
+set $color2 #acb5c7
+set $color3 #a498a7
+set $color4 #8b94ac
+set $color5 #a98394
+set $color6 #7189aa
+set $color7 #c7c7c8
+set $color8 #6d6f76
+set $color9 #ed768b
+set $color10 #c7e3ff
+set $color11 #e1b0ed
+set $color12 #a0b7f3
+set $color13 #ef96be
+set $color14 #80afef
+set $color15 #fefeff

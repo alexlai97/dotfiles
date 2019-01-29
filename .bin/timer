@@ -1,0 +1,33 @@
+#!/bin/dash
+
+#TODO
+# add feature that it can exec command after sleep
+#                  it can display custom info (e.g. This is time for class)
+# notify-send when start counting
+
+
+usage() {
+  echo -e "Usage: timer \n Or timer [time] "purpse"\n You need to input a valid time then the purpose.\n For example,\n\t10s\n\t1h" >&2
+}
+
+if [ ${#} -eq 0 ]; then 
+  TIME=$(zenity --entry --title="Timer" --text="Enter a duration for the timer.")
+else
+  TIME=$1
+fi
+
+if [ -z $TIME ]; then
+  usage
+  exit 1
+fi
+
+if [ ${#} -eq 0 ]; then 
+WHATFOR=$(zenity --entry --title="What for" --text="Enter a purpose for this timer. (Or ع)")
+else 
+  WHATFOR="$2"
+fi
+
+
+sleep $TIME
+
+zenity --info --title="Timer Complete" --text="The timer for $WHATFOR has over.\n\n Slept for $TIME."

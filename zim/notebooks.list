@@ -1,0 +1,9 @@
+[NotebookList]
+Default=~/Documents/Notebooks/Notes
+1=~/Documents/Notebooks/Notes
+
+[Notebook 1]
+uri=~/Documents/Notebooks/Notes
+name=Journal
+interwiki=None
+icon=None

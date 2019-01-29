@@ -1,0 +1,40 @@
+#!/bin/bash
+tmpqrcode=/tmp/qrcode/tmpqrcode.png
+sleeptime=45
+
+usage() {
+	echo -e "usage:
+  qrcode {-h --help}
+  qrcode {-o --output} <pathtofile> \"yourstring\"
+  qrcode \"yourstring\"  
+	(image will be deleted in 45 seconds)" >&2
+}
+
+
+if [ $# -eq 1 ]; then
+	if [ "$1" == "-h" -o "$1" == "--help" ]; then
+		usage
+		exit 0
+	else
+		if [ ! -d "/tmp/qrcode" ] ; then
+			mkdir /tmp/qrcode
+		fi
+		/usr/bin/qrencode --output $tmpqrcode "$1"
+		echo "Showing qrcode with string '$1'"
+		feh $tmpqrcode & 
+		echo "image will be available for ${sleeptime} secs" >&2
+		sleep "${sleeptime}s" && rm $tmpqrcode 2>/dev/null &
+	fi
+elif [ $# -eq 3 ]; then
+	if [ "$1" == "-o" -o "$1" == "--output" ]; then 
+		/usr/bin/qrencode --output $2 "$3"
+	else 
+		echo "Incorrect arguments" >&2
+		usage
+		exit 1
+	fi
+else 
+	usage
+	exit 1
+fi
+

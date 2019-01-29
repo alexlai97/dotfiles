@@ -1,0 +1,28 @@
+{
+    "wallpaper": "lamp_dark.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#020202",
+        "foreground": "#d2d5d6",
+        "cursor": "#d2d5d6"
+    },
+    "colors": {
+        "color0": "#020202",
+        "color1": "#87867A",
+        "color2": "#767985",
+        "color3": "#7B8888",
+        "color4": "#8E918F",
+        "color5": "#9EA39F",
+        "color6": "#ACB2B2",
+        "color7": "#d2d5d6",
+        "color8": "#939595",
+        "color9": "#87867A",
+        "color10": "#767985",
+        "color11": "#7B8888",
+        "color12": "#8E918F",
+        "color13": "#9EA39F",
+        "color14": "#ACB2B2",
+        "color15": "#d2d5d6"
+    }
+}

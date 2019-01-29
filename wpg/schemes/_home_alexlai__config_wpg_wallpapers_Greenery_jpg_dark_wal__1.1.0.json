@@ -1,0 +1,28 @@
+{
+    "wallpaper": "Greenery.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#030820",
+        "foreground": "#ffffc0",
+        "cursor": "#ffffc0"
+    },
+    "colors": {
+        "color0": "#030820",
+        "color1": "#A0BA34",
+        "color2": "#3F8146",
+        "color3": "#B1CA36",
+        "color4": "#A1C32E",
+        "color5": "#91B234",
+        "color6": "#669447",
+        "color7": "#dde592",
+        "color8": "#69739f",
+        "color9": "#d9ff34",
+        "color10": "#45b451",
+        "color11": "#f1ff35",
+        "color12": "#d9ff2c",
+        "color13": "#c3f634",
+        "color14": "#81ce4e",
+        "color15": "#ffffc0"
+    }
+}

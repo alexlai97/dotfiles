@@ -1,0 +1,28 @@
+{
+    "wallpaper": "old-bridge-intothedistance.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1b2122",
+        "foreground": "#c5c5c7",
+        "cursor": "#c5c5c7"
+    },
+    "colors": {
+        "color0": "#1b2122",
+        "color1": "#A38772",
+        "color2": "#C89F76",
+        "color3": "#757B85",
+        "color4": "#817E83",
+        "color5": "#7D828B",
+        "color6": "#8D8E93",
+        "color7": "#c5c5c7",
+        "color8": "#89898b",
+        "color9": "#A38772",
+        "color10": "#C89F76",
+        "color11": "#757B85",
+        "color12": "#817E83",
+        "color13": "#7D828B",
+        "color14": "#8D8E93",
+        "color15": "#c5c5c7"
+    }
+}

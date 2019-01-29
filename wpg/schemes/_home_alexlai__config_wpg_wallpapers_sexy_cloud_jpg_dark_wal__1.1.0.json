@@ -1,0 +1,28 @@
+{
+    "wallpaper": "sexy_cloud.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#201a22",
+        "foreground": "#bcb3b8",
+        "cursor": "#bcb3b8"
+    },
+    "colors": {
+        "color0": "#201a22",
+        "color1": "#976863",
+        "color2": "#CF7757",
+        "color3": "#EFA066",
+        "color4": "#F1BF65",
+        "color5": "#1B7687",
+        "color6": "#5C7786",
+        "color7": "#bcb3b8",
+        "color8": "#837d80",
+        "color9": "#976863",
+        "color10": "#CF7757",
+        "color11": "#EFA066",
+        "color12": "#F1BF65",
+        "color13": "#1B7687",
+        "color14": "#5C7786",
+        "color15": "#bcb3b8"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "Watercolor_Sunset_Clouds.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#232515",
+        "foreground": "#ffffd1",
+        "cursor": "#ffffd1"
+    },
+    "colors": {
+        "color0": "#232515",
+        "color1": "#AC8C38",
+        "color2": "#8D9552",
+        "color3": "#D29D34",
+        "color4": "#ACA659",
+        "color5": "#CCA855",
+        "color6": "#91AC67",
+        "color7": "#ded09f",
+        "color8": "#6f7440",
+        "color9": "#eebc39",
+        "color10": "#c2d05b",
+        "color11": "#ffd132",
+        "color12": "#f0e662",
+        "color13": "#ffe15b",
+        "color14": "#c0f174",
+        "color15": "#ffffd1"
+    }
+}

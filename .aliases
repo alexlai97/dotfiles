@@ -1,47 +1,35 @@
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
+# rust crate binary
+alias ls='exa'
+#alias grep='rg'
+alias find='fd'
 
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias c="clear"
+alias c='clear'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias sudo='sudo '
-alias view='vi -R '
+alias view='vim -R '
 alias n='nnn'
 
 
-alias g++14="g++-5 -std=c++14"
+alias g++14='g++-5 -std=c++14'
 
-alias vi=${EDITOR}
-alias dotzshrc="${EDITOR} ${HOME}/.zshrc"
-alias dottermite="${EDITOR} ${HOME}/.config/termite/config"
-alias dotvimb="${EDITOR} ${HOME}/.config/vimb/config"
-alias dotvimrc="${EDITOR} ${HOME}/.vimrc"
-alias dotbashrc="${EDITOR} ${HOME}/.bashrc"
-alias dotranger="${EDITOR} ${HOME}/.config/ranger/rc.conf"
-alias dotneorc="${EDITOR} ${HOME}/.config/nvim/init.vim"
-alias dotaliases="${EDITOR} ${HOME}/.aliases"
-alias dottmux="${EDITOR} ${HOME}/.tmux.conf"
-alias doti3status="${EDITOR} ${HOME}/.config/i3status/config"
-alias doti3="${EDITOR} ${HOME}/.config/i3/config"
-alias sshcs="ssh -Y x7lai@ubuntu1604-004.student.cs.uwaterloo.ca"
-alias rusti="rustup run nightly-2016-08-01 ~/.cargo/bin/rusti"
+#alias vi=${EDITOR}
+alias dotzshrc='${EDITOR} ${HOME}/.zshrc'
+#alias dottermite='${EDITOR} ${HOME}/.config/termite/config'
+alias dotvimb='${EDITOR} ${HOME}/.config/vimb/config'
+alias dotvimrc='${EDITOR} ${HOME}/.vimrc'
+#alias dotbashrc='${EDITOR} ${HOME}/.bashrc'
+#alias dotranger='${EDITOR} ${HOME}/.config/ranger/rc.conf'
+#alias dotneorc='${EDITOR} ${HOME}/.config/nvim/init.vim'
+alias dotaliases='${EDITOR} ${HOME}/.aliases'
+#alias dottmux='${EDITOR} ${HOME}/.tmux.conf'
+alias doti3status='${EDITOR} ${HOME}/.config/i3status/config'
+alias doti3='${EDITOR} ${HOME}/.config/i3/config'
+alias sshcs='ssh -Y x7lai@ubuntu1604-004.student.cs.uwaterloo.ca'
+alias rusti='rustup run nightly-2016-08-01 ~/.cargo/bin/rusti'
+alias p='ping -c 10 8.8.8.8'
 
 
-export SSH="x7lai@linux.student.cs.uwaterloo.ca"
-export SPRING_2018="/mnt/alex/Documents/Study/Classes/Spring 2018"
-export FALL_2018="/mnt/alex/Documents/School/Fall 2018"
-export DOT_FILES="/home/alexlai/Repos/myrepos/dotfiles"
+export SSH='x7lai@linux.student.cs.uwaterloo.ca'
+export WINTER_2019='/home/alex/Documents/School/Winter 2019'
+export DOT_FILES='/home/alex/myrepos/dotfiles'
+export PLAYGROUND='/home/alex/myrepos/Playground'

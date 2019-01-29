@@ -1,0 +1,28 @@
+{
+    "wallpaper": "wafu-bedroom.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#20151b",
+        "foreground": "#fff9e2",
+        "cursor": "#fff9e2"
+    },
+    "colors": {
+        "color0": "#20151b",
+        "color1": "#CD6D42",
+        "color2": "#A78E6B",
+        "color3": "#D89D6B",
+        "color4": "#90706C",
+        "color5": "#B48970",
+        "color6": "#9B6A58",
+        "color7": "#dcc2b0",
+        "color8": "#794e66",
+        "color9": "#ff8644",
+        "color10": "#eabb79",
+        "color11": "#ffca76",
+        "color12": "#cb847c",
+        "color13": "#fcad7e",
+        "color14": "#d98262",
+        "color15": "#fff9e2"
+    }
+}

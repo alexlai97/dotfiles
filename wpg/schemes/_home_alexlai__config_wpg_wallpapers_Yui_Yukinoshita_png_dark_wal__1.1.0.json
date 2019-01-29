@@ -1,0 +1,28 @@
+{
+    "wallpaper": "Yui_Yukinoshita.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0F0F13",
+        "foreground": "#e3ffff",
+        "cursor": "#e3ffff"
+    },
+    "colors": {
+        "color0": "#0F0F13",
+        "color1": "#c5545e",
+        "color2": "#B46C6E",
+        "color3": "#9D897A",
+        "color4": "#617787",
+        "color5": "#C07788",
+        "color6": "#6F909A",
+        "color7": "#b0cedb",
+        "color8": "#727290",
+        "color9": "#ff7481",
+        "color10": "#fc797d",
+        "color11": "#deaf8c",
+        "color12": "#6f9dbe",
+        "color13": "#ff86a6",
+        "color14": "#7fc4d9",
+        "color15": "#e3ffff"
+    }
+}

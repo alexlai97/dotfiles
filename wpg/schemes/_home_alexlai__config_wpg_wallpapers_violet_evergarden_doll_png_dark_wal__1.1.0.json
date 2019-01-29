@@ -1,0 +1,28 @@
+{
+    "wallpaper": "violet_evergarden_doll.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#151316",
+        "foreground": "#fffdf7",
+        "cursor": "#fffdf7"
+    },
+    "colors": {
+        "color0": "#151316",
+        "color1": "#A89999",
+        "color2": "#CEB095",
+        "color3": "#D9A267",
+        "color4": "#70618F",
+        "color5": "#8E739B",
+        "color6": "#798795",
+        "color7": "#dbd3ce",
+        "color8": "#605664",
+        "color9": "#efb2b2",
+        "color10": "#ffe3aa",
+        "color11": "#ffd371",
+        "color12": "#8c6ec9",
+        "color13": "#be84da",
+        "color14": "#8bafd3",
+        "color15": "#fffdf7"
+    }
+}
