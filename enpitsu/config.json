@@ -1,3 +1,4 @@
 {
-  "taskLocation" : "$XDG_DATA_HOME/enpitsu/tasks.json"
+  "taskLocation" : "$XDG_DATA_HOME/enpitsu/tasks.json",
+  "editor" : "$EDITOR"
 }

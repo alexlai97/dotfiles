@@ -1,0 +1,2 @@
+#!/bin/dash 
+GTK_THEME=Arc /usr/bin/firefox-bin

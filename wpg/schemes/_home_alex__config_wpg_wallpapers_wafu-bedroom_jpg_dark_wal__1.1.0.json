@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/wafu-bedroom.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#20161b",
+        "foreground": "#e0ccbf",
+        "cursor": "#e0ccbf"
+    },
+    "colors": {
+        "color0": "#20161b",
+        "color1": "#90716B",
+        "color2": "#B28A6E",
+        "color3": "#CE9970",
+        "color4": "#DAC06B",
+        "color5": "#787C97",
+        "color6": "#AB9691",
+        "color7": "#e0ccbf",
+        "color8": "#9c8e85",
+        "color9": "#90716B",
+        "color10": "#B28A6E",
+        "color11": "#CE9970",
+        "color12": "#DAC06B",
+        "color13": "#787C97",
+        "color14": "#AB9691",
+        "color15": "#e0ccbf"
+    }
+}

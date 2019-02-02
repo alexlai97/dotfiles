@@ -1,2 +1,2 @@
-#!/bin/bash
-wpg -rs startled_kitten.jpg startled_kitten.jpg
+#!/usr/bin/env bash
+wpg -rs 'wafu-bedroom.jpg' 'wafu-bedroom.jpg'

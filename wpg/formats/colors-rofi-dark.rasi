@@ -1,9 +1,9 @@
 * {
-    active-background: #acb5c7;
+    active-background: #ca8961;
     active-foreground: @foreground;
     normal-background: @background;
     normal-foreground: @foreground;
-    urgent-background: #a96974;
+    urgent-background: #a36960;
     urgent-foreground: @foreground;
 
     alternate-active-background: @background;
@@ -13,16 +13,16 @@
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #a96974;
+    selected-active-background: #a36960;
     selected-active-foreground: @foreground;
-    selected-normal-background: #acb5c7;
+    selected-normal-background: #ca8961;
     selected-normal-foreground: @foreground;
-    selected-urgent-background: #a498a7;
+    selected-urgent-background: #f6d05d;
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
-    background: #202123;
-    foreground: #fefeff;
+    background: #2b131f;
+    foreground: #fed0d0;
     border-color: @background;
     spacing: 2;
 }
@@ -48,11 +48,11 @@
     text-color: @foreground;
 }
 
-inputbar {
+#inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
 }
 
-textbox-prompt-colon {
+#textbox-prompt-colon {
     expand: false;
     str: ":";
     margin: 0px 0.3em 0em 0em;

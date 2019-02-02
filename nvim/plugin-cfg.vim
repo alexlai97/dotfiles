@@ -28,7 +28,7 @@ let g:racer_experimental_completer = 0
 
 " vimtex
 "let g:vimtex_view_method='zathura'
-let g:vimtex_view_general_viewer='/home/alex/bin/zathura-open.sh'
+let g:vimtex_view_general_viewer='/home/alex/.scripts/zathura-open.sh'
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 
 " Ultisnips
@@ -57,6 +57,7 @@ let g:tagbar_ctags_bin='/usr/bin/ctags'
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
     \ 'java': ['/usr/bin/jdtls'],
+    \ 'python': ['~/.local/bin/pyls'],
     \ }
 
 function LC_maps()

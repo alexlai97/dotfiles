@@ -1,4 +1,4 @@
-#(cat $HOME/.cache/wpgtk.sequences & )
+(cat $HOME/.cache/wpgtk.sequences & )
 #clear
 #
 
@@ -23,9 +23,7 @@ ENABLE_CORRECTION="true"
 # HIST_STAMPS="mm/dd/yyyy"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-plugins=(git z tmux vi-mode
-cargo
-rust
+plugins=(git z tmux vi-mode cargo rust
 )
 
 source $ZSH/oh-my-zsh.sh

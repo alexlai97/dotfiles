@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/clannad-sunflowerfield.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#210301",
+        "foreground": "#f6bfea",
+        "cursor": "#f6bfea"
+    },
+    "colors": {
+        "color0": "#210301",
+        "color1": "#F30F95",
+        "color2": "#F1DE8D",
+        "color3": "#B41A94",
+        "color4": "#F238A5",
+        "color5": "#FADCCF",
+        "color6": "#DCC199",
+        "color7": "#f6bfea",
+        "color8": "#ac85a3",
+        "color9": "#F30F95",
+        "color10": "#F1DE8D",
+        "color11": "#B41A94",
+        "color12": "#F238A5",
+        "color13": "#FADCCF",
+        "color14": "#DCC199",
+        "color15": "#f6bfea"
+    }
+}

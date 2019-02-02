@@ -1,0 +1,6 @@
+#!/usr/bin/env dash
+vim_buffer=$(mktemp)
+cat > $vim_buffer
+vim $vim_buffer < /dev/tty > /dev/tty
+cat $vim_buffer > /dev/stdout
+rm $vim_buffer
