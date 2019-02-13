@@ -1,0 +1,25 @@
+# tex
+
+snippet     scul 
+abbr        subsection with underline
+options     head
+  \subsection{${1:title}} ${2:#:new_line}
+  \underline{$1：}
+
+  ${0:TARGET}
+
+snippet     cb 
+abbr        centerbox
+options     head
+  \centerbox{
+    ${1}
+  }
+
+  ${0:TARGET}
+
+snippet     uln
+abbr        underline with newline
+options     head
+  \underline{${1}} \\\\ 
+  ${0:TARGET}
+

@@ -2,6 +2,8 @@
 import subprocess
 import os
 
+endstring=".mpv"
+
 def update_bookmark(dir,number):
     with open(dir+"/.bookmark",'w') as f:
         f.write(number)
@@ -24,11 +26,11 @@ def call_rofi(entries,command):
     return answer.replace("\n","")
 
 def get_chapter(file):
-    name,number = file.replace(".mkv","").split(" - ")
+    name,number = file.replace(endstring,"").split(" - ")
     return int(number)
 
 def get_files(dir):
-    chapters = [file for file in os.listdir(dir) if file.endswith(".mkv")]
+    chapters = [file for file in os.listdir(dir) if file.endswith(endstring)]
     chapters.sort(key=lambda file: get_chapter(file))
     return chapters
 
@@ -48,7 +50,7 @@ def choose_chapter(dir):
     chapter = call_rofi(chapters,command)
     return chapter if chapter in chapters else None
 
-dir = "/home/alexlai/Videos/Anime/"
+dir = "/home/alex/Videos/Anime/"
 folder = choose_folder(dir)
 if folder != None:
     chapter = choose_chapter(dir+"/"+folder)

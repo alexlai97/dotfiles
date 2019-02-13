@@ -9,7 +9,7 @@ let g:which_key_map = {}
 nmap <leader>rcv :edit ~/.vimrc<cr>
 nmap <leader>rcn :edit $MYVIMRC<cr>
 let g:which_key_map.r = {
-  \ 'name' : '+r',
+  \ 'name' : '+rc',
   \ 'c' : 'rc',
   \ }
 let g:which_key_map.r.c = {
@@ -66,10 +66,12 @@ let g:which_key_map.v.c = {
 " Simplenote keybinding
 nmap <leader>Sl :SimplenoteList<CR>
 nmap <leader>Sn :SimplenoteNew<CR>
+nmap <leader>Su :SimplenoteUpdate<CR>
 nmap <leader>Sd :SimplenoteDelete<CR>
 let g:which_key_map.S = {
   \ 'name' : '+Simplenote',
   \ 'l' : 'SimplenoteList',
+  \ 'u' : 'SimplenoteUpdate',
   \ 'n' : 'SimplenoteNew',
   \ 'd' : 'SimplenoteDelete',
   \ }

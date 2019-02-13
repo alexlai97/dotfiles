@@ -3,10 +3,11 @@
 #
 
 export ZSH=$HOME/.oh-my-zsh
-source $HOME/.zshenv
+#source $HOME/.zshenv
 #export RUST_SRC_PATH=/home/alexlai/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src
 #export PATH=$HOME/.cargo/bin:$HOME/.local/bin:$PATH
 
+fpath+=~/.zfunc
 
 #ZSH_TMUX_AUTOSTART=true
 ZSH_THEME="arrow"

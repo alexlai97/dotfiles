@@ -8,7 +8,7 @@ set mouse=a
 if has('nvim')
   execute pathogen#infect('light-bundle/{}','common-bundle/{}','nvim-bundle/{}','tex-bundle/{}','rust-bundle/{}')
 else
-  execute pathogen#infect('light-bundle/{}')
+  execute pathogen#infect('light-bundle/{}','common-bundle/{}')
 endif
 packloadall
 
@@ -60,3 +60,5 @@ let g:multi_cursor_exit_from_insert_mode=0
 let g:netrw_winsize=20
 
 nnoremap <F3> :Lexplore<CR>
+
+

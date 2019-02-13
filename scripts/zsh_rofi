@@ -1,3 +1,5 @@
 #!/bin/sh
 
-exec zsh -c "rofi -show run"
+source ~/.zshenv
+
+exec rofi -show run

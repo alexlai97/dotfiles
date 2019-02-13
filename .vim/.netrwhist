@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/alex/myrepos/rusts/tictactoe-rust/src'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/alex/myrepos/dotfiles/.vim/bundle/simplenote.vim/autoload'
+let g:netrw_dirhist_2='/home/alex/myrepos/dotfiles/.vim/bundle/simplenote.vim'
+let g:netrw_dirhist_3='/home/alex/myrepos/dotfiles/.vim/bundle/simplenote.vim/autoload'
+let g:netrw_dirhist_4='/home/alex/myrepos/dotfiles/.vim/bundle/simplenote.vim'
+let g:netrw_dirhist_5='/home/alex/myrepos/dotfiles/.vim/bundle/simplenote.vim/autoload'
+let g:netrw_dirhist_6='/home/alex/google-drive/School/Winter 2019/CS349/1191/09.graphics/examples'
