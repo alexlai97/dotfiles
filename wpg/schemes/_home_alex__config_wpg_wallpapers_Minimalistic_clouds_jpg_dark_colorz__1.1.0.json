@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/Minimalistic_clouds.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0c1d24",
+        "foreground": "#c2c6c8",
+        "cursor": "#c2c6c8"
+    },
+    "colors": {
+        "color0": "#0c1d24",
+        "color1": "#4192b7",
+        "color2": "#63a4c3",
+        "color3": "#89b2c7",
+        "color4": "#a8bcc8",
+        "color5": "#3980aa",
+        "color6": "#c0c4c7",
+        "color7": "#c2c6c8",
+        "color8": "#48555a",
+        "color9": "#4192b7",
+        "color10": "#63a4c3",
+        "color11": "#89b2c7",
+        "color12": "#a8bcc8",
+        "color13": "#3980aa",
+        "color14": "#c0c4c7",
+        "color15": "#c2c6c8"
+    }
+}

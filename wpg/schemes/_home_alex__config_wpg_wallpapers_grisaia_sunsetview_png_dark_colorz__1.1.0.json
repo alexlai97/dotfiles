@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/grisaia_sunsetview.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#271915",
+        "foreground": "#c9c5c4",
+        "cursor": "#c9c5c4"
+    },
+    "colors": {
+        "color0": "#271915",
+        "color1": "#c77f6e",
+        "color2": "#c7b18f",
+        "color3": "#c7a64e",
+        "color4": "#5f64aa",
+        "color5": "#9c7da4",
+        "color6": "#ac6676",
+        "color7": "#c9c5c4",
+        "color8": "#5d524f",
+        "color9": "#c77f6e",
+        "color10": "#c7b18f",
+        "color11": "#c7a64e",
+        "color12": "#5f64aa",
+        "color13": "#9c7da4",
+        "color14": "#ac6676",
+        "color15": "#c9c5c4"
+    }
+}

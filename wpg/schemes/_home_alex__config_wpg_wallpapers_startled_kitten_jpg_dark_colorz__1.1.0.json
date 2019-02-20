@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/startled_kitten.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#151a21",
+        "foreground": "#c4c5c7",
+        "cursor": "#c4c5c7"
+    },
+    "colors": {
+        "color0": "#151a21",
+        "color1": "#6c86aa",
+        "color2": "#acb5c7",
+        "color3": "#8893ac",
+        "color4": "#a397a7",
+        "color5": "#a98293",
+        "color6": "#a96872",
+        "color7": "#c4c5c7",
+        "color8": "#4f5358",
+        "color9": "#6c86aa",
+        "color10": "#acb5c7",
+        "color11": "#8893ac",
+        "color12": "#a397a7",
+        "color13": "#a98293",
+        "color14": "#a96872",
+        "color15": "#c4c5c7"
+    }
+}

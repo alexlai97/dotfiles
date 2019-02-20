@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/seaside_cave.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#20201e",
+        "foreground": "#c7c7c6",
+        "cursor": "#c7c7c6"
+    },
+    "colors": {
+        "color0": "#20201e",
+        "color1": "#a4a59a",
+        "color2": "#8dbfc7",
+        "color3": "#5bb4c3",
+        "color4": "#319eb9",
+        "color5": "#b9c3c6",
+        "color6": "#859ca9",
+        "color7": "#c7c7c6",
+        "color8": "#575756",
+        "color9": "#a4a59a",
+        "color10": "#8dbfc7",
+        "color11": "#5bb4c3",
+        "color12": "#319eb9",
+        "color13": "#b9c3c6",
+        "color14": "#859ca9",
+        "color15": "#c7c7c6"
+    }
+}

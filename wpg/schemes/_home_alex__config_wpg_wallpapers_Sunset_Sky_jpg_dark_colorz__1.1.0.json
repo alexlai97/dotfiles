@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/Sunset_Sky.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#121825",
+        "foreground": "#c3c5c8",
+        "cursor": "#c3c5c8"
+    },
+    "colors": {
+        "color0": "#121825",
+        "color1": "#5c7cbd",
+        "color2": "#2a34aa",
+        "color3": "#554daa",
+        "color4": "#8e65a9",
+        "color5": "#b7adb3",
+        "color6": "#b16b78",
+        "color7": "#c3c5c8",
+        "color8": "#4d515b",
+        "color9": "#5c7cbd",
+        "color10": "#2a34aa",
+        "color11": "#554daa",
+        "color12": "#8e65a9",
+        "color13": "#b7adb3",
+        "color14": "#b16b78",
+        "color15": "#c3c5c8"
+    }
+}

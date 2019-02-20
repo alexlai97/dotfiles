@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/sexy_cloud.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#271a10",
+        "foreground": "#c9c5c3",
+        "cursor": "#c9c5c3"
+    },
+    "colors": {
+        "color0": "#271a10",
+        "color1": "#c68655",
+        "color2": "#86a9a4",
+        "color3": "#22a1a9",
+        "color4": "#5a90a8",
+        "color5": "#9c88a5",
+        "color6": "#ab777d",
+        "color7": "#c9c5c3",
+        "color8": "#5d534b",
+        "color9": "#c68655",
+        "color10": "#86a9a4",
+        "color11": "#22a1a9",
+        "color12": "#5a90a8",
+        "color13": "#9c88a5",
+        "color14": "#ab777d",
+        "color15": "#c9c5c3"
+    }
+}

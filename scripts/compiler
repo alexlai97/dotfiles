@@ -1,0 +1,43 @@
+#!/bin/env dash
+
+file=$1
+base=${file%.*}
+suffix=${file##*.}
+
+if [ $# -eq 0 ]; then
+  echo "Usage: $0 (file)"
+  exit 1
+fi
+
+if [ ! -f $file ]; then 
+  echo "NO such file called $file"
+  notify-send "Compilation Failed" "No such file! $file"
+  exit 1
+fi
+
+# echo $file $base $suffix
+failMesg(){
+  echo "Compiling $file failed!"
+  notify-send "Compilation Failed" "Compiling $file failed!"
+  exit 1
+}
+
+successMesg(){
+  echo "Compiling $file succeeded!"
+  notify-send "Compilation Done" "Compiling $file succeeded!"
+  exit 0
+}
+
+unknownMesg(){
+  echo "Unknown filetype $suffix"
+  notify-send "Unknown filetype .$suffix" "compiling $file discontinued"
+  exit 1
+}
+
+case $suffix in 
+   c|C) gcc $file -o $base && successMesg || failMesg ;;
+   cc|c++|cpp) g++ $file -o $base && successMesg || failMesg ;;
+   rs) rustc $file -o $base && successMesg || failMesg ;;
+   *) unknownMesg ;;
+esac
+

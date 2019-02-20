@@ -2,7 +2,7 @@
 import subprocess
 import os
 
-endstring=".mpv"
+endstring=".mp4"
 
 def update_bookmark(dir,number):
     with open(dir+"/.bookmark",'w') as f:

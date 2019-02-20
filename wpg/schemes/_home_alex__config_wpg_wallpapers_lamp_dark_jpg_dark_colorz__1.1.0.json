@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/lamp_dark.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#20180c",
+        "foreground": "#c7c5c2",
+        "cursor": "#c7c5c2"
+    },
+    "colors": {
+        "color0": "#20180c",
+        "color1": "#a57a40",
+        "color2": "#a8a697",
+        "color3": "#a6aaaa",
+        "color4": "#c3c4c6",
+        "color5": "#8d97a8",
+        "color6": "#4d6ca8",
+        "color7": "#c7c5c2",
+        "color8": "#575148",
+        "color9": "#a57a40",
+        "color10": "#a8a697",
+        "color11": "#a6aaaa",
+        "color12": "#c3c4c6",
+        "color13": "#8d97a8",
+        "color14": "#4d6ca8",
+        "color15": "#c7c5c2"
+    }
+}

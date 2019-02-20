@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/violet_evergarden_doll.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#272524",
+        "foreground": "#c9c8c8",
+        "cursor": "#c9c8c8"
+    },
+    "colors": {
+        "color0": "#272524",
+        "color1": "#c6bcb9",
+        "color2": "#ad8f83",
+        "color3": "#ad7258",
+        "color4": "#c5b29d",
+        "color5": "#7977ab",
+        "color6": "#a598a5",
+        "color7": "#c9c8c8",
+        "color8": "#5d5b5a",
+        "color9": "#c6bcb9",
+        "color10": "#ad8f83",
+        "color11": "#ad7258",
+        "color12": "#c5b29d",
+        "color13": "#7977ab",
+        "color14": "#a598a5",
+        "color15": "#c9c8c8"
+    }
+}

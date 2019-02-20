@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/dark_cactus_spines_green_drop.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#212020",
+        "foreground": "#c7c7c7",
+        "cursor": "#c7c7c7"
+    },
+    "colors": {
+        "color0": "#212020",
+        "color1": "#a9a4a1",
+        "color2": "#a99673",
+        "color3": "#a79242",
+        "color4": "#62aa1f",
+        "color5": "#6daa4e",
+        "color6": "#79a57f",
+        "color7": "#c7c7c7",
+        "color8": "#585757",
+        "color9": "#a9a4a1",
+        "color10": "#a99673",
+        "color11": "#a79242",
+        "color12": "#62aa1f",
+        "color13": "#6daa4e",
+        "color14": "#79a57f",
+        "color15": "#c7c7c7"
+    }
+}

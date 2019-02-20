@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/Violet_evergarden_1.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#211513",
+        "foreground": "#c7c4c4",
+        "cursor": "#c7c4c4"
+    },
+    "colors": {
+        "color0": "#211513",
+        "color1": "#aa6d61",
+        "color2": "#c48961",
+        "color3": "#c5a488",
+        "color4": "#c6bcb3",
+        "color5": "#7075aa",
+        "color6": "#a88a99",
+        "color7": "#c7c4c4",
+        "color8": "#584f4e",
+        "color9": "#aa6d61",
+        "color10": "#c48961",
+        "color11": "#c5a488",
+        "color12": "#c6bcb3",
+        "color13": "#7075aa",
+        "color14": "#a88a99",
+        "color15": "#c7c4c4"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/nightfall.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1d2625",
+        "foreground": "#c6c8c8",
+        "cursor": "#c6c8c8"
+    },
+    "colors": {
+        "color0": "#1d2625",
+        "color1": "#92c0ba",
+        "color2": "#629eb0",
+        "color3": "#0781ac",
+        "color4": "#3f87ac",
+        "color5": "#2a69aa",
+        "color6": "#1056aa",
+        "color7": "#c6c8c8",
+        "color8": "#555c5b",
+        "color9": "#92c0ba",
+        "color10": "#629eb0",
+        "color11": "#0781ac",
+        "color12": "#3f87ac",
+        "color13": "#2a69aa",
+        "color14": "#1056aa",
+        "color15": "#c6c8c8"
+    }
+}

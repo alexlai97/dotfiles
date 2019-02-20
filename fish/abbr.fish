@@ -27,6 +27,15 @@ if status is-interactive
   # abduco
   abbr --add ab abduco
 
+  # ranger
+  abbr --add r ranger
+
+  # dir operations
+  abbr --add rd rmdir
+  abbr --add md mkdir
+
+  # info
+  abbr --add info info --vi-keys
 end
 
 # Variables

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/Greenery.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#24270b",
+        "foreground": "#c8c9c2",
+        "cursor": "#c8c9c2"
+    },
+    "colors": {
+        "color0": "#24270b",
+        "color1": "#b6c73c",
+        "color2": "#9ab739",
+        "color3": "#77aa3c",
+        "color4": "#58aa66",
+        "color5": "#3d97a2",
+        "color6": "#1e40aa",
+        "color7": "#c8c9c2",
+        "color8": "#5a5d48",
+        "color9": "#b6c73c",
+        "color10": "#9ab739",
+        "color11": "#77aa3c",
+        "color12": "#58aa66",
+        "color13": "#3d97a2",
+        "color14": "#1e40aa",
+        "color15": "#c8c9c2"
+    }
+}

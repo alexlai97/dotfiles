@@ -12,5 +12,7 @@ do
       echo -n "$file" | xclip -selection clipboard ;;
     "C-w")
       feh --bg-scale "$file" ;;
+    "C-W")
+      wpg -s "$file" ;;
   esac
 done

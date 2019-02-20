@@ -9,7 +9,7 @@ let g:which_key_map = {}
 nmap <leader>rcv :edit ~/.vimrc<cr>
 nmap <leader>rcn :edit $MYVIMRC<cr>
 let g:which_key_map.r = {
-  \ 'name' : '+rc',
+  \ 'name' : '+rc|run',
   \ 'c' : 'rc',
   \ }
 let g:which_key_map.r.c = {
@@ -95,7 +95,7 @@ let g:which_key_map.g = {
   \ 'x' : 'rust-def-vertical',
   \ }
 let g:which_key_map.c = {
-  \ 'name' : '+cargo',
+  \ 'name' : '+cargo|compiler',
   \ 'b' : 'cargo build',
   \ 'r' : 'cargo run',
   \ 't' : 'cargo test',
@@ -103,9 +103,15 @@ let g:which_key_map.c = {
   \ }
 
 
-" c type file key commands
-autocmd Filetype c,cpp nnoremap <leader>m :!g++ -std=c++14 -Wall -Werror -g % -o %:r<CR>
-autocmd Filetype c,cpp nnoremap <leader>r :!./%:r <CR>
+" compile & run
+nnoremap <leader>com :!compiler %<CR>
+autocmd Filetype c,cpp,rust nnoremap <leader>run :! ./%:r <CR>
+let g:which_key_map.c.o = {
+  \ 'm': 'compiler',
+  \ }
+let g:which_key_map.r.u = {
+  \ 'n': 'run',
+  \ }
 
 
 " tagbar

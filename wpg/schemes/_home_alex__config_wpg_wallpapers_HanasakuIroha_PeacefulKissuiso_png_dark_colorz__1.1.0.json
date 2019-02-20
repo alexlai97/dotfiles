@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/HanasakuIroha_PeacefulKissuiso.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#211917",
+        "foreground": "#c7c5c5",
+        "cursor": "#c7c5c5"
+    },
+    "colors": {
+        "color0": "#211917",
+        "color1": "#a98175",
+        "color2": "#a9af84",
+        "color3": "#bdbcc2",
+        "color4": "#9a5ea7",
+        "color5": "#a38da5",
+        "color6": "#aa454e",
+        "color7": "#c7c5c5",
+        "color8": "#585251",
+        "color9": "#a98175",
+        "color10": "#a9af84",
+        "color11": "#bdbcc2",
+        "color12": "#9a5ea7",
+        "color13": "#a38da5",
+        "color14": "#aa454e",
+        "color15": "#c7c5c5"
+    }
+}

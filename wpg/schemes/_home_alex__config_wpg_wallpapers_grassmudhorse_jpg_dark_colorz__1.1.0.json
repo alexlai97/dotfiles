@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/grassmudhorse.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#251809",
+        "foreground": "#c8c5c1",
+        "cursor": "#c8c5c1"
+    },
+    "colors": {
+        "color0": "#251809",
+        "color1": "#ba7930",
+        "color2": "#c2b39b",
+        "color3": "#ad9c68",
+        "color4": "#98a82b",
+        "color5": "#2891c0",
+        "color6": "#6da2bd",
+        "color7": "#c8c5c1",
+        "color8": "#5b5146",
+        "color9": "#ba7930",
+        "color10": "#c2b39b",
+        "color11": "#ad9c68",
+        "color12": "#98a82b",
+        "color13": "#2891c0",
+        "color14": "#6da2bd",
+        "color15": "#c8c5c1"
+    }
+}

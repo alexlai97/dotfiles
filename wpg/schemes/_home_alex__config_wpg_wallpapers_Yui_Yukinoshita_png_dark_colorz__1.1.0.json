@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/Yui_Yukinoshita.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#261f1f",
+        "foreground": "#c8c7c7",
+        "cursor": "#c8c7c7"
+    },
+    "colors": {
+        "color0": "#261f1f",
+        "color1": "#c39e9d",
+        "color2": "#bbbdc0",
+        "color3": "#647baa",
+        "color4": "#989ba7",
+        "color5": "#b3575d",
+        "color6": "#b67a7c",
+        "color7": "#c8c7c7",
+        "color8": "#5c5757",
+        "color9": "#c39e9d",
+        "color10": "#bbbdc0",
+        "color11": "#647baa",
+        "color12": "#989ba7",
+        "color13": "#b3575d",
+        "color14": "#b67a7c",
+        "color15": "#c8c7c7"
+    }
+}

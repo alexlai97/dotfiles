@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/old-bridge-intothedistance.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#231f1f",
+        "foreground": "#f2e8e8",
+        "cursor": "#f2e8e8"
+    },
+    "colors": {
+        "color0": "#231f1f",
+        "color1": "#b18469",
+        "color2": "#c0b1aa",
+        "color3": "#c99b6f",
+        "color4": "#979cad",
+        "color5": "#ae9284",
+        "color6": "#849dad",
+        "color7": "#cebbbb",
+        "color8": "#756464",
+        "color9": "#f6a974",
+        "color10": "#f3e0c7",
+        "color11": "#f4cc7c",
+        "color12": "#b0bef3",
+        "color13": "#f4b796",
+        "color14": "#98d2f4",
+        "color15": "#f2e8e8"
+    }
+}

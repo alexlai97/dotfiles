@@ -1,0 +1,100 @@
+:q
+:h
+:t id
+:t 5
+id (5)
+:q
+factorial 4
+factorial 2
+:l factorial.hs 
+:t factorial 
+:l factorial.hs 
+:t myfactorial 
+:l factorial.hs 
+:t factorial 
+:l factorial.hs 
+:l factorial.hs 
+:l factorial.hs 
+:t (+)
+:t (++)
+:l factorial.hs 
+factorial 10
+factorial 10
+:l factorial.hs 
+:l factorial.hs 
+:q
+:t read
+:q
+main
+:l triangle.hs 
+:run triangle.hs 
+:r main
+:? run
+:? runn
+:h
+:l learning_haskell.hs 
+:q
+q
+:t main
+main
+Main
+main
+:r
+:r
+main
+:l learning_haskell.hs 
+v <- "123"
+x <- "213"
+x <- 1
+area <- 1 
+area <- 1 * 2
+:t area
+:t 
+area
+area = 1  * 2
+name
+name <- getLine
+x
+let x = getLine
+let x <- getLine
+x getLine
+getLine
+:t getLine
+getLine
+base
+base = getLine
+read (getLine)::Int
+read (getLine) ::Int
+read (getLine) :: Int
+read getLine :: Int
+read "4"
+:t read
+read "1"::Int
+"1"::Int
+getLine
+:t IO
+reverse phrase
+phrase = "Hello World"
+putStrLn "Hello World"
+:t putStrLn
+:h putStrLn
+(unwords . reverse . words) "Mary had a little lamb"
+:q
+:l learning_haskell.hs 
+:q
+:l learning_haskell.hs 
+:q
+:l learning_haskell.hs 
+:l learning_haskell.hs 
+:l learning_haskell.hs 
+:l learning_haskell.hs 
+triangles 
+let triangles = [ (a,b,c) | c <- [1..], a <- [1..c], b <- [1..a], a^2 + b^2 == c^2 ]
+:l learning_haskell.hs 
+:l learning_haskell.hs 
+:l learning_haskell.hs 
+:l learning_haskell.hs 
+:l learning_haskell.hs 
+:l learning_haskell.hs 
+:l learning_haskell.hs 
+:l learning_haskell.hs 
