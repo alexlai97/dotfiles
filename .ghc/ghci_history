@@ -1,100 +1,100 @@
-:q
-:h
-:t id
-:t 5
-id (5)
-:q
-factorial 4
-factorial 2
-:l factorial.hs 
-:t factorial 
-:l factorial.hs 
-:t myfactorial 
-:l factorial.hs 
-:t factorial 
-:l factorial.hs 
-:l factorial.hs 
-:l factorial.hs 
-:t (+)
-:t (++)
-:l factorial.hs 
-factorial 10
-factorial 10
-:l factorial.hs 
-:l factorial.hs 
-:q
-:t read
-:q
-main
-:l triangle.hs 
-:run triangle.hs 
-:r main
-:? run
-:? runn
-:h
-:l learning_haskell.hs 
+nothing [1,3..10999]
+nothing [1,3..10]
+nothing [1,2..10]
+nothing [1,2,..10]
+nothing [1,0.1,..10]
+nothing [1,0.1m..10]
+nothing [1,0.1..10]
+nothing [1.0.1..10]
+nothing [1..0.1..10]
+nothing [1..0.1..10
+nothing [1..100]
+nothing [1..2]
+nothing list = foldr (:) [] list
 :q
 q
-:t main
-main
-Main
-main
-:r
-:r
-main
-:l learning_haskell.hs 
-v <- "123"
-x <- "213"
-x <- 1
-area <- 1 
-area <- 1 * 2
-:t area
-:t 
-area
-area = 1  * 2
-name
-name <- getLine
-x
-let x = getLine
-let x <- getLine
-x getLine
-getLine
-:t getLine
-getLine
-base
-base = getLine
-read (getLine)::Int
-read (getLine) ::Int
-read (getLine) :: Int
-read getLine :: Int
-read "4"
-:t read
-read "1"::Int
-"1"::Int
-getLine
-:t IO
-reverse phrase
-phrase = "Hello World"
-putStrLn "Hello World"
-:t putStrLn
-:h putStrLn
-(unwords . reverse . words) "Mary had a little lamb"
+[1..100]
+foldr (:) [] [1..100]
+[1..100]
+foldr (:) [] [1..100]
+[1..100]
+foldr (:) [] [1..100]
+foldr (:) [] [1..100]
+foldr (:) [] [1..10000]
+foldr (:) [] [1..10000]
+foldr (:) [] [1..100]
+foldr (:) [1,2]
+foldr (:) []
+:t (:)
+:t succ
+succ 1
+succ 1
+:t acc
+:y acc
+acc
+myconcat [[1,2,3], [4,5,6], [7..9]]
+myconcat [1,2,3]
+:load fold.hs 
+mysum [1..100]
+mysum [1..]
+:load fold.hs 
+(5*) 2
+(5*) 5
+:type (5*)
+:type 5*
+:t (*)
+applyToIntegers (*100) [1..100]
+applyToIntegers doubleList [1..100]
+:load list.hs
+:load list.hs
+multiplyList 8 [1..100]
+multiplyList 8 [1..]
+doubleList [1,2,3,4,5]
+:load list.hs
+:load list.hs
+:load list.hs
+:load list.hs
+doubleList [1,2,3,4,5]
+:load list.hs
+doubleList [1,2,3,4,5]
+:load list.hs
 :q
-:l learning_haskell.hs 
-:q
-:l learning_haskell.hs 
-:q
-:l learning_haskell.hs 
-:l learning_haskell.hs 
-:l learning_haskell.hs 
-:l learning_haskell.hs 
-triangles 
-let triangles = [ (a,b,c) | c <- [1..], a <- [1..c], b <- [1..a], a^2 + b^2 == c^2 ]
-:l learning_haskell.hs 
-:l learning_haskell.hs 
-:l learning_haskell.hs 
-:l learning_haskell.hs 
-:l learning_haskell.hs 
-:l learning_haskell.hs 
-:l learning_haskell.hs 
-:l learning_haskell.hs 
+actualData 
+mapM_ (p) laststep
+sum (mapM_ (p) laststep)
+chi_square
+mapM_ (p) laststep
+mapM_ (p) laststep
+p x = printf "%.2f\n" (x :: Double) 
+p x = printf "%.2f\n" (x :: Double) x
+p 2
+p x = printf "%.2f\n" (x :: Double) x
+map (p) laststep
+p x = printf "%.2f\n" (x :: Double)
+map (p) laststep
+p 2
+p x = printf "%.2f\n" (x :: Float)
+printf "%.2f\n" (2 :: Float)
+printf "%.2f\n" 2
+printf "%.2f" 2
+printf "%.2f"
+map (printf "%.2f\n") laststep
+import Text.Printf 
+import Text.Prinf
+sum expectedData 
+laststep 
+:load tmp.hs 
+zip actualData expectedData 
+expectedData 
+:load tmp.hs 
+total
+chi_square 
+:load tmp.hs 
+sum (zipWith (/) (map (^2) (zipWith (-) (map fromIntegral actualData) expectedData)) expectedData)
+zipWith (/) (map (^2) (zipWith (-) (map fromIntegral actualData) expectedData)) expectedData 
+map (^2) (zipWith (-) (map fromIntegral actualData) expectedData)
+map ((+1) . (^2)) (zipWith (-) (map fromIntegral actualData) expectedData)
+map ((-1) . (^2)) (zipWith (-) (map fromIntegral actualData) expectedData)
+map (^2) (zipWith (-) (map fromIntegral actualData) expectedData)
+zipWith (-) (map fromIntegral actualData) expectedData 
+zipWith (-) actualData expectedData 

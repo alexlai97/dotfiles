@@ -1,5 +1,7 @@
-#!/bin/sh
+#!/bin/dash
 
-source ~/.zshenv
+export PATH="/usr/bin:/bin:/usr/local/bin:$HOME/bin:$HOME/.scripts:$HOME/.cargo/bin:$HOME/.local/bin:$HOME/.texlive/2018/bin/x86_64-linux:/opt/bin"
+
+# source ~/.zshenv
 
 exec rofi -show run

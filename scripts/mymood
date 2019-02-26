@@ -1,0 +1,28 @@
+#!/bin/dash
+
+file="$HOME/.cache/dwm/mymood.txt"
+iconfile="$HOME/.cache/dwm/mymoodicons.txt"
+usage() {
+  echo "Usage: $0 (input|choose|help)"
+}
+
+seticon() {
+  read input
+  echo $input > $file
+}
+
+chooseicon() {
+  cat $iconfile | rofi -dmenu -p "icon:" > $file
+}
+
+display() {
+  cat $file
+}
+
+#main
+case $1 in 
+  input|-i|--input|i) seticon;;
+  choose|c) chooseicon;;
+  help|h) usage;;
+  *) display;;
+esac

@@ -22,14 +22,14 @@ preview () {
 }
 
 if [ $# -eq 0 ]; then
-  OPTION=$(echo -e "window\nroot\ntime\nclean" | rofi -dmenu -p "mode")
+  OPTION=$(echo -e "window\nroot\ntime\nshow\nclean" | rofi -dmenu -p "screenshot mode")
 else
   OPTION=$1
 fi
 
 case $OPTION in 
   "window"|"w")
-    if import "${FNAME}"; then
+    if sleep 0.1 && import "${FNAME}"; then
       preview
       notify-send "Window screenshot saved!" "Window screenshot was saved as:\n ${FNAME}"
     else
@@ -47,7 +47,7 @@ case $OPTION in
     ;;
 
   "time"|"t")
-    t=$(echo -e "3\n5\n10\n15\n" | rofi -dmenu)
+    t=$(echo -e "3\n5\n10\n15\n30\n60\n120\n180\n1800\n3600" | rofi -dmenu -p "countdown")
     if [ -z $t ] ;then rofi -e "failed to capture time"; exit 1; fi
     notify-send "Count down $t seconds"
     sleep $t && import -window root "${FNAME}"
@@ -74,9 +74,13 @@ case $OPTION in
       * ) exit 0 ;;
     esac
     ;;
+  
+  "show"|"s")
+    sxiv $FOLDER/screenshot-*.png
+    ;;
 
   *)
-    echo $"Usage: $0 {window|w|root|r|clean|c}"
+    echo $"Usage: $0 {window|w|root|r|clean|c|show|s}"
     exit 1
     ;;
 esac

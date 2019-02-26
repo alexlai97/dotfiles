@@ -10,7 +10,9 @@ set -xg _JAVA_AWT_WM_NONREPARENTING 1
 set -g EDITOR vi
 
 #source ~/.aliases
-source ~/.config/fish/abbr.fish
+# source ~/.config/fish/abbr.fish
 
-#loadcolor
+# if test "$TERM" = "st-256color"
+#    loadcolor
+# end 
 #fzf_key_bindings

@@ -1,0 +1,91 @@
+#!/bin/dash
+
+CACHEFILE=/home/alex/.cache/weather/current_weather.png
+CACHEFILE_WHITE=/home/alex/.cache/weather/current_weather_white.png
+CACHE_ONELINE=/home/alex/.cache/weather/current_weather_oneline.txt
+TIME=""
+OPTION=$2
+
+usage () {
+  echo "Usage: $0 (help|show|get|reload|full|dark|white|text) [:help|p|q]"
+  echo "  help    :   show this page
+  show    :   show picture according to time
+  get     :   get image from wttr.in
+  reload  :   get and show
+  full    :   curl wttr.in [:help|p|q]
+  white   :   show white picture
+  dark    :   show dark picture
+  text    :   print one line text
+
+  example: weather f 'Kitchener_0pq'
+           weather f moon
+" >&2
+  exit 0
+}
+
+dark_or_white() {
+  h=$(date +%H)
+  if [ $h -lt 7 -o $h -gt 19 ]; then
+    echo it\'s late
+    TIME="dark"
+  else 
+    echo good day
+    TIME="white"
+  fi
+}
+
+onlyprinttext() {
+  info=$(cat $CACHE_ONELINE)
+  case $info in 
+    *HTTP*) ;;
+    *)  echo $info ;;
+  esac
+}
+
+negate_image() {
+  convert $CACHEFILE -negate $CACHEFILE_WHITE
+}
+
+get_image() {
+  curl 'wttr.in/Kitchener_0pq.png' > $CACHEFILE
+  curl 'wttr.in/?format=%c+%t' > $CACHE_ONELINE
+  negate_image
+}
+
+
+print_detail() {
+  echo curl "wttr.in/"$OPTION
+  curl "wttr.in"/$OPTION
+}
+
+
+show_image() {
+  if [ ! -e $CACHEFILE ]; then
+    get_image
+  fi
+
+  echo showing $1
+  if [ ! $1 = "white" ]; then
+    n30f -x 1120 -y 34  $CACHEFILE -c "sxiv $CACHEFILE" &
+  else 
+    n30f -x 1120 -y 34  $CACHEFILE_WHITE -c "sxiv $CACHEFILE_WHITE" &
+  fi
+  if [ $? -eq 0 ]; then 
+    sleep 10s && kill $! &
+  fi
+}
+
+# main
+case "$1" in 
+  h|-h*|--h*)    usage ;;
+  show|s)        dark_or_white; show_image $TIME;;
+  dark|d)        show_image "dark";;
+  white|w)       show_image "white";;
+  get|g)         get_image;;
+  reload|r)      get_image && dark_or_white && show_image;;
+  full|f)        print_detail; OPTION=$2;;
+  negate|n)      negate_image;;
+  text|t)        onlyprinttext;;
+  *)             onlyprinttext; usage;;
+esac
+

@@ -1,0 +1,80 @@
+#!/bin/dash
+
+# * select menu
+#   * youtube mpsyt playlist
+#   * local video playlist
+#   * local wallpaper
+#   * kill
+
+MPSYOUTUBEPATH="/home/alex/.config/mps-youtube/playlists/"
+LOCALVIDEOPATH="/home/alex/Videos/mpsyt/"
+WALLPAPERPATH="/home/alex/Pictures/Wallpaper/"
+SESSION="dynwal"
+
+usage() {
+  echo "Usage: $0 [mpv commands]"
+}
+
+COMMANDS=""
+OPTION=""
+
+rofimenu() {
+  echo "  youtube mpsyt playlist
+  local video playlist
+  local wallpaper playlist
+  control terminal
+  kill current playing" | rofi -dmenu -p "playlist" || exit 1
+}
+
+getmpsyoutubeplaylist() {
+  ls $MPSYOUTUBEPATH | rofi -dmenu -p "playlist" || exit 1
+}
+getlocalvideoplaylist() {
+  ls $LOCALVIDEOPATH | rofi -dmenu -p "playlist" || exit 1
+}
+getwallpaperplaylist() {
+  sxiv -o $WALLPAPERPATH
+}
+getimageduration() {
+  echo "10
+60
+120" | rofi -dmenu -p "image display duration (seconds)"
+}
+
+killprocess() {
+  pkill xwinwrap
+}
+
+spawncontroller() {
+  notify-send "Terminal Spawned" "$SESSION mpv controller, ctrl-\\ to detach"
+  st -e abduco -a $SESSION
+}
+
+getcommand() {
+  case $(rofimenu) in 
+    *youtube*) echo "$MPSYOUTUBEPATH/"$(getmpsyoutubeplaylist);;
+    *video*) echo "$LOCALVIDEOPATH"/$(getlocalvideoplaylist);;
+    *wallpaper*) echo $(getwallpaperplaylist); OPTION="--image-display-duration=$(getimageduration)"; echo $OPTION ;;
+    *kill*) killprocess ;;
+    *terminal*) spawncontroller;;
+  esac
+}
+
+plaympv() {
+  if [ -z "$COMMANDS" ]; then
+    exit 1
+  fi 
+  echo xwinwrap -fs -ni -nf -b -ov -- mpv -wid WID  $COMMANDS
+  # abduco -e '^q' -c $SESSION xwinwrap -fs -ni -nf -b -ov -- mpv -wid WID --script==~/.config/mpv/lua/notify.lua $COMMANDS
+  abduco -e '^q' -c $SESSION xwinwrap -fs -ni -nf -b -ov -- mpv -wid WID $COMMANDS
+}
+
+
+# main
+case "$1" in 
+  -h|-help|h|help) usage;exit 0 ;;
+  "") COMMANDS=$(getcommand) && plaympv;;
+  *) COMMANDS="$@"; plaympv ;;
+esac
+
+

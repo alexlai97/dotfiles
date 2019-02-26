@@ -1,0 +1,14 @@
+#!/bin/dash
+
+h=$(date +%H)
+if [ $h -ge 7 -a $h -lt 11 ]; then # 7 - 11
+  echo 
+elif [ $h -ge 11 -a $h -lt 15 ]; then # 11 - 15
+  echo 
+elif [ $h -ge 15 -a $h -lt 19 ]; then # 15 - 19
+  echo 
+elif [ $h -ge 19 -a $h -lt 23 ]; then # 19 - 23
+  echo 
+else  # 23 - 7
+  echo 
+fi

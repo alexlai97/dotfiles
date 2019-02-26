@@ -1,18 +1,41 @@
-#!/bin/sh
+#!/bin/dash
+CACHE=/home/alex/.cache/sxiv/clipboard.log
+
+PID=$$
+
 while read file
 do
+  base=$(basename $file)
   case "$1" in
-    "C-d")
-      mv "$file" ~/.trash ;;
-    "C-r")
-      convert -rotate 90 "$file" "$file" ;;
+    "C-h")
+      notify-send "help" "please refer to $0"
+      ;;
     "C-m")
-      convert -transpose "$file" "$file" ;;
-    "C-c")
-      echo -n "$file" | xclip -selection clipboard ;;
+      newDirectory=$(zenity --file-selection --directory)
+      logs=$(cat $CACHE)
+      trucated=$(cat $CACHE | xargs echo -n)
+      mv $trucated $newDirectory && notify-send "Moved pictures" "$logs moved to $newDirectory";;
+    "C-d")
+      mv "$file" ~/.trash && notify-send "Trashed picture" "$base moved to ~/.trash";;
+    "C-D")
+      rm "$file" && notify-send "Deleted picture" "$base is permanently deleted";;
+    "C-r")
+      convert -rotate 90 "$file" "$file" && notify-send "Picture rotated π/2" "$base is rotated for 90 clockwise";;
+    "C-n")
+      convert "$file" -negate "$file" && notify-send "Picture color inversion" "$base is negated";;
+    "C-f")
+      convert -flip "$file" "$file" && notify-send "Picture flipped" "$base flipped";;
+    "C-y")
+      echo "$file" | xclip -selection clipboard && notify-send "Picture copied to clipboard" "$base filename copied";;
     "C-w")
-      feh --bg-scale "$file" ;;
+      feh --bg-scale "$file" && notify-send "Picture set as wallpaper" "$base set as wallpaper";;
     "C-W")
-      wpg -s "$file" ;;
+      wpg -s "$file" && notify-send "Picture set as colorscheme" "$base set as colorscheme globally";;
+    "C-l")
+      echo "$file" >> $CACHE && notify-send "Picture name sent to clipboard.log" "$base sent to $CACHE.\nC-x-L to copy from log";;
+    "C-L")
+      cat "$CACHE" | xclip -selection clipboard && notify-send "clipboard.log copied to clipboard" "$(cat $CACHE)";;
+    "C-c")
+      num=$(cat $CACHE | wc -l) && rm "$CACHE" && notify-send "clipboard.log deleted" "$num entries and $CACHE deleted";;
   esac
 done

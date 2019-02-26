@@ -17,4 +17,4 @@ fi
 echo "##Auto compile when the source $1 changed"
 
 # pkill -f "entr compiler" && exit
-echo "$file" | entr -s "compiler $file; and echo ======Running======;and ./$base; and echo ======Finish======="
+echo "$file" | entr -s "compiler $file; and echo '======Running======';and ./$base; and echo '======Finish======='"

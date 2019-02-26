@@ -1,9 +1,10 @@
 # Abbreviations
 if status is-interactive
   # Common
-  abbr --add ls exa
-  abbr --add l exa -l -a
-  abbr --add la exa -a
+  # abbr --add ls exa
+  abbr --add e exa
+  abbr --add el exa -l -a
+  # abbr --add la exa -a
   abbr --add c clear
   abbr --add p ping -c 10 www.gentoo.org
   abbr --add dotabbr vim ~/.config/fish/abbr.fish
@@ -26,6 +27,7 @@ if status is-interactive
 
   # abduco
   abbr --add ab abduco
+  abbr --add abqw 'abduco -e "^q" -a dywall'
 
   # ranger
   abbr --add r ranger
@@ -36,6 +38,11 @@ if status is-interactive
 
   # info
   abbr --add info info --vi-keys
+
+  # zenity
+  abbr --add zfd zenity --file-selection --directory
+  abbr --add zc zenity --calendar
+
 end
 
 # Variables

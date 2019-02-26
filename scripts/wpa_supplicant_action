@@ -1,0 +1,13 @@
+#!/bin/env dash
+
+SSID=$(/home/alex/.scripts/getssid)
+# echo $SSID
+
+case "$2" in
+	CONNECTED)
+		notify-send "WPA supplicant: connection established" "Connect to $SSID";
+		;;
+	DISCONNECTED)
+		notify-send "WPA supplicant: connection lost" "Disconnect with $1 $SSID";
+		;;
+esac

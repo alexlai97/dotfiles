@@ -1,0 +1,85 @@
+#!/bin/dash
+#
+#TODO
+# put the info in the cache, for wifi, does not need to ask every time
+
+usage() {
+  echo "Usage: $0 (help|kill)"
+}
+
+killitself() {
+  xsetroot -name "mydwmstatus is killed on $(date +'%H:%M:%S')" && pkill mydwmstatus
+}
+
+cpu(){
+  read cpu a b c previdle rest < /proc/stat
+  prevtotal=$((a+b+c+previdle))
+  sleep 0.5
+  read cpu a b c idle rest < /proc/stat
+  total=$((a+b+c+idle))
+  status=$((100*( (total-prevtotal) - (idle-previdle)  ) / (total-prevtotal) ))
+  echo " $status%"
+}
+
+mem(){
+  perc=`free | awk '/Mem/ {printf "%d\n", $3 * 100 / $2}'`
+  echo " $perc%"
+  if [ $perc -ge 90 ]; then
+    pkill firefox
+  fi
+}
+
+wifi() {
+  echo " $(getssid)"
+}
+
+battery0() {
+  case $(cat /sys/class/power_supply/BAT0/status) in 
+    Full) status="?" ;;
+    Charging) status="+" ;;
+    Dischargin) status="-" ;;
+  esac
+
+  capacity=$(cat /sys/class/power_supply/BAT0/capacity)
+
+  if [ $capacity -ge 100 ];then 
+    icon=""
+  elif [ $capacity -ge 75 ];then 
+    icon=""
+  elif [ $capacity -ge 50 ];then 
+    icon=""
+  elif [ $capacity -ge 25 ];then 
+    icon=""
+  else
+    icon=""
+  fi
+
+  echo "$icon $capacity%$status"  
+}
+
+myweather() {
+  weather text
+}
+
+mydate() { 
+  icon=$(dayornight)
+  date +" %a %b.%d $icon %T"
+}
+
+istheretimer() {
+  pgrep timer > /dev/null && echo " "
+}
+
+
+main() {
+  while true; do
+    xsetroot -name "$(cpu) $(mem) $(battery0) | $(myweather) $(mydate) $(mymood)$(istheretimer)"
+    sleep 2
+  done
+}
+
+case $1 in 
+  help|h) usage;;
+  kill|k) killitself;;
+  *) main;;
+esac

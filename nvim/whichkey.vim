@@ -122,3 +122,14 @@ let g:which_key_map.t = {
   \ 'b' : 'TagbarOpenAutoClose',
   \ }
 
+
+" urlview
+nnoremap <leader>url :!st -e urlview %<CR>
+let g:which_key_map.u = {
+  \ 'name' : '+urlview',
+  \ 'r' : 'urlview',
+  \ }
+let g:which_key_map.u.r = {
+  \ 'name' : '+urlview',
+  \ 'l' : 'urlview',
+  \ }

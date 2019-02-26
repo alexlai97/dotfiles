@@ -1,0 +1,49 @@
+#!/bin/dash
+
+usage () {
+  echo "Usage: $0 (help)"
+}
+
+rofioption () {
+  echo "quicknote
+timer
+calendar
+weather
+dynwal (dynamic background)
+wallpaper in sxiv
+screenshot
+mydwmstatus kill
+mymood
+spacefm (file manager)
+daily terminal
+htop
+xkill
+slock
+" | rofi -dmenu -p "lanuncher"
+}
+
+execute () {
+  case $(rofioption) in 
+    quicknote) st -e nvim;;
+    timer) timer;;
+    calendar) zenity --calendar;;
+    weather) weather show;;
+    dynwal*) dynamicwallpaper;;
+    wallpaper*) sxiv ~/Pictures/Wallpaper;;
+    screenshot) screenshot.sh;;
+    'mydwmstatus kill') mydwmstatus kill;;
+    'daily terminal') st -e abduco -A daily;;
+    mymood) mymood choose;;
+    spacefm*) spacefm;;
+    htop) st -e htop;;
+    xkill) xkill;;
+    slock) slock;;
+  esac
+}
+
+
+# main
+case "$1" in 
+  -h|-help|h|help) usage;exit 0 ;;
+  *) execute ;;
+esac
