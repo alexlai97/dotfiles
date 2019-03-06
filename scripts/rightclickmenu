@@ -5,7 +5,7 @@ usage () {
 }
 
 rofioption () {
-  echo "quicknote
+  echo "quicknote (nvim)
 timer
 calendar
 weather
@@ -13,18 +13,21 @@ dynwal (dynamic background)
 wallpaper in sxiv
 screenshot
 mydwmstatus kill
-mymood
+mymood choose
+mymood askprompt
+calculator haskell ghci
 spacefm (file manager)
-daily terminal
-htop
+quicknote (emacs)
 xkill
-slock
-" | rofi -dmenu -p "lanuncher"
+daily terminal" | rofi -dmenu -p "lanuncher"
+# htop
+# slock
 }
 
 execute () {
-  case $(rofioption) in 
-    quicknote) st -e nvim;;
+  case $(rofioption) in
+    *nvim*) st -e nvim;;
+    *emacs*) emacsclient --create-frame;;
     timer) timer;;
     calendar) zenity --calendar;;
     weather) weather show;;
@@ -33,7 +36,9 @@ execute () {
     screenshot) screenshot.sh;;
     'mydwmstatus kill') mydwmstatus kill;;
     'daily terminal') st -e abduco -A daily;;
-    mymood) mymood choose;;
+    'mymood choose') mymood choose;;
+    'mymood askprompt') mymood ask;;
+    *ghci*) st -e ghci;;
     spacefm*) spacefm;;
     htop) st -e htop;;
     xkill) xkill;;
@@ -43,7 +48,7 @@ execute () {
 
 
 # main
-case "$1" in 
+case "$1" in
   -h|-help|h|help) usage;exit 0 ;;
   *) execute ;;
 esac

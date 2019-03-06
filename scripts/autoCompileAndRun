@@ -14,7 +14,20 @@ if [ ! -f $file ]; then
   exit 1
 fi
 
+unknownMesg(){
+  echo "Unknown filetype $suffix"
+  notify-send "Unknown filetype .$suffix" "compiling $file discontinued"
+  exit 1
+}
+
+runcommand=""
+case $suffix in 
+   c|C|cc|c++|cpp|rs) runcommand="./$base";;
+   java) runcommand="java $base"  ;;
+   *) unknownMesg ;;
+esac
+
 echo "##Auto compile when the source $1 changed"
 
 # pkill -f "entr compiler" && exit
-echo "$file" | entr -s "compiler $file; and echo '======Running======';and ./$base; and echo '======Finish======='"
+echo "$file" | entr -s "compiler $file; and echo '======Running======';and $runcommand; and echo '======Finish======='"

@@ -2,17 +2,25 @@
 
 file="$HOME/.cache/dwm/mymood.txt"
 iconfile="$HOME/.cache/dwm/mymoodicons.txt"
+input=""
 usage() {
-  echo "Usage: $0 (input|choose|help)"
+  echo "Usage: $0 (input|ask|choose|help)"
+}
+
+readfromterminal() {
+  read input
+}
+
+askprompt() {
+  input=$(zenity --entry --title="mymood" --text="Enter whatever you want.")
 }
 
 seticon() {
-  read input
   echo $input > $file
 }
 
 chooseicon() {
-  cat $iconfile | rofi -dmenu -p "icon:" > $file
+  cat $iconfile | rofi -dmenu -p "icon" > $file
 }
 
 display() {
@@ -21,7 +29,8 @@ display() {
 
 #main
 case $1 in 
-  input|-i|--input|i) seticon;;
+  input|-i|--input|i) readfromterminal && seticon;;
+  a|ask) askprompt && seticon;;
   choose|c) chooseicon;;
   help|h) usage;;
   *) display;;

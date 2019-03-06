@@ -22,7 +22,7 @@ if [ -z $TIME ]; then
 fi
 
 if [ ${#} -eq 0 ]; then 
-WHATFOR=$(zenity --entry --title="What for" --text="Enter a purpose for this timer. (Or ع)")
+WHATFOR=$(zenity --entry --title="What for" --text="Enter a note for/after this timer. (Or ع)")
 else 
   WHATFOR="$2"
 fi

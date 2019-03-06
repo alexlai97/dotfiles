@@ -16,6 +16,7 @@ usage () {
   white   :   show white picture
   dark    :   show dark picture
   text    :   print one line text
+  clear   :   clear text cache
 
   example: weather f 'Kitchener_0pq'
            weather f moon
@@ -37,7 +38,7 @@ dark_or_white() {
 onlyprinttext() {
   info=$(cat $CACHE_ONELINE)
   case $info in 
-    *HTTP*) ;;
+    *DOCTYPE*) echo " n/a";;
     *)  echo $info ;;
   esac
 }

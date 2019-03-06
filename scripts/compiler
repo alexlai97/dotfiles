@@ -38,6 +38,7 @@ case $suffix in
    c|C) gcc $file -o $base && successMesg || failMesg ;;
    cc|c++|cpp) g++ $file -o $base && successMesg || failMesg ;;
    rs) rustc $file -o $base && successMesg || failMesg ;;
+   java) javac $file && successMesg || failMesg ;;
    *) unknownMesg ;;
 esac
 
