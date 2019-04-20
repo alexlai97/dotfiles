@@ -1,0 +1,26 @@
+#!/bin/dash
+usage() {
+  echo "Usage: $0 (help|update)"
+}
+
+result=""
+getstatus() {
+  perc=`free | awk '/Mem/ {printf "%d\n", $3 * 100 / $2}'`
+  result="$perc%"
+  if [ $perc -ge 90 ]; then
+    pkill firefox
+  fi
+}
+
+update_awesome() {
+  echo "mymem.text = \"$result\"" | awesome-client 
+}
+
+
+case $1 in 
+  help|h) usage;;
+  update|u) getstatus && update_awesome;;
+  *) getstatus && echo $result;;
+esac
+
+# vim: syntax=sh

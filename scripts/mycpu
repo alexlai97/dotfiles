@@ -1,0 +1,28 @@
+#!/bin/dash
+usage() {
+  echo "Usage: $0 (help|update)"
+}
+
+result=""
+getstatus() {
+  read cpu a b c previdle rest < /proc/stat
+  prevtotal=$((a+b+c+previdle))
+  sleep 0.5
+  read cpu a b c idle rest < /proc/stat
+  total=$((a+b+c+idle))
+  status=$((100*( (total-prevtotal) - (idle-previdle)  ) / (total-prevtotal) ))
+  result="$status%"
+}
+
+update_awesome() {
+  echo "mycpu.text = \"$result\"" | awesome-client 
+}
+
+
+case $1 in 
+  help|h) usage;;
+  update|u) getstatus && update_awesome;;
+  *) getstatus && echo $result;;
+esac
+
+# vim: syntax=sh

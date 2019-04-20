@@ -8,18 +8,18 @@ rofioption () {
   echo "quicknote (nvim)
 timer
 calendar
-weather
 dynwal (dynamic background)
 wallpaper in sxiv
 screenshot
-mydwmstatus kill
-mymood choose
-mymood askprompt
 calculator haskell ghci
 spacefm (file manager)
-quicknote (emacs)
+config awesomewm
 xkill
 daily terminal" | rofi -dmenu -p "lanuncher"
+# weather
+# mydwmstatus kill
+# mymood choose
+# mymood askprompt
 # htop
 # slock
 }
@@ -27,7 +27,7 @@ daily terminal" | rofi -dmenu -p "lanuncher"
 execute () {
   case $(rofioption) in
     *nvim*) st -e nvim;;
-    *emacs*) emacsclient --create-frame;;
+    # *emacs*) emacsclient --create-frame;;
     timer) timer;;
     calendar) zenity --calendar;;
     weather) weather show;;
@@ -35,9 +35,10 @@ execute () {
     wallpaper*) sxiv ~/Pictures/Wallpaper;;
     screenshot) screenshot.sh;;
     'mydwmstatus kill') mydwmstatus kill;;
-    'daily terminal') st -e abduco -A daily;;
+    'daily terminal') st -e tmux attach || st -e tmux ;;
     'mymood choose') mymood choose;;
     'mymood askprompt') mymood ask;;
+    'config awesomewm') st -e nvim ~/.config/awesome/rc.lua;;
     *ghci*) st -e ghci;;
     spacefm*) spacefm;;
     htop) st -e htop;;
@@ -52,3 +53,5 @@ case "$1" in
   -h|-help|h|help) usage;exit 0 ;;
   *) execute ;;
 esac
+
+# vim: filetype=sh

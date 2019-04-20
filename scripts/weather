@@ -76,17 +76,23 @@ show_image() {
   fi
 }
 
+update_awesomewm() {
+  oneline=`cat $CACHE_ONELINE`
+  echo "myweather.text = \"$oneline\"" | awesome-client 
+}
+
 # main
 case "$1" in 
   h|-h*|--h*)    usage ;;
   show|s)        dark_or_white; show_image $TIME;;
   dark|d)        show_image "dark";;
   white|w)       show_image "white";;
-  get|g)         get_image;;
-  reload|r)      get_image && dark_or_white && show_image;;
+  get|g)         get_image && update_awesomewm;;
+  reload|r)      get_image && dark_or_white && show_image && update_awesomewm;;
   full|f)        print_detail; OPTION=$2;;
   negate|n)      negate_image;;
   text|t)        onlyprinttext;;
   *)             onlyprinttext; usage;;
 esac
 
+# vim: filetype=sh

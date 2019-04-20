@@ -1,5 +1,3 @@
-rename Multimedia
-rename 
 tabnew 
 cd /home/alexlai/google-drive/
 rename_append 
@@ -18,7 +16,6 @@ shell wal -i %f
 rename Buddhism
 tabnew $HOME
 cd ~
-open_with 
 shell 
 tab_new 
 open_with un
@@ -40,11 +37,14 @@ find rang
 cd /usr/share/doc/random-1.0.1.1-r1q
 cd /usr/share/doc/ranger-1.9.2/
 previe
-
 cd /home/alex/.config/ranger/
 change_mode 
 rename emu
 find 
-delete
 find .sc
 find not
+open_with 
+!unzip %f
+shell unzip B239lecture31.mp4.zip 
+delete
+

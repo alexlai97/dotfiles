@@ -83,3 +83,5 @@ case $1 in
   kill|k) killitself;;
   *) main;;
 esac
+
+# vim: filetype=sh

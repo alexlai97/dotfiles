@@ -1,7 +1,7 @@
 #!/bin/dash
 
-file="$HOME/.cache/dwm/mymood.txt"
-iconfile="$HOME/.cache/dwm/mymoodicons.txt"
+file="$HOME/.cache/mymood/mymood.txt"
+iconfile="$HOME/.cache/mymood/mymoodicons.txt"
 input=""
 usage() {
   echo "Usage: $0 (input|ask|choose|help)"
@@ -17,10 +17,13 @@ askprompt() {
 
 seticon() {
   echo $input > $file
+  # awesomewm
+  icon=$(cat $file)
+  echo "mymood.text = \"$icon\"" | awesome-client 
 }
 
 chooseicon() {
-  cat $iconfile | rofi -dmenu -p "icon" > $file
+  input=`cat $iconfile | rofi -dmenu -p "icon"`
 }
 
 display() {
@@ -31,7 +34,9 @@ display() {
 case $1 in 
   input|-i|--input|i) readfromterminal && seticon;;
   a|ask) askprompt && seticon;;
-  choose|c) chooseicon;;
+  choose|c) chooseicon && seticon;;
   help|h) usage;;
   *) display;;
 esac
+
+# vim: filetype=sh

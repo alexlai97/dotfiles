@@ -1,0 +1,44 @@
+#!/bin/dash
+#
+usage() {
+  echo "Usage: $0 (help|update)"
+}
+
+result=""
+
+getstatus() {
+  case $(cat /sys/class/power_supply/BAT0/status) in 
+    Full) status="?" ;;
+    Charging) status="+" ;;
+    Dischargin) status="-" ;;
+  esac
+
+  capacity=$(cat /sys/class/power_supply/BAT0/capacity)
+
+  if [ $capacity -ge 100 ];then 
+    icon=""
+  elif [ $capacity -ge 75 ];then 
+    icon=""
+  elif [ $capacity -ge 50 ];then 
+    icon=""
+  elif [ $capacity -ge 25 ];then 
+    icon=""
+  else
+    icon=""
+  fi
+
+  result="$icon$capacity%$status"  
+}
+
+update_awesome() {
+  echo "mybattery.text = \"$result\"" | awesome-client 
+}
+
+
+case $1 in 
+  help|h) usage;;
+  update|u) getstatus && update_awesome;;
+  *) getstatus && echo $result;;
+esac
+
+# vim: syntax=sh

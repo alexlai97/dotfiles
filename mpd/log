@@ -1524,3 +1524,559 @@ Feb 23 21:28 : client: [4] closed
 Feb 23 21:28 : client: [3] closed
 Feb 26 14:15 : client: [2] closed
 Feb 26 14:17 : client: [5] opened from [::1]:59808
+Mar 03 18:52 : client: [6] opened from [::1]:33810
+Mar 03 18:52 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 03 18:52 : client: [5] closed
+Mar 03 18:52 : client: [6] closed
+Mar 03 18:52 : client: [7] opened from [::1]:33812
+Mar 03 18:52 : client: [7] closed
+Mar 03 18:52 : client: [8] opened from [::1]:33814
+Mar 03 18:55 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/08- 偄偪偛僐儞僾儕乕僩.mp3"
+Mar 03 18:55 : client: [8] closed
+Mar 03 18:55 : client: [9] opened from [::1]:33816
+Mar 03 18:55 : client: [9] closed
+Mar 03 18:55 : client: [10] opened from [::1]:33818
+Mar 03 19:01 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/09- 僸儍僟僀儞偺僇僇僇僞仚僇僞僆儌僀-C [Instrumental].mp3"
+Mar 03 19:01 : client: [10] closed
+Mar 03 19:01 : client: [11] opened from [::1]:33838
+Mar 03 19:01 : client: [11] closed
+Mar 03 19:01 : client: [12] opened from [::1]:33840
+Mar 03 19:05 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/10- 惓夝偼傂偲偮!偠傖側偄!! [Instrumental].mp3"
+Mar 03 19:05 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 03 19:05 : client: [12] closed
+Mar 03 19:05 : client: [13] opened from [::1]:33846
+Mar 03 19:05 : client: [13] closed
+Mar 03 19:05 : client: [14] opened from [::1]:33848
+Mar 03 19:09 : player: played "Anime_songs/萌 JAZZ/01. 萌ジャズ Dreamer.flac"
+Mar 03 19:09 : client: [14] closed
+Mar 03 19:09 : client: [15] opened from [::1]:33852
+Mar 03 19:09 : client: [15] closed
+Mar 03 19:09 : client: [16] opened from [::1]:33854
+Mar 03 19:11 : player: played "Anime_songs/萌 JAZZ/02. 萌ジャズ Dreamer (BOSSA NOVA ver.).flac"
+Mar 03 19:11 : client: [16] closed
+Mar 03 19:11 : client: [17] opened from [::1]:33856
+Mar 03 19:11 : client: [17] closed
+Mar 03 19:11 : client: [18] opened from [::1]:33858
+Mar 03 19:15 : player: played "Anime_songs/萌 JAZZ/03. 萌ジャズ Dreamer (instrumental).flac"
+Mar 03 19:15 : client: [18] closed
+Mar 03 19:15 : client: [19] opened from [::1]:33860
+Mar 03 19:15 : client: [19] closed
+Mar 03 19:15 : client: [20] opened from [::1]:33862
+Mar 03 19:18 : player: played "Anime_songs/萌 JAZZ/04. Outroduction.flac"
+Mar 03 19:18 : client: [20] closed
+Mar 03 19:18 : client: [21] opened from [::1]:33870
+Mar 03 19:18 : client: [21] closed
+Mar 03 19:18 : client: [22] opened from [::1]:33872
+Mar 03 20:07 : client: [23] opened from [::1]:33918
+Mar 03 20:07 : client: [23] closed
+Mar 03 20:07 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 03 20:07 : client: [22] closed
+Mar 03 20:07 : client: [24] opened from [::1]:33920
+Mar 03 20:07 : client: [24] closed
+Mar 03 20:07 : client: [25] opened from [::1]:33922
+Mar 03 20:07 : client: [26] opened from [::1]:33924
+Mar 03 20:07 : client: [25] closed
+Mar 03 20:07 : client: [26] closed
+Mar 03 20:07 : client: [27] opened from [::1]:33926
+Mar 03 20:07 : client: [27] closed
+Mar 03 20:07 : client: [28] opened from [::1]:33928
+Mar 03 20:07 : client: [29] opened from [::1]:33930
+Mar 03 20:07 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 03 20:07 : client: [28] closed
+Mar 03 20:07 : client: [29] closed
+Mar 03 20:07 : client: [30] opened from [::1]:33932
+Mar 03 20:07 : client: [30] closed
+Mar 03 20:07 : client: [31] opened from [::1]:33934
+Mar 03 20:07 : client: [32] opened from [::1]:33936
+Mar 03 20:07 : client: [31] closed
+Mar 03 20:07 : client: [32] closed
+Mar 03 20:07 : client: [33] opened from [::1]:33938
+Mar 03 20:07 : client: [33] closed
+Mar 03 20:07 : client: [34] opened from [::1]:33940
+Mar 03 20:07 : client: [35] opened from [::1]:33942
+Mar 03 20:07 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 03 20:07 : client: [34] closed
+Mar 03 20:07 : client: [35] closed
+Mar 03 20:07 : client: [36] opened from [::1]:33944
+Mar 03 20:07 : client: [36] closed
+Mar 03 20:07 : client: [37] opened from [::1]:33946
+Mar 03 20:07 : client: [38] opened from [::1]:33948
+Mar 03 20:07 : client: [37] closed
+Mar 03 20:07 : client: [38] closed
+Mar 03 20:07 : client: [39] opened from [::1]:33950
+Mar 03 20:07 : client: [39] closed
+Mar 03 20:07 : client: [40] opened from [::1]:33952
+Mar 03 20:07 : client: [41] opened from [::1]:33954
+Mar 03 20:07 : client: [40] closed
+Mar 03 20:07 : client: [41] closed
+Mar 03 20:07 : client: [42] opened from [::1]:33956
+Mar 03 20:07 : client: [42] closed
+Mar 03 20:07 : client: [43] opened from [::1]:33958
+Mar 03 20:07 : client: [44] opened from [::1]:33960
+Mar 03 20:07 : client: [43] closed
+Mar 03 20:07 : client: [44] closed
+Mar 03 20:07 : client: [45] opened from [::1]:33962
+Mar 03 20:07 : client: [45] closed
+Mar 03 20:07 : client: [46] opened from [::1]:33964
+Mar 03 20:07 : client: [47] opened from [::1]:33966
+Mar 03 20:07 : client: [46] closed
+Mar 03 20:07 : client: [47] closed
+Mar 03 20:07 : client: [48] opened from [::1]:33968
+Mar 03 20:07 : client: [48] closed
+Mar 03 20:07 : client: [49] opened from [::1]:33970
+Mar 05 10:49 : client: [49] closed
+Mar 05 10:51 : client: [50] opened from [::1]:42416
+Mar 05 10:54 : client: [50] closed
+Mar 05 10:54 : client: [51] opened from [::1]:42504
+Mar 05 20:14 : client: [52] opened from [::1]:44678
+Mar 05 20:14 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 05 20:14 : client: [51] closed
+Mar 05 20:14 : client: [52] closed
+Mar 05 20:14 : client: [53] opened from [::1]:44680
+Mar 05 20:14 : client: [53] closed
+Mar 05 20:14 : client: [54] opened from [::1]:44682
+Mar 05 20:14 : client: [55] opened from [::1]:44684
+Mar 05 20:14 : client: [54] closed
+Mar 05 20:14 : client: [55] closed
+Mar 05 20:14 : client: [56] opened from [::1]:44686
+Mar 05 20:14 : client: [56] closed
+Mar 05 20:14 : client: [57] opened from [::1]:44688
+Mar 07 16:58 : client: [58] opened from [::1]:53314
+Mar 07 16:58 : player: played "Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3"
+Mar 07 16:58 : client: [57] closed
+Mar 07 16:58 : client: [58] closed
+Mar 07 16:58 : client: [59] opened from [::1]:53316
+Mar 07 16:58 : client: [59] closed
+Mar 07 16:58 : client: [60] opened from [::1]:53318
+Mar 09 15:16 : client: [60] closed
+Mar 09 15:18 : client: [61] opened from [::1]:38548
+Mar 09 15:51 : client: [61] closed
+Mar 09 15:51 : client: [62] opened from [::1]:38662
+Mar 09 16:06 : client: [63] opened from [::1]:38818
+Mar 09 16:06 : exception: Not playing
+Mar 09 16:06 : client: [63] closed
+Mar 09 16:06 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 09 16:06 : update: added Anime_songs/萌 JAZZ/02. 萌ジャズ Dreamer (BOSSA NOVA ver.).flac
+Mar 09 16:06 : update: added Anime_songs/萌 JAZZ/01. 萌ジャズ Dreamer.flac
+Mar 09 16:06 : update: added Anime_songs/萌 JAZZ/03. 萌ジャズ Dreamer (instrumental).flac
+Mar 09 16:06 : update: added Anime_songs/萌 JAZZ/04. Outroduction.flac
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/01- 懢梲濰偔擱偊傛僇僆僗.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/04- 偄偉偡!備備備仚備傞備傝侓侓.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/02- 僴儎僥偺偛偲偔!.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/05- 宱尡抣忋徃拞仚.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/07- 惓夝偼傂偲偮!偠傖側偄!!.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/03- 僸儍僟僀儞偺僇僇僇僞仚僇僞僆儌僀-C.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/06- Love Destiny.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/10- 惓夝偼傂偲偮!偠傖側偄!! [Instrumental].mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/08- 偄偪偛僐儞僾儕乕僩.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/09- 僸儍僟僀儞偺僇僇僇僞仚僇僞僆儌僀-C [Instrumental].mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/01. ラテアート幻想郷.mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/04. 昼下がりのビタースウィート.mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/06. あしたも抹茶色.mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/03. ねこまたアキアート.mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/07. 終わらないカフェテラス.mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/02. ようこそ喫茶白玉楼へ.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/03. autumn wind.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/05. River path.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/02. Fall of summer memories -煌く水面-.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/04. Usual Place.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/08. Mellow Waves.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/01. Naive Face.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/06. Mirage.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/04 - Jewelry Time.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/08 - Wings of Courage -空を超えて-.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/07 - 風のなかのプリムローズ.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/12 - Sky is the limit.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/06 - 『恋と選挙とチョコレート』BGMメドレー.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/05 - シグナルグラフ.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/11 - 『蒼の彼方のフォーリズム』BGMメドレー.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/01 - INITIATIVE.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/03 - 青空 Starting Line.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/02 - sprite LIVE 2015  『恋と選挙とチョコレート』キャラクターソングメドレー.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/09 - INFINITE SKY.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/10 - sprite LIVE 2015  『蒼の彼方のフォーリズム』キャラクターソングメドレー.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/04. Perfect Day Dream - ししまい3号.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/05. 暖色系アリス - koutaq.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/09. Below Between Beyond - Ludo.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/02. faraway country - 鯛の小骨.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/01. もし、空が晴れるなら - Bizen.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/07. 無何有の郷 (KiRa Remix) - Coro.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/10. Sky Garden - Takayan.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/11. Lotus - KA=YA.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/06. 風の都 - Bizen.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/Blue sky of wind.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/A Brief Vacation.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/Cramped space.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/思い出景色.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/Bell of Mugen.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/Cool shade.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/上昇気流.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/迷い込んで迷路庭園.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/窓から外を見ると.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/近く遠い斜め色の空.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/05 - Lupe.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/12 - See You ～小さな永遠～.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/08 - Permit.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/04 - 遮光.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/02 - Face of Fact.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/10 - I pray to stop my cry -little sea style-.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/01 - Close to me….mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/13 - Imaginary affair.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/11 - SNOW.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/09 - 砂の城 -The Castle of Sand-.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/03 - Ever stay snow.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/06 - Do you know the magic_.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/07 - Out Flow.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/06 [OdiakeS] Skyscraper of Horizon.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/03 [ししまい3号] 濡れた素肌に.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/04 [鯛の小骨] かんぱんバカンス.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/10 [Takayan] Old under the sun.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/09 [NOAH] SEAMOON.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/11 [F] Blue Wings.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/08 [Bizen] 流星階段.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/02 [ぴーえー] unknown.your smile.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/07 [KA=YA] Prime Star.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/01 [Bizen] Seaside.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/05 [ひろさわけんぢ] Romance for you.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/05. DDBY - 奀増偄僔僥傿.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/03. DDBY - 儕僶乕僒僀僪僇僼僃.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/08. DDBY - 楒恖偺抋惗擔.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/04. DDBY - 塉偺奨.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/07. DDBY - 恀栭拞偑丄崱偦偺栚傪妎傑偡.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/02. DDBY - 偄傠偳傝棳傟惎.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/01. DDBY - 壠楬傪媫偄偱.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/06. DDBY - 岎嵎揰偱楒偵棊偪偰.mp3
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/23 Believe in... (Short Size).m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/17 The Storm.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/18 Letters From Heaven.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/02 Wherever You Are, Wherever You May Be.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/24 Violet Snow (Short size).m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/10 Fractured Heart.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/13 Torn Apart at the Seams.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/07 The Love That Binds Us.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/01 Across the Violet Sky.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/20 Violet's Letter.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/26 Letter (Short Size).m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/16 The Songstress Aria (Instrumental).m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/04 Adamantine Dreams.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/08 Devoid of Hope.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/15 The Stench of Fear and Hatred.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/19 What It Means To Love.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/03 Never Coming Back.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/22 みちしるべ (Short Size).m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/25 The Songstress Aria.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/06 Inconsolable.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/12 Always Watching Over You.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/05 The Ultimate Price.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/14 Intertwined Fates.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/21 Sincerely (Short Size).m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/11 Innocence.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/09 Torment.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/09 In Remembrance.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/16 Those Words You Spoke to Me.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/19 Each Memory a Message.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/20 The Long Night.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/04 Unspoken Words.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/06 Another Sunny Day.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/07 The Voice in My Heart.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/14 A Place to Call Home.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/01 Theme of Violet Evergarden.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/10 Ink to Paper.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/11 The Birth of a Legend.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/15 An Admirable Doll.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/12 To The Ends of Our World.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/08 Rust.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/13 Back in Business.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/21 Violet Snow for Orchestra.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/05 A Simple Mission.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/18 A Bit of Sass.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/17 Strangeling.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/03 One Last Message.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/02 A Doll's Beginning.m4a
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.2 (MP3)/05- 偲傑偳偄價僞乕僠儏乕儞.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.2 (MP3)/03- secret base 乣孨偑偔傟偨傕偺乣 (10 years after Ver.).mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.2 (MP3)/02- 備傝備傜傜傜傜備傞備傝戝帠審.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.2 (MP3)/01- 僆儗儞僕.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.2 (MP3)/04- 楒垽僒乕僉儏儗乕僔儑儞.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/02. heartfelt fancy（ハートフェルトファンシー）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/04. Brilliant Girls（ハルトマンの妖怪少女）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/07. Slope of Intention（緑眼のジェラシー）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/05. 廃獄ララバイ（廃獄ララバイ）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/01. VAGUELY PASSION（封じられた妖怪 ～ Lost Place）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/03. ラテアート（霊知の太陽信仰 ～ Nuclear Fusion）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/08. Wanna be free（ラストリモート）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/06. 地獄でお茶を（旧地獄街道を行く）.mp3
+Mar 09 16:06 : exception: Failed to access /home/alex/Music/Genki2: No such file or directory
+Mar 09 16:06 : client: [64] opened from [::1]:38820
+Mar 09 16:06 : client: [64] closed
+Mar 09 16:06 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 09 16:06 : client: [62] closed
+Mar 09 16:06 : client: [65] opened from [::1]:38822
+Mar 09 16:06 : client: [65] closed
+Mar 09 16:06 : client: [66] opened from [::1]:38824
+Mar 09 16:06 : client: [67] opened from [::1]:38826
+Mar 09 16:06 : player: played "Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3"
+Mar 09 16:06 : client: [66] closed
+Mar 09 16:06 : client: [67] closed
+Mar 09 16:06 : client: [68] opened from [::1]:38828
+Mar 09 16:06 : client: [68] closed
+Mar 09 16:06 : client: [69] opened from [::1]:38830
+Mar 09 19:22 : client: [69] closed
+Mar 09 19:23 : client: [70] opened from [::1]:40462
+Mar 10 16:40 : client: [71] opened from [::1]:46188
+Mar 10 16:40 : client: [71] closed
+Mar 10 16:40 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 10 16:40 : client: [70] closed
+Mar 10 16:40 : client: [72] opened from [::1]:46190
+Mar 10 16:40 : client: [72] closed
+Mar 10 16:40 : client: [73] opened from [::1]:46192
+Mar 10 16:40 : client: [74] opened from [::1]:46194
+Mar 10 16:40 : client: [73] closed
+Mar 10 16:40 : client: [74] closed
+Mar 10 16:40 : client: [75] opened from [::1]:46196
+Mar 10 16:40 : client: [75] closed
+Mar 10 16:40 : client: [76] opened from [::1]:46198
+Mar 10 16:40 : client: [77] opened from [::1]:46200
+Mar 10 16:40 : client: [76] closed
+Mar 10 16:40 : client: [77] closed
+Mar 10 16:40 : client: [78] opened from [::1]:46202
+Mar 10 16:40 : client: [78] closed
+Mar 10 16:40 : client: [79] opened from [::1]:46204
+Mar 10 16:40 : client: [80] opened from [::1]:46206
+Mar 10 16:40 : player: played "Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3"
+Mar 10 16:40 : client: [79] closed
+Mar 10 16:40 : client: [80] closed
+Mar 10 16:40 : client: [81] opened from [::1]:46208
+Mar 10 16:40 : client: [81] closed
+Mar 10 16:40 : client: [82] opened from [::1]:46210
+Mar 10 16:40 : client: [83] opened from [::1]:46212
+Mar 10 16:40 : client: [83] closed
+Mar 10 16:40 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 10 16:40 : client: [82] closed
+Mar 10 16:40 : client: [84] opened from [::1]:46214
+Mar 10 16:40 : client: [84] closed
+Mar 10 16:40 : client: [85] opened from [::1]:46216
+Mar 10 16:43 : client: [86] opened from [::1]:46230
+Mar 10 16:43 : client: [85] closed
+Mar 10 16:43 : client: [86] closed
+Mar 10 16:43 : client: [87] opened from [::1]:46232
+Mar 10 16:43 : client: [87] closed
+Mar 10 16:43 : client: [88] opened from [::1]:46234
+Mar 10 16:43 : client: [89] opened from [::1]:46236
+Mar 10 16:43 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 10 16:43 : client: [88] closed
+Mar 10 16:43 : client: [89] closed
+Mar 10 16:43 : client: [90] opened from [::1]:46238
+Mar 10 16:43 : client: [90] closed
+Mar 10 16:43 : client: [91] opened from [::1]:46240
+Mar 10 16:45 : player: played "Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3"
+Mar 10 16:45 : client: [91] closed
+Mar 10 16:45 : client: [92] opened from [::1]:46244
+Mar 10 16:45 : client: [92] closed
+Mar 10 16:45 : client: [93] opened from [::1]:46246
+Mar 10 16:49 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3"
+Mar 10 16:49 : client: [93] closed
+Mar 10 16:49 : client: [94] opened from [::1]:46248
+Mar 10 16:49 : client: [94] closed
+Mar 10 16:49 : client: [95] opened from [::1]:46250
+Mar 10 16:54 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/02 [ぴーえー] unknown.your smile.mp3"
+Mar 10 16:54 : client: [95] closed
+Mar 10 16:54 : client: [96] opened from [::1]:46268
+Mar 10 16:54 : client: [96] closed
+Mar 10 16:54 : client: [97] opened from [::1]:46270
+Mar 10 16:57 : client: [98] opened from [::1]:46272
+Mar 10 16:57 : client: [97] closed
+Mar 10 16:57 : client: [98] closed
+Mar 10 16:57 : client: [99] opened from [::1]:46274
+Mar 10 16:57 : client: [99] closed
+Mar 10 16:57 : client: [100] opened from [::1]:46276
+Mar 10 16:57 : client: [101] opened from [::1]:46278
+Mar 10 16:57 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 10 16:57 : client: [100] closed
+Mar 10 16:57 : client: [101] closed
+Mar 10 16:57 : client: [102] opened from [::1]:46280
+Mar 10 16:57 : client: [102] closed
+Mar 10 16:57 : client: [103] opened from [::1]:46282
+Mar 10 16:58 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Mar 10 16:58 : client: [103] closed
+Mar 10 16:58 : client: [104] opened from [::1]:46286
+Mar 10 16:58 : client: [104] closed
+Mar 10 16:58 : client: [105] opened from [::1]:46288
+Mar 10 17:02 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/05 [ひろさわけんぢ] Romance for you.mp3"
+Mar 10 17:02 : client: [105] closed
+Mar 10 17:02 : client: [106] opened from [::1]:46316
+Mar 10 17:02 : client: [106] closed
+Mar 10 17:02 : client: [107] opened from [::1]:46318
+Mar 10 17:06 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/04. Perfect Day Dream - ししまい3号.mp3"
+Mar 10 17:06 : client: [107] closed
+Mar 10 17:06 : client: [108] opened from [::1]:46336
+Mar 10 17:06 : client: [108] closed
+Mar 10 17:06 : client: [109] opened from [::1]:46338
+Mar 10 17:10 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/03 [ししまい3号] 濡れた素肌に.mp3"
+Mar 10 17:10 : client: [109] closed
+Mar 10 17:10 : client: [110] opened from [::1]:46354
+Mar 10 17:10 : client: [110] closed
+Mar 10 17:10 : client: [111] opened from [::1]:46356
+Mar 10 17:14 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/06. DDBY - 岎嵎揰偱楒偵棊偪偰.mp3"
+Mar 10 17:14 : client: [111] closed
+Mar 10 17:14 : client: [112] opened from [::1]:46370
+Mar 10 17:14 : client: [112] closed
+Mar 10 17:14 : client: [113] opened from [::1]:46372
+Mar 10 17:17 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Mar 10 17:17 : client: [113] closed
+Mar 10 17:17 : client: [114] opened from [::1]:46418
+Mar 10 17:17 : client: [114] closed
+Mar 10 17:17 : client: [115] opened from [::1]:46420
+Mar 10 17:22 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/09. Below Between Beyond - Ludo.mp3"
+Mar 10 17:22 : client: [115] closed
+Mar 10 17:22 : client: [116] opened from [::1]:46434
+Mar 10 17:22 : client: [116] closed
+Mar 10 17:22 : client: [117] opened from [::1]:46436
+Mar 10 17:26 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Mar 10 17:26 : client: [117] closed
+Mar 10 17:26 : client: [118] opened from [::1]:46438
+Mar 10 17:26 : client: [118] closed
+Mar 10 17:26 : client: [119] opened from [::1]:46440
+Mar 10 17:31 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/11 [F] Blue Wings.mp3"
+Mar 10 17:31 : client: [119] closed
+Mar 10 17:31 : client: [120] opened from [::1]:46444
+Mar 10 17:31 : client: [120] closed
+Mar 10 17:31 : client: [121] opened from [::1]:46446
+Mar 10 17:34 : player: played "Anime_songs/Cafe de Touhou 7/06. Mirage.mp3"
+Mar 10 17:34 : client: [121] closed
+Mar 10 17:34 : client: [122] opened from [::1]:46496
+Mar 10 17:34 : client: [122] closed
+Mar 10 17:34 : client: [123] opened from [::1]:46498
+Mar 10 17:38 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/03. DDBY - 儕僶乕僒僀僪僇僼僃.mp3"
+Mar 10 17:38 : client: [123] closed
+Mar 10 17:38 : client: [124] opened from [::1]:46596
+Mar 10 17:38 : client: [124] closed
+Mar 10 17:38 : client: [125] opened from [::1]:46598
+Mar 10 17:41 : client: [126] opened from [::1]:46646
+Mar 10 17:41 : client: [125] closed
+Mar 10 17:41 : client: [126] closed
+Mar 10 17:41 : client: [127] opened from [::1]:46648
+Mar 10 17:41 : client: [127] closed
+Mar 10 17:41 : client: [128] opened from [::1]:46650
+Mar 11 22:14 : client: [129] opened from [::1]:55440
+Mar 11 22:14 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 11 22:14 : client: [128] closed
+Mar 11 22:14 : client: [129] closed
+Mar 11 22:14 : client: [130] opened from [::1]:55442
+Mar 11 22:14 : client: [130] closed
+Mar 11 22:14 : client: [131] opened from [::1]:55444
+Mar 11 22:15 : client: [132] opened from [::1]:55446
+Mar 11 22:15 : client: [131] closed
+Mar 11 22:15 : client: [132] closed
+Mar 11 22:15 : client: [133] opened from [::1]:55448
+Mar 11 22:15 : client: [133] closed
+Mar 11 22:15 : client: [134] opened from [::1]:55450
+Mar 13 16:06 : client: [134] closed
+Mar 13 16:06 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/03. DDBY - 儕僶乕僒僀僪僇僼僃.mp3"
+Mar 13 16:07 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 13 16:07 : client: [0] opened from [::1]:50640
+Mar 13 16:15 : client: [0] closed
+Mar 13 16:16 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 13 16:16 : client: [0] opened from [::1]:41006
+Mar 13 17:01 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 13 17:01 : client: [0] opened from [::1]:48692
+Mar 13 17:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 13 17:35 : client: [0] opened from [::1]:50244
+Mar 13 17:51 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 13 17:51 : client: [0] opened from [::1]:35872
+Mar 13 18:09 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 13 18:09 : client: [0] opened from [::1]:39860
+Mar 13 18:09 : client: [0] closed
+Mar 13 18:10 : client: [1] opened from [::1]:39862
+Mar 13 18:10 : client: [1] closed
+Mar 13 18:10 : client: [2] opened from [::1]:39864
+Mar 15 18:43 : client: [2] closed
+Mar 15 18:44 : client: [3] opened from [::1]:48218
+Mar 17 20:06 : client: [4] opened from [::1]:55926
+Mar 17 20:06 : exception: Not playing
+Mar 17 20:06 : client: [4] closed
+Mar 17 20:06 : client: [5] opened from [::1]:55928
+Mar 17 20:06 : exception: Not playing
+Mar 17 20:06 : client: [5] closed
+Mar 22 12:31 : client: [3] closed
+Mar 22 12:32 : client: [6] opened from [::1]:45150
+Mar 30 16:25 : client: [7] opened from [::1]:43562
+Mar 30 16:25 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 30 16:25 : client: [7] closed
+Mar 30 16:25 : client: [8] opened from [::1]:43564
+Mar 30 16:25 : client: [8] closed
+Mar 30 16:25 : client: [9] opened from [::1]:43566
+Mar 30 16:25 : client: [10] opened from [::1]:43568
+Mar 30 16:25 : client: [10] closed
+Mar 30 16:25 : client: [11] opened from [::1]:43570
+Mar 30 16:25 : client: [11] closed
+Mar 30 16:25 : client: [12] opened from [::1]:43572
+Mar 30 16:25 : client: [12] closed
+Mar 30 16:25 : client: [9] closed
+Mar 30 17:01 : client: [6] closed
+Mar 30 17:03 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 30 17:03 : client: [0] opened from [::1]:60470
+Mar 30 17:06 : client: [1] opened from [::1]:60472
+Mar 30 17:06 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 30 17:06 : client: [1] closed
+Mar 30 17:06 : client: [2] opened from [::1]:60474
+Mar 30 17:06 : client: [2] closed
+Apr 03 00:43 : client: [3] opened from [::1]:49460
+Apr 03 00:43 : client: [3] closed
+Apr 03 00:44 : client: [4] opened from [::1]:49462
+Apr 03 00:44 : exception: Not playing
+Apr 03 00:44 : client: [4] closed
+Apr 13 22:16 : client: [0] closed
+Apr 13 22:18 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 13 22:18 : client: [0] opened from [::1]:46734

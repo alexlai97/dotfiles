@@ -42,3 +42,4 @@ case $suffix in
    *) unknownMesg ;;
 esac
 
+# vim: filetype=sh

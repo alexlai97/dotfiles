@@ -1,0 +1,23 @@
+#!/bin/dash
+usage() {
+  echo "Usage: $0 (help|update)"
+}
+
+result=""
+getstatus() {
+  status=$(wpa_cli status | grep "^ssid" | cut -d '=' -f 2)
+  result="$status"
+}
+
+update_awesome() {
+  echo "mywifi.text = \"$result\"" | awesome-client 
+}
+
+
+case $1 in 
+  help|h) usage;;
+  update|u) getstatus && update_awesome;;
+  *) getstatus && echo $result;;
+esac
+
+# vim: syntax=sh

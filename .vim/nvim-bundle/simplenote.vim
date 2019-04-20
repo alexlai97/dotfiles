@@ -1,1 +1,0 @@
-../bundle/simplenote.vim/

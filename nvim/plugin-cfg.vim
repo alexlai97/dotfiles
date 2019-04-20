@@ -57,7 +57,7 @@ imap <expr><TAB>
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
  \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
-let g:neosnippet#snippets_directory='~/.vim/my-snips'
+let g:neosnippet#snippets_directory='~/myrepos/dotvim/my-snips'
 
 " quick-scope
 "let g:qs_highlight_on_keys = ['f', 'F']
