@@ -1,1 +1,4 @@
-.simplenoterc
+.simplenoterc.vim
+fcitx/clipboard
+fcitx/dbus
+fcitx/log
