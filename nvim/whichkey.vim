@@ -1,11 +1,19 @@
-" Which key
-"
+"  _       ____    _      __       __ __          
+" | |     / / /_  (_)____/ /_     / //_/__  __  __
+" | | /| / / __ \/ / ___/ __ \   / ,< / _ \/ / / /
+" | |/ |/ / / / / / /__/ / / /  / /| /  __/ /_/ / 
+" |__/|__/_/ /_/_/\___/_/ /_/  /_/ |_\___/\__, /  
+"                                        /____/   
+"  
+
+"{{{- whick key setup
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 set timeoutlen=500
 call which_key#register('<Space>', "g:which_key_map")
 let g:which_key_map = {}
+"-}}}
 
-
+"{{{- edit vimrc / initrc
 nmap <leader>rcv :edit ~/.vimrc<cr>
 nmap <leader>rcn :edit $MYVIMRC<cr>
 let g:which_key_map.r = {
@@ -17,9 +25,9 @@ let g:which_key_map.r.c = {
   \ 'n' : 'edit init.nvim',
   \ 'v' : 'edit .vimrc',
   \ }
+"-}}}
 
-
-" type writer mode
+"{{{- type writer mode 
 nmap <silent> <leader>dt :set so=999<CR>
 nmap <silent> <leader>dT :set so=0<CR>
 let g:which_key_map.d = {
@@ -27,8 +35,9 @@ let g:which_key_map.d = {
   \ 't' : 'typewritermode',
   \ 'T' : 'untoggle-typewritermode',
   \ } 
+"-}}}
 
-" startify keybinding
+"{{{- startify keybinding
 nmap <leader>st :Startify<CR>
 nmap <Leader>ss :SSave<CR>
 nmap <Leader>sd :SDelete<CR>
@@ -40,8 +49,9 @@ let g:which_key_map.s = {
   \ 'd' : 'SDelete',
   \ 'c' : 'SClose',
   \ }
+"-}}}
 
-" tex keybinding
+"{{{- vimtex keybinding
 nmap <leader>vt :VimtexTocOpen<CR>
 nmap <leader>ve :VimtexError<CR>
 nmap <silent> <leader>vv :VimtexView<CR>
@@ -62,8 +72,9 @@ let g:which_key_map.v.c = {
   \ 'o' : 'VimtexCompileOutput',
   \ 'c' : 'VimtexCompile',
   \ }
+"-}}}
 
-" Simplenote keybinding
+"{{{- Simplenote keybinding
 nmap <leader>Sl :SimplenoteList<CR>
 nmap <leader>Sn :SimplenoteNew<CR>
 nmap <leader>Su :SimplenoteUpdate<CR>
@@ -75,9 +86,10 @@ let g:which_key_map.S = {
   \ 'n' : 'SimplenoteNew',
   \ 'd' : 'SimplenoteDelete',
   \ }
+"-}}}
 
 
-" Rust , racer, cargo
+"{{{- Rust, racer, cargo
 au FileType rust nmap <leader>gs <Plug>(rust-def-split)
 au FileType rust nmap <leader>gx <Plug>(rust-def-vertical)
 au FileType rust nmap <leader>gd <Plug>(rust-def)
@@ -101,9 +113,9 @@ let g:which_key_map.c = {
   \ 't' : 'cargo test',
   \ 'p' : 'cargo clippy',
   \ }
+"-}}}
 
-
-" compile & run
+"{{{- compile / run a source
 nnoremap <leader>com :!compiler %<CR>
 autocmd Filetype c,cpp,rust nnoremap <leader>run :! ./%:r <CR>
 let g:which_key_map.c.o = {
@@ -112,18 +124,20 @@ let g:which_key_map.c.o = {
 let g:which_key_map.r.u = {
   \ 'n': 'run',
   \ }
+"-}}}
 
 
-" tagbar
+"{{{- tagbar
 nnoremap <leader>tb :TagbarOpenAutoClose<CR>
 nnoremap <F8> :TagbarToggle<CR>
 let g:which_key_map.t = {
   \ 'name' : '+tagbar',
   \ 'b' : 'TagbarOpenAutoClose',
   \ }
+"-}}}
 
 
-" urlview
+"{{{- urlview
 nnoremap <leader>url :!st -e urlview %<CR>
 let g:which_key_map.u = {
   \ 'name' : '+urlview',
@@ -133,3 +147,5 @@ let g:which_key_map.u.r = {
   \ 'name' : '+urlview',
   \ 'l' : 'urlview',
   \ }
+"-}}}
+
