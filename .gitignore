@@ -1,4 +1,4 @@
 .simplenoterc.vim
-fcitx/clipboard
-fcitx/dbus
-fcitx/log
+fcitx/clipboard/*
+fcitx/dbus/*
+fcitx/log/*

@@ -1,3 +1,4 @@
+-- {{{ Load libraries
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
@@ -13,6 +14,7 @@ local hotkeys_popup = require("awful.hotkeys_popup").widget
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
+-- }}} 
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -40,15 +42,27 @@ end
 -- }}}
 
 -- {{{ Variable definitions
+-- directories
+home_path = '/home/alex/'
+bin_path = home_path .. 'bin/'
+scripts_path = home_path .. '.scripts/'
+cache_path = home_path .. '.cache/'
+wallpaper_path = home_path .. "Pictures/Wallpaper/"
+config_path = home_path .. '.config/'
+my_icon_path = home_path .. '.icons/'
+
 -- Themes define colours, icons, font and wallpapers.
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
-beautiful.init("/home/alex/.config/awesome/theme.lua")
+beautiful.init(config_path .. "awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "/home/alex/bin/st"
+terminal = bin_path .. "st"
+terminal_cmd = terminal .. " -e "
 editor = os.getenv("EDITOR") or "vi"
-editor_cmd = terminal .. " -e " .. editor
-gentoo_icon = "/home/alex/.icons/gentoo/gentoo.png"
+editor_cmd = terminal_cmd .. editor
+
+-- icons
+gentoo_icon = my_icon_path .. "gentoo/gentoo.png"
 terminal_icon = "/usr/share/icons/Adwaita/16x16/apps/utilities-terminal.png"
 
 -- Default modkey.
@@ -126,11 +140,12 @@ mylauncher = awful.widget.launcher({ image = gentoo_icon,
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
 -- }}}
 
+-- {{{ Wibar
 -- Keyboard map indicator and switcher
 -- mykeyboardlayout = awful.widget.keyboardlayout()
 
--- {{{ Wibar
-function read_line_from_a_file(file)
+-- Helper function to read all content in a file
+local function read_line_from_a_file(file)
   local f = assert(io.open(file))
   local t = f:read("*all")
   f:close()
@@ -138,14 +153,14 @@ function read_line_from_a_file(file)
 end
 
 -- mymood
-mymood = wibox.widget.textbox(read_line_from_a_file('/home/alex/.cache/mymood/mymood.txt'))
+mymood = wibox.widget.textbox(read_line_from_a_file(cache_path .. 'mymood/mymood.txt'))
 mymood:buttons(gears.table.join(
   awful.button({ }, 1, function() awful.spawn("mymood choose") end) ,
   awful.button({ }, 3, function() awful.spawn("mymood ask") end)
 ))
 
 -- myweather
-myweather = wibox.widget.textbox(read_line_from_a_file('/home/alex/.cache/weather/current_weather_oneline.txt'))
+myweather = wibox.widget.textbox(read_line_from_a_file(cache_path .. 'weather/current_weather_oneline.txt'))
 myweather:buttons(gears.table.join(
   awful.button({ }, 1, function() awful.spawn("weather show") end) ,
   awful.button({ }, 3, function() awful.spawn("weather get") end)
@@ -153,7 +168,8 @@ myweather:buttons(gears.table.join(
 
 
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock(" %a %b.%d  %T", 1)
+-- mytextclock = wibox.widget.textclock( {format = " %a %b.%d  %T", refresh = 1})
+mytextclock = wibox.widget.textclock( " %a %b.%d  %T", 1)
 month_calendar = awful.widget.calendar_popup.month({position = "tr"})
 mytextclock:buttons(gears.table.join(
   awful.button({ }, 1, function() month_calendar:toggle() end) ,
@@ -163,35 +179,35 @@ mytextclock:buttons(gears.table.join(
 ))
 
 -- battery widget
-mybattery = awful.widget.watch("/home/alex/.scripts/mybattery", 240)
+mybattery = awful.widget.watch(scripts_path .. "mybattery", 240)
 mybattery:buttons(gears.table.join(
   awful.button({ }, 1, function() awful.spawn("mybattery update") end) ,
   awful.button({ }, 3, function() awful.spawn("mybattery update") end) 
 ))
 
 -- mem widget
-mymem = awful.widget.watch("/home/alex/.scripts/mymem", 4)
+mymem = awful.widget.watch(scripts_path .. "mymem", 4)
 mymem:buttons(gears.table.join(
   awful.button({ }, 1, function() awful.spawn("mymem update") end) ,
   awful.button({ }, 3, function() awful.spawn("mymem update") end) 
 ))
 
 -- cpu widget
-mycpu = awful.widget.watch("/home/alex/.scripts/mycpu", 2)
+mycpu = awful.widget.watch(scripts_path .. "mycpu", 2)
 mycpu:buttons(gears.table.join(
   awful.button({ }, 1, function() awful.spawn("mycpu update") end) ,
   awful.button({ }, 3, function() awful.spawn("mycpu update") end) 
 ))
 
 -- dayornight widget
-mydayornight = awful.widget.watch("/home/alex/.scripts/dayornight", 3600)
+mydayornight = awful.widget.watch(scripts_path .. "dayornight", 3600)
 mydayornight:buttons(gears.table.join(
   awful.button({ }, 1, function() awful.spawn("dayornight update") end) ,
   awful.button({ }, 3, function() awful.spawn("dayornight update") end) 
 ))
 
 -- wifi widget
-mywifi = awful.widget.watch("/home/alex/.scripts/mywifi", 4)
+mywifi = awful.widget.watch(scripts_path .. "mywifi", 4)
 mywifi:buttons(gears.table.join(
   awful.button({ }, 1, function() awful.spawn("mywifi update") end) ,
   awful.button({ }, 3, function() awful.spawn("mywifi update") end) 
@@ -325,7 +341,7 @@ end)
 -- {{{ Mouse bindings
 root.buttons(gears.table.join(
     awful.button({ }, 1, function () mymainmenu:toggle() end),
-    awful.button({ }, 2, function () awful.spawn("sxiv /home/alex/Pictures/Wallpaper/") end),
+    awful.button({ }, 2, function () awful.spawn("sxiv " .. wallpaper_path) end),
     awful.button({ }, 3, function () awful.spawn("rightclickmenu") end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
@@ -417,9 +433,9 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
 
     -- User program
-    awful.key({ modkey, "Mod1" }, "h", function () awful.spawn("st -e htop") end,
+    awful.key({ modkey, "Mod1" }, "h", function () awful.spawn(terminal_cmd .. "htop") end,
               {description = "open htop in st", group = "programs"}),
-    awful.key({ modkey, "Mod1" }, "r", function () awful.spawn("st -e ranger") end,
+    awful.key({ modkey, "Mod1" }, "r", function () awful.spawn(terminal_cmd .. "ranger") end,
               {description = "open ranger in st", group = "programs"}),
     awful.key({ modkey, "Mod1" }, "f", function () awful.spawn("firefox-bin") end,
               {description = "run firefox", group = "programs"}),
@@ -431,9 +447,9 @@ globalkeys = gears.table.join(
     -- Prompt
     awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
               {description = "run prompt", group = "launcher"}),
-    awful.key({ modkey },            "d",     function () awful.spawn("/home/alex/.scripts/zsh_rofi") end,
+    awful.key({ modkey },            "d",     function () awful.spawn(scripts_path .. "zsh_rofi") end,
               {description = "run rofi", group = "launcher"}),
-    awful.key({ modkey, },           "w",     function () awful.spawn("/home/alex/.scripts/dmenu_extended_run") end,
+    awful.key({ modkey, },           "w",     function () awful.spawn(scripts_path .. "dmenu_extended_run") end,
               {description = "run rofi-extended", group = "launcher"}),
     awful.key({ modkey }, "x",
               function ()
@@ -450,51 +466,51 @@ globalkeys = gears.table.join(
               {description = "show the menubar", group = "launcher"}),
     -- PowerOff show oblogout
     awful.key({}, "XF86PowerOff", function ()
-      awful.util.spawn("oblogout", false)
+      awful.spawn("oblogout", false)
     end),
     -- Volume Keys
     awful.key({}, "XF86AudioLowerVolume", function ()
-      awful.util.spawn("amixer -q -D pulse sset Master 5%-", false)
+      awful.spawn("amixer -q -D pulse sset Master 5%-", false)
     end),
     awful.key({}, "XF86AudioRaiseVolume", function ()
-      awful.util.spawn("amixer -q -D pulse sset Master 5%+", false)
+      awful.spawn("amixer -q -D pulse sset Master 5%+", false)
     end),
     awful.key({}, "XF86AudioMute", function ()
-      awful.util.spawn("amixer -D pulse set Master 1+ toggle", false)
+      awful.spawn("amixer -D pulse set Master 1+ toggle", false)
     end),
     -- Media Keys
     awful.key({}, "XF86AudioPlay", function()
-      awful.util.spawn("mpc toggle", false)
+      awful.spawn("mpc toggle", false)
     end),
     awful.key({}, "XF86AudioStop", function()
-      awful.util.spawn("mpc stop", false)
+      awful.spawn("mpc stop", false)
     end),
     awful.key({}, "XF86AudioNext", function()
-      awful.util.spawn("mpc next", false)
+      awful.spawn("mpc next", false)
     end),
     awful.key({}, "XF86AudioPrev", function()
-      awful.util.spawn("mpc prev", false)
+      awful.spawn("mpc prev", false)
     end),
     -- Screen Brightness Control
     awful.key({}, "XF86MonBrightnessDown", function()
-      awful.util.spawn("xbacklight -dec 5", false)
+      awful.spawn("xbacklight -dec 5", false)
     end),
     awful.key({}, "XF86MonBrightnessUp", function()
-      awful.util.spawn("xbacklight -inc 5", false)
+      awful.spawn("xbacklight -inc 5", false)
     end),
     -- Screenshot Keys
     awful.key({}, "Print", function() 
-      awful.util.spawn("/home/alex/.scripts/screenshot.sh window", false)
+      awful.spawn(scripts_path .. "screenshot.sh window", false)
     end),
     awful.key({"Shift"}, "Print", function() 
-      awful.util.spawn("/home/alex/.scripts/screenshot.sh root", false)
+      awful.spawn(scripts_path .. "screenshot.sh root", false)
     end),
     -- Keyboard LED 
     awful.key({}, "Scroll_Lock", function() 
-      awful.util.spawn("xset led 3", false)
+      awful.spawn("xset led 3", false)
     end),
     awful.key({"Shift"}, "Scroll_Lock", function() 
-      awful.util.spawn("xset -led 3", false)
+      awful.spawn("xset -led 3", false)
     end)
 )
 

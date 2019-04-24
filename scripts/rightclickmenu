@@ -14,7 +14,9 @@ screenshot
 calculator haskell ghci
 spacefm (file manager)
 config awesomewm
+config rightclickmenu
 xkill
+view (tail) startx log
 daily terminal" | rofi -dmenu -p "lanuncher"
 # weather
 # mydwmstatus kill
@@ -38,12 +40,14 @@ execute () {
     'daily terminal') st -e tmux attach || st -e tmux ;;
     'mymood choose') mymood choose;;
     'mymood askprompt') mymood ask;;
-    'config awesomewm') st -e nvim ~/.config/awesome/rc.lua;;
+    'config awesomewm') gnvim ~/.config/awesome/rc.lua;;
+    'config rightclickmenu') gnvim ~/.scripts/rightclickmenu;;
     *ghci*) st -e ghci;;
     spacefm*) spacefm;;
     htop) st -e htop;;
     xkill) xkill;;
     slock) slock;;
+    *startx*) st -e tail -f ~/.cache/xorg_startx.log;;
   esac
 }
 

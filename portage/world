@@ -41,6 +41,7 @@ dev-util/cscope
 dev-vcs/git
 gnome-extra/zenity
 mail-client/neomutt
+mail-mta/msmtp
 media-fonts/dejavu
 media-fonts/fontawesome
 media-fonts/fontawesome-extension
@@ -67,8 +68,10 @@ media-video/mpv
 net-analyzer/nmap
 net-dns/bind-tools
 net-im/signal-desktop-bin
+net-irc/hexchat
 net-libs/libsoup
 net-libs/webkit-gtk
+net-mail/isync
 net-misc/aria2
 net-misc/dhcpcd
 net-misc/netifrc

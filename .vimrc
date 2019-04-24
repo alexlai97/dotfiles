@@ -28,6 +28,7 @@ if dein#load_state('/home/alex/.cache/dein')
   call dein#add('terryma/vim-multiple-cursors')
   call dein#add('mhinz/vim-startify')
   call dein#add('tpope/vim-surround')
+  call dein#add('junegunn/vim-easy-align')
 
   " nvim special (heavy tasks)
   if has('nvim')
@@ -37,10 +38,11 @@ if dein#load_state('/home/alex/.cache/dein')
     call dein#add('lervag/vimtex')
     call dein#add('majutsushi/tagbar')
     call dein#add('tpope/vim-fugitive')
-    call dein#add('iamcco/markdown-preview.nvim')
+    call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd']})
     call dein#add('Shougo/neosnippet.vim')
     call dein#add('Shougo/neosnippet-snippets')
     call dein#add('Shougo/deoplete.nvim')
+    call dein#add('dag/vim-fish')
     " call dein#add('raghur/vim-ghost')
   else " vim special
     call dein#add('roxma/nvim-yarp')
@@ -102,8 +104,9 @@ let g:netrw_winsize=20
 nnoremap <F3> :Lexplore<CR>
 "-}}}
 
-"{{{- vim filetype auto folding
-autocmd Filetype vim set foldmethod=marker
+"{{{- auto folding
+" autocmd Filetype vim,sh set foldmethod=marker
+set foldmethod=marker
 "-}}}
 
 "{{{- window/buffer/tab key shortcut
