@@ -73,9 +73,9 @@ set timeoutlen=1000 ttimeoutlen=0
 set mouse=a
 "-}}}
 
-"{{{- Color settings 
+"{{{- Color Colorscheme  
 if exists("g:gnvim") 
-  colorscheme evening
+  colorscheme desert
 endif
 " set termguicolors
 " set background=dark
