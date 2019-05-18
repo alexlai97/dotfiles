@@ -1,2 +1,4 @@
 #!/bin/env dash
 wpa_cli status | grep "^ssid" | cut -d '=' -f 2
+
+# vim: filetype=sh

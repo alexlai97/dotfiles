@@ -44,7 +44,7 @@ end
 -- {{{ Variable definitions
 -- directories
 home_path = os.getenv("HOME") .. '/'
-bin_path = home_path .. '/.local/bin/'
+bin_path = home_path .. '.local/bin/'
 scripts_path = home_path .. '.scripts/'
 cache_path = home_path .. '.cache/'
 wallpaper_path = home_path .. "Pictures/Wallpaper/"
@@ -183,7 +183,7 @@ mytextclock:buttons(gears.table.join(
 ))
 
 -- battery widget
-mybattery = awful.widget.watch(scripts_path .. "mybattery", 240)
+mybattery = awful.widget.watch(scripts_path .. "mybattery", 2)
 mybattery:buttons(gears.table.join(
   awful.button({ }, 1, function() awful.spawn("mybattery update") end) ,
   awful.button({ }, 3, function() awful.spawn("mybattery update") end) 
@@ -437,14 +437,14 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
 
     -- User program
-    awful.key({ modkey, "Mod1" }, "h", function () awful.spawn(terminal_cmd .. "htop") end,
-              {description = "open htop in st", group = "programs"}),
-    awful.key({ modkey, "Mod1" }, "r", function () awful.spawn(terminal_cmd .. "ranger") end,
-              {description = "open ranger in st", group = "programs"}),
-    awful.key({ modkey, "Mod1" }, "f", function () awful.spawn("firefox-bin") end,
-              {description = "run firefox", group = "programs"}),
-    awful.key({ modkey, "Mod1" }, "s", function () awful.spawn("spacefm") end,
-              {description = "run spacefm", group = "programs"}),
+    -- awful.key({ modkey, "Mod1" }, "h", function () awful.spawn(terminal_cmd .. "htop") end,
+    --           {description = "open htop in st", group = "programs"}),
+    -- awful.key({ modkey, "Mod1" }, "r", function () awful.spawn(terminal_cmd .. "ranger") end,
+    --           {description = "open ranger in st", group = "programs"}),
+    -- awful.key({ modkey, "Mod1" }, "f", function () awful.spawn("firefox-bin") end,
+    --           {description = "run firefox", group = "programs"}),
+    -- awful.key({ modkey, "Mod1" }, "s", function () awful.spawn("spacefm") end,
+    --           {description = "run spacefm", group = "programs"}),
 
     -- Prompt
     awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
@@ -465,63 +465,67 @@ globalkeys = gears.table.join(
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"}),
-    -- PowerOff show oblogout
-    awful.key({}, "XF86PowerOff", function ()
-      awful.spawn("oblogout")
-    end),
-    -- System
-    awful.key({ modkey, "Shift" }, "Page_Down", function () awful.spawn("oblogout") end,
-              {description = "run oblogout", group = "system"}),
-    awful.key({ modkey, "Shift" }, "s", function () awful.spawn(suspend_command) end,
-              {description = "suspend the system", group = "system"}
-    ),
-    awful.key({ modkey, "Shift" }, "l", function () awful.spawn(lockscreen_command) end,
-              {description = "lock screen", group = "system"}),
-    -- Volume Keys
-    awful.key({}, "XF86AudioLowerVolume", function ()
-      awful.spawn("amixer -q -D pulse sset Master 5%-")
-    end),
-    awful.key({}, "XF86AudioRaiseVolume", function ()
-      awful.spawn("amixer -q -D pulse sset Master 5%+")
-    end),
-    awful.key({}, "XF86AudioMute", function ()
-      awful.spawn("amixer -D pulse set Master 1+ toggle")
-    end),
-    -- Media Keys
-    awful.key({}, "XF86AudioPlay", function()
-      awful.spawn("mpc toggle")
-    end),
-    awful.key({}, "XF86AudioStop", function()
-      awful.spawn("mpc stop")
-    end),
-    awful.key({}, "XF86AudioNext", function()
-      awful.spawn("mpc next")
-    end),
-    awful.key({}, "XF86AudioPrev", function()
-      awful.spawn("mpc prev")
-    end),
-    -- Screen Brightness Control
-    awful.key({}, "XF86MonBrightnessDown", function()
-      awful.spawn("xbacklight -dec 5")
-    end),
-    awful.key({}, "XF86MonBrightnessUp", function()
-      awful.spawn("xbacklight -inc 5")
-    end),
-    -- Screenshot Keys
-    awful.key({}, "Print", function() 
-      awful.spawn(scripts_path .. "screenshot.sh window")
-    end),
-    awful.key({"Shift"}, "Print", function() 
-      awful.spawn(scripts_path .. "screenshot.sh root")
-    end),
-    -- Keyboard LED 
-    awful.key({}, "Scroll_Lock", function() 
-      awful.spawn("xset led 3")
-    end),
-    awful.key({"Shift"}, "Scroll_Lock", function() 
-      awful.spawn("xset -led 3")
-    end)
+              {description = "show the menubar", group = "launcher"})
+    -- -- PowerOff show oblogout
+    -- awful.key({}, "XF86PowerOff", function ()
+    --   awful.spawn("oblogout")
+    -- end),
+    -- -- System
+    -- awful.key({ modkey, "Shift" }, "Page_Down", function () awful.spawn("oblogout") end,
+    --           {description = "run oblogout", group = "system"}),
+    -- awful.key({ modkey, "Shift" }, "s", function () awful.spawn(suspend_command) end,
+    --           {description = "suspend the system", group = "system"}
+    -- ),
+    -- awful.key({ modkey, "Shift" }, "l", function () awful.spawn(lockscreen_command) end,
+    --           {description = "lock screen", group = "system"})
+    -- -- Volume Keys
+    -- awful.key({}, "XF86AudioLowerVolume", function() -- sxhkd need testing
+    --   awful.spawn("amixer -q -D pulse sset Master 5%-")
+    -- end),
+    -- awful.key({}, "XF86AudioRaiseVolume", function() -- sxhkd need testing
+    --   awful.spawn("amixer -q -D pulse sset Master 5%+")
+    -- end),
+    -- awful.key({}, "XF86AudioMute", function() -- sxhkd need testing
+    --   awful.spawn("amixer -D pulse set Master 1+ toggle")
+    -- end),
+    -- -- Media Keys
+    -- awful.key({}, "XF86AudioPlay", function() -- sxhkd need testing
+    --   awful.spawn("mpc toggle")
+    -- end),
+    -- awful.key({}, "XF86AudioStop", function() -- sxhkd need testing
+    --   awful.spawn("mpc stop")
+    -- end),
+    -- awful.key({}, "XF86AudioNext", function() -- sxhkd need testing
+    --   awful.spawn("mpc next")
+    -- end),
+    -- awful.key({}, "XF86AudioPrev", function() -- sxhkd need testing
+    --   awful.spawn("mpc prev")
+    -- end),
+    -- -- Screen Brightness Control
+    -- awful.key({}, "XF86MonBrightnessDown", function() -- sxhkd need testing
+    --   awful.spawn("xbacklight -dec 5")
+    -- end),
+    -- awful.key({}, "XF86MonBrightnessUp", function() -- sxhkd need testing
+    --   awful.spawn("xbacklight -inc 5")
+    -- end),
+    -- -- Screenshot Keys
+    -- awful.key({}, "Print", function() -- sxhkd need testing 
+    --   awful.spawn(scripts_path .. "screenshot.sh window")
+    -- end),
+    -- awful.key({"Shift"}, "Print", function() -- sxhkd need testing 
+    --   awful.spawn(scripts_path .. "screenshot.sh root")
+    -- end),
+    -- -- Keyboard LED 
+    -- awful.key({}, "Scroll_Lock", function() -- sxhkd need testing 
+    --   awful.spawn("xset led 3")
+    -- end),
+    -- awful.key({"Shift"}, "Scroll_Lock", function() -- sxhkd need testing 
+    --   awful.spawn("xset -led 3")
+    -- end),
+    -- -- Touchpad Toggle
+    -- awful.key({}, "XF86TouchpadToggle", function() -- sxhkd need testing 
+    --   awful.spawn(scripts_path .. "toggletouchpad.sh")
+    -- end)
 )
 
 clientkeys = gears.table.join(

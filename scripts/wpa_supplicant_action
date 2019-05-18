@@ -1,6 +1,6 @@
 #!/bin/env dash
 
-SSID=$(/home/alex/.scripts/getssid)
+SSID=$($HOME"/.scripts/getssid")
 # echo $SSID
 
 case "$2" in
@@ -11,3 +11,5 @@ case "$2" in
 		notify-send "WPA supplicant: connection lost" "Disconnect with $1 $SSID";
 		;;
 esac
+
+# vim: filetype=sh

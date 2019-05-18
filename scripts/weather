@@ -1,8 +1,9 @@
 #!/bin/dash
 
-CACHEFILE=/home/alex/.cache/weather/current_weather.png
-CACHEFILE_WHITE=/home/alex/.cache/weather/current_weather_white.png
-CACHE_ONELINE=/home/alex/.cache/weather/current_weather_oneline.txt
+WEATHER_CACHE_DIR=$HOME"/.cache/weather"
+CACHEFILE=$WEATHER_CACHE_DIR"/current_weather.png"
+CACHEFILE_WHITE=$WEATHER_CACHE_DIR"/current_weather_white.png"
+CACHE_ONELINE=$WEATHER_CACHE_DIR"/current_weather_oneline.txt"
 TIME=""
 OPTION=$2
 

@@ -6,9 +6,10 @@
 #   * local wallpaper
 #   * kill
 
-MPSYOUTUBEPATH="/home/alex/.config/mps-youtube/playlists/"
-LOCALVIDEOPATH="/home/alex/Videos/mpsyt/"
-WALLPAPERPATH="/home/alex/Pictures/Wallpaper/"
+
+MPSYOUTUBE_PATH=$HOME"/.config/mps-youtube/playlists/"
+LOCALVIDEO_PATH=$HOME"/Videos/mpsyt/"
+WALLPAPER_PATH=$HOME"/Pictures/Wallpaper/"
 SESSION="dynwal"
 
 usage() {
@@ -27,13 +28,13 @@ rofimenu() {
 }
 
 getmpsyoutubeplaylist() {
-  ls $MPSYOUTUBEPATH | rofi -dmenu -p "playlist" || exit 1
+  ls $MPSYOUTUBE_PATH | rofi -dmenu -p "playlist" || exit 1
 }
 getlocalvideoplaylist() {
-  ls $LOCALVIDEOPATH | rofi -dmenu -p "playlist" || exit 1
+  ls $LOCALVIDEO_PATH | rofi -dmenu -p "playlist" || exit 1
 }
 getwallpaperplaylist() {
-  sxiv -o $WALLPAPERPATH
+  sxiv -o $WALLPAPER_PATH
 }
 getimageduration() {
   echo "10
@@ -52,8 +53,8 @@ spawncontroller() {
 
 getcommand() {
   case $(rofimenu) in 
-    *youtube*) echo "$MPSYOUTUBEPATH/"$(getmpsyoutubeplaylist);;
-    *video*) echo "$LOCALVIDEOPATH"/$(getlocalvideoplaylist);;
+    *youtube*) echo "$MPSYOUTUBE_PATH/"$(getmpsyoutubeplaylist);;
+    *video*) echo "$LOCALVIDEO_PATH"/$(getlocalvideoplaylist);;
     *wallpaper*) echo $(getwallpaperplaylist); OPTION="--image-display-duration=$(getimageduration)"; echo $OPTION ;;
     *kill*) killprocess ;;
     *terminal*) spawncontroller;;
@@ -77,4 +78,4 @@ case "$1" in
   *) COMMANDS="$@"; plaympv ;;
 esac
 
-
+# vim: filetype=sh

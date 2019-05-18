@@ -10,15 +10,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/home/alex/.cache/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/home/alex/.cache/dein')
-  call dein#begin('/home/alex/.cache/dein')
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/home/alex/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 
   " My plugins
   call dein#add('jiangmiao/auto-pairs')
@@ -43,6 +43,7 @@ if dein#load_state('/home/alex/.cache/dein')
     call dein#add('Shougo/neosnippet-snippets')
     call dein#add('Shougo/deoplete.nvim')
     call dein#add('dag/vim-fish')
+    call dein#add('baskerville/vim-sxhkdrc')
     " call dein#add('raghur/vim-ghost')
   else " vim special
     call dein#add('roxma/nvim-yarp')

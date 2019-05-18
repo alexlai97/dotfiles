@@ -16,7 +16,7 @@ spacefm (file manager)
 config awesomewm
 config rightclickmenu
 xkill
-view (tail) startx log
+view (tail) startx logs
 daily terminal" | rofi -dmenu -p "lanuncher"
 # weather
 # mydwmstatus kill
@@ -47,7 +47,10 @@ execute () {
     htop) st -e htop;;
     xkill) xkill;;
     slock) slock;;
-    *startx*) st -e tail -f ~/.cache/xorg_startx.log;;
+    *startx*) 
+      st -e tail -f ~/.cache/xorg_startx.log &
+      st -e tail -f ~/.cache/xorg_startx_stdout.log
+      ;;
   esac
 }
 

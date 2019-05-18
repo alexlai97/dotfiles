@@ -48,3 +48,5 @@
 =x11-misc/xwinwrap-0_p4-r1 ~amd64
 # required by urlview (argument)
 =net-misc/urlview-0.9 ~amd64
+# required by sxhkd (argument)
+=x11-misc/sxhkd-0.6.0 ~amd64

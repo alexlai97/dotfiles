@@ -1,0 +1,38 @@
+XF86Audio{LowerVolume,RaiseVolume}
+    amixer -q -D pulse sset Master {5%-,5%+}
+
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle
+
+XF86Audio{Play,Stop,Next,Prev}
+    mpc {toggle,stop,next,prev}
+
+XF86MonBrightness{Up,Down}
+    xbacklight {-inc,-dec} 5
+
+{_,shift + }Print
+    screenshot.sh {window,root}
+
+{_,shift + }Scroll_Lock
+    xset {led,-led} 3
+
+XF86TouchpadToggle
+    toggletouchpad.sh
+
+XF86PowerOff
+    oblogout
+
+super + alt + {h,r}
+    st -e {htop,ranger}
+    
+super + alt + {f,s}
+    {firefox-bin,spacefm}
+
+super + shift + {Page_Down}
+    {oblogout}
+
+#super + shift + l
+#    slock
+
+super + shift + s
+    dbus-send --system --print-reply --dest='org.freedesktop.ConsoleKit' /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Suspend  boolean:true

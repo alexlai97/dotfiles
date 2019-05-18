@@ -53,6 +53,7 @@ media-fonts/wqy-zenhei
 media-gfx/feh
 media-gfx/imagemagick
 media-gfx/sxiv
+media-libs/alsa-lib
 media-libs/imlib2
 media-libs/libexif
 media-libs/libsdl
@@ -67,11 +68,13 @@ media-video/ffmpeg
 media-video/mpv
 net-analyzer/nmap
 net-dns/bind-tools
+net-firewall/ufw
 net-im/signal-desktop-bin
 net-irc/hexchat
 net-libs/libsoup
 net-libs/webkit-gtk
 net-mail/isync
+net-mail/notmuch
 net-misc/aria2
 net-misc/dhcpcd
 net-misc/netifrc
@@ -112,12 +115,14 @@ x11-apps/xkill
 x11-apps/xmodmap
 x11-apps/xsetroot
 x11-base/xorg-server
+x11-misc/arandr
 x11-misc/dmenu
 x11-misc/dunst
 x11-misc/oblogout
 x11-misc/redshift
 x11-misc/rofi
 x11-misc/spacefm
+x11-misc/sxhkd
 x11-misc/xwinwrap
 x11-misc/zim
 x11-terms/cool-retro-term
