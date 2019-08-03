@@ -1,0 +1,54 @@
+# required by app-editors/neovim-0.3.3::gentoo
+# required by app-editors/neovim (argument)
+=dev-libs/msgpack-3.1.1 ~amd64
+# required by app-editors/neovim (argument)
+=app-editors/neovim-0.3.3 ~amd64
+# required by app-editors/neovim-0.3.3::gentoo[tui]
+# required by app-editors/neovim (argument)
+=dev-libs/unibilium-2.0.0 ~amd64
+# required by fontawesome (argument)
+=media-fonts/fontawesome-5.1.0 ~amd64
+# required by oblogout (argument)
+=x11-misc/oblogout-0.2-r2 ~amd64
+# required by imlib2_loaders (argument)
+=media-plugins/imlib2_loaders-1.5.1 ~amd64
+# required by openjdk (argument)
+=dev-java/openjdk-11.0.1_p13 ~amd64
+# required by gradle-bin (argument)
+=dev-java/gradle-bin-3.4.1 ~amd64
+# required by net-im/signal-desktop-bin (argument)
+=net-im/signal-desktop-bin-1.20.0 ~amd64
+# required by cool-retro-term (argument)
+=x11-terms/cool-retro-term-1.1.1 ~amd64
+# required by vis (argument)
+=app-editors/vis-0.5 ~amd64
+# required by =x11-misc/zim-0.69 (argument)
+=x11-misc/zim-0.69 ~amd64
+# required by nextcloud-client (argument)
+=net-misc/nextcloud-client-2.5.1 ~amd64
+# required by net-misc/curl-7.62.0::gentoo[ssl,curl_ssl_openssl]
+# required by media-sound/ncmpcpp-0.8.2::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/openssl-1.1.0j ~amd64
+# required by =dev-python/m2crypto-0.27.0 (argument)
+=dev-python/m2crypto-0.27.0 ~amd64
+# required by stack-bin (argument)
+=dev-haskell/stack-bin-1.7.1 ~amd64
+# required by app-admin/entr (argument)
+=app-admin/entr-4.1 ~amd64
+# required by sandy (argument)
+=app-editors/sandy-0.4 ~amd64
+# required by media-sound/mps-youtube-0.2.8::gentoo
+# required by mps-youtube (argument)
+=dev-python/pafy-0.5.4 ~amd64
+# required by mps-youtube (argument)
+=media-sound/mps-youtube-0.2.8 ~amd64
+# required by xwinwrap (argument)
+=x11-misc/xwinwrap-0_p4-r1 ~amd64
+# required by urlview (argument)
+=net-misc/urlview-0.9 ~amd64
+# required by sxhkd (argument)
+=x11-misc/sxhkd-0.6.0 ~amd64
+# required by buku (argument)
+=www-misc/buku-3.7 ~amd64

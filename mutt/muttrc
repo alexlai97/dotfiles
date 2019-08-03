@@ -1,143 +1,144 @@
-set my_realname="Alex Lai"
-set my_username="x7lai"
-set my_domain="edu.uwaterloo.ca"
-set my_password=`pass uwaterloo/quest | head`
+# vim: filetype=neomuttrc
+# This is the general mutt config which has the settings that all accounts use.
+set mailcap_path = ~/.config/mutt/mailcap
+set date_format="%y/%m/%d %I:%M%p"
+set index_format="%2C %zs %?X?A& ? %D %-15.15F %s (%-4.4c)"
+set sort = 'reverse-date'
+set smtp_authenticators = 'gssapi:login'
+set query_command = "abook --mutt-query '%s'"
+set rfc2047_parameters = yes
+set sleep_time = 0		# Pause 0 seconds for informational messages
+set markers = no		# Disables the `+` displayed at line wraps
+set mark_old = no		# Unread mail stay unread until read
+set mime_forward = yes		# attachments are forwarded with mail
+set wait_key = no		# mutt won't ask "press key to continue"
+set fast_reply			# skip to compose when replying
+set fcc_attach			# save attachments with the body
+set forward_format = "Fwd: %s"	# format of subject when forwarding
+set forward_quote		# include message in forwards
+set reverse_name		# reply as whomever it was to
+set include			# include message in replies
+auto_view text/html		# automatically show html (mailcap uses w3m)
+auto_view application/pgp-encrypted
+alternative_order text/plain text/enriched text/html
+bind index,pager i noop
+bind index,pager g noop
+bind index \Cf noop
 
-# IMAP folders
-set my_drafts="Drafts"
-set my_drafts_noquote="Drafts"
-set my_sent="Sent<quote-char><space>Items"
-set my_sent_noquote="Sent Items"
-set my_trash="Deleted<quote-char><space>Items"
-set my_trash_noquote="Deleted Items"
+# General rebindings
+bind attach <return> view-mailcap
+bind attach l view-mailcap
+bind editor <space> noop
+bind index G last-entry
+bind index gg first-entry
+bind pager,attach h exit
+bind pager j next-line
+bind pager k previous-line
+bind pager l view-attachments
+bind index D delete-message
+bind index U undelete-message
+bind index L limit
+bind index h noop
+bind index l display-message
+bind browser h goto-parent
+bind browser l select-entry
+bind pager,browser gg top-page
+bind pager,browser G bottom-page
+bind index,browser d half-down
+bind index,browser u half-up
+bind index,pager S sync-mailbox
+bind index,pager R group-reply
+bind index \031 previous-undeleted	# Mouse wheel
+bind index \005 next-undeleted		# Mouse wheel
+bind pager \031 previous-line		# Mouse wheel
+bind pager \005 next-line		# Mouse wheel
+bind editor <Tab> complete-query
 
-# Quotation and date formats
-set attribution="The %d, %n wrote:"
-set date_format="!%m/%d/%Y %H:%M"
+macro index,pager a "|abook --add-email\n" 'add sender to abook'
+macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
+macro index O "<shell-escape>mailsync -Va<enter>" "run offlineimap to sync all mail"
+macro index \Cf "<enter-command>unset wait_key<enter><shell-escape>read -p 'Enter a search term to find with notmuch: ' x; echo \$x >~/.cache/mutt_terms<enter><limit>~i \"\`notmuch search --output=messages \$(cat ~/.cache/mutt_terms) | head -n 600 | perl -le '@a=<>;chomp@a;s/\^id:// for@a;$,=\"|\";print@a'\`\"<enter>" "show only messages matching a notmuch pattern"
+macro index A "<limit>all\n" "show all messages (undo limit)"
 
-# Hours and dates
-set charset="utf-8"
-set assumed_charset="utf-8"
-set send_charset="utf-8:us-ascii"
+# Sidebar mappings
+set sidebar_visible = yes
+set sidebar_width = 20
+set sidebar_short_path = yes
+set sidebar_next_new_wrap = yes
+set mail_check_stats
+set sidebar_format = '%B%?F? [%F]?%* %?N?%N/? %?S?%S?'
+bind index,pager \Ck sidebar-prev
+bind index,pager \Cj sidebar-next
+bind index,pager \Co sidebar-open
+bind index,pager \Cp sidebar-prev-new
+bind index,pager \Cn sidebar-next-new
+bind index,pager B sidebar-toggle-visible
 
-## Server config
+# Default index colors:
+color index yellow default '.*'
+color index_author red default '.*'
+color index_number blue default
+color index_subject cyan default '.*'
 
-# IMAP config
-set imap_user="$my_username@$my_domain"
-set imap_pass=$my_password
+# New mail is boldened:
+color index brightyellow black "~N"
+color index_author brightred black "~N"
+color index_subject brightcyan black "~N"
 
-set folder="imaps://outlook.office365.com/"
-set spoolfile= +INBOX
-set postponed= +$my_drafts_noquote
-set record = +$my_sent_noquote
-set trash = +$my_trash_noquote
-mailboxes
+# Other colors and aesthetic settings:
+mono bold bold
+mono underline underline
+mono indicator reverse
+mono error bold
+color normal default default
+color indicator brightblack white
+color sidebar_highlight red default
+color sidebar_divider brightblack black
+color sidebar_flagged red black
+color sidebar_new green black
+color normal brightyellow default
+color error red default
+color tilde black default
+color message cyan default
+color markers red white
+color attachment white default
+color search brightmagenta default
+color status brightyellow black
+color hdrdefault brightgreen default
+color quoted green default
+color quoted1 blue default
+color quoted2 cyan default
+color quoted3 yellow default
+color quoted4 red default
+color quoted5 brightred default
+color signature brightgreen default
+color bold black default
+color underline black default
+color normal default default
 
-set imap_check_subscribed="yes"
-set imap_list_subscribed="yes"
-set timeout=15
-set mail_check=90
-set imap_keepalive=180
-set imap_idle
-unset mark_old
-set ssl_use_sslv3=yes
+# Regex highlighting:
+color header blue default ".*"
+color header brightmagenta default "^(From)"
+color header brightcyan default "^(Subject)"
+color header brightwhite default "^(CC|BCC)"
+color body brightred default "[\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+" # Email addresses
+color body brightblue default "(https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+" # URL
+color body green default "\`[^\`]*\`" # Green text between ` and `
+color body brightblue default "^# \.*" # Headings as bold blue
+color body brightcyan default "^## \.*" # Subheadings as bold cyan
+color body brightgreen default "^### \.*" # Subsubheadings as bold green
+color body yellow default "^(\t| )*(-|\\*) \.*" # List items as yellow
+color body brightcyan default "[;:][-o][)/(|]" # emoticons
+color body brightcyan default "[;:][)(|]" # emoticons
+color body brightcyan default "[ ][*][^*]*[*][ ]?" # more emoticon?
+color body brightcyan default "[ ]?[*][^*]*[*][ ]" # more emoticon?
+color body red default "(BAD signature)"
+color body cyan default "(Good signature)"
+color body brightblack default "^gpg: Good signature .*"
+color body brightyellow default "^gpg: "
+color body brightyellow red "^gpg: BAD signature from.*"
+mono body bold "^gpg: Good signature"
+mono body bold "^gpg: BAD signature from.*"
+color body red default "([a-z][a-z0-9+-]*://(((([a-z0-9_.!~*'();:&=+$,-]|%[0-9a-f][0-9a-f])*@)?((([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?|[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+)(:[0-9]+)?)|([a-z0-9_.!~*'()$,;:@&=+-]|%[0-9a-f][0-9a-f])+)(/([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*)*(/([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*(;([a-z0-9_.!~*'():@&=+$,-]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([a-z0-9_.!~*'();/?:@&=+$,-]|%[0-9a-f][0-9a-f])*)?(#([a-z0-9_.!~*'();/?:@&=+$,-]|%[0-9a-f][0-9a-f])*)?|(www|ftp)\\.(([a-z0-9]([a-z0-9-]*[a-z0-9])?)\\.)*([a-z]([a-z0-9-]*[a-z0-9])?)\\.?(:[0-9]+)?(/([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*)*(/([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*(;([-a-z0-9_.!~*'():@&=+$,]|%[0-9a-f][0-9a-f])*)*)*)?(\\?([-a-z0-9_.!~*'();/?:@&=+$,]|%[0-9a-f][0-9a-f])*)?(#([-a-z0-9_.!~*'();/?:@&=+$,]|%[0-9a-f][0-9a-f])*)?)[^].,:;!)? \t\r\n<>\"]"
 
-# SMTP config
-set realname = $my_realname
-set from = "$my_username@$my_domain"
-set smtp_pass = $my_password
-set hostname = $my_domain
-set smtp_url = "smtp://$my_username@$my_domain@outlook.office365.com:587/"
-set ssl_force_tls = yes
-set smtp_authenticators = "login"
-
-## More settings
-
-# File storage settings
-
-# set signature="~/.mutt/signature"
-# set message_cachedir="~/.mutt/message_cache"
-# set header_cache="~/.mutt/header_cache"
-# set tmpdir="~/.mutt/tmp"
-
-# Text view first
-set pager_stop="yes"
-set smart_wrap="yes"
-alternative_order text/plain
-auto_view text/html
-set reverse_name=yes
-set reverse_realname=yes
-
-# Text editor
-#set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
-set editor="vi"
-
-# Adress book handling
-# set sort_alias=alias
-# set reverse_alias=yes
-# set alias_file="~/.mutt/aliases"
-# source "~/.mutt/gal"
-# source "~/.mutt/aliases"
-# source "~/.mutt/mailing_lists"
-
-# Thread ordering
-set sort = 'threads'
-set sort_browser="reverse-date"
-set sort_aux="last-date-received"
-unset collapse_unread
-# set index_format=" %?M?   ↳&%4C?   %Z      %D     %-15.15n    %s"
-
-## Key bindings
-
-# Mailboxes
-# bind    index   G  imap-fetch-mail
-# macro   index   gi "<change-folder>=INBOX<enter>"       "Go to Inbox"
-# macro   index   gs "<change-folder>=$my_sent<enter>"    "Go to Sent"
-# macro   index   gd "<change-folder>=$my_drafts<enter>"  "Go to Drafts"
-# macro   index   gt "<change-folder>=$my_trash<enter>"   "Go to Trash"
-
-# Index
-# bind    index   <up>        previous-entry
-# bind    index   <down>      next-entry
-# bind    index   <delete>    delete-message
-# bind    index   n           next-entry
-# bind    index   p           previous-entry
-# macro   index   Q           ":set quit=yes\nq" "Quit mutt without asking"
-# bind    index   C           noop
-# bind    index   -           collapse-thread
-# bind    index   _           collapse-all
-
-# Pager
-# bind    pager   <up>        previous-line
-# bind    pager   <down>      next-line
-# bind    pager   <left>      previous-entry
-# bind    pager   <right>     next-entry
-# bind    pager   <delete>    delete-message
-# bind    pager   k           previous-line
-# bind    pager   j           next-line
-# bind    pager   n           next-entry
-# bind    pager   p           previous-entry
-# bind    pager   w           previous-page
-
-# Colors
-color   normal      white default
-color   attachment  brightyellow default
-color   hdrdefault  cyan default
-color   indicator   black cyan
-color   markers     brightred default
-color   quoted      green default
-color   signature   cyan default
-color   status      brightgreen blue
-color   tilde       blue default
-color   tree        red default
-color   header      brightgreen default ^From:
-color   header      brightcyan default ^To:
-color   header      brightcyan default ^Reply-To:
-color   header      brightcyan default ^Cc:
-color   header      brightblue default ^Subject:
-color   body        brightred default [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
-color   body        brightblue default (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+
-
-# For better looks
-#set markers=no # don't put '+' at the beginning of wrapped lines
-#set pager_index_lines= 5 # how large is the index window?
+source personal.muttrc

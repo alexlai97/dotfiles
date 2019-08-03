@@ -13,6 +13,7 @@ app-emulation/virtualbox-bin
 app-i18n/fcitx
 app-i18n/fcitx-sunpinyin
 app-i18n/mozc
+app-misc/asciinema
 app-misc/figlet
 app-misc/neofetch
 app-misc/ranger
@@ -30,6 +31,8 @@ app-text/zathura
 app-text/zathura-meta
 dev-lang/lua
 dev-lang/python
+dev-libs/libxls
+dev-libs/libzip
 dev-libs/mpc
 dev-libs/openssl
 dev-python/m2crypto
@@ -39,6 +42,7 @@ dev-python/pyopenssl
 dev-scheme/racket
 dev-util/cscope
 dev-vcs/git
+games-misc/lolcat
 gnome-extra/zenity
 mail-client/neomutt
 mail-mta/msmtp
@@ -52,6 +56,7 @@ media-fonts/twemoji-color-font
 media-fonts/wqy-zenhei
 media-gfx/feh
 media-gfx/imagemagick
+media-gfx/inkscape
 media-gfx/sxiv
 media-libs/alsa-lib
 media-libs/imlib2
@@ -64,11 +69,13 @@ media-sound/mpd
 media-sound/mps-youtube
 media-sound/ncmpcpp
 media-sound/pulseaudio
+media-sound/wildmidi
 media-video/ffmpeg
 media-video/mpv
 net-analyzer/nmap
 net-dns/bind-tools
 net-firewall/ufw
+net-fs/davfs2
 net-im/signal-desktop-bin
 net-irc/hexchat
 net-libs/libsoup
@@ -79,6 +86,7 @@ net-misc/aria2
 net-misc/dhcpcd
 net-misc/netifrc
 net-misc/urlview
+net-news/newsboat
 net-wireless/bluez
 net-wireless/crda
 net-wireless/iw
@@ -104,6 +112,7 @@ sys-power/suspend
 sys-process/cronie
 sys-process/htop
 sys-process/lsof
+sys-process/time
 virtual/jdk
 www-client/firefox-bin
 x11-apps/oclock

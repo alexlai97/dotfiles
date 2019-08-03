@@ -1,22 +1,7 @@
-tabnew 
-cd /home/alexlai/google-drive/
-rename_append 
-rename MTHEL 131
-rename Spring 2018
-mkdir Math
-mkdir Linear_Algebra
-mkdir Rub
-rename Books
-mkdir Rubic's_cube
-mkdir Backwards_planning
-tabnew
-cd
-rename Books_and_pdfs
 shell wal -i %f
 rename Buddhism
 tabnew $HOME
 cd ~
-shell 
 tab_new 
 open_with un
 find ru
@@ -40,11 +25,26 @@ previe
 cd /home/alex/.config/ranger/
 change_mode 
 rename emu
-find 
 find .sc
 find not
 open_with 
 !unzip %f
 shell unzip B239lecture31.mp4.zip 
 delete
+find 
+find v
+cd /home/alex/myrepos/wat16rxl/
+echo $TMUX_PANE
+cd .c
+find .tmux.conf
+filter zh
+filter 
+search 
+find tmux.
+rename Configy.class
+search java
+shell 
+find java
+mkdir D5
 
+rename D5_deliverable.pdf

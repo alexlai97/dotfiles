@@ -3,6 +3,8 @@
 " +-+-+-+-+-+-+
 
 set runtimepath^=~/.vim
+set runtimepath+=/home/alex/.local/lilypond/usr/share/lilypond/current/vim
+
 let &packpath = &runtimepath
 
 source ~/.vimrc

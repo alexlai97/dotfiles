@@ -39,6 +39,7 @@ case $suffix in
    cc|c++|cpp) g++ $file -o $base && successMesg || failMesg ;;
    rs) rustc $file -o $base && successMesg || failMesg ;;
    java) javac $file && successMesg || failMesg ;;
+   ly) lilypond $file && successMesg || failMesg ;;
    *) unknownMesg ;;
 esac
 

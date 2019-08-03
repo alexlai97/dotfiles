@@ -1,3 +1,5 @@
 #!/bin/dash 
 GTK_THEME=Arc 
-exec /usr/bin/firefox-bin
+exec /usr/bin/firefox-bin $@
+
+# vim: filetype=sh

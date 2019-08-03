@@ -1,0 +1,1 @@
+/home/alex/android-studio/bin/studio.sh

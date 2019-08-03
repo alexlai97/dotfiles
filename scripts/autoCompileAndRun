@@ -24,6 +24,7 @@ runcommand=""
 case $suffix in 
    c|C|cc|c++|cpp|rs) runcommand="./$base";;
    java) runcommand="java $base"  ;;
+   ly) runcommand="echo "  ;;
    *) unknownMesg ;;
 esac
 

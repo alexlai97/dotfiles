@@ -138,7 +138,8 @@ let g:which_key_map.t = {
 
 
 "{{{- urlview
-nnoremap <leader>url :!st -e urlview %<CR>
+" nnoremap <leader>url :!st -e urlview %<CR>
+nnoremap <leader>url :term urlview % <CR> i
 let g:which_key_map.u = {
   \ 'name' : '+urlview',
   \ 'r' : 'urlview',

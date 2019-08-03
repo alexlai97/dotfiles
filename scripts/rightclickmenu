@@ -17,6 +17,7 @@ config awesomewm
 config rightclickmenu
 xkill
 view (tail) startx logs
+sxhkd restart (Simple X hotkey daemon)
 daily terminal" | rofi -dmenu -p "lanuncher"
 # weather
 # mydwmstatus kill
@@ -47,6 +48,7 @@ execute () {
     htop) st -e htop;;
     xkill) xkill;;
     slock) slock;;
+    *sxhkd*) pkill sxhkd; sxhkd;;
     *startx*) 
       st -e tail -f ~/.cache/xorg_startx.log &
       st -e tail -f ~/.cache/xorg_startx_stdout.log

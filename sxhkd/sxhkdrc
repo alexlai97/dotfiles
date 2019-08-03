@@ -1,38 +1,71 @@
-XF86Audio{LowerVolume,RaiseVolume}
-    amixer -q -D pulse sset Master {5%-,5%+}
-
+##{{{ System keys
+{XF86TouchpadToggle,Menu : F3}
+    toggletouchpad.sh
+{XF86MonBrightnessDown,Menu : F4}
+    xbacklight -dec 5
+{XF86MonBrightnessUp,Menu : F5}
+    xbacklight -inc 5
+{XF86AudioPrev,Menu : F8}
+    mpc prev
+{XF86AudioPlay,Menu : F9}
+    mpc toggle
+{XF86AudioNext,Menu : F10}
+    mpc next
+{XF86AudioLowerVolume,Menu : F11}
+    amixer -q -D pulse sset Master 5%-
+{XF86AudioRaiseVolume,Menu : F12}
+    amixer -q -D pulse sset Master 5%+
 XF86AudioMute
     amixer -D pulse set Master 1+ toggle
-
-XF86Audio{Play,Stop,Next,Prev}
-    mpc {toggle,stop,next,prev}
-
-XF86MonBrightness{Up,Down}
-    xbacklight {-inc,-dec} 5
-
+XF86AudioStop
+    mpc stop
 {_,shift + }Print
     screenshot.sh {window,root}
-
 {_,shift + }Scroll_Lock
     xset {led,-led} 3
-
-XF86TouchpadToggle
-    toggletouchpad.sh
-
 XF86PowerOff
     oblogout
+##}}}
 
-super + alt + {h,r}
-    st -e {htop,ranger}
+##{{{ User program
+# restart sxhkd
+super + Escape
+    pkill sxhkd; sxhkd &; notify-send "sxhkd" "sxhkd restarted"
+
+# program in terminal, htop, ranger
+super + alt + {h,r,n,m,b}
+    st -e {htop,ranger,neomutt,ncmpcpp,oil}
     
+# launcher
+super + {d,w}
+    {rofi -show run,dmenu_extended_run}
+
+# program
 super + alt + {f,s}
     {firefox-bin,spacefm}
 
-super + shift + {Page_Down}
-    {oblogout}
+# Terminal
+super + Return
+    st
+super + shift + Return 
+    st -e tmux attach || st -e tmux
 
-#super + shift + l
-#    slock
+# run mailsync
+super + F5
+    mailsync && notify-send "Mailsync" "mailsync completed"
+##}}}
 
+##{{{ System-related program/service
+# Suspend
 super + shift + s
     dbus-send --system --print-reply --dest='org.freedesktop.ConsoleKit' /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Suspend  boolean:true
+
+# Screenlock
+@super + shift + l
+    slock
+
+# logout menu
+@super + shift + {Page_Down}
+    {oblogout}
+
+##}}}

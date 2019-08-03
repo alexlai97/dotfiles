@@ -1,100 +1,100 @@
-nothing [1,3..10999]
-nothing [1,3..10]
-nothing [1,2..10]
-nothing [1,2,..10]
-nothing [1,0.1,..10]
-nothing [1,0.1m..10]
-nothing [1,0.1..10]
-nothing [1.0.1..10]
-nothing [1..0.1..10]
-nothing [1..0.1..10
-nothing [1..100]
-nothing [1..2]
-nothing list = foldr (:) [] list
-:q
-q
-[1..100]
-foldr (:) [] [1..100]
-[1..100]
-foldr (:) [] [1..100]
-[1..100]
-foldr (:) [] [1..100]
-foldr (:) [] [1..100]
-foldr (:) [] [1..10000]
-foldr (:) [] [1..10000]
-foldr (:) [] [1..100]
-foldr (:) [1,2]
-foldr (:) []
-:t (:)
-:t succ
-succ 1
-succ 1
-:t acc
-:y acc
-acc
-myconcat [[1,2,3], [4,5,6], [7..9]]
-myconcat [1,2,3]
-:load fold.hs 
-mysum [1..100]
-mysum [1..]
-:load fold.hs 
-(5*) 2
-(5*) 5
-:type (5*)
-:type 5*
-:t (*)
-applyToIntegers (*100) [1..100]
-applyToIntegers doubleList [1..100]
-:load list.hs
-:load list.hs
-multiplyList 8 [1..100]
-multiplyList 8 [1..]
-doubleList [1,2,3,4,5]
-:load list.hs
-:load list.hs
-:load list.hs
-:load list.hs
-doubleList [1,2,3,4,5]
-:load list.hs
-doubleList [1,2,3,4,5]
-:load list.hs
-:q
-actualData 
-mapM_ (p) laststep
-sum (mapM_ (p) laststep)
-chi_square
-mapM_ (p) laststep
-mapM_ (p) laststep
-p x = printf "%.2f\n" (x :: Double) 
-p x = printf "%.2f\n" (x :: Double) x
-p 2
-p x = printf "%.2f\n" (x :: Double) x
-map (p) laststep
-p x = printf "%.2f\n" (x :: Double)
-map (p) laststep
-p 2
-p x = printf "%.2f\n" (x :: Float)
-printf "%.2f\n" (2 :: Float)
-printf "%.2f\n" 2
-printf "%.2f" 2
-printf "%.2f"
-map (printf "%.2f\n") laststep
-import Text.Printf 
-import Text.Prinf
-sum expectedData 
-laststep 
-:load tmp.hs 
-zip actualData expectedData 
-expectedData 
-:load tmp.hs 
-total
-chi_square 
-:load tmp.hs 
-sum (zipWith (/) (map (^2) (zipWith (-) (map fromIntegral actualData) expectedData)) expectedData)
-zipWith (/) (map (^2) (zipWith (-) (map fromIntegral actualData) expectedData)) expectedData 
-map (^2) (zipWith (-) (map fromIntegral actualData) expectedData)
-map ((+1) . (^2)) (zipWith (-) (map fromIntegral actualData) expectedData)
-map ((-1) . (^2)) (zipWith (-) (map fromIntegral actualData) expectedData)
-map (^2) (zipWith (-) (map fromIntegral actualData) expectedData)
-zipWith (-) (map fromIntegral actualData) expectedData 
-zipWith (-) actualData expectedData 
+l (e 5 1)
+l (e 5 2)
+l (e 5 3)
+e 5 1
+e 5 2
+e 5 3
+e 5 4
+e 5 3
+l (e 5 2)
+l (e 5 3)
+l (e 5 1)
+l (e 5 4)
+e (5,4)
+e (5 4)
+(e 5 4)
+l 2
+e 5 4
+l (e 5 4)
+l e = h / sqrt(2 * me * ( e - 3.67e-19 ) )
+sqrt(4)
+l e = h / (
+me = 9.109e-31
+h = 6.626070e-34
+e 5 1
+e 5 4
+e a b = rh * ( 1 / (b**2) - 1 / (a**2))
+e a b = rh ( 1 / (b**2) - 1 / (a**2))
+f 3 10
+f 3 3
+f a b = a + b
+rh
+rh = 2.179e-18
+rh
+rh = 2.179 * (10 ** (-18))
+rh = 2.179 * e-18
+50 * 30 * 4  / 60
+50 * 30 * 4 
+1.622/5
+h / (62.7 * (10 ** (-6)) * me)
+h / (62.7 * (10 ** (-6)) * me))
+me
+me = 9.109 * (10 ** (-31))
+:type e(0)
+e(0)
+h * c / (e(7) - e(1)) * (10 ** 9)
+h * c / (e(7) - e(2)) * (10 ** 9)
+h * c / (e(7) - e(5)) * (10 ** 9)
+(e(9) - e(5)) / h
+e(9) - e(5)
+h * c / (e(9) - e(5)) * (10 ** 9)
+e(2) == e2
+e(2)
+e (n)  = -rh / (n**2)
+E (n)  = -rh / (n**2)
+E n  = -rh / (n**2)
+h * c / (e7 - e6) * (10 ** 9)
+e9
+e5
+e9 = - rh / 81
+h * c / (e7 - e6) * (10 ** 6)
+h * c / (e7 - e6) * (10 ** 9)
+e6 = -rh / 36
+e7 = - rh / 49
+h * c / (e5 - e2) * (10 ** 9)
+h * c / (e5 - e2)
+(e5 - e2)
+e2 - e5
+e2
+e5
+e2 = - rh / 4
+e5 = - rh / 25
+rh
+rh = 2.179 * (10 ** (-18))
+rh = 2.179 * (10 ** -18)
+h * c * ( 1/v1 - 1/v2)
+v2
+v1
+v1 v2
+v2 = 276 * (10 ** (-9))
+v2
+v1
+v2 = 256 * (10 ** (-9))
+v1 = 256 * (10 ** (-9))
+v1 = 276 * (10 ** (-9))
+v1
+v1 = 256 * (10 ** (-9))
+h * c * na / e
+c = 2.998 * (10 ** (8))
+h * c * na / e
+na
+na = 6.02214076 * (10 ** 23)
+na
+na = 6.022 * (10 ** 23)
+e
+e = 1.55 * (10 **9)
+E = 1
+h
+h = 6.626 * (10 ** (-34))
+c
+c = 2.998 * (10 ** (-8))

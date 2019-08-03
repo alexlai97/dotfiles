@@ -2080,3 +2080,416 @@ Apr 03 00:44 : client: [4] closed
 Apr 13 22:16 : client: [0] closed
 Apr 13 22:18 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Apr 13 22:18 : client: [0] opened from [::1]:46734
+Apr 19 23:55 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 19 23:55 : client: [0] opened from [::1]:46476
+Apr 20 13:39 : client: [0] closed
+Apr 20 13:41 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 20 13:41 : client: [0] opened from [::1]:45428
+Apr 21 12:39 : client: [0] closed
+Apr 21 12:39 : client: [1] opened from [::1]:50252
+Apr 21 12:46 : client: [1] closed
+Apr 21 12:47 : client: [2] opened from [::1]:50368
+Apr 25 07:57 : client: [2] closed
+Apr 25 16:46 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 25 16:46 : client: [0] opened from [::1]:59788
+Apr 25 16:46 : client: [0] closed
+Apr 25 16:46 : client: [1] opened from [::1]:59790
+Apr 28 21:10 : client: [1] closed
+Apr 28 21:11 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 28 21:11 : client: [0] opened from [::1]:42650
+May 03 17:17 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 03 17:17 : client: [0] opened from [::1]:37346
+May 06 20:33 : client: [0] closed
+May 06 20:33 : client: [1] opened from [::1]:41728
+May 17 11:43 : client: [1] closed
+May 17 11:45 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 17 11:45 : client: [0] opened from [::1]:43746
+May 17 23:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 17 23:04 : client: [0] opened from [::1]:50388
+May 18 17:08 : client: [1] opened from [::1]:51684
+May 18 17:08 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+May 18 17:08 : client: [1] closed
+May 18 17:12 : client: [2] opened from [::1]:51714
+May 18 17:12 : client: [2] closed
+May 18 17:12 : client: [3] opened from [::1]:51716
+May 18 17:12 : client: [3] closed
+May 18 17:12 : client: [4] opened from [::1]:51718
+May 18 17:12 : client: [4] closed
+May 18 17:12 : client: [5] opened from [::1]:51720
+May 18 17:12 : client: [5] closed
+May 18 23:28 : client: [6] opened from [::1]:51874
+May 18 23:28 : client: [6] closed
+May 18 23:28 : client: [7] opened from [::1]:51876
+May 18 23:28 : client: [7] closed
+May 18 23:28 : client: [8] opened from [::1]:51878
+May 18 23:29 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : player: problems opening audio device while playing "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/01. DDBY - 壠楬傪媫偄偱.mp3"
+May 18 23:29 : client: [9] opened from [::1]:51880
+May 18 23:29 : client: [0] closed
+May 18 23:29 : client: [9] closed
+May 18 23:29 : client: [10] opened from [::1]:51882
+May 18 23:29 : client: [10] closed
+May 18 23:29 : client: [11] opened from [::1]:51884
+May 18 23:29 : client: [12] opened from [::1]:51886
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : client: [11] closed
+May 18 23:29 : client: [12] closed
+May 18 23:29 : client: [13] opened from [::1]:51888
+May 18 23:29 : client: [13] closed
+May 18 23:29 : client: [14] opened from [::1]:51890
+May 18 23:29 : client: [15] opened from [::1]:51892
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : client: [14] closed
+May 18 23:29 : client: [15] closed
+May 18 23:29 : client: [16] opened from [::1]:51894
+May 18 23:29 : client: [16] closed
+May 18 23:29 : client: [17] opened from [::1]:51896
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : client: [17] closed
+May 18 23:29 : client: [18] opened from [::1]:51898
+May 18 23:29 : client: [18] closed
+May 18 23:29 : client: [19] opened from [::1]:51900
+May 18 23:29 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/01. DDBY - 壠楬傪媫偄偱.mp3"
+May 18 23:29 : client: [19] closed
+May 18 23:29 : client: [20] opened from [::1]:51902
+May 18 23:29 : client: [20] closed
+May 18 23:29 : client: [21] opened from [::1]:51904
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : player: problems opening audio device while playing "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/02. DDBY - 偄傠偳傝棳傟惎.mp3"
+May 18 23:29 : client: [21] closed
+May 18 23:29 : client: [22] opened from [::1]:51906
+May 18 23:29 : client: [22] closed
+May 18 23:29 : client: [23] opened from [::1]:51908
+May 18 23:29 : client: [23] closed
+May 18 23:29 : client: [24] opened from [::1]:51910
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : client: [24] closed
+May 18 23:29 : client: [25] opened from [::1]:51912
+May 18 23:29 : client: [25] closed
+May 18 23:29 : client: [26] opened from [::1]:51914
+May 18 23:29 : client: [26] closed
+May 18 23:29 : client: [27] opened from [::1]:51916
+May 18 23:30 : client: [28] opened from [::1]:51918
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : client: [27] closed
+May 18 23:30 : client: [28] closed
+May 18 23:30 : client: [29] opened from [::1]:51920
+May 18 23:30 : client: [29] closed
+May 18 23:30 : client: [30] opened from [::1]:51922
+May 18 23:30 : client: [31] opened from [::1]:51924
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : client: [30] closed
+May 18 23:30 : client: [31] closed
+May 18 23:30 : client: [32] opened from [::1]:51926
+May 18 23:30 : client: [32] closed
+May 18 23:30 : client: [33] opened from [::1]:51928
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : client: [33] closed
+May 18 23:30 : client: [34] opened from [::1]:51930
+May 18 23:30 : client: [34] closed
+May 18 23:30 : client: [35] opened from [::1]:51932
+May 18 23:30 : client: [35] closed
+May 18 23:30 : client: [36] opened from [::1]:51934
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : client: [36] closed
+May 18 23:30 : client: [37] opened from [::1]:51936
+May 18 23:30 : client: [37] closed
+May 18 23:30 : client: [38] opened from [::1]:51938
+May 18 23:30 : client: [38] closed
+May 18 23:30 : client: [39] opened from [::1]:51940
+May 18 23:30 : client: [8] closed
+May 18 23:30 : client: [40] opened from [::1]:51942
+May 18 23:30 : client: [41] opened from [::1]:51944
+May 18 23:30 : client: [41] closed
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : client: [39] closed
+May 18 23:30 : client: [42] opened from [::1]:51946
+May 18 23:30 : client: [42] closed
+May 18 23:30 : client: [43] opened from [::1]:51948
+May 18 23:30 : client: [43] closed
+May 18 23:30 : client: [44] opened from [::1]:51950
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [44] closed
+May 18 23:31 : client: [45] opened from [::1]:51952
+May 18 23:31 : client: [45] closed
+May 18 23:31 : client: [46] opened from [::1]:51954
+May 18 23:31 : client: [46] closed
+May 18 23:31 : client: [47] opened from [::1]:51956
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [47] closed
+May 18 23:31 : client: [48] opened from [::1]:51958
+May 18 23:31 : client: [48] closed
+May 18 23:31 : client: [49] opened from [::1]:51960
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [49] closed
+May 18 23:31 : client: [50] opened from [::1]:51962
+May 18 23:31 : client: [50] closed
+May 18 23:31 : client: [51] opened from [::1]:51964
+May 18 23:31 : client: [51] closed
+May 18 23:31 : client: [52] opened from [::1]:51966
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [52] closed
+May 18 23:31 : client: [53] opened from [::1]:51968
+May 18 23:31 : client: [53] closed
+May 18 23:31 : client: [54] opened from [::1]:51970
+May 18 23:31 : client: [54] closed
+May 18 23:31 : client: [55] opened from [::1]:51972
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [55] closed
+May 18 23:31 : client: [56] opened from [::1]:51974
+May 18 23:31 : client: [56] closed
+May 18 23:31 : client: [57] opened from [::1]:51976
+May 18 23:31 : client: [57] closed
+May 18 23:31 : client: [58] opened from [::1]:51978
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [58] closed
+May 18 23:31 : client: [59] opened from [::1]:51980
+May 18 23:31 : client: [59] closed
+May 18 23:31 : client: [60] opened from [::1]:51982
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [60] closed
+May 18 23:31 : client: [61] opened from [::1]:51984
+May 18 23:31 : client: [61] closed
+May 18 23:31 : client: [62] opened from [::1]:51986
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [62] closed
+May 18 23:31 : client: [63] opened from [::1]:51988
+May 18 23:31 : client: [63] closed
+May 18 23:31 : client: [64] opened from [::1]:51990
+May 18 23:31 : client: [65] opened from [::1]:51992
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [64] closed
+May 18 23:31 : client: [65] closed
+May 18 23:31 : client: [66] opened from [::1]:51994
+May 18 23:31 : client: [66] closed
+May 18 23:31 : client: [67] opened from [::1]:51996
+May 18 23:31 : client: [67] closed
+May 18 23:31 : client: [68] opened from [::1]:51998
+May 18 23:31 : client: [69] opened from [::1]:52000
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [68] closed
+May 18 23:31 : client: [69] closed
+May 18 23:31 : client: [70] opened from [::1]:52002
+May 18 23:31 : client: [70] closed
+May 18 23:31 : client: [71] opened from [::1]:52004
+May 18 23:31 : client: [71] closed
+May 18 23:31 : client: [72] opened from [::1]:52006
+May 18 23:31 : client: [73] opened from [::1]:52008
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [72] closed
+May 18 23:31 : client: [73] closed
+May 18 23:31 : client: [74] opened from [::1]:52010
+May 18 23:31 : client: [74] closed
+May 18 23:31 : client: [75] opened from [::1]:52012
+May 18 23:31 : client: [76] opened from [::1]:52014
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [75] closed
+May 18 23:31 : client: [76] closed
+May 18 23:31 : client: [77] opened from [::1]:52016
+May 18 23:31 : client: [77] closed
+May 18 23:31 : client: [78] opened from [::1]:52018
+May 18 23:32 : client: [40] closed
+May 18 23:32 : client: [79] opened from [::1]:52020
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:32 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:32 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:32 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:32 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:32 : client: [78] closed
+May 18 23:32 : client: [79] closed
+May 18 23:32 : client: [80] opened from [::1]:52022
+May 18 23:32 : client: [80] closed
+May 18 23:32 : client: [81] opened from [::1]:52024
+May 19 23:38 : client: [81] closed
+May 19 23:38 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/07. DDBY - 恀栭拞偑丄崱偦偺栚傪妎傑偡.mp3"
+May 19 23:39 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 19 23:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 19 23:39 : client: [0] opened from [::1]:42734
+May 30 12:01 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 30 12:01 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 30 12:01 : client: [0] opened from [::1]:49336
+Jun 04 12:07 : client: [1] opened from [::1]:43294
+Jun 04 12:07 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:07 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:07 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:07 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:07 : client: [0] closed
+Jun 04 12:07 : client: [1] closed
+Jun 04 12:07 : client: [2] opened from [::1]:43296
+Jun 04 12:07 : client: [2] closed
+Jun 04 12:07 : client: [3] opened from [::1]:43298
+Jun 04 12:07 : client: [4] opened from [::1]:43300
+Jun 04 12:07 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:07 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:07 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:07 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:07 : client: [3] closed
+Jun 04 12:07 : client: [4] closed
+Jun 04 12:07 : client: [5] opened from [::1]:43302
+Jun 04 12:07 : client: [5] closed
+Jun 04 12:07 : client: [6] opened from [::1]:43304
+Jun 04 12:08 : client: [7] opened from [::1]:43308
+Jun 04 12:08 : client: [8] opened from [::1]:43310
+Jun 04 12:08 : client: [8] closed
+Jun 04 12:08 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:08 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:08 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:08 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:08 : client: [6] closed
+Jun 04 12:08 : client: [9] opened from [::1]:43312
+Jun 04 12:08 : client: [9] closed
+Jun 04 12:08 : client: [10] opened from [::1]:43314
+Jun 04 12:08 : client: [10] closed
+Jun 04 12:08 : client: [11] opened from [::1]:43316
+Jun 04 12:08 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:08 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:08 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:08 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:08 : client: [11] closed
+Jun 04 12:08 : client: [12] opened from [::1]:43318
+Jun 04 12:08 : client: [12] closed
+Jun 04 12:08 : client: [13] opened from [::1]:43320
+Jun 04 12:08 : client: [13] closed
+Jun 04 12:08 : client: [14] opened from [::1]:43322
+Jun 04 12:08 : client: [7] closed
+Jun 04 12:08 : client: [15] opened from [::1]:43326
+Jun 04 12:08 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:08 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:08 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:08 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:08 : client: [14] closed
+Jun 04 12:08 : client: [15] closed
+Jun 04 12:08 : client: [16] opened from [::1]:43328
+Jun 04 12:08 : client: [16] closed
+Jun 04 12:08 : client: [17] opened from [::1]:43330
+Jun 19 08:18 : client: [17] closed
+Jun 19 08:19 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jun 19 08:20 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 08:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 08:20 : client: [0] opened from [::1]:41092
+Jun 20 07:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 20 07:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 20 07:34 : client: [0] opened from [::1]:41060
+Jun 22 01:35 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jun 22 01:38 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 22 01:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 22 01:38 : client: [0] opened from [::1]:40474
+Jun 23 01:56 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jun 23 09:56 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 23 09:56 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 23 09:56 : client: [0] opened from [::1]:34698
+Jun 29 21:20 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 29 21:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 29 21:20 : client: [0] opened from [::1]:58514
+Jul 06 08:32 : client: [0] closed
+Jul 06 08:32 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jul 06 08:54 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 06 08:54 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 06 08:54 : client: [0] opened from [::1]:50228
+Jul 22 12:19 : client: [0] closed
+Jul 22 12:19 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jul 22 15:39 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 22 15:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 22 15:39 : client: [0] opened from [::1]:58114
+Jul 31 20:11 : client: [0] closed
+Jul 31 20:11 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jul 31 20:12 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 31 20:12 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 31 20:12 : client: [0] opened from [::1]:60640
+Aug 03 08:42 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Aug 03 08:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 03 08:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 03 08:43 : client: [0] opened from [::1]:58174

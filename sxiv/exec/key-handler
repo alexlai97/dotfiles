@@ -39,3 +39,5 @@ do
       num=$(cat $CACHE | wc -l) && rm "$CACHE" && notify-send "clipboard.log deleted" "$num entries and $CACHE deleted";;
   esac
 done
+
+# vim:filetype=sh

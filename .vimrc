@@ -20,16 +20,6 @@ if dein#load_state('~/.cache/dein')
   " Required:
   call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 
-  " My plugins
-  call dein#add('jiangmiao/auto-pairs')
-  call dein#add('liuchengxu/vim-which-key')
-  call dein#add('unblevable/quick-scope')
-  call dein#add('tpope/vim-commentary')
-  call dein#add('terryma/vim-multiple-cursors')
-  call dein#add('mhinz/vim-startify')
-  call dein#add('tpope/vim-surround')
-  call dein#add('junegunn/vim-easy-align')
-
   " nvim special (heavy tasks)
   if has('nvim')
     call dein#add('autozimu/LanguageClient-neovim')
@@ -44,11 +34,23 @@ if dein#load_state('~/.cache/dein')
     call dein#add('Shougo/deoplete.nvim')
     call dein#add('dag/vim-fish')
     call dein#add('baskerville/vim-sxhkdrc')
+    call dein#add('tbodt/deoplete-tabnine', { 'build': './install.sh' })
     " call dein#add('raghur/vim-ghost')
   else " vim special
     call dein#add('roxma/nvim-yarp')
     call dein#add('roxma/vim-hug-neovim-rpc')
   endif
+
+  " My plugins
+  call dein#add('jiangmiao/auto-pairs')
+  call dein#add('liuchengxu/vim-which-key')
+  call dein#add('unblevable/quick-scope')
+  call dein#add('tpope/vim-commentary')
+  call dein#add('terryma/vim-multiple-cursors')
+  call dein#add('mhinz/vim-startify')
+  call dein#add('tpope/vim-surround')
+  call dein#add('junegunn/vim-easy-align')
+  call dein#add('cespare/vim-toml')
 
   " Required:
   call dein#end()
@@ -133,4 +135,8 @@ nnoremap <A-7> :buffer 7<cr>
 nnoremap <A-8> :buffer 8<cr>
 nnoremap <A-9> :buffer 9<cr>
 "-}}}
+
+"{{{- bufwritepost
+" autocmd BufWritePost ~/.config/sxhkd/sxhkdrc !killall sxhkd; sxhkd
+"}}}
 
