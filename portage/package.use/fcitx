@@ -1,1 +1,1 @@
-app-i18n/fcitx autostart cairo opencc gtk2 gtk3
+app-i18n/fcitx autostart cairo gtk2 gtk3 opencc

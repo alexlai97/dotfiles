@@ -1,1 +1,1 @@
->=net-analyzer/nmap-6.25 gtk ipv6 lua nls ssl ncat ndiff nmap-update nping
+>=net-analyzer/nmap-6.25 ipv6 ncat ndiff nls nmap-update nping ssl

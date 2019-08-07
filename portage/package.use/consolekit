@@ -1,1 +1,1 @@
-sys-auth/consolekit pm-utils pam policykit
+sys-auth/consolekit pam pm-utils policykit

@@ -9,7 +9,6 @@ app-editors/neovim
 app-editors/vim
 app-editors/vis
 app-emulation/qemu
-app-emulation/virtualbox-bin
 app-i18n/fcitx
 app-i18n/fcitx-sunpinyin
 app-i18n/mozc
@@ -19,6 +18,7 @@ app-misc/neofetch
 app-misc/ranger
 app-misc/tmux
 app-portage/eix
+app-portage/flaggie
 app-portage/gentoolkit
 app-portage/layman
 app-shells/dash
@@ -52,9 +52,9 @@ media-fonts/fontawesome-extension
 media-fonts/ja-ipafonts
 media-fonts/terminus-font
 media-fonts/tex-gyre
-media-fonts/twemoji-color-font
 media-fonts/wqy-zenhei
 media-gfx/feh
+media-gfx/gimp
 media-gfx/imagemagick
 media-gfx/inkscape
 media-gfx/sxiv

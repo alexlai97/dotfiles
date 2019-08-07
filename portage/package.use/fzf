@@ -1,1 +1,1 @@
-app-shells/fzf neovim -fish-completion
+app-shells/fzf -fish-completion neovim

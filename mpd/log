@@ -2493,3 +2493,11 @@ Aug 03 08:42 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工�
 Aug 03 08:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Aug 03 08:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Aug 03 08:43 : client: [0] opened from [::1]:58174
+Aug 04 09:31 : client: [0] closed
+Aug 04 09:31 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Aug 04 09:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 09:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 09:35 : client: [0] opened from [::1]:60064
+Aug 05 13:56 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 05 13:56 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 05 13:56 : client: [0] opened from [::1]:58314
