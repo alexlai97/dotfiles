@@ -17,7 +17,7 @@ let g:which_key_map = {}
 nmap <leader>rcv :edit ~/.vimrc<cr>
 nmap <leader>rcn :edit $MYVIMRC<cr>
 let g:which_key_map.r = {
-  \ 'name' : '+rc|run',
+  \ 'name' : '+rc',
   \ 'c' : 'rc',
   \ }
 let g:which_key_map.r.c = {
@@ -121,9 +121,9 @@ autocmd Filetype c,cpp,rust nnoremap <leader>run :! ./%:r <CR>
 let g:which_key_map.c.o = {
   \ 'm': 'compiler',
   \ }
-let g:which_key_map.r.u = {
-  \ 'n': 'run',
-  \ }
+" let g:which_key_map.r.u = {
+"   \ 'n': 'run',
+"   \ }
 "-}}}
 
 

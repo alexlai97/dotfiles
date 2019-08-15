@@ -79,6 +79,7 @@ net-fs/davfs2
 net-im/signal-desktop-bin
 net-irc/hexchat
 net-libs/libsoup
+net-libs/libssh2
 net-libs/webkit-gtk
 net-mail/isync
 net-mail/notmuch
