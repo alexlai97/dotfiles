@@ -1,4 +1,3 @@
-tabnew $HOME
 cd ~
 tab_new 
 open_with un
@@ -48,3 +47,4 @@ rename D5_deliverable.pdf
 open_with vim
 open_with vis
 open_with 
+find ripgrep

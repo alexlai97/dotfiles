@@ -375,7 +375,6 @@ root.buttons(gears.table.join(
 ))
 -- }}}
 
-
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {

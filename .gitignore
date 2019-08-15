@@ -3,3 +3,6 @@ fcitx/clipboard/*
 fcitx/dbus/*
 fcitx/log/*
 mutt/
+
+*.log
+*.dat
