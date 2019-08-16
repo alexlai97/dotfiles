@@ -54,6 +54,7 @@ my_icon_path = home_path .. '.icons/'
 -- Themes define colours, icons, font and wallpapers.
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 beautiful.init(config_path .. "awesome/theme.lua")
+beautiful.useless_gap = 5
 
 -- This is used later as the default terminal and editor to run.
 terminal = "/usr/local/bin/alacritty"
@@ -101,6 +102,9 @@ awful.layout.layouts = {
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
 }
+
+-- Each screen has its own tag table.
+tag_names = { "", "", "", "", "", "", "", "", "" }
 -- }}}
 
 -- {{{ Helper functions
@@ -295,11 +299,9 @@ awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
     set_wallpaper(s)
 
-    -- Each screen has its own tag table.
-    local names = { "", "", "", "", "", "", "", "", "" }
     local l = awful.layout.suit  -- Just to save some typing: use an alias.
-    local layouts = { l.floating, l.floating, l.floating, l.floating, l.floating, l.floating, l.floating, l.floating, l.floating }
-    awful.tag(names, s, layouts)
+    local layouts = { l.tile, l.tile, l.tile, l.tile, l.tile, l.tile, l.tile, l.tile, l.tile }
+    awful.tag(tag_names, s, layouts)
     -- awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
@@ -400,8 +402,8 @@ awful.rules.rules = {
         },
         class = {
           "Sxiv",
-          "st",
-          "Alacritty"
+          "St",
+          "Wpg",
         },
 
         name = {
@@ -412,7 +414,7 @@ awful.rules.rules = {
           -- "AlarmWindow",  -- Thunderbird's calendar.
           -- "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
         }
-      }, properties = { floating = true }},
+      }, properties = { floating = true, placement = awful.placement.centered }},
 
     -- Add titlebars to normal clients and dialogs
     { rule_any = {type = { "normal", "dialog" }

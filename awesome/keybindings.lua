@@ -23,6 +23,7 @@ editor_cmd = terminal_cmd .. editor
 super_key = "Mod4"
 alt_key   = "Mod1"
 shift_key   = "Shift"
+tag_names = { "", "", "", "", "", "", "", "", "" }
 --}}}
 
 --{{{ Global keys 
@@ -39,47 +40,6 @@ globalkeys = gears.table.join(
     awful.key({ super_key,           }, "w", function () mymainmenu:show() end,
               {description = "show main menu", group = "awesome"}),
     --]]
-    --}}}
-
-    -- {{{ tag group
-    awful.key({ super_key,           }, "Left",   awful.tag.viewprev,
-              {description = "view previous", group = "tag"}),
-    awful.key({ super_key,           }, "Right",  awful.tag.viewnext,
-              {description = "view next", group = "tag"}),
-    awful.key({ super_key,           }, "Tab", awful.tag.history.restore,
-              {description = "go back", group = "tag"}),
-    -- }}}
-
-
-    --{{{ screen group
-    awful.key({ super_key, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
-              {description = "swap with next client by index", group = "client"}),
-    awful.key({ super_key, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end,
-              {description = "swap with previous client by index", group = "client"}),
-    awful.key({ super_key, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
-              {description = "focus the next screen", group = "screen"}),
-    awful.key({ super_key, "Control" }, "k", function () awful.screen.focus_relative(-1) end,
-              {description = "focus the previous screen", group = "screen"}),
-    --}}}
-
-
-    --{{{ layout group
-    awful.key({ super_key,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
-              {description = "increase master width factor", group = "layout"}),
-    awful.key({ super_key,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,
-              {description = "decrease master width factor", group = "layout"}),
-    awful.key({ super_key            }, "-",     function () awful.tag.incnmaster( 1, nil, true) end,
-              {description = "increase the number of master clients", group = "layout"}),
-    awful.key({ super_key, "Shift"   }, "=",     function () awful.tag.incnmaster(-1, nil, true) end,
-              {description = "decrease the number of master clients", group = "layout"}),
-    awful.key({ super_key, "Control" }, "h",     function () awful.tag.incncol( 1, nil, true)    end,
-              {description = "increase the number of columns", group = "layout"}),
-    awful.key({ super_key, "Control" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
-              {description = "decrease the number of columns", group = "layout"}),
-    awful.key({ super_key,           }, "space", function () awful.layout.inc( 1)                end,
-              {description = "select next", group = "layout"}),
-    awful.key({ super_key, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
-              {description = "select previous", group = "layout"}),
     --}}}
 
     --{{{ client group
@@ -117,70 +77,6 @@ globalkeys = gears.table.join(
                   end
               end,
               {description = "restore minimized", group = "client"}),
-    --}}}
-
-    --{{{ User program
-    -- terminal
-    awful.key({ super_key,           }, "Return", function () awful.spawn(terminal) end,
-              {description = "open a terminal", group = "launcher"}),
-    awful.key({ super_key, shift_key }, "Return", 
-      function () awful.spawn.easy_async("tmux has-session -t daily", 
-        function(stdout, stderr, reason, exit_code) 
-          if (exit_code ~= 0) then 
-            awful.spawn(terminal_cmd .. "tmux new-session -t daily")
-          else 
-            awful.spawn(terminal_cmd .. "tmux attach -t daily")
-          end
-        end) end, 
-        {description = "open daily tmux", group = "launcher"}),
-    
-    -- terminal program TODO write a function to simplify
-    awful.key({ super_key, alt_key }, "h", function () awful.spawn(terminal_cmd .. "htop") end,
-              {description = "open htop in terminal", group = "programs"}),
-    awful.key({ super_key, alt_key }, "r", function () awful.spawn(terminal_cmd .. "ranger") end,
-              {description = "open ranger in terminal", group = "programs"}),
-    awful.key({ super_key, alt_key }, "n", function () awful.spawn(terminal_cmd .. "ncmpcpp") end,
-              {description = "open ncmpcpp in terminal", group = "programs"}),
-    awful.key({ super_key, alt_key }, "m", function () awful.spawn(terminal_cmd .. "neomutt") end,
-              {description = "open neomutt in terminal", group = "programs"}),
-
-    -- non terminal program
-    awful.key({ super_key, alt_key }, "f", function () awful.spawn("firefox-bin") end,
-              {description = "run firefox", group = "programs"}),
-    awful.key({ super_key, alt_key }, "s", function () awful.spawn("spacefm") end,
-              {description = "run spacefm", group = "programs"}),
-
-    --}}}
-
-    --{{{Launcher
-    awful.key({ super_key },            "r",     function () awful.screen.focused().mypromptbox:run() end,
-              {description = "run prompt", group = "launcher"}),
-    awful.key({ super_key },            "d",     function () awful.spawn("rofi -show run") end,
-              {description = "run rofi", group = "launcher"}),
-    awful.key({ super_key, },           "w",     function () awful.spawn(scripts_path .. "dmenu_extended_run") end,
-              {description = "run rofi-extended", group = "launcher"}),
-    awful.key({ super_key }, "x",
-              function ()
-                  awful.prompt.run {
-                    prompt       = "Run Lua code: ",
-                    textbox      = awful.screen.focused().mypromptbox.widget,
-                    exe_callback = awful.util.eval,
-                    history_path = awful.util.get_cache_dir() .. "/history_eval"
-                  }
-              end,
-              {description = "lua execute prompt", group = "awesome"}),
-    awful.key({ super_key }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"}),
-    --}}}
-
-    --{{{ system
-    awful.key({ super_key, "Shift" }, "Page_Down", function () awful.spawn("oblogout") end,
-    {description = "run oblogout", group = "system"}),
-    awful.key({ super_key, "Shift" }, "s", function () awful.spawn(suspend_command) end,
-    {description = "suspend the system", group = "system"}
-    ),
-    awful.key({ super_key, "Shift" }, "l", function () awful.spawn(lockscreen_command) end,
-    {description = "lock screen", group = "system"}),
     --}}}
 
     -- {{{ function key  
@@ -235,7 +131,110 @@ globalkeys = gears.table.join(
       -- Touchpad Toggle
       awful.key({}, "XF86TouchpadToggle", function()  
         awful.spawn(scripts_path .. "toggletouchpad.sh")
-      end)
+      end),
+    -- }}}
+    
+    --{{{ launcher group
+    awful.key({ super_key },            "r",     function () awful.screen.focused().mypromptbox:run() end,
+              {description = "run prompt", group = "launcher"}),
+    awful.key({ super_key },            "d",     function () awful.spawn("rofi -show run") end,
+              {description = "run rofi", group = "launcher"}),
+    awful.key({ super_key, },           "w",     function () awful.spawn(scripts_path .. "dmenu_extended_run") end,
+              {description = "run rofi-extended", group = "launcher"}),
+    awful.key({ super_key }, "x",
+              function ()
+                  awful.prompt.run {
+                    prompt       = "Run Lua code: ",
+                    textbox      = awful.screen.focused().mypromptbox.widget,
+                    exe_callback = awful.util.eval,
+                    history_path = awful.util.get_cache_dir() .. "/history_eval"
+                  }
+              end,
+              {description = "lua execute prompt", group = "awesome"}),
+    awful.key({ super_key }, "p", function() menubar.show() end,
+              {description = "show the menubar", group = "launcher"}),
+    --}}}
+    
+    --{{{ layout group
+    awful.key({ super_key,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
+              {description = "increase master width factor", group = "layout"}),
+    awful.key({ super_key,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,
+              {description = "decrease master width factor", group = "layout"}),
+    awful.key({ super_key            }, "-",     function () awful.tag.incnmaster( 1, nil, true) end,
+              {description = "increase the number of master clients", group = "layout"}),
+    awful.key({ super_key, "Shift"   }, "=",     function () awful.tag.incnmaster(-1, nil, true) end,
+              {description = "decrease the number of master clients", group = "layout"}),
+    awful.key({ super_key, "Control" }, "h",     function () awful.tag.incncol( 1, nil, true)    end,
+              {description = "increase the number of columns", group = "layout"}),
+    awful.key({ super_key, "Control" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
+              {description = "decrease the number of columns", group = "layout"}),
+    awful.key({ super_key,           }, "space", function () awful.layout.inc( 1)                end,
+              {description = "select next", group = "layout"}),
+    awful.key({ super_key, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
+              {description = "select previous", group = "layout"}),
+    --}}}
+
+    --{{{ screen group
+    awful.key({ super_key, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
+              {description = "swap with next client by index", group = "client"}),
+    awful.key({ super_key, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end,
+              {description = "swap with previous client by index", group = "client"}),
+    awful.key({ super_key, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
+              {description = "focus the next screen", group = "screen"}),
+    awful.key({ super_key, "Control" }, "k", function () awful.screen.focus_relative(-1) end,
+              {description = "focus the previous screen", group = "screen"}),
+    --}}}
+
+    --{{{ programs group
+    -- terminal
+    awful.key({ super_key,           }, "Return", function () awful.spawn(terminal) end,
+              {description = "open a terminal", group = "launcher"}),
+    awful.key({ super_key, shift_key }, "Return", 
+      function () awful.spawn.easy_async("tmux has-session -t daily", 
+        function(stdout, stderr, reason, exit_code) 
+          if (exit_code ~= 0) then 
+            awful.spawn(terminal_cmd .. "tmux new-session -t daily")
+          else 
+            awful.spawn(terminal_cmd .. "tmux attach -t daily")
+          end
+        end) end, 
+        {description = "open daily tmux", group = "launcher"}),
+    
+    -- terminal program TODO write a function to simplify
+    awful.key({ super_key, alt_key }, "h", function () awful.spawn(terminal_cmd .. "htop") end,
+              {description = "open htop in terminal", group = "programs"}),
+    awful.key({ super_key, alt_key }, "r", function () awful.spawn(terminal_cmd .. "ranger") end,
+              {description = "open ranger in terminal", group = "programs"}),
+    awful.key({ super_key, alt_key }, "n", function () awful.spawn(terminal_cmd .. "ncmpcpp") end,
+              {description = "open ncmpcpp in terminal", group = "programs"}),
+    awful.key({ super_key, alt_key }, "m", function () awful.spawn(terminal_cmd .. "neomutt") end,
+              {description = "open neomutt in terminal", group = "programs"}),
+
+    -- non terminal program
+    awful.key({ super_key, alt_key }, "f", function () awful.spawn("firefox-bin") end,
+              {description = "run firefox", group = "programs"}),
+    awful.key({ super_key, alt_key }, "s", function () awful.spawn("spacefm") end,
+              {description = "run spacefm", group = "programs"}),
+
+    --}}}
+
+    --{{{ system
+    awful.key({ super_key, "Shift" }, "Page_Down", function () awful.spawn("oblogout") end,
+    {description = "run oblogout", group = "system"}),
+    awful.key({ super_key, "Shift" }, "s", function () awful.spawn(suspend_command) end,
+    {description = "suspend the system", group = "system"}
+    ),
+    awful.key({ super_key, "Shift" }, "l", function () awful.spawn(lockscreen_command) end,
+    {description = "lock screen", group = "system"}),
+    --}}}
+
+    -- {{{ tag group
+    awful.key({ super_key,           }, "Left",   awful.tag.viewprev,
+              {description = "view previous", group = "tag"}),
+    awful.key({ super_key,           }, "Right",  awful.tag.viewnext,
+              {description = "view next", group = "tag"}),
+    awful.key({ super_key,           }, "Tab", awful.tag.history.restore,
+              {description = "go back", group = "tag"})
     -- }}}
 )
 --}}}
@@ -314,7 +313,7 @@ for i = 1, 9 do
                            tag:view_only()
                         end
                   end,
-                  {description = "view tag #"..i, group = "tag"}),
+                  {description = "view tag "..tag_names[i], group = "tag"}),
         -- Toggle tag display.
         awful.key({ super_key, "Control" }, "#" .. i + 9,
                   function ()
@@ -335,7 +334,7 @@ for i = 1, 9 do
                           end
                      end
                   end,
-                  {description = "move focused client to tag #"..i, group = "tag"}),
+                  {description = "move focused client to tag "..tag_names[i], group = "tag"}),
         -- Toggle tag on focused client.
         awful.key({ super_key, "Control", "Shift" }, "#" .. i + 9,
                   function ()
@@ -346,7 +345,7 @@ for i = 1, 9 do
                           end
                       end
                   end,
-                  {description = "toggle focused client on tag #" .. i, group = "tag"})
+                  {description = "toggle focused client on tag "..tag_names[i], group = "tag"})
     )
 end
 --}}}

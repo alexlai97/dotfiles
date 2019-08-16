@@ -177,26 +177,26 @@ schemes:
 
 colors: 
   primary:
-    background: '0x221e1c'
-    foreground: '0xc7c6c6'
+    background: '0x162119'
+    foreground: '0xc4c7c5'
   normal:
-    black:   '0x221e1c'
-    red:     '0xab9890'
-    green:   '0xaa7e6a'
-    yellow:  '0xaa6237'
-    blue:    '0xaa7250'
-    magenta: '0xb08c47'
-    cyan:    '0x6c7ea2'
-    white:   '0xc7c6c6'
+    black:   '0x162119'
+    red:     '0x72aa80'
+    green:   '0x5ba4a6'
+    yellow:  '0x75aec6'
+    blue:    '0x5a9bc5'
+    magenta: '0xa6bac7'
+    cyan:    '0x4e83ac'
+    white:   '0xc4c7c5'
   bright:
-    black:   '0x595654'
-    red:     '0xab9890'
-    green:   '0xaa7e6a'
-    yellow:  '0xaa6237'
-    blue:    '0xaa7250'
-    magenta: '0xb08c47'
-    cyan:    '0x6c7ea2'
-    white:   '0xc7c6c6'
+    black:   '0x505852'
+    red:     '0x72aa80'
+    green:   '0x5ba4a6'
+    yellow:  '0x75aec6'
+    blue:    '0x5a9bc5'
+    magenta: '0xa6bac7'
+    cyan:    '0x4e83ac'
+    white:   '0xc4c7c5'
 
 #{{{ Visual Bell
 #
@@ -229,7 +229,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1.0
+background_opacity: 0.8
 #}}}
 
 #{{{ Selection
