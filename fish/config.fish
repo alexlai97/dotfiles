@@ -19,3 +19,7 @@ export SUCKLESS_REPO="$home_path/myrepos/suckless_stuff"
 export PLAYGROUND="$home_path/myrepos/Playground"
 
 bind -M insert \cf forward-char
+
+if test "$USER" = "root"
+    set -xg TERM xterm-256color
+end

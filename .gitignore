@@ -3,6 +3,11 @@ fcitx/clipboard/*
 fcitx/dbus/*
 fcitx/log/*
 mutt/
+mpd/log
+mpd/pid
+mpd/playlists/
+mpd/database
 
 *.log
 *.dat
+*history*

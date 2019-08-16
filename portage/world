@@ -74,7 +74,6 @@ media-video/ffmpeg
 media-video/mpv
 net-analyzer/nmap
 net-dns/bind-tools
-net-firewall/ufw
 net-fs/davfs2
 net-im/signal-desktop-bin
 net-irc/hexchat
