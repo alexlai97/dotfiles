@@ -1,28 +1,28 @@
 {
-    "wallpaper": "/home/alex/.config/wpg/wallpapers/wafu-bedroom.jpg",
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/Library_Night.jpg",
     "alpha": "100",
 
     "special": {
-        "background": "#2b131f",
-        "foreground": "#fed0d0",
-        "cursor": "#fed0d0"
+        "background": "#221e1c",
+        "foreground": "#c7c6c6",
+        "cursor": "#c7c6c6"
     },
     "colors": {
-        "color0": "#2b131f",
-        "color1": "#a36960",
-        "color2": "#ca8961",
-        "color3": "#f6d05d",
-        "color4": "#6b74a9",
-        "color5": "#be8e83",
-        "color6": "#e49a5f",
-        "color7": "#f9c9ab",
-        "color8": "#7f3e61",
-        "color9": "#e67a6d",
-        "color10": "#feaf67",
-        "color11": "#fefe63",
-        "color12": "#7887ec",
-        "color13": "#feaa93",
-        "color14": "#fec967",
-        "color15": "#fed0d0"
+        "color0": "#221e1c",
+        "color1": "#ab9890",
+        "color2": "#aa7e6a",
+        "color3": "#aa6237",
+        "color4": "#aa7250",
+        "color5": "#b08c47",
+        "color6": "#6c7ea2",
+        "color7": "#c7c6c6",
+        "color8": "#595654",
+        "color9": "#ab9890",
+        "color10": "#aa7e6a",
+        "color11": "#aa6237",
+        "color12": "#aa7250",
+        "color13": "#b08c47",
+        "color14": "#6c7ea2",
+        "color15": "#c7c6c6"
     }
 }
