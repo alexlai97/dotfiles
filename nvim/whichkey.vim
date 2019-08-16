@@ -136,15 +136,15 @@ let g:which_key_map.t = {
   \ }
 "-}}}
 
-"{{{- urlview
-nnoremap <leader>url :term urlview % <CR> i
-let g:which_key_map.u = {
-  \ 'name' : '+urlview',
-  \ 'r' : 'urlview',
-  \ }
-let g:which_key_map.u.r = {
-  \ 'name' : '+urlview',
-  \ 'l' : 'urlview',
-  \ }
+"{{{- urlview NOT USED
+" nnoremap <leader>url :term urlview % <CR> i
+" let g:which_key_map.u = {
+"   \ 'name' : '+urlview',
+"   \ 'r' : 'urlview',
+"   \ }
+" let g:which_key_map.u.r = {
+"   \ 'name' : '+urlview',
+"   \ 'l' : 'urlview',
+"   \ }
 "-}}}
 
