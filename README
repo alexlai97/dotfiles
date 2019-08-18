@@ -1,4 +1,7 @@
 # dotfiles
 
-# TODO
-install script
+## Installing
+```shell
+$ # install stow first
+$ install.sh # read it for more details
+```

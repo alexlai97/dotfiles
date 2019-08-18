@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/alex/myrepos/rusts/zola_site/test_site/themes/book/content/chapter1'
 let g:netrw_dirhist_2='/home/alex/myrepos/rusts/zola_site/test_site/themes/book/content'
 let g:netrw_dirhist_3='/home/alex/myrepos/rusts/zola_site/test_site/themes/book/content/chapter1'
@@ -7,3 +7,5 @@ let g:netrw_dirhist_4='/home/alex/myrepos/rusts/zola_site/test_site/themes/book/
 let g:netrw_dirhist_5='/home/alex/myrepos/dotfiles/sxhkd'
 let g:netrw_dirhist_6='/home/alex/myrepos/dotfiles/awesome'
 let g:netrw_dirhist_7='/home/alex/myrepos/dotfiles/.ghc'
+let g:netrw_dirhist_8='/home/alex/myrepos/dotfiles/.git'
+let g:netrw_dirhist_9='/home/alex/myrepos/dotfiles/fcitx'
