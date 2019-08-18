@@ -37,5 +37,6 @@ stow -v -d . -t ~/ wpg
 stow -v -d . -t ~/ zathura
 stow -v -d . -t ~/ zim
 stow -v -d . -t ~/ zsh
+stow -v -d . -t ~/ x
 
 sudo stow -v -d . -t / portage

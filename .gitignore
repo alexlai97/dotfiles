@@ -8,4 +8,6 @@ mutt/
 *.dat
 *history*
 
-.vim/.netrwhist
+.netrwhist
+
+*-errors
