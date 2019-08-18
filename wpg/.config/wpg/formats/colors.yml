@@ -1,0 +1,24 @@
+wallpaper: "/home/alex/.config/wpg/wallpapers/Watercolor_Sunset_Clouds.png"
+
+special:
+    background: "#231809"
+    foreground: "#c8c5c1"
+    cursor: "#c8c5c1"
+
+colors:
+    color0: "#231809"
+    color1: "#b17b30"
+    color2: "#c6aa47"
+    color3: "#ab9d53"
+    color4: "#c5bc6f"
+    color5: "#91ab67"
+    color6: "#67a97d"
+    color7: "#c8c5c1"
+    color8: "#5a5146"
+    color9: "#b17b30"
+    color10: "#c6aa47"
+    color11: "#ab9d53"
+    color12: "#c5bc6f"
+    color13: "#91ab67"
+    color14: "#67a97d"
+    color15: "#c8c5c1"

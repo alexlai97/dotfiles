@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/alex/.config/wpg/wallpapers/Watercolor_Sunset_Clouds.png"
+let background = "#231809"
+let foreground = "#c8c5c1"
+let cursor     = "#c8c5c1"
+
+" Colors
+let color0  = "#231809"
+let color1  = "#b17b30"
+let color2  = "#c6aa47"
+let color3  = "#ab9d53"
+let color4  = "#c5bc6f"
+let color5  = "#91ab67"
+let color6  = "#67a97d"
+let color7  = "#c8c5c1"
+let color8  = "#5a5146"
+let color9  = "#b17b30"
+let color10 = "#c6aa47"
+let color11 = "#ab9d53"
+let color12 = "#c5bc6f"
+let color13 = "#91ab67"
+let color14 = "#67a97d"
+let color15 = "#c8c5c1"

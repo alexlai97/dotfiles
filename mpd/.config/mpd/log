@@ -1,0 +1,2906 @@
+Jan 28 18:09 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 28 18:09 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 28 18:09 : client: [0] opened from [::1]:51360
+Jan 28 18:09 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 18:09 : client: [0] closed
+Jan 28 18:09 : client: [1] opened from [::1]:51362
+Jan 28 18:09 : client: [2] opened from [::1]:51364
+Jan 28 18:09 : client: [2] closed
+Jan 28 18:09 : client: [3] opened from [::1]:51366
+Jan 28 18:09 : exception: Not playing
+Jan 28 18:09 : client: [3] closed
+Jan 28 18:09 : client: [4] opened from [::1]:51368
+Jan 28 18:09 : exception: Not playing
+Jan 28 18:09 : client: [4] closed
+Jan 28 18:09 : client: [5] opened from [::1]:51370
+Jan 28 18:09 : client: [5] closed
+Jan 28 18:10 : client: [1] closed
+Jan 28 18:11 : client: [6] opened from [::1]:51372
+Jan 28 18:12 : client: [6] closed
+Jan 28 18:12 : client: [7] opened from [::1]:51374
+Jan 28 18:13 : client: [8] opened from [::1]:51376
+Jan 28 18:13 : client: [8] closed
+Jan 28 18:13 : client: [9] opened from [::1]:51378
+Jan 28 18:13 : client: [9] closed
+Jan 28 18:13 : client: [10] opened from [::1]:51380
+Jan 28 18:13 : client: [10] closed
+Jan 28 18:13 : client: [11] opened from [::1]:51382
+Jan 28 18:13 : client: [11] closed
+Jan 28 18:13 : client: [12] opened from [::1]:51384
+Jan 28 18:13 : exception: Not playing
+Jan 28 18:13 : client: [12] closed
+Jan 28 18:13 : client: [13] opened from [::1]:51386
+Jan 28 18:13 : exception: Not playing
+Jan 28 18:13 : client: [13] closed
+Jan 28 18:13 : client: [14] opened from [::1]:51388
+Jan 28 18:13 : exception: Not playing
+Jan 28 18:13 : client: [14] closed
+Jan 28 18:13 : client: [15] opened from [::1]:51390
+Jan 28 18:13 : client: [15] closed
+Jan 28 18:13 : client: [7] closed
+Jan 28 18:14 : client: [16] opened from [::1]:51392
+Jan 28 18:15 : client: [17] opened from [::1]:51394
+Jan 28 18:15 : client: [16] closed
+Jan 28 18:15 : client: [18] opened from [::1]:51396
+Jan 28 18:15 : client: [18] closed
+Jan 28 18:15 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 18:15 : client: [19] opened from [::1]:51398
+Jan 28 18:15 : client: [17] closed
+Jan 28 18:15 : client: [20] opened from [::1]:51400
+Jan 28 18:15 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3"
+Jan 28 18:15 : client: [19] closed
+Jan 28 18:15 : client: [20] closed
+Jan 28 18:15 : client: [21] opened from [::1]:51402
+Jan 28 18:15 : client: [21] closed
+Jan 28 18:15 : client: [22] opened from [::1]:51404
+Jan 28 18:15 : client: [23] opened from [::1]:51406
+Jan 28 18:15 : client: [23] closed
+Jan 28 18:15 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 18:15 : client: [22] closed
+Jan 28 18:15 : client: [24] opened from [::1]:51408
+Jan 28 18:15 : client: [24] closed
+Jan 28 18:15 : client: [25] opened from [::1]:51410
+Jan 28 18:15 : client: [26] opened from [::1]:51412
+Jan 28 18:15 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3"
+Jan 28 18:15 : client: [25] closed
+Jan 28 18:15 : client: [26] closed
+Jan 28 18:15 : client: [27] opened from [::1]:51414
+Jan 28 18:15 : client: [27] closed
+Jan 28 18:15 : client: [28] opened from [::1]:51416
+Jan 28 21:05 : client: [29] opened from [::1]:51798
+Jan 28 21:05 : client: [29] closed
+Jan 28 21:22 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 28 21:22 : client: [0] opened from [::1]:53246
+Jan 28 21:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 28 21:23 : client: [0] opened from [::1]:57848
+Jan 28 21:23 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 21:23 : client: [0] closed
+Jan 28 21:23 : client: [1] opened from [::1]:57850
+Jan 28 21:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 28 21:23 : client: [0] opened from [::1]:36676
+Jan 28 21:23 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 21:23 : client: [0] closed
+Jan 28 21:23 : client: [1] opened from [::1]:36678
+Jan 28 21:23 : client: [2] opened from [::1]:36680
+Jan 28 21:23 : client: [2] closed
+Jan 28 21:24 : client: [3] opened from [::1]:36682
+Jan 28 21:24 : client: [3] closed
+Jan 28 21:24 : client: [4] opened from [::1]:36684
+Jan 28 21:24 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 21:24 : client: [1] closed
+Jan 28 21:24 : client: [5] opened from [::1]:36686
+Jan 28 21:24 : client: [5] closed
+Jan 28 21:24 : client: [6] opened from [::1]:36688
+Jan 28 21:24 : client: [4] closed
+Jan 28 21:25 : client: [7] opened from [::1]:36690
+Jan 28 21:25 : client: [6] closed
+Jan 28 21:25 : client: [7] closed
+Jan 28 21:25 : client: [8] opened from [::1]:36692
+Jan 28 21:25 : client: [8] closed
+Jan 28 21:25 : client: [9] opened from [::1]:36694
+Jan 28 21:25 : client: [10] opened from [::1]:36696
+Jan 28 21:25 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3"
+Jan 28 21:25 : client: [9] closed
+Jan 28 21:25 : client: [10] closed
+Jan 28 21:25 : client: [11] opened from [::1]:36698
+Jan 28 21:25 : client: [11] closed
+Jan 28 21:25 : client: [12] opened from [::1]:36700
+Jan 28 21:25 : client: [13] opened from [::1]:36702
+Jan 28 21:25 : exception: Not playing
+Jan 28 21:25 : client: [13] closed
+Jan 28 21:25 : client: [14] opened from [::1]:36704
+Jan 28 21:25 : client: [14] closed
+Jan 28 21:25 : client: [12] closed
+Jan 28 21:25 : client: [15] opened from [::1]:36706
+Jan 28 21:25 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 21:25 : client: [15] closed
+Jan 28 21:25 : client: [16] opened from [::1]:36708
+Jan 28 21:25 : client: [17] opened from [::1]:36710
+Jan 28 21:25 : client: [18] opened from [::1]:36712
+Jan 28 21:25 : client: [16] closed
+Jan 28 21:25 : client: [18] closed
+Jan 28 21:25 : client: [19] opened from [::1]:36714
+Jan 28 21:25 : client: [20] opened from [::1]:36716
+Jan 28 21:25 : client: [19] closed
+Jan 28 21:25 : client: [20] closed
+Jan 28 21:25 : client: [21] opened from [::1]:36718
+Jan 28 21:26 : client: [21] closed
+Jan 28 21:26 : client: [22] opened from [::1]:36730
+Jan 28 21:26 : client: [22] closed
+Jan 28 21:26 : client: [23] opened from [::1]:36732
+Jan 28 21:26 : client: [24] opened from [::1]:36734
+Jan 28 21:26 : client: [23] closed
+Jan 28 21:26 : client: [24] closed
+Jan 28 21:26 : client: [25] opened from [::1]:36736
+Jan 28 21:26 : client: [26] opened from [::1]:36738
+Jan 28 21:26 : client: [25] closed
+Jan 28 21:26 : client: [26] closed
+Jan 28 21:26 : client: [27] opened from [::1]:36740
+Jan 28 21:26 : client: [27] closed
+Jan 28 21:26 : client: [28] opened from [::1]:36742
+Jan 28 21:26 : client: [28] closed
+Jan 28 21:26 : client: [29] opened from [::1]:36744
+Jan 28 21:26 : client: [30] opened from [::1]:36746
+Jan 28 21:26 : client: [29] closed
+Jan 28 21:26 : client: [30] closed
+Jan 28 21:26 : client: [31] opened from [::1]:36748
+Jan 28 21:26 : client: [31] closed
+Jan 28 21:26 : client: [32] opened from [::1]:36750
+Jan 28 21:26 : client: [32] closed
+Jan 28 21:26 : client: [33] opened from [::1]:36752
+Jan 28 21:26 : client: [17] closed
+Jan 28 21:26 : client: [34] opened from [::1]:36754
+Jan 28 21:26 : client: [34] closed
+Jan 28 21:26 : client: [35] opened from [::1]:36756
+Jan 28 21:26 : client: [35] closed
+Jan 28 21:26 : client: [36] opened from [::1]:36758
+Jan 28 21:26 : client: [36] closed
+Jan 28 21:26 : client: [37] opened from [::1]:36760
+Jan 28 21:26 : client: [37] closed
+Jan 28 21:26 : client: [38] opened from [::1]:36762
+Jan 28 21:26 : client: [38] closed
+Jan 28 21:27 : client: [39] opened from [::1]:36764
+Jan 28 21:27 : client: [33] closed
+Jan 28 21:27 : client: [40] opened from [::1]:36766
+Jan 28 21:27 : client: [40] closed
+Jan 28 21:27 : client: [41] opened from [::1]:36768
+Jan 28 21:27 : client: [42] opened from [::1]:36770
+Jan 28 21:27 : client: [41] closed
+Jan 28 21:27 : client: [42] closed
+Jan 28 21:27 : client: [43] opened from [::1]:36772
+Jan 28 21:27 : client: [44] opened from [::1]:36774
+Jan 28 21:27 : client: [43] closed
+Jan 28 21:27 : client: [44] closed
+Jan 28 21:27 : client: [45] opened from [::1]:36776
+Jan 28 21:27 : client: [45] closed
+Jan 28 21:27 : client: [46] opened from [::1]:36778
+Jan 28 21:27 : client: [46] closed
+Jan 28 21:27 : client: [47] opened from [::1]:36780
+Jan 28 21:27 : client: [47] closed
+Jan 28 21:27 : client: [48] opened from [::1]:36782
+Jan 28 21:27 : client: [48] closed
+Jan 28 21:27 : client: [49] opened from [::1]:36784
+Jan 28 21:27 : client: [49] closed
+Jan 28 21:27 : client: [50] opened from [::1]:36786
+Jan 28 21:27 : client: [50] closed
+Jan 28 21:27 : client: [51] opened from [::1]:36788
+Jan 28 21:27 : client: [51] closed
+Jan 28 21:27 : client: [52] opened from [::1]:36790
+Jan 28 21:27 : client: [52] closed
+Jan 28 21:27 : client: [53] opened from [::1]:36792
+Jan 28 21:27 : client: [39] closed
+Jan 28 21:28 : client: [54] opened from [::1]:36794
+Jan 28 21:28 : client: [55] opened from [::1]:36796
+Jan 28 21:28 : client: [55] closed
+Jan 28 21:28 : client: [53] closed
+Jan 28 21:28 : client: [56] opened from [::1]:36798
+Jan 28 21:28 : client: [56] closed
+Jan 28 21:28 : client: [57] opened from [::1]:36800
+Jan 28 21:28 : client: [57] closed
+Jan 28 21:28 : client: [58] opened from [::1]:36802
+Jan 28 21:28 : client: [58] closed
+Jan 28 21:28 : client: [59] opened from [::1]:36804
+Jan 28 21:28 : client: [59] closed
+Jan 28 21:28 : client: [60] opened from [::1]:36806
+Jan 28 21:28 : client: [60] closed
+Jan 28 21:28 : client: [61] opened from [::1]:36808
+Jan 28 21:28 : client: [61] closed
+Jan 28 21:28 : client: [62] opened from [::1]:36810
+Jan 28 21:28 : client: [62] closed
+Jan 28 21:28 : client: [63] opened from [::1]:36812
+Jan 28 21:28 : client: [63] closed
+Jan 28 21:28 : client: [64] opened from [::1]:36814
+Jan 28 21:28 : client: [64] closed
+Jan 28 21:28 : client: [65] opened from [::1]:36816
+Jan 28 21:28 : client: [65] closed
+Jan 28 21:28 : client: [66] opened from [::1]:36818
+Jan 28 21:28 : client: [66] closed
+Jan 28 21:28 : client: [67] opened from [::1]:36820
+Jan 28 21:28 : client: [68] opened from [::1]:36822
+Jan 28 21:28 : client: [67] closed
+Jan 28 21:28 : client: [68] closed
+Jan 28 21:28 : client: [69] opened from [::1]:36824
+Jan 28 21:28 : client: [69] closed
+Jan 28 21:28 : client: [70] opened from [::1]:36826
+Jan 28 21:28 : client: [70] closed
+Jan 28 21:28 : client: [71] opened from [::1]:36828
+Jan 28 21:28 : client: [71] closed
+Jan 28 21:28 : client: [72] opened from [::1]:36830
+Jan 28 21:28 : client: [72] closed
+Jan 28 21:28 : client: [73] opened from [::1]:36832
+Jan 28 21:28 : client: [73] closed
+Jan 28 21:28 : client: [74] opened from [::1]:36834
+Jan 28 21:28 : client: [74] closed
+Jan 28 21:28 : client: [75] opened from [::1]:36836
+Jan 28 21:28 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 28 21:28 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 21:28 : client: [76] opened from [::1]:36838
+Jan 28 21:28 : client: [75] closed
+Jan 28 21:28 : client: [76] closed
+Jan 28 21:28 : client: [77] opened from [::1]:36840
+Jan 28 21:28 : client: [77] closed
+Jan 28 21:28 : client: [78] opened from [::1]:36842
+Jan 28 21:28 : client: [78] closed
+Jan 28 21:28 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 21:28 : client: [79] opened from [::1]:36844
+Jan 28 21:28 : client: [79] closed
+Jan 28 21:28 : client: [80] opened from [::1]:36846
+Jan 28 21:28 : client: [80] closed
+Jan 28 21:28 : client: [81] opened from [::1]:36848
+Jan 28 21:28 : client: [81] closed
+Jan 28 21:28 : client: [82] opened from [::1]:36850
+Jan 28 21:28 : client: [82] closed
+Jan 28 21:28 : client: [83] opened from [::1]:36852
+Jan 28 21:28 : client: [83] closed
+Jan 28 21:28 : client: [84] opened from [::1]:36854
+Jan 28 21:28 : client: [54] closed
+Jan 28 21:28 : client: [85] opened from [::1]:36856
+Jan 28 21:28 : client: [84] closed
+Jan 28 21:28 : client: [85] closed
+Jan 28 21:28 : client: [86] opened from [::1]:36858
+Jan 28 21:28 : client: [86] closed
+Jan 28 21:28 : client: [87] opened from [::1]:36860
+Jan 28 21:28 : client: [88] opened from [::1]:36862
+Jan 28 21:28 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 21:28 : client: [87] closed
+Jan 28 21:28 : client: [88] closed
+Jan 28 21:28 : client: [89] opened from [::1]:36864
+Jan 28 21:28 : client: [89] closed
+Jan 28 21:28 : client: [90] opened from [::1]:36866
+Jan 28 21:28 : client: [91] opened from [::1]:36868
+Jan 28 21:28 : client: [90] closed
+Jan 28 21:28 : client: [91] closed
+Jan 28 21:28 : client: [92] opened from [::1]:36870
+Jan 28 21:28 : client: [92] closed
+Jan 28 21:28 : client: [93] opened from [::1]:36872
+Jan 28 21:28 : client: [94] opened from [::1]:36874
+Jan 28 21:28 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 21:28 : client: [93] closed
+Jan 28 21:28 : client: [94] closed
+Jan 28 21:28 : client: [95] opened from [::1]:36876
+Jan 28 21:28 : client: [95] closed
+Jan 28 21:28 : client: [96] opened from [::1]:36878
+Jan 28 21:28 : client: [97] opened from [::1]:36880
+Jan 28 21:28 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/02. faraway country - 鯛の小骨.mp3"
+Jan 28 21:28 : client: [96] closed
+Jan 28 21:28 : client: [97] closed
+Jan 28 21:28 : client: [98] opened from [::1]:36882
+Jan 28 21:28 : client: [98] closed
+Jan 28 21:28 : client: [99] opened from [::1]:36884
+Jan 28 21:28 : client: [100] opened from [::1]:36886
+Jan 28 21:28 : client: [100] closed
+Jan 28 21:28 : client: [99] closed
+Jan 28 21:28 : client: [101] opened from [::1]:36888
+Jan 28 21:28 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 21:28 : client: [101] closed
+Jan 28 21:28 : client: [102] opened from [::1]:36890
+Jan 28 21:33 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/02. faraway country - 鯛の小骨.mp3"
+Jan 28 21:33 : client: [102] closed
+Jan 28 21:33 : client: [103] opened from [::1]:36896
+Jan 28 21:33 : client: [103] closed
+Jan 28 21:33 : client: [104] opened from [::1]:36898
+Jan 28 21:37 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/04 [鯛の小骨] かんぱんバカンス.mp3"
+Jan 28 21:37 : client: [104] closed
+Jan 28 21:37 : client: [105] opened from [::1]:36912
+Jan 28 21:37 : client: [105] closed
+Jan 28 21:37 : client: [106] opened from [::1]:36914
+Jan 28 21:58 : client: [107] opened from [::1]:36936
+Jan 28 21:58 : client: [107] closed
+Jan 28 21:58 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 21:58 : client: [106] closed
+Jan 28 21:58 : client: [108] opened from [::1]:36938
+Jan 28 21:58 : client: [108] closed
+Jan 28 21:58 : client: [109] opened from [::1]:36940
+Jan 28 22:03 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3"
+Jan 28 22:03 : client: [109] closed
+Jan 28 22:03 : client: [110] opened from [::1]:36984
+Jan 28 22:03 : client: [110] closed
+Jan 28 22:03 : client: [111] opened from [::1]:36986
+Jan 28 22:07 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/02 [ぴーえー] unknown.your smile.mp3"
+Jan 28 22:07 : client: [111] closed
+Jan 28 22:07 : client: [112] opened from [::1]:37072
+Jan 28 22:07 : client: [112] closed
+Jan 28 22:07 : client: [113] opened from [::1]:37074
+Jan 28 22:12 : player: played "Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3"
+Jan 28 22:12 : client: [113] closed
+Jan 28 22:12 : client: [114] opened from [::1]:37102
+Jan 28 22:12 : client: [114] closed
+Jan 28 22:12 : client: [115] opened from [::1]:37104
+Jan 28 22:16 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3"
+Jan 28 22:16 : client: [115] closed
+Jan 28 22:16 : client: [116] opened from [::1]:37114
+Jan 28 22:16 : client: [116] closed
+Jan 28 22:16 : client: [117] opened from [::1]:37116
+Jan 28 22:21 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/02 [ぴーえー] unknown.your smile.mp3"
+Jan 28 22:21 : client: [117] closed
+Jan 28 22:21 : client: [118] opened from [::1]:37160
+Jan 28 22:21 : client: [118] closed
+Jan 28 22:21 : client: [119] opened from [::1]:37162
+Jan 28 22:25 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Jan 28 22:25 : client: [119] closed
+Jan 28 22:25 : client: [120] opened from [::1]:37194
+Jan 28 22:25 : client: [120] closed
+Jan 28 22:25 : client: [121] opened from [::1]:37196
+Jan 28 22:29 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/05 [ひろさわけんぢ] Romance for you.mp3"
+Jan 28 22:29 : client: [121] closed
+Jan 28 22:29 : client: [122] opened from [::1]:37280
+Jan 28 22:29 : client: [122] closed
+Jan 28 22:29 : client: [123] opened from [::1]:37282
+Jan 28 22:33 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/04. Perfect Day Dream - ししまい3号.mp3"
+Jan 28 22:33 : client: [123] closed
+Jan 28 22:33 : client: [124] opened from [::1]:37284
+Jan 28 22:33 : client: [124] closed
+Jan 28 22:33 : client: [125] opened from [::1]:37286
+Jan 28 22:37 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/03 [ししまい3号] 濡れた素肌に.mp3"
+Jan 28 22:37 : client: [125] closed
+Jan 28 22:37 : client: [126] opened from [::1]:37302
+Jan 28 22:37 : client: [126] closed
+Jan 28 22:37 : client: [127] opened from [::1]:37304
+Jan 28 22:41 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/06. DDBY - 岎嵎揰偱楒偵棊偪偰.mp3"
+Jan 28 22:41 : client: [127] closed
+Jan 28 22:41 : client: [128] opened from [::1]:37346
+Jan 28 22:41 : client: [128] closed
+Jan 28 22:41 : client: [129] opened from [::1]:37348
+Jan 28 22:45 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Jan 28 22:45 : client: [129] closed
+Jan 28 22:45 : client: [130] opened from [::1]:37400
+Jan 28 22:45 : client: [130] closed
+Jan 28 22:45 : client: [131] opened from [::1]:37402
+Jan 28 22:49 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/09. Below Between Beyond - Ludo.mp3"
+Jan 28 22:49 : client: [131] closed
+Jan 28 22:49 : client: [132] opened from [::1]:37488
+Jan 28 22:49 : client: [132] closed
+Jan 28 22:49 : client: [133] opened from [::1]:37490
+Jan 28 22:53 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Jan 28 22:53 : client: [133] closed
+Jan 28 22:53 : client: [134] opened from [::1]:37546
+Jan 28 22:53 : client: [134] closed
+Jan 28 22:53 : client: [135] opened from [::1]:37548
+Jan 28 22:58 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/11 [F] Blue Wings.mp3"
+Jan 28 22:58 : client: [135] closed
+Jan 28 22:58 : client: [136] opened from [::1]:37564
+Jan 28 22:58 : client: [136] closed
+Jan 28 22:58 : client: [137] opened from [::1]:37566
+Jan 28 23:01 : player: played "Anime_songs/Cafe de Touhou 7/06. Mirage.mp3"
+Jan 28 23:01 : client: [137] closed
+Jan 28 23:01 : client: [138] opened from [::1]:37590
+Jan 28 23:01 : client: [138] closed
+Jan 28 23:01 : client: [139] opened from [::1]:37592
+Jan 28 23:03 : client: [140] opened from [::1]:37594
+Jan 28 23:03 : client: [139] closed
+Jan 28 23:03 : client: [140] closed
+Jan 28 23:03 : client: [141] opened from [::1]:37596
+Jan 28 23:03 : client: [141] closed
+Jan 28 23:03 : client: [142] opened from [::1]:37598
+Jan 28 23:03 : client: [143] opened from [::1]:37600
+Jan 28 23:03 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 23:03 : client: [142] closed
+Jan 28 23:03 : client: [143] closed
+Jan 28 23:03 : client: [144] opened from [::1]:37602
+Jan 28 23:03 : client: [144] closed
+Jan 28 23:03 : client: [145] opened from [::1]:37604
+Jan 28 23:03 : client: [146] opened from [::1]:37606
+Jan 28 23:03 : client: [145] closed
+Jan 28 23:03 : client: [146] closed
+Jan 28 23:03 : client: [147] opened from [::1]:37608
+Jan 28 23:03 : client: [147] closed
+Jan 28 23:03 : client: [148] opened from [::1]:37610
+Jan 28 23:03 : client: [149] opened from [::1]:37612
+Jan 28 23:03 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 23:03 : client: [148] closed
+Jan 28 23:03 : client: [149] closed
+Jan 28 23:03 : client: [150] opened from [::1]:37614
+Jan 28 23:03 : client: [150] closed
+Jan 28 23:03 : client: [151] opened from [::1]:37616
+Jan 28 23:05 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/03. DDBY - 儕僶乕僒僀僪僇僼僃.mp3"
+Jan 28 23:05 : client: [151] closed
+Jan 28 23:05 : client: [152] opened from [::1]:37640
+Jan 28 23:05 : client: [152] closed
+Jan 28 23:05 : client: [153] opened from [::1]:37642
+Jan 28 23:09 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/04. DDBY - 塉偺奨.mp3"
+Jan 28 23:09 : client: [153] closed
+Jan 28 23:09 : client: [154] opened from [::1]:37660
+Jan 28 23:09 : client: [154] closed
+Jan 28 23:09 : client: [155] opened from [::1]:37662
+Jan 28 23:13 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 28 23:13 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/09 [NOAH] SEAMOON.mp3"
+Jan 28 23:13 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 23:13 : client: [155] closed
+Jan 28 23:13 : client: [156] opened from [::1]:37672
+Jan 28 23:13 : client: [156] closed
+Jan 28 23:13 : client: [157] opened from [::1]:37674
+Jan 28 23:15 : player: played "Anime_songs/Violet Evergarden/Disc 2/23 Believe in... (Short Size).m4a"
+Jan 28 23:15 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 28 23:15 : client: [157] closed
+Jan 28 23:15 : client: [158] opened from [::1]:37726
+Jan 28 23:15 : client: [158] closed
+Jan 28 23:15 : client: [159] opened from [::1]:37728
+Jan 28 23:18 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/01. ラテアート幻想郷.mp3"
+Jan 28 23:18 : client: [159] closed
+Jan 28 23:18 : client: [160] opened from [::1]:37748
+Jan 28 23:18 : client: [160] closed
+Jan 28 23:18 : client: [161] opened from [::1]:37750
+Jan 28 23:22 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/02. ようこそ喫茶白玉楼へ.mp3"
+Jan 28 23:22 : client: [161] closed
+Jan 28 23:22 : client: [162] opened from [::1]:37766
+Jan 28 23:22 : client: [162] closed
+Jan 28 23:22 : client: [163] opened from [::1]:37768
+Jan 28 23:27 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/03. ねこまたアキアート.mp3"
+Jan 28 23:27 : client: [163] closed
+Jan 28 23:27 : client: [164] opened from [::1]:37810
+Jan 28 23:27 : client: [164] closed
+Jan 28 23:27 : client: [165] opened from [::1]:37812
+Jan 28 23:32 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/04. 昼下がりのビタースウィート.mp3"
+Jan 28 23:32 : client: [165] closed
+Jan 28 23:32 : client: [166] opened from [::1]:37828
+Jan 28 23:32 : client: [166] closed
+Jan 28 23:32 : client: [167] opened from [::1]:37830
+Jan 28 23:36 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jan 28 23:36 : client: [167] closed
+Jan 28 23:36 : client: [168] opened from [::1]:37940
+Jan 28 23:36 : client: [168] closed
+Jan 28 23:36 : client: [169] opened from [::1]:37942
+Jan 28 23:40 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/06. あしたも抹茶色.mp3"
+Jan 28 23:40 : client: [169] closed
+Jan 28 23:40 : client: [170] opened from [::1]:38004
+Jan 28 23:40 : client: [170] closed
+Jan 28 23:40 : client: [171] opened from [::1]:38006
+Jan 28 23:44 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/07. 終わらないカフェテラス.mp3"
+Jan 28 23:44 : client: [171] closed
+Jan 28 23:44 : client: [172] opened from [::1]:38030
+Jan 28 23:44 : client: [172] closed
+Jan 28 23:44 : client: [173] opened from [::1]:38032
+Jan 28 23:49 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/02. faraway country - 鯛の小骨.mp3"
+Jan 28 23:49 : client: [173] closed
+Jan 28 23:49 : client: [174] opened from [::1]:38114
+Jan 28 23:49 : client: [174] closed
+Jan 28 23:49 : client: [175] opened from [::1]:38116
+Jan 28 23:53 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/04 [鯛の小骨] かんぱんバカンス.mp3"
+Jan 28 23:53 : client: [175] closed
+Jan 28 23:53 : client: [176] opened from [::1]:38124
+Jan 28 23:53 : client: [176] closed
+Jan 28 23:53 : client: [177] opened from [::1]:38126
+Jan 28 23:59 : client: [177] closed
+Jan 29 00:00 : client: [178] opened from [::1]:38280
+Jan 29 00:29 : client: [178] closed
+Jan 29 00:29 : client: [179] opened from [::1]:38666
+Jan 29 16:13 : client: [179] closed
+Jan 29 16:13 : client: [180] opened from [::1]:44944
+Jan 29 17:28 : client: [181] opened from [::1]:45486
+Jan 29 17:28 : client: [181] closed
+Jan 29 17:28 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 29 17:28 : client: [180] closed
+Jan 29 17:28 : client: [182] opened from [::1]:45488
+Jan 29 17:28 : client: [182] closed
+Jan 29 17:28 : client: [183] opened from [::1]:45490
+Jan 29 17:32 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3"
+Jan 29 17:32 : client: [183] closed
+Jan 29 17:32 : client: [184] opened from [::1]:45554
+Jan 29 17:32 : client: [184] closed
+Jan 29 17:32 : client: [185] opened from [::1]:45556
+ALSA lib /var/tmp/portage/media-plugins/alsa-plugins-1.1.6/work/alsa-plugins-1.1.6/pulse/pcm_pulse.c:752:(pulse_prepare) PulseAudio: Unable to create stream: Timeout
+
+Jan 29 17:36 : exception: "My ALSA Device" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Jan 29 17:36 : exception: Failed to open audio output
+Jan 29 17:36 : client: [185] closed
+Jan 29 17:37 : client: [186] opened from [::1]:45558
+Jan 29 17:37 : client: [187] opened from [::1]:45560
+Jan 29 17:37 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 29 17:37 : client: [186] closed
+Jan 29 17:37 : client: [187] closed
+Jan 29 17:37 : client: [188] opened from [::1]:45566
+ALSA lib /var/tmp/portage/media-plugins/alsa-plugins-1.1.6/work/alsa-plugins-1.1.6/pulse/pcm_pulse.c:752:(pulse_prepare) PulseAudio: Unable to create stream: Timeout
+
+Jan 29 17:39 : exception: "My ALSA Device" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Jan 29 17:39 : exception: Failed to open audio output
+Jan 29 17:39 : client: [188] closed
+Jan 29 17:40 : client: [189] opened from [::1]:45590
+Jan 29 17:40 : client: [190] opened from [::1]:45592
+Jan 29 17:40 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/02 [ぴーえー] unknown.your smile.mp3"
+Jan 29 17:40 : client: [191] opened from [::1]:45584
+Jan 29 17:40 : client: [192] opened from [::1]:45586
+Jan 29 17:41 : client: [189] closed
+Jan 29 17:41 : client: [191] closed
+Jan 29 17:41 : client: [190] closed
+Jan 29 17:41 : client: [192] closed
+Jan 29 17:42 : client: [193] opened from [::1]:45596
+Jan 29 17:42 : client: [193] closed
+Jan 29 17:47 : client: [194] opened from [::1]:45598
+Jan 29 17:55 : client: [194] closed
+Jan 29 18:25 : client: [195] opened from [::1]:45744
+Jan 29 18:25 : client: [195] closed
+Jan 29 18:38 : client: [196] opened from [::1]:45870
+Jan 29 18:39 : client: [196] closed
+Jan 29 18:40 : client: [197] opened from [::1]:45872
+Jan 29 20:29 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 29 20:29 : client: [0] opened from [::1]:49120
+Jan 30 07:33 : client: [0] closed
+Jan 30 07:33 : client: [1] opened from [::1]:51008
+Jan 30 07:40 : client: [2] opened from [::1]:51058
+Jan 30 07:40 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 30 07:40 : client: [2] closed
+Jan 30 07:40 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 30 07:40 : client: [1] closed
+Jan 30 07:40 : client: [3] opened from [::1]:51060
+Jan 30 07:40 : client: [3] closed
+Jan 30 07:40 : client: [4] opened from [::1]:51062
+Jan 30 07:45 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/02 [ぴーえー] unknown.your smile.mp3"
+Jan 30 07:45 : client: [4] closed
+Jan 30 07:45 : client: [5] opened from [::1]:51164
+Jan 30 07:45 : client: [5] closed
+Jan 30 07:45 : client: [6] opened from [::1]:51166
+Jan 30 07:50 : player: played "Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3"
+Jan 30 07:50 : client: [6] closed
+Jan 30 07:50 : client: [7] opened from [::1]:51184
+Jan 30 07:50 : client: [7] closed
+Jan 30 07:50 : client: [8] opened from [::1]:51186
+Jan 30 07:54 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3"
+Jan 30 07:54 : client: [8] closed
+Jan 30 07:54 : client: [9] opened from [::1]:51202
+Jan 30 07:54 : client: [9] closed
+Jan 30 07:54 : client: [10] opened from [::1]:51204
+Jan 30 07:59 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/02 [ぴーえー] unknown.your smile.mp3"
+Jan 30 07:59 : client: [10] closed
+Jan 30 07:59 : client: [11] opened from [::1]:51216
+Jan 30 07:59 : client: [11] closed
+Jan 30 07:59 : client: [12] opened from [::1]:51218
+Jan 30 08:03 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Jan 30 08:03 : client: [12] closed
+Jan 30 08:03 : client: [13] opened from [::1]:51234
+Jan 30 08:03 : client: [13] closed
+Jan 30 08:03 : client: [14] opened from [::1]:51236
+Jan 30 08:07 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/05 [ひろさわけんぢ] Romance for you.mp3"
+Jan 30 08:07 : client: [14] closed
+Jan 30 08:07 : client: [15] opened from [::1]:51238
+Jan 30 08:07 : client: [15] closed
+Jan 30 08:07 : client: [16] opened from [::1]:51240
+Jan 30 08:11 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/04. Perfect Day Dream - ししまい3号.mp3"
+Jan 30 08:11 : client: [16] closed
+Jan 30 08:11 : client: [17] opened from [::1]:51246
+Jan 30 08:11 : client: [17] closed
+Jan 30 08:11 : client: [18] opened from [::1]:51248
+Jan 30 08:15 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/03 [ししまい3号] 濡れた素肌に.mp3"
+Jan 30 08:15 : client: [18] closed
+Jan 30 08:15 : client: [19] opened from [::1]:51262
+Jan 30 08:15 : client: [19] closed
+Jan 30 08:15 : client: [20] opened from [::1]:51264
+Jan 30 08:18 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/06. DDBY - 岎嵎揰偱楒偵棊偪偰.mp3"
+Jan 30 08:18 : client: [20] closed
+Jan 30 08:18 : client: [21] opened from [::1]:51266
+Jan 30 08:18 : client: [21] closed
+Jan 30 08:18 : client: [22] opened from [::1]:51268
+Jan 30 08:22 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Jan 30 08:22 : client: [22] closed
+Jan 30 08:22 : client: [23] opened from [::1]:51270
+Jan 30 08:22 : client: [23] closed
+Jan 30 08:22 : client: [24] opened from [::1]:51272
+Jan 30 08:27 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/09. Below Between Beyond - Ludo.mp3"
+Jan 30 08:27 : client: [24] closed
+Jan 30 08:27 : client: [25] opened from [::1]:51290
+Jan 30 08:27 : client: [25] closed
+Jan 30 08:27 : client: [26] opened from [::1]:51292
+Jan 30 08:31 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Jan 30 08:31 : client: [26] closed
+Jan 30 08:31 : client: [27] opened from [::1]:51300
+Jan 30 08:31 : client: [27] closed
+Jan 30 08:31 : client: [28] opened from [::1]:51302
+Jan 30 08:35 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/11 [F] Blue Wings.mp3"
+Jan 30 08:35 : client: [28] closed
+Jan 30 08:35 : client: [29] opened from [::1]:51304
+Jan 30 08:35 : client: [29] closed
+Jan 30 08:35 : client: [30] opened from [::1]:51306
+Jan 30 08:39 : player: played "Anime_songs/Cafe de Touhou 7/06. Mirage.mp3"
+Jan 30 08:39 : client: [30] closed
+Jan 30 08:39 : client: [31] opened from [::1]:51326
+Jan 30 08:39 : client: [31] closed
+Jan 30 08:39 : client: [32] opened from [::1]:51328
+Jan 30 08:43 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/03. DDBY - 儕僶乕僒僀僪僇僼僃.mp3"
+Jan 30 08:43 : client: [32] closed
+Jan 30 08:43 : client: [33] opened from [::1]:51338
+Jan 30 08:43 : client: [33] closed
+Jan 30 08:43 : client: [34] opened from [::1]:51340
+Jan 30 08:47 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/04. DDBY - 塉偺奨.mp3"
+Jan 30 08:47 : client: [34] closed
+Jan 30 08:47 : client: [35] opened from [::1]:51354
+Jan 30 08:47 : client: [35] closed
+Jan 30 08:47 : client: [36] opened from [::1]:51356
+Jan 30 08:51 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 30 08:51 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/09 [NOAH] SEAMOON.mp3"
+Jan 30 08:51 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 30 08:51 : client: [36] closed
+Jan 30 08:51 : client: [37] opened from [::1]:51358
+Jan 30 08:51 : client: [37] closed
+Jan 30 08:51 : client: [38] opened from [::1]:51360
+Jan 30 08:53 : player: played "Anime_songs/Violet Evergarden/Disc 2/23 Believe in... (Short Size).m4a"
+Jan 30 08:53 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 30 08:53 : client: [38] closed
+Jan 30 08:53 : client: [39] opened from [::1]:51362
+Jan 30 08:53 : client: [39] closed
+Jan 30 08:53 : client: [40] opened from [::1]:51364
+Jan 30 08:56 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/01. ラテアート幻想郷.mp3"
+Jan 30 08:56 : client: [40] closed
+Jan 30 08:56 : client: [41] opened from [::1]:51378
+Jan 30 08:56 : client: [41] closed
+Jan 30 08:56 : client: [42] opened from [::1]:51380
+Jan 30 09:00 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/02. ようこそ喫茶白玉楼へ.mp3"
+Jan 30 09:00 : client: [42] closed
+Jan 30 09:00 : client: [43] opened from [::1]:51382
+Jan 30 09:00 : client: [43] closed
+Jan 30 09:00 : client: [44] opened from [::1]:51384
+Jan 30 09:05 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/03. ねこまたアキアート.mp3"
+Jan 30 09:05 : client: [44] closed
+Jan 30 09:05 : client: [45] opened from [::1]:51386
+Jan 30 09:05 : client: [45] closed
+Jan 30 09:05 : client: [46] opened from [::1]:51388
+Jan 30 09:09 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/04. 昼下がりのビタースウィート.mp3"
+Jan 30 09:09 : client: [46] closed
+Jan 30 09:09 : client: [47] opened from [::1]:51408
+Jan 30 09:09 : client: [47] closed
+Jan 30 09:09 : client: [48] opened from [::1]:51410
+Jan 30 09:13 : client: [49] opened from [::1]:51416
+Jan 30 09:13 : client: [48] closed
+Jan 30 09:13 : client: [49] closed
+Jan 30 09:13 : client: [50] opened from [::1]:51418
+Jan 30 09:13 : client: [50] closed
+Jan 30 09:13 : client: [51] opened from [::1]:51420
+Jan 30 09:13 : client: [52] opened from [::1]:51422
+Jan 30 09:13 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 30 09:13 : client: [51] closed
+Jan 30 09:13 : client: [52] closed
+Jan 30 09:13 : client: [53] opened from [::1]:51424
+Jan 30 09:13 : client: [53] closed
+Jan 30 09:13 : client: [54] opened from [::1]:51426
+Jan 30 09:13 : client: [55] opened from [::1]:51428
+Jan 30 09:13 : client: [54] closed
+Jan 30 09:13 : client: [55] closed
+Jan 30 09:13 : client: [56] opened from [::1]:51430
+Jan 30 09:13 : client: [56] closed
+Jan 30 09:13 : client: [57] opened from [::1]:51432
+Jan 30 09:13 : client: [58] opened from [::1]:51434
+Jan 30 09:13 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jan 30 09:13 : client: [57] closed
+Jan 30 09:13 : client: [58] closed
+Jan 30 09:13 : client: [59] opened from [::1]:51436
+Jan 30 09:13 : client: [59] closed
+Jan 30 09:13 : client: [60] opened from [::1]:51438
+Jan 30 09:13 : client: [61] opened from [::1]:51440
+Jan 30 09:13 : client: [61] closed
+Jan 30 09:13 : client: [62] opened from [::1]:51442
+Jan 30 09:13 : client: [62] closed
+Jan 30 10:35 : client: [60] closed
+Jan 30 10:40 : client: [63] opened from [::1]:51576
+Jan 30 11:11 : client: [63] closed
+Jan 30 11:11 : client: [64] opened from [::1]:51894
+Jan 30 13:12 : client: [64] closed
+Jan 30 13:12 : client: [65] opened from [::1]:52258
+Jan 30 16:03 : client: [66] opened from [::1]:52914
+Jan 30 16:03 : client: [66] closed
+Jan 30 16:31 : client: [67] opened from [::1]:53148
+Jan 30 16:32 : client: [67] closed
+Jan 30 19:00 : client: [68] opened from [::1]:53896
+Jan 30 19:00 : exception: Not playing
+Jan 30 19:00 : client: [68] closed
+Jan 30 19:00 : client: [69] opened from [::1]:53898
+Jan 30 19:00 : exception: Not playing
+Jan 30 19:00 : client: [69] closed
+Jan 30 19:00 : client: [70] opened from [::1]:53900
+Jan 30 19:00 : exception: Not playing
+Jan 30 19:00 : client: [70] closed
+Jan 30 19:00 : client: [71] opened from [::1]:53902
+Jan 30 19:00 : exception: Not playing
+Jan 30 19:00 : client: [71] closed
+Jan 30 19:00 : client: [72] opened from [::1]:53906
+Jan 30 19:00 : exception: Not playing
+Jan 30 19:00 : client: [72] closed
+Jan 30 19:00 : client: [73] opened from [::1]:53908
+Jan 30 19:00 : exception: Not playing
+Jan 30 19:00 : client: [73] closed
+Jan 30 19:00 : client: [74] opened from [::1]:53910
+Jan 30 19:00 : exception: Not playing
+Jan 30 19:00 : client: [74] closed
+Jan 30 19:00 : client: [75] opened from [::1]:53912
+Jan 30 19:00 : exception: Not playing
+Jan 30 19:00 : client: [75] closed
+Feb 02 12:10 : client: [76] opened from [::1]:42584
+Feb 02 12:10 : client: [76] closed
+Feb 02 12:10 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 02 12:10 : client: [65] closed
+Feb 02 12:10 : client: [77] opened from [::1]:42586
+Feb 02 12:10 : client: [77] closed
+Feb 02 12:10 : client: [78] opened from [::1]:42588
+Feb 02 12:14 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Feb 02 12:14 : client: [78] closed
+Feb 02 12:14 : client: [79] opened from [::1]:42676
+Feb 02 12:14 : client: [79] closed
+Feb 02 12:14 : client: [80] opened from [::1]:42678
+Feb 02 12:18 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/06. あしたも抹茶色.mp3"
+Feb 02 12:18 : client: [80] closed
+Feb 02 12:18 : client: [81] opened from [::1]:42858
+Feb 02 12:18 : client: [81] closed
+Feb 02 12:18 : client: [82] opened from [::1]:42860
+Feb 02 12:19 : client: [83] opened from [::1]:42878
+Feb 02 12:19 : client: [84] opened from [::1]:42880
+Feb 02 12:19 : client: [84] closed
+Feb 02 12:19 : client: [85] opened from [::1]:42882
+Feb 02 12:19 : client: [82] closed
+Feb 02 12:19 : client: [85] closed
+Feb 02 12:19 : client: [86] opened from [::1]:42884
+Feb 02 12:19 : client: [86] closed
+Feb 02 12:19 : client: [87] opened from [::1]:42886
+Feb 02 12:19 : client: [88] opened from [::1]:42888
+Feb 02 12:19 : client: [87] closed
+Feb 02 12:19 : client: [88] closed
+Feb 02 12:19 : client: [89] opened from [::1]:42890
+Feb 02 12:19 : client: [89] closed
+Feb 02 12:19 : client: [90] opened from [::1]:42892
+Feb 02 12:19 : client: [90] closed
+Feb 02 12:19 : client: [91] opened from [::1]:42950
+Feb 02 12:19 : client: [91] closed
+Feb 02 12:19 : client: [92] opened from [::1]:42952
+Feb 02 12:19 : client: [93] opened from [::1]:42958
+Feb 02 12:19 : client: [92] closed
+Feb 02 12:19 : client: [93] closed
+Feb 02 12:19 : client: [94] opened from [::1]:42960
+Feb 02 12:19 : client: [95] opened from [::1]:42962
+Feb 02 12:19 : client: [95] closed
+Feb 02 12:20 : client: [94] closed
+Feb 02 12:20 : client: [96] opened from [::1]:42980
+Feb 02 12:20 : client: [96] closed
+Feb 02 12:20 : client: [97] opened from [::1]:42982
+Feb 02 12:20 : client: [97] closed
+Feb 02 12:20 : client: [98] opened from [::1]:42984
+Feb 02 12:20 : client: [98] closed
+Feb 02 12:20 : client: [99] opened from [::1]:42986
+Feb 02 12:20 : client: [83] closed
+Feb 02 12:23 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/01. DDBY - 壠楬傪媫偄偱.mp3"
+Feb 02 12:23 : client: [99] closed
+Feb 02 12:23 : client: [100] opened from [::1]:43110
+Feb 02 12:23 : client: [100] closed
+Feb 02 12:23 : client: [101] opened from [::1]:43112
+Feb 02 12:25 : client: [102] opened from [::1]:43162
+Feb 02 12:25 : client: [101] closed
+Feb 02 12:25 : client: [102] closed
+Feb 02 12:25 : client: [103] opened from [::1]:43164
+Feb 02 12:25 : client: [103] closed
+Feb 02 12:25 : client: [104] opened from [::1]:43166
+Feb 02 14:58 : client: [104] closed
+Feb 02 14:58 : client: [105] opened from [::1]:46786
+Feb 02 15:04 : client: [105] closed
+Feb 02 15:05 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/02. DDBY - 偄傠偳傝棳傟惎.mp3"
+Feb 02 15:06 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 02 15:06 : client: [0] opened from [::1]:41336
+Feb 02 15:06 : client: [0] closed
+Feb 02 15:06 : client: [1] opened from [::1]:41338
+Feb 02 15:06 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 02 15:06 : client: [1] closed
+Feb 02 15:06 : client: [2] opened from [::1]:41340
+Feb 02 15:06 : client: [3] opened from [::1]:41342
+Feb 02 15:06 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 02 15:06 : client: [2] closed
+Feb 02 15:06 : client: [3] closed
+Feb 02 15:06 : client: [4] opened from [::1]:41344
+Feb 02 15:06 : client: [4] closed
+Feb 02 15:06 : client: [5] opened from [::1]:41346
+Feb 02 15:06 : client: [6] opened from [::1]:41348
+Feb 02 15:06 : client: [5] closed
+Feb 02 15:06 : client: [6] closed
+Feb 02 15:06 : client: [7] opened from [::1]:41350
+Feb 02 15:06 : client: [7] closed
+Feb 02 15:06 : client: [8] opened from [::1]:41352
+Feb 02 15:18 : client: [9] opened from [::1]:41556
+Feb 02 15:18 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 02 15:18 : client: [8] closed
+Feb 02 15:18 : client: [9] closed
+Feb 02 15:18 : client: [10] opened from [::1]:41558
+Feb 02 15:18 : client: [10] closed
+Feb 02 15:18 : client: [11] opened from [::1]:41560
+Feb 02 15:18 : client: [12] opened from [::1]:41562
+Feb 02 15:18 : client: [13] opened from [::1]:41564
+Feb 02 15:18 : client: [13] closed
+Feb 02 15:19 : client: [11] closed
+Feb 02 15:19 : client: [14] opened from [::1]:41566
+Feb 02 15:19 : client: [14] closed
+Feb 02 15:19 : client: [15] opened from [::1]:41568
+Feb 02 15:19 : client: [15] closed
+Feb 02 15:19 : client: [16] opened from [::1]:41570
+Feb 02 15:19 : client: [12] closed
+Feb 02 15:19 : client: [17] opened from [::1]:41572
+Feb 02 15:19 : client: [18] opened from [::1]:41574
+Feb 02 15:19 : client: [18] closed
+Feb 02 15:19 : client: [16] closed
+Feb 02 15:19 : client: [19] opened from [::1]:41576
+Feb 02 15:19 : client: [19] closed
+Feb 02 15:19 : client: [20] opened from [::1]:41578
+Feb 02 15:19 : client: [20] closed
+Feb 02 15:19 : client: [21] opened from [::1]:41580
+Feb 02 15:20 : client: [17] closed
+Feb 02 15:22 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/思い出景色.mp3"
+Feb 02 15:22 : client: [21] closed
+Feb 02 15:22 : client: [22] opened from [::1]:41582
+Feb 02 15:22 : client: [22] closed
+Feb 02 15:22 : client: [23] opened from [::1]:41584
+Feb 02 15:25 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/迷い込んで迷路庭園.mp3"
+Feb 02 15:25 : client: [23] closed
+Feb 02 15:25 : client: [24] opened from [::1]:41608
+Feb 02 15:25 : client: [24] closed
+Feb 02 15:25 : client: [25] opened from [::1]:41610
+Feb 02 15:29 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/近く遠い斜め色の空.mp3"
+Feb 02 15:29 : client: [25] closed
+Feb 02 15:29 : client: [26] opened from [::1]:41612
+Feb 02 15:29 : client: [26] closed
+Feb 02 15:29 : client: [27] opened from [::1]:41614
+Feb 02 15:31 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/上昇気流.mp3"
+Feb 02 15:31 : client: [27] closed
+Feb 02 15:31 : client: [28] opened from [::1]:41656
+Feb 02 15:31 : client: [28] closed
+Feb 02 15:31 : client: [29] opened from [::1]:41658
+Feb 02 15:32 : client: [30] opened from [::1]:41674
+Feb 02 15:32 : client: [29] closed
+Feb 02 15:32 : client: [30] closed
+Feb 02 15:32 : client: [31] opened from [::1]:41676
+Feb 02 15:32 : client: [31] closed
+Feb 02 15:32 : client: [32] opened from [::1]:41678
+Feb 02 15:34 : client: [33] opened from [::1]:41694
+Feb 02 15:34 : client: [32] closed
+Feb 02 15:34 : client: [33] closed
+Feb 02 15:34 : client: [34] opened from [::1]:41696
+Feb 02 15:34 : client: [34] closed
+Feb 02 15:34 : client: [35] opened from [::1]:41698
+Feb 03 09:22 : client: [36] opened from [::1]:43708
+Feb 03 09:22 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 03 09:22 : client: [35] closed
+Feb 03 09:22 : client: [36] closed
+Feb 03 09:22 : client: [37] opened from [::1]:43710
+Feb 03 09:22 : client: [37] closed
+Feb 03 09:22 : client: [38] opened from [::1]:43712
+Feb 03 09:22 : client: [39] opened from [::1]:43714
+Feb 03 09:22 : client: [38] closed
+Feb 03 09:22 : client: [39] closed
+Feb 03 09:22 : client: [40] opened from [::1]:43716
+Feb 03 09:22 : client: [40] closed
+Feb 03 09:22 : client: [41] opened from [::1]:43718
+Feb 03 09:45 : client: [42] opened from [::1]:43870
+Feb 03 09:45 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 03 09:45 : client: [41] closed
+Feb 03 09:45 : client: [42] closed
+Feb 03 09:45 : client: [43] opened from [::1]:43872
+Feb 03 09:45 : client: [43] closed
+Feb 03 09:45 : client: [44] opened from [::1]:43874
+Feb 03 09:46 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/Cramped space.mp3"
+Feb 03 09:46 : client: [44] closed
+Feb 03 09:46 : client: [45] opened from [::1]:43880
+Feb 03 09:46 : client: [45] closed
+Feb 03 09:46 : client: [46] opened from [::1]:43882
+Feb 03 09:50 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/Blue sky of wind.mp3"
+Feb 03 09:50 : client: [46] closed
+Feb 03 09:50 : client: [47] opened from [::1]:43884
+Feb 03 09:50 : client: [47] closed
+Feb 03 09:50 : client: [48] opened from [::1]:43886
+Feb 03 09:54 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/A Brief Vacation.mp3"
+Feb 03 09:54 : client: [48] closed
+Feb 03 09:54 : client: [49] opened from [::1]:43902
+Feb 03 09:54 : client: [49] closed
+Feb 03 09:54 : client: [50] opened from [::1]:43904
+Feb 03 09:58 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/Cool shade.mp3"
+Feb 03 09:58 : client: [50] closed
+Feb 03 09:58 : client: [51] opened from [::1]:43906
+Feb 03 09:58 : client: [51] closed
+Feb 03 09:58 : client: [52] opened from [::1]:43908
+Feb 03 10:02 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/01. もし、空が晴れるなら - Bizen.mp3"
+Feb 03 10:02 : client: [52] closed
+Feb 03 10:02 : client: [53] opened from [::1]:43922
+Feb 03 10:02 : client: [53] closed
+Feb 03 10:02 : client: [54] opened from [::1]:43924
+Feb 03 10:07 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/02. faraway country - 鯛の小骨.mp3"
+Feb 03 10:07 : client: [54] closed
+Feb 03 10:07 : client: [55] opened from [::1]:43942
+Feb 03 10:07 : client: [55] closed
+Feb 03 10:07 : client: [56] opened from [::1]:43944
+Feb 03 10:07 : client: [57] opened from [::1]:43946
+Feb 03 10:07 : client: [56] closed
+Feb 03 10:07 : client: [57] closed
+Feb 03 10:07 : client: [58] opened from [::1]:43948
+Feb 03 10:07 : client: [58] closed
+Feb 03 10:07 : client: [59] opened from [::1]:43950
+Feb 03 11:25 : client: [60] opened from [::1]:44214
+Feb 03 11:25 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 03 11:25 : client: [59] closed
+Feb 03 11:25 : client: [60] closed
+Feb 03 11:25 : client: [61] opened from [::1]:44216
+Feb 03 11:25 : client: [61] closed
+Feb 03 11:25 : client: [62] opened from [::1]:44218
+Feb 03 11:25 : client: [63] opened from [::1]:44220
+Feb 03 11:25 : client: [62] closed
+Feb 03 11:25 : client: [63] closed
+Feb 03 11:25 : client: [64] opened from [::1]:44222
+Feb 03 11:25 : client: [64] closed
+Feb 03 11:25 : client: [65] opened from [::1]:44224
+Feb 04 18:15 : client: [65] closed
+Feb 04 18:16 : client: [66] opened from [::1]:51078
+Feb 04 19:53 : client: [67] opened from [::1]:51874
+Feb 04 19:53 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3"
+Feb 04 19:53 : client: [66] closed
+Feb 04 19:53 : client: [67] closed
+Feb 04 19:53 : client: [68] opened from [::1]:51876
+Feb 04 19:53 : client: [68] closed
+Feb 04 19:53 : client: [69] opened from [::1]:51878
+Feb 06 09:12 : client: [69] closed
+Feb 06 09:13 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 06 09:13 : client: [0] opened from [::1]:46706
+Feb 07 14:02 : client: [1] opened from [::1]:53708
+Feb 07 14:02 : client: [2] opened from [::1]:53710
+Feb 07 14:02 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 07 14:02 : exception: Not playing
+Feb 07 14:02 : client: [3] opened from [::1]:53712
+Feb 07 14:02 : exception: Not playing
+Feb 07 14:02 : client: [1] closed
+Feb 07 14:02 : client: [2] closed
+Feb 07 14:02 : client: [3] closed
+Feb 07 14:02 : client: [4] opened from [::1]:53714
+Feb 07 14:02 : client: [4] closed
+Feb 07 14:02 : client: [5] opened from [::1]:53716
+Feb 07 14:02 : client: [5] closed
+Feb 07 14:02 : client: [6] opened from [::1]:53718
+Feb 07 14:02 : client: [6] closed
+Feb 07 14:02 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 07 14:02 : client: [0] closed
+Feb 07 14:02 : client: [7] opened from [::1]:53720
+Feb 07 14:02 : client: [7] closed
+Feb 07 14:02 : client: [8] opened from [::1]:53722
+Feb 07 14:02 : client: [9] opened from [::1]:53724
+Feb 07 14:02 : client: [10] opened from [::1]:53726
+Feb 07 14:02 : client: [8] closed
+Feb 07 14:02 : client: [9] closed
+Feb 07 14:02 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 07 14:02 : client: [11] opened from [::1]:53728
+Feb 07 14:02 : client: [11] closed
+Feb 07 14:02 : client: [10] closed
+Feb 07 14:02 : client: [12] opened from [::1]:53730
+Feb 07 14:03 : client: [13] opened from [::1]:53732
+Feb 07 14:03 : client: [12] closed
+Feb 07 14:03 : client: [13] closed
+Feb 07 14:03 : client: [14] opened from [::1]:53734
+Feb 07 14:03 : client: [14] closed
+Feb 07 14:03 : client: [15] opened from [::1]:53736
+Feb 08 23:14 : client: [15] closed
+Feb 08 23:14 : client: [16] opened from [::1]:58702
+Feb 09 07:51 : client: [16] closed
+Feb 09 07:51 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3"
+Feb 09 07:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 09 07:52 : client: [0] opened from [::1]:59730
+Feb 10 20:37 : client: [0] closed
+Feb 10 20:37 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3"
+Feb 10 20:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 10 20:38 : client: [0] opened from [::1]:34698
+Feb 10 20:38 : client: [0] closed
+Feb 10 20:38 : client: [1] opened from [::1]:34700
+Feb 10 20:38 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 10 20:38 : client: [1] closed
+Feb 10 20:38 : client: [2] opened from [::1]:34702
+Feb 12 13:50 : client: [3] opened from [::1]:42502
+Feb 12 13:50 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 12 13:50 : client: [2] closed
+Feb 12 13:50 : client: [3] closed
+Feb 12 13:50 : client: [4] opened from [::1]:42504
+Feb 12 13:50 : client: [4] closed
+Feb 12 13:50 : client: [5] opened from [::1]:42506
+Feb 12 13:50 : client: [6] opened from [::1]:42508
+Feb 12 13:50 : client: [5] closed
+Feb 12 13:50 : client: [6] closed
+Feb 12 13:50 : client: [7] opened from [::1]:42510
+Feb 12 13:50 : client: [7] closed
+Feb 12 13:50 : client: [8] opened from [::1]:42512
+Feb 18 01:28 : client: [8] closed
+Feb 18 01:28 : client: [9] opened from [::1]:42232
+Feb 18 09:40 : client: [10] opened from [::1]:42866
+Feb 18 09:40 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 18 09:40 : client: [9] closed
+Feb 18 09:40 : client: [10] closed
+Feb 18 09:40 : client: [11] opened from [::1]:42868
+Feb 18 09:40 : client: [11] closed
+Feb 18 09:40 : client: [12] opened from [::1]:42870
+Feb 18 09:40 : client: [13] opened from [::1]:42872
+Feb 18 09:40 : client: [12] closed
+Feb 18 09:40 : client: [13] closed
+Feb 18 09:40 : client: [14] opened from [::1]:42874
+Feb 18 09:40 : client: [14] closed
+Feb 18 09:40 : client: [15] opened from [::1]:42876
+Feb 18 09:42 : client: [16] opened from [::1]:42882
+Feb 18 09:42 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 18 09:42 : client: [15] closed
+Feb 18 09:42 : client: [16] closed
+Feb 18 09:42 : client: [17] opened from [::1]:42884
+Feb 18 09:42 : client: [17] closed
+Feb 18 09:42 : client: [18] opened from [::1]:42886
+Feb 18 09:42 : client: [19] opened from [::1]:42888
+Feb 18 09:42 : client: [18] closed
+Feb 18 09:42 : client: [19] closed
+Feb 18 09:42 : client: [20] opened from [::1]:42890
+Feb 18 09:42 : client: [20] closed
+Feb 18 09:42 : client: [21] opened from [::1]:42892
+Feb 18 09:42 : client: [22] opened from [::1]:42894
+Feb 18 09:42 : client: [21] closed
+Feb 18 09:42 : client: [22] closed
+Feb 18 09:42 : client: [23] opened from [::1]:42896
+Feb 18 09:42 : client: [23] closed
+Feb 18 09:42 : client: [24] opened from [::1]:42898
+Feb 18 09:42 : client: [25] opened from [::1]:42900
+Feb 18 09:42 : client: [24] closed
+Feb 18 09:42 : client: [25] closed
+Feb 18 09:42 : client: [26] opened from [::1]:42902
+Feb 18 09:42 : client: [26] closed
+Feb 18 09:42 : client: [27] opened from [::1]:42904
+Feb 18 12:38 : client: [27] closed
+Feb 18 12:38 : client: [28] opened from [::1]:44294
+Feb 18 19:23 : client: [28] closed
+Feb 18 19:23 : client: [29] opened from [::1]:47090
+Feb 18 20:51 : client: [30] opened from [::1]:47668
+Feb 18 20:51 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 18 20:51 : client: [29] closed
+Feb 18 20:51 : client: [30] closed
+Feb 18 20:51 : client: [31] opened from [::1]:47670
+Feb 18 20:51 : client: [31] closed
+Feb 18 20:51 : client: [32] opened from [::1]:47672
+Feb 18 20:51 : client: [33] opened from [::1]:47674
+Feb 18 20:51 : client: [32] closed
+Feb 18 20:51 : client: [33] closed
+Feb 18 20:51 : client: [34] opened from [::1]:47676
+Feb 18 20:51 : client: [34] closed
+Feb 18 20:51 : client: [35] opened from [::1]:47678
+Feb 18 20:51 : client: [36] opened from [::1]:47680
+Feb 18 20:51 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 18 20:51 : client: [35] closed
+Feb 18 20:51 : client: [36] closed
+Feb 18 20:51 : client: [37] opened from [::1]:47682
+Feb 18 20:51 : client: [37] closed
+Feb 18 20:51 : client: [38] opened from [::1]:47684
+Feb 18 20:52 : client: [39] opened from [::1]:47686
+Feb 18 20:52 : client: [38] closed
+Feb 18 20:52 : client: [39] closed
+Feb 18 20:52 : client: [40] opened from [::1]:47688
+Feb 18 20:52 : client: [40] closed
+Feb 18 20:52 : client: [41] opened from [::1]:47690
+Feb 18 20:53 : client: [42] opened from [::1]:47692
+Feb 18 20:53 : client: [41] closed
+Feb 18 20:53 : client: [42] closed
+Feb 18 20:53 : client: [43] opened from [::1]:47694
+Feb 18 20:53 : client: [43] closed
+Feb 18 20:53 : client: [44] opened from [::1]:47696
+Feb 18 20:53 : client: [45] opened from [::1]:47698
+Feb 18 20:53 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 18 20:53 : client: [44] closed
+Feb 18 20:53 : client: [45] closed
+Feb 18 20:53 : client: [46] opened from [::1]:47700
+Feb 18 20:53 : client: [46] closed
+Feb 18 20:53 : client: [47] opened from [::1]:47702
+Feb 18 20:53 : client: [48] opened from [::1]:47704
+Feb 18 20:53 : client: [47] closed
+Feb 18 20:53 : client: [48] closed
+Feb 18 20:53 : client: [49] opened from [::1]:47706
+Feb 18 20:53 : client: [49] closed
+Feb 18 20:53 : client: [50] opened from [::1]:47708
+Feb 18 20:53 : client: [51] opened from [::1]:47710
+Feb 18 20:53 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 18 20:53 : client: [50] closed
+Feb 18 20:53 : client: [51] closed
+Feb 18 20:53 : client: [52] opened from [::1]:47712
+Feb 18 20:53 : client: [52] closed
+Feb 18 20:53 : client: [53] opened from [::1]:47714
+Feb 18 20:53 : client: [54] opened from [::1]:47716
+Feb 18 20:53 : client: [53] closed
+Feb 18 20:53 : client: [54] closed
+Feb 18 20:53 : client: [55] opened from [::1]:47718
+Feb 18 20:53 : client: [55] closed
+Feb 18 20:53 : client: [56] opened from [::1]:47720
+Feb 18 20:53 : client: [57] opened from [::1]:47722
+Feb 18 20:53 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 18 20:53 : client: [56] closed
+Feb 18 20:53 : client: [57] closed
+Feb 18 20:53 : client: [58] opened from [::1]:47724
+Feb 18 20:53 : client: [58] closed
+Feb 18 20:53 : client: [59] opened from [::1]:47726
+Feb 18 20:55 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/05. 暖色系アリス - koutaq.mp3"
+Feb 18 20:55 : client: [59] closed
+Feb 18 20:55 : client: [60] opened from [::1]:47732
+Feb 18 20:55 : client: [60] closed
+Feb 18 20:55 : client: [61] opened from [::1]:47734
+Feb 18 20:58 : client: [62] opened from [::1]:47752
+Feb 18 20:58 : client: [61] closed
+Feb 18 20:58 : client: [62] closed
+Feb 18 20:58 : client: [63] opened from [::1]:47754
+Feb 18 20:58 : client: [63] closed
+Feb 18 20:58 : client: [64] opened from [::1]:47756
+Feb 18 20:58 : client: [65] opened from [::1]:47758
+Feb 18 20:58 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 18 20:58 : client: [64] closed
+Feb 18 20:58 : client: [65] closed
+Feb 18 20:58 : client: [66] opened from [::1]:47760
+Feb 18 20:58 : client: [66] closed
+Feb 18 20:58 : client: [67] opened from [::1]:47762
+Feb 18 20:59 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/06. 風の都 - Bizen.mp3"
+Feb 18 20:59 : client: [67] closed
+Feb 18 20:59 : client: [68] opened from [::1]:47768
+Feb 18 20:59 : client: [68] closed
+Feb 18 20:59 : client: [69] opened from [::1]:47770
+Feb 18 20:59 : client: [70] opened from [::1]:47772
+Feb 18 20:59 : client: [69] closed
+Feb 18 20:59 : client: [70] closed
+Feb 18 20:59 : client: [71] opened from [::1]:47774
+Feb 18 20:59 : client: [71] closed
+Feb 18 20:59 : client: [72] opened from [::1]:47776
+Feb 18 20:59 : client: [73] opened from [::1]:47778
+Feb 18 20:59 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 18 20:59 : client: [72] closed
+Feb 18 20:59 : client: [73] closed
+Feb 18 20:59 : client: [74] opened from [::1]:47780
+Feb 18 20:59 : client: [74] closed
+Feb 18 20:59 : client: [75] opened from [::1]:47782
+Feb 18 21:03 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/07. 無何有の郷 (KiRa Remix) - Coro.mp3"
+Feb 18 21:03 : client: [75] closed
+Feb 18 21:03 : client: [76] opened from [::1]:47800
+Feb 18 21:03 : client: [76] closed
+Feb 18 21:03 : client: [77] opened from [::1]:47802
+Feb 18 21:07 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Feb 18 21:07 : client: [77] closed
+Feb 18 21:07 : client: [78] opened from [::1]:47828
+Feb 18 21:07 : client: [78] closed
+Feb 18 21:07 : client: [79] opened from [::1]:47830
+Feb 18 21:12 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/09. Below Between Beyond - Ludo.mp3"
+Feb 18 21:12 : client: [79] closed
+Feb 18 21:12 : client: [80] opened from [::1]:47934
+Feb 18 21:12 : client: [80] closed
+Feb 18 21:12 : client: [81] opened from [::1]:47936
+Feb 18 21:17 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/10. Sky Garden - Takayan.mp3"
+Feb 18 21:17 : client: [81] closed
+Feb 18 21:17 : client: [82] opened from [::1]:47974
+Feb 18 21:17 : client: [82] closed
+Feb 18 21:17 : client: [83] opened from [::1]:47976
+Feb 18 21:22 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/11. Lotus - KA=YA.mp3"
+Feb 18 21:22 : client: [83] closed
+Feb 18 21:22 : client: [84] opened from [::1]:48002
+Feb 18 21:22 : client: [84] closed
+Feb 18 21:22 : client: [85] opened from [::1]:48004
+Feb 18 21:26 : player: played "Anime_songs/Cafe de Touhou 7/01. Naive Face.mp3"
+Feb 18 21:26 : client: [85] closed
+Feb 18 21:26 : client: [86] opened from [::1]:48024
+Feb 18 21:26 : client: [86] closed
+Feb 18 21:26 : client: [87] opened from [::1]:48026
+Feb 18 21:31 : player: played "Anime_songs/Cafe de Touhou 7/02. Fall of summer memories -煌く水面-.mp3"
+Feb 18 21:31 : client: [87] closed
+Feb 18 21:31 : client: [88] opened from [::1]:48076
+Feb 18 21:31 : client: [88] closed
+Feb 18 21:31 : client: [89] opened from [::1]:48078
+Feb 18 21:35 : player: played "Anime_songs/Cafe de Touhou 7/03. autumn wind.mp3"
+Feb 18 21:35 : client: [89] closed
+Feb 18 21:35 : client: [90] opened from [::1]:48110
+Feb 18 21:35 : client: [90] closed
+Feb 18 21:35 : client: [91] opened from [::1]:48112
+Feb 18 21:38 : player: played "Anime_songs/Cafe de Touhou 7/04. Usual Place.mp3"
+Feb 18 21:38 : client: [91] closed
+Feb 18 21:38 : client: [92] opened from [::1]:48170
+Feb 18 21:38 : client: [92] closed
+Feb 18 21:38 : client: [93] opened from [::1]:48172
+Feb 18 21:42 : player: played "Anime_songs/Cafe de Touhou 7/05. River path.mp3"
+Feb 18 21:42 : client: [93] closed
+Feb 18 21:42 : client: [94] opened from [::1]:48174
+Feb 18 21:42 : client: [94] closed
+Feb 18 21:42 : client: [95] opened from [::1]:48176
+Feb 18 21:45 : client: [95] closed
+Feb 18 21:45 : client: [96] opened from [::1]:48190
+Feb 18 21:46 : player: played "Anime_songs/Cafe de Touhou 7/06. Mirage.mp3"
+Feb 18 21:46 : client: [96] closed
+Feb 18 21:46 : client: [97] opened from [::1]:48192
+Feb 18 21:46 : client: [97] closed
+Feb 18 21:46 : client: [98] opened from [::1]:48194
+Feb 18 21:51 : player: played "Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3"
+Feb 18 21:51 : client: [98] closed
+Feb 18 21:51 : client: [99] opened from [::1]:48196
+Feb 18 21:51 : client: [99] closed
+Feb 18 21:51 : client: [100] opened from [::1]:48198
+Feb 18 21:55 : player: played "Anime_songs/Cafe de Touhou 7/08. Mellow Waves.mp3"
+Feb 18 21:55 : client: [100] closed
+Feb 18 21:55 : client: [101] opened from [::1]:48272
+Feb 18 21:55 : client: [101] closed
+Feb 18 21:55 : client: [102] opened from [::1]:48274
+Feb 18 22:00 : player: played "Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/01 - Close to me….mp3"
+Feb 18 22:00 : client: [102] closed
+Feb 18 22:00 : client: [103] opened from [::1]:48348
+Feb 18 22:00 : client: [103] closed
+Feb 18 22:00 : client: [104] opened from [::1]:48350
+Feb 18 22:05 : player: played "Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/02 - Face of Fact.mp3"
+Feb 18 22:05 : client: [104] closed
+Feb 18 22:05 : client: [105] opened from [::1]:48352
+Feb 18 22:05 : client: [105] closed
+Feb 18 22:05 : client: [106] opened from [::1]:48354
+Feb 18 22:10 : player: played "Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/03 - Ever stay snow.mp3"
+Feb 18 22:10 : client: [106] closed
+Feb 18 22:10 : client: [107] opened from [::1]:48392
+Feb 18 22:10 : client: [107] closed
+Feb 18 22:10 : client: [108] opened from [::1]:48394
+Feb 18 22:12 : client: [109] opened from [::1]:48396
+Feb 18 22:12 : client: [108] closed
+Feb 18 22:12 : client: [109] closed
+Feb 18 22:12 : client: [110] opened from [::1]:48398
+Feb 18 22:12 : client: [110] closed
+Feb 18 22:12 : client: [111] opened from [::1]:48400
+Feb 18 22:23 : client: [111] closed
+Feb 18 22:23 : client: [112] opened from [::1]:48418
+Feb 19 12:07 : client: [113] opened from [::1]:50736
+Feb 19 12:07 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 19 12:07 : client: [112] closed
+Feb 19 12:07 : client: [113] closed
+Feb 19 12:07 : client: [114] opened from [::1]:50738
+Feb 19 12:07 : client: [114] closed
+Feb 19 12:07 : client: [115] opened from [::1]:50740
+Feb 19 12:07 : client: [116] opened from [::1]:50742
+Feb 19 12:07 : client: [115] closed
+Feb 19 12:07 : client: [116] closed
+Feb 19 12:07 : client: [117] opened from [::1]:50744
+Feb 19 12:07 : client: [117] closed
+Feb 19 12:07 : client: [118] opened from [::1]:50746
+Feb 19 12:08 : client: [119] opened from [::1]:50748
+Feb 19 12:08 : client: [118] closed
+Feb 19 12:08 : client: [119] closed
+Feb 19 12:08 : client: [120] opened from [::1]:50750
+Feb 19 12:08 : client: [120] closed
+Feb 19 12:08 : client: [121] opened from [::1]:50752
+Feb 19 15:27 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 19 15:27 : client: [0] opened from [::1]:35540
+Feb 19 15:27 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 19 15:27 : client: [0] closed
+Feb 19 15:27 : client: [1] opened from [::1]:35542
+Feb 20 16:17 : client: [1] closed
+Feb 20 16:18 : client: [2] opened from [::1]:39206
+xcb_connection_has_error() returned true
+xcb_connection_has_error() returned true
+Feb 20 16:18 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 20 16:18 : client: [2] closed
+Feb 20 16:18 : client: [3] opened from [::1]:39220
+Feb 20 16:18 : client: [4] opened from [::1]:39222
+Feb 20 16:18 : client: [4] closed
+Feb 20 16:18 : client: [5] opened from [::1]:39224
+Feb 20 16:18 : client: [5] closed
+Feb 20 16:18 : client: [3] closed
+Feb 20 16:19 : client: [6] opened from [::1]:39226
+Feb 20 16:19 : client: [7] opened from [::1]:39228
+Feb 20 16:19 : client: [6] closed
+Feb 20 16:19 : client: [7] closed
+Feb 20 16:19 : client: [8] opened from [::1]:39230
+Feb 20 16:19 : client: [8] closed
+Feb 20 16:19 : client: [9] opened from [::1]:39232
+Feb 20 16:19 : client: [10] opened from [::1]:39234
+Feb 20 16:19 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 20 16:19 : client: [9] closed
+Feb 20 16:19 : client: [10] closed
+Feb 20 16:19 : client: [11] opened from [::1]:39236
+Feb 20 16:19 : client: [11] closed
+Feb 20 16:19 : client: [12] opened from [::1]:39238
+Feb 20 16:19 : client: [13] opened from [::1]:39240
+Feb 20 16:19 : client: [12] closed
+Feb 20 16:19 : client: [13] closed
+Feb 20 16:19 : client: [14] opened from [::1]:39242
+Feb 20 16:19 : client: [14] closed
+Feb 20 16:19 : client: [15] opened from [::1]:39244
+Feb 20 16:19 : client: [16] opened from [::1]:39246
+Feb 20 16:19 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 20 16:19 : client: [15] closed
+Feb 20 16:19 : client: [16] closed
+Feb 20 16:19 : client: [17] opened from [::1]:39248
+Feb 20 16:19 : client: [17] closed
+Feb 20 16:19 : client: [18] opened from [::1]:39250
+Feb 20 16:20 : client: [19] opened from [::1]:39252
+Feb 20 16:20 : client: [18] closed
+Feb 20 16:20 : client: [19] closed
+Feb 20 16:20 : client: [20] opened from [::1]:39254
+Feb 20 16:20 : client: [20] closed
+Feb 20 16:20 : client: [21] opened from [::1]:39256
+Feb 20 16:20 : client: [22] opened from [::1]:39258
+Feb 20 16:20 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 20 16:20 : client: [21] closed
+Feb 20 16:20 : client: [22] closed
+Feb 20 16:20 : client: [23] opened from [::1]:39260
+Feb 20 16:20 : client: [23] closed
+Feb 20 16:20 : client: [24] opened from [::1]:39262
+Feb 20 16:24 : player: played "Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/10 - I pray to stop my cry -little sea style-.mp3"
+Feb 20 16:24 : client: [24] closed
+Feb 20 16:24 : client: [25] opened from [::1]:39264
+Feb 20 16:24 : client: [25] closed
+Feb 20 16:24 : client: [26] opened from [::1]:39266
+Feb 20 16:30 : player: played "Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/11 - SNOW.mp3"
+Feb 20 16:30 : client: [26] closed
+Feb 20 16:30 : client: [27] opened from [::1]:39268
+Feb 20 16:30 : client: [27] closed
+Feb 20 16:30 : client: [28] opened from [::1]:39270
+Feb 20 16:35 : player: played "Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/12 - See You ～小さな永遠～.mp3"
+Feb 20 16:35 : client: [28] closed
+Feb 20 16:35 : client: [29] opened from [::1]:39274
+Feb 20 16:35 : client: [29] closed
+Feb 20 16:35 : client: [30] opened from [::1]:39276
+Feb 20 16:37 : client: [30] closed
+Feb 20 16:37 : client: [31] opened from [::1]:39278
+Feb 20 16:38 : player: played "Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/13 - Imaginary affair.mp3"
+Feb 20 16:38 : client: [31] closed
+Feb 20 16:38 : client: [32] opened from [::1]:39280
+Feb 20 16:38 : client: [32] closed
+Feb 20 16:38 : client: [33] opened from [::1]:39282
+Feb 20 16:41 : player: played "Anime_songs/Melty Sky -sprite PIANO Selection-/01 - INITIATIVE.mp3"
+Feb 20 16:41 : client: [33] closed
+Feb 20 16:41 : client: [34] opened from [::1]:39284
+Feb 20 16:41 : client: [34] closed
+Feb 20 16:41 : client: [35] opened from [::1]:39286
+Feb 20 16:45 : client: [35] closed
+Feb 20 16:45 : client: [36] opened from [::1]:39288
+Feb 20 16:48 : client: [37] opened from [::1]:39302
+Feb 20 16:48 : client: [36] closed
+Feb 20 16:48 : client: [37] closed
+Feb 20 16:48 : client: [38] opened from [::1]:39304
+Feb 20 16:48 : client: [38] closed
+Feb 20 16:48 : client: [39] opened from [::1]:39306
+Feb 20 18:21 : client: [39] closed
+Feb 20 18:22 : client: [40] opened from [::1]:39882
+Feb 20 20:50 : client: [40] closed
+Feb 20 20:50 : client: [41] opened from [::1]:41364
+Feb 20 22:50 : client: [41] closed
+Feb 20 22:51 : client: [42] opened from [::1]:42340
+Feb 20 22:51 : client: [42] closed
+Feb 20 22:51 : client: [43] opened from [::1]:42342
+Feb 21 00:05 : client: [44] opened from [::1]:42670
+Feb 21 00:05 : client: [45] opened from [::1]:42672
+Feb 21 00:05 : client: [45] closed
+Feb 21 00:05 : client: [44] closed
+Feb 21 08:06 : client: [46] opened from [::1]:42716
+Feb 21 08:06 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 21 08:06 : client: [43] closed
+Feb 21 08:06 : client: [46] closed
+Feb 21 08:06 : client: [47] opened from [::1]:42718
+Feb 21 08:06 : client: [47] closed
+Feb 21 08:06 : client: [48] opened from [::1]:42720
+Feb 21 08:08 : player: played "Anime_songs/Melty Sky -sprite PIANO Selection-/02 - sprite LIVE 2015  『恋と選挙とチョコレート』キャラクターソングメドレー.mp3"
+Feb 21 08:08 : client: [48] closed
+Feb 21 08:08 : client: [49] opened from [::1]:42722
+Feb 21 08:08 : client: [49] closed
+Feb 21 08:08 : client: [50] opened from [::1]:42724
+Feb 21 08:11 : player: played "Anime_songs/Melty Sky -sprite PIANO Selection-/03 - 青空 Starting Line.mp3"
+Feb 21 08:11 : client: [50] closed
+Feb 21 08:11 : client: [51] opened from [::1]:42740
+Feb 21 08:11 : client: [51] closed
+Feb 21 08:11 : client: [52] opened from [::1]:42742
+Feb 21 08:15 : player: played "Anime_songs/Melty Sky -sprite PIANO Selection-/04 - Jewelry Time.mp3"
+Feb 21 08:15 : client: [52] closed
+Feb 21 08:15 : client: [53] opened from [::1]:42766
+Feb 21 08:15 : client: [53] closed
+Feb 21 08:15 : client: [54] opened from [::1]:42768
+Feb 21 08:18 : player: played "Anime_songs/Melty Sky -sprite PIANO Selection-/05 - シグナルグラフ.mp3"
+Feb 21 08:18 : client: [54] closed
+Feb 21 08:18 : client: [55] opened from [::1]:42774
+Feb 21 08:18 : client: [55] closed
+Feb 21 08:18 : client: [56] opened from [::1]:42776
+Feb 21 08:22 : player: played "Anime_songs/Melty Sky -sprite PIANO Selection-/06 - 『恋と選挙とチョコレート』BGMメドレー.mp3"
+Feb 21 08:22 : client: [56] closed
+Feb 21 08:22 : client: [57] opened from [::1]:42778
+Feb 21 08:22 : client: [57] closed
+Feb 21 08:22 : client: [58] opened from [::1]:42780
+Feb 21 08:26 : player: played "Anime_songs/Melty Sky -sprite PIANO Selection-/07 - 風のなかのプリムローズ.mp3"
+Feb 21 08:26 : client: [58] closed
+Feb 21 08:26 : client: [59] opened from [::1]:42794
+Feb 21 08:26 : client: [59] closed
+Feb 21 08:26 : client: [60] opened from [::1]:42796
+Feb 21 08:30 : player: played "Anime_songs/Melty Sky -sprite PIANO Selection-/08 - Wings of Courage -空を超えて-.mp3"
+Feb 21 08:30 : client: [60] closed
+Feb 21 08:30 : client: [61] opened from [::1]:42810
+Feb 21 08:30 : client: [61] closed
+Feb 21 08:30 : client: [62] opened from [::1]:42812
+Feb 21 08:33 : player: played "Anime_songs/Melty Sky -sprite PIANO Selection-/09 - INFINITE SKY.mp3"
+Feb 21 08:33 : client: [62] closed
+Feb 21 08:33 : client: [63] opened from [::1]:42814
+Feb 21 08:33 : client: [63] closed
+Feb 21 08:33 : client: [64] opened from [::1]:42816
+Feb 21 08:42 : player: played "Anime_songs/Melty Sky -sprite PIANO Selection-/10 - sprite LIVE 2015  『蒼の彼方のフォーリズム』キャラクターソングメドレー.mp3"
+Feb 21 08:42 : client: [64] closed
+Feb 21 08:42 : client: [65] opened from [::1]:42848
+Feb 21 08:42 : client: [65] closed
+Feb 21 08:42 : client: [66] opened from [::1]:42850
+Feb 21 08:45 : player: played "Anime_songs/Melty Sky -sprite PIANO Selection-/11 - 『蒼の彼方のフォーリズム』BGMメドレー.mp3"
+Feb 21 08:45 : client: [66] closed
+Feb 21 08:45 : client: [67] opened from [::1]:42852
+Feb 21 08:45 : client: [67] closed
+Feb 21 08:45 : client: [68] opened from [::1]:42854
+Feb 21 08:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 21 08:49 : player: played "Anime_songs/Melty Sky -sprite PIANO Selection-/12 - Sky is the limit.mp3"
+Feb 21 08:49 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 21 08:49 : client: [68] closed
+Feb 21 08:49 : client: [69] opened from [::1]:42856
+Feb 21 08:49 : client: [69] closed
+Feb 21 08:49 : client: [70] opened from [::1]:42858
+Feb 21 08:51 : player: played "Anime_songs/Violet Evergarden/Disc 2/23 Believe in... (Short Size).m4a"
+Feb 21 08:51 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 21 08:51 : client: [70] closed
+Feb 21 08:51 : client: [71] opened from [::1]:42860
+Feb 21 08:51 : client: [71] closed
+Feb 21 08:51 : client: [72] opened from [::1]:42862
+Feb 21 08:55 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/01- 懢梲濰偔擱偊傛僇僆僗.mp3"
+Feb 21 08:55 : client: [72] closed
+Feb 21 08:55 : client: [73] opened from [::1]:42864
+Feb 21 08:55 : client: [73] closed
+Feb 21 08:55 : client: [74] opened from [::1]:42866
+Feb 21 09:00 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/02- 僴儎僥偺偛偲偔!.mp3"
+Feb 21 09:00 : client: [74] closed
+Feb 21 09:00 : client: [75] opened from [::1]:42870
+Feb 21 09:00 : client: [75] closed
+Feb 21 09:00 : client: [76] opened from [::1]:42872
+Feb 21 09:02 : client: [76] closed
+Feb 21 09:02 : client: [77] opened from [::1]:42890
+Feb 21 09:05 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/03- 僸儍僟僀儞偺僇僇僇僞仚僇僞僆儌僀-C.mp3"
+Feb 21 09:05 : client: [77] closed
+Feb 21 09:05 : client: [78] opened from [::1]:42892
+Feb 21 09:05 : client: [78] closed
+Feb 21 09:05 : client: [79] opened from [::1]:42894
+Feb 21 09:10 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/04- 偄偉偡!備備備仚備傞備傝侓侓.mp3"
+Feb 21 09:10 : client: [79] closed
+Feb 21 09:10 : client: [80] opened from [::1]:42896
+Feb 21 09:10 : client: [80] closed
+Feb 21 09:10 : client: [81] opened from [::1]:42898
+Feb 21 18:41 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/05- 宱尡抣忋徃拞仚.mp3"
+Feb 21 18:41 : client: [81] closed
+Feb 21 18:41 : client: [82] opened from [::1]:42904
+Feb 21 18:41 : client: [82] closed
+Feb 21 18:41 : client: [83] opened from [::1]:42906
+Feb 21 18:45 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/06- Love Destiny.mp3"
+Feb 21 18:45 : client: [83] closed
+Feb 21 18:45 : client: [84] opened from [::1]:43032
+Feb 21 18:45 : client: [84] closed
+Feb 21 18:45 : client: [85] opened from [::1]:43034
+Feb 21 18:50 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/07- 惓夝偼傂偲偮!偠傖側偄!!.mp3"
+Feb 21 18:50 : client: [85] closed
+Feb 21 18:50 : client: [86] opened from [::1]:43062
+Feb 21 18:50 : client: [86] closed
+Feb 21 18:50 : client: [87] opened from [::1]:43064
+Feb 21 18:51 : client: [88] opened from [::1]:43066
+Feb 21 18:51 : client: [87] closed
+Feb 21 18:51 : client: [88] closed
+Feb 21 18:51 : client: [89] opened from [::1]:43068
+Feb 21 18:51 : client: [89] closed
+Feb 21 18:51 : client: [90] opened from [::1]:43070
+Feb 21 20:56 : client: [90] closed
+Feb 21 21:02 : client: [91] opened from [::1]:43648
+Feb 21 21:02 : client: [92] opened from [::1]:43650
+Feb 21 21:02 : client: [92] closed
+xcb_connection_has_error() returned true
+xcb_connection_has_error() returned true
+Feb 21 21:02 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 21 21:02 : client: [93] opened from [::1]:43664
+Feb 21 21:02 : client: [93] closed
+Feb 21 21:02 : client: [91] closed
+Feb 21 21:02 : client: [94] opened from [::1]:43666
+Feb 21 21:03 : client: [94] closed
+Feb 21 21:03 : client: [95] opened from [::1]:43668
+Feb 21 21:05 : client: [95] closed
+Feb 21 21:05 : client: [96] opened from [::1]:43670
+Feb 21 21:06 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/06- Love Destiny.mp3"
+Feb 21 21:06 : client: [96] closed
+Feb 21 21:06 : client: [97] opened from [::1]:43672
+Feb 21 21:06 : client: [97] closed
+Feb 21 21:06 : client: [98] opened from [::1]:43674
+Feb 21 21:10 : client: [99] opened from [::1]:43690
+Feb 21 21:10 : client: [98] closed
+Feb 21 21:10 : client: [99] closed
+Feb 21 21:10 : client: [100] opened from [::1]:43692
+Feb 21 21:10 : client: [100] closed
+Feb 21 21:10 : client: [101] opened from [::1]:43694
+Feb 22 01:14 : client: [101] closed
+Feb 22 01:14 : client: [102] opened from [::1]:45652
+Feb 22 01:14 : client: [102] closed
+Feb 22 01:15 : client: [103] opened from [::1]:45654
+Feb 22 16:31 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Feb 22 16:31 : client: [0] opened from [::1]:40360
+Feb 22 16:31 : client: [0] closed
+Feb 22 16:31 : client: [1] opened from [::1]:40362
+Feb 22 16:31 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Feb 22 16:31 : client: [1] closed
+Feb 22 16:31 : client: [2] opened from [::1]:40364
+Feb 23 21:28 : client: [3] opened from [::1]:44622
+Feb 23 21:28 : client: [4] opened from [::1]:44624
+Feb 23 21:28 : client: [4] closed
+Feb 23 21:28 : client: [3] closed
+Feb 26 14:15 : client: [2] closed
+Feb 26 14:17 : client: [5] opened from [::1]:59808
+Mar 03 18:52 : client: [6] opened from [::1]:33810
+Mar 03 18:52 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 03 18:52 : client: [5] closed
+Mar 03 18:52 : client: [6] closed
+Mar 03 18:52 : client: [7] opened from [::1]:33812
+Mar 03 18:52 : client: [7] closed
+Mar 03 18:52 : client: [8] opened from [::1]:33814
+Mar 03 18:55 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/08- 偄偪偛僐儞僾儕乕僩.mp3"
+Mar 03 18:55 : client: [8] closed
+Mar 03 18:55 : client: [9] opened from [::1]:33816
+Mar 03 18:55 : client: [9] closed
+Mar 03 18:55 : client: [10] opened from [::1]:33818
+Mar 03 19:01 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/09- 僸儍僟僀儞偺僇僇僇僞仚僇僞僆儌僀-C [Instrumental].mp3"
+Mar 03 19:01 : client: [10] closed
+Mar 03 19:01 : client: [11] opened from [::1]:33838
+Mar 03 19:01 : client: [11] closed
+Mar 03 19:01 : client: [12] opened from [::1]:33840
+Mar 03 19:05 : player: played "Anime_songs/朑JAZZ vol.1 (MP3)/10- 惓夝偼傂偲偮!偠傖側偄!! [Instrumental].mp3"
+Mar 03 19:05 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 03 19:05 : client: [12] closed
+Mar 03 19:05 : client: [13] opened from [::1]:33846
+Mar 03 19:05 : client: [13] closed
+Mar 03 19:05 : client: [14] opened from [::1]:33848
+Mar 03 19:09 : player: played "Anime_songs/萌 JAZZ/01. 萌ジャズ Dreamer.flac"
+Mar 03 19:09 : client: [14] closed
+Mar 03 19:09 : client: [15] opened from [::1]:33852
+Mar 03 19:09 : client: [15] closed
+Mar 03 19:09 : client: [16] opened from [::1]:33854
+Mar 03 19:11 : player: played "Anime_songs/萌 JAZZ/02. 萌ジャズ Dreamer (BOSSA NOVA ver.).flac"
+Mar 03 19:11 : client: [16] closed
+Mar 03 19:11 : client: [17] opened from [::1]:33856
+Mar 03 19:11 : client: [17] closed
+Mar 03 19:11 : client: [18] opened from [::1]:33858
+Mar 03 19:15 : player: played "Anime_songs/萌 JAZZ/03. 萌ジャズ Dreamer (instrumental).flac"
+Mar 03 19:15 : client: [18] closed
+Mar 03 19:15 : client: [19] opened from [::1]:33860
+Mar 03 19:15 : client: [19] closed
+Mar 03 19:15 : client: [20] opened from [::1]:33862
+Mar 03 19:18 : player: played "Anime_songs/萌 JAZZ/04. Outroduction.flac"
+Mar 03 19:18 : client: [20] closed
+Mar 03 19:18 : client: [21] opened from [::1]:33870
+Mar 03 19:18 : client: [21] closed
+Mar 03 19:18 : client: [22] opened from [::1]:33872
+Mar 03 20:07 : client: [23] opened from [::1]:33918
+Mar 03 20:07 : client: [23] closed
+Mar 03 20:07 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 03 20:07 : client: [22] closed
+Mar 03 20:07 : client: [24] opened from [::1]:33920
+Mar 03 20:07 : client: [24] closed
+Mar 03 20:07 : client: [25] opened from [::1]:33922
+Mar 03 20:07 : client: [26] opened from [::1]:33924
+Mar 03 20:07 : client: [25] closed
+Mar 03 20:07 : client: [26] closed
+Mar 03 20:07 : client: [27] opened from [::1]:33926
+Mar 03 20:07 : client: [27] closed
+Mar 03 20:07 : client: [28] opened from [::1]:33928
+Mar 03 20:07 : client: [29] opened from [::1]:33930
+Mar 03 20:07 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 03 20:07 : client: [28] closed
+Mar 03 20:07 : client: [29] closed
+Mar 03 20:07 : client: [30] opened from [::1]:33932
+Mar 03 20:07 : client: [30] closed
+Mar 03 20:07 : client: [31] opened from [::1]:33934
+Mar 03 20:07 : client: [32] opened from [::1]:33936
+Mar 03 20:07 : client: [31] closed
+Mar 03 20:07 : client: [32] closed
+Mar 03 20:07 : client: [33] opened from [::1]:33938
+Mar 03 20:07 : client: [33] closed
+Mar 03 20:07 : client: [34] opened from [::1]:33940
+Mar 03 20:07 : client: [35] opened from [::1]:33942
+Mar 03 20:07 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 03 20:07 : client: [34] closed
+Mar 03 20:07 : client: [35] closed
+Mar 03 20:07 : client: [36] opened from [::1]:33944
+Mar 03 20:07 : client: [36] closed
+Mar 03 20:07 : client: [37] opened from [::1]:33946
+Mar 03 20:07 : client: [38] opened from [::1]:33948
+Mar 03 20:07 : client: [37] closed
+Mar 03 20:07 : client: [38] closed
+Mar 03 20:07 : client: [39] opened from [::1]:33950
+Mar 03 20:07 : client: [39] closed
+Mar 03 20:07 : client: [40] opened from [::1]:33952
+Mar 03 20:07 : client: [41] opened from [::1]:33954
+Mar 03 20:07 : client: [40] closed
+Mar 03 20:07 : client: [41] closed
+Mar 03 20:07 : client: [42] opened from [::1]:33956
+Mar 03 20:07 : client: [42] closed
+Mar 03 20:07 : client: [43] opened from [::1]:33958
+Mar 03 20:07 : client: [44] opened from [::1]:33960
+Mar 03 20:07 : client: [43] closed
+Mar 03 20:07 : client: [44] closed
+Mar 03 20:07 : client: [45] opened from [::1]:33962
+Mar 03 20:07 : client: [45] closed
+Mar 03 20:07 : client: [46] opened from [::1]:33964
+Mar 03 20:07 : client: [47] opened from [::1]:33966
+Mar 03 20:07 : client: [46] closed
+Mar 03 20:07 : client: [47] closed
+Mar 03 20:07 : client: [48] opened from [::1]:33968
+Mar 03 20:07 : client: [48] closed
+Mar 03 20:07 : client: [49] opened from [::1]:33970
+Mar 05 10:49 : client: [49] closed
+Mar 05 10:51 : client: [50] opened from [::1]:42416
+Mar 05 10:54 : client: [50] closed
+Mar 05 10:54 : client: [51] opened from [::1]:42504
+Mar 05 20:14 : client: [52] opened from [::1]:44678
+Mar 05 20:14 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 05 20:14 : client: [51] closed
+Mar 05 20:14 : client: [52] closed
+Mar 05 20:14 : client: [53] opened from [::1]:44680
+Mar 05 20:14 : client: [53] closed
+Mar 05 20:14 : client: [54] opened from [::1]:44682
+Mar 05 20:14 : client: [55] opened from [::1]:44684
+Mar 05 20:14 : client: [54] closed
+Mar 05 20:14 : client: [55] closed
+Mar 05 20:14 : client: [56] opened from [::1]:44686
+Mar 05 20:14 : client: [56] closed
+Mar 05 20:14 : client: [57] opened from [::1]:44688
+Mar 07 16:58 : client: [58] opened from [::1]:53314
+Mar 07 16:58 : player: played "Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3"
+Mar 07 16:58 : client: [57] closed
+Mar 07 16:58 : client: [58] closed
+Mar 07 16:58 : client: [59] opened from [::1]:53316
+Mar 07 16:58 : client: [59] closed
+Mar 07 16:58 : client: [60] opened from [::1]:53318
+Mar 09 15:16 : client: [60] closed
+Mar 09 15:18 : client: [61] opened from [::1]:38548
+Mar 09 15:51 : client: [61] closed
+Mar 09 15:51 : client: [62] opened from [::1]:38662
+Mar 09 16:06 : client: [63] opened from [::1]:38818
+Mar 09 16:06 : exception: Not playing
+Mar 09 16:06 : client: [63] closed
+Mar 09 16:06 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 09 16:06 : update: added Anime_songs/萌 JAZZ/02. 萌ジャズ Dreamer (BOSSA NOVA ver.).flac
+Mar 09 16:06 : update: added Anime_songs/萌 JAZZ/01. 萌ジャズ Dreamer.flac
+Mar 09 16:06 : update: added Anime_songs/萌 JAZZ/03. 萌ジャズ Dreamer (instrumental).flac
+Mar 09 16:06 : update: added Anime_songs/萌 JAZZ/04. Outroduction.flac
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/01- 懢梲濰偔擱偊傛僇僆僗.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/04- 偄偉偡!備備備仚備傞備傝侓侓.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/02- 僴儎僥偺偛偲偔!.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/05- 宱尡抣忋徃拞仚.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/07- 惓夝偼傂偲偮!偠傖側偄!!.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/03- 僸儍僟僀儞偺僇僇僇僞仚僇僞僆儌僀-C.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/06- Love Destiny.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/10- 惓夝偼傂偲偮!偠傖側偄!! [Instrumental].mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/08- 偄偪偛僐儞僾儕乕僩.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.1 (MP3)/09- 僸儍僟僀儞偺僇僇僇僞仚僇僞僆儌僀-C [Instrumental].mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/01. ラテアート幻想郷.mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/04. 昼下がりのビタースウィート.mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/06. あしたも抹茶色.mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/03. ねこまたアキアート.mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/07. 終わらないカフェテラス.mp3
+Mar 09 16:06 : update: added Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/02. ようこそ喫茶白玉楼へ.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/03. autumn wind.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/05. River path.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/02. Fall of summer memories -煌く水面-.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/04. Usual Place.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/08. Mellow Waves.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/01. Naive Face.mp3
+Mar 09 16:06 : update: added Anime_songs/Cafe de Touhou 7/06. Mirage.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/04 - Jewelry Time.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/08 - Wings of Courage -空を超えて-.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/07 - 風のなかのプリムローズ.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/12 - Sky is the limit.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/06 - 『恋と選挙とチョコレート』BGMメドレー.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/05 - シグナルグラフ.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/11 - 『蒼の彼方のフォーリズム』BGMメドレー.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/01 - INITIATIVE.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/03 - 青空 Starting Line.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/02 - sprite LIVE 2015  『恋と選挙とチョコレート』キャラクターソングメドレー.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/09 - INFINITE SKY.mp3
+Mar 09 16:06 : update: added Anime_songs/Melty Sky -sprite PIANO Selection-/10 - sprite LIVE 2015  『蒼の彼方のフォーリズム』キャラクターソングメドレー.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/04. Perfect Day Dream - ししまい3号.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/05. 暖色系アリス - koutaq.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/09. Below Between Beyond - Ludo.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/02. faraway country - 鯛の小骨.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/01. もし、空が晴れるなら - Bizen.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/07. 無何有の郷 (KiRa Remix) - Coro.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/10. Sky Garden - Takayan.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/11. Lotus - KA=YA.mp3
+Mar 09 16:06 : update: added Anime_songs/2010.12.30 Cafe de Touhou [C79]/06. 風の都 - Bizen.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/Blue sky of wind.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/A Brief Vacation.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/Cramped space.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/思い出景色.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/Bell of Mugen.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/Cool shade.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/上昇気流.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/迷い込んで迷路庭園.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/窓から外を見ると.mp3
+Mar 09 16:06 : update: added Anime_songs/[DDBY] 座って聴く東方文花帳/近く遠い斜め色の空.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/05 - Lupe.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/12 - See You ～小さな永遠～.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/08 - Permit.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/04 - 遮光.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/02 - Face of Fact.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/10 - I pray to stop my cry -little sea style-.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/01 - Close to me….mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/13 - Imaginary affair.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/11 - SNOW.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/09 - 砂の城 -The Castle of Sand-.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/03 - Ever stay snow.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/06 - Do you know the magic_.mp3
+Mar 09 16:06 : update: added Anime_songs/I've Piano Pieces Monochrome Solitude vol.2/07 - Out Flow.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/06 [OdiakeS] Skyscraper of Horizon.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/03 [ししまい3号] 濡れた素肌に.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/04 [鯛の小骨] かんぱんバカンス.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/10 [Takayan] Old under the sun.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/09 [NOAH] SEAMOON.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/11 [F] Blue Wings.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/08 [Bizen] 流星階段.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/02 [ぴーえー] unknown.your smile.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/07 [KA=YA] Prime Star.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/01 [Bizen] Seaside.mp3
+Mar 09 16:06 : update: added Anime_songs/[C80] DDBY - Cafe de Touhou 2/05 [ひろさわけんぢ] Romance for you.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/05. DDBY - 奀増偄僔僥傿.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/03. DDBY - 儕僶乕僒僀僪僇僼僃.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/08. DDBY - 楒恖偺抋惗擔.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/04. DDBY - 塉偺奨.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/07. DDBY - 恀栭拞偑丄崱偦偺栚傪妎傑偡.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/02. DDBY - 偄傠偳傝棳傟惎.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/01. DDBY - 壠楬傪媫偄偱.mp3
+Mar 09 16:06 : update: added Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/06. DDBY - 岎嵎揰偱楒偵棊偪偰.mp3
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/23 Believe in... (Short Size).m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/17 The Storm.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/18 Letters From Heaven.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/02 Wherever You Are, Wherever You May Be.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/24 Violet Snow (Short size).m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/10 Fractured Heart.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/13 Torn Apart at the Seams.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/07 The Love That Binds Us.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/01 Across the Violet Sky.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/20 Violet's Letter.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/26 Letter (Short Size).m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/16 The Songstress Aria (Instrumental).m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/04 Adamantine Dreams.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/08 Devoid of Hope.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/15 The Stench of Fear and Hatred.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/19 What It Means To Love.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/03 Never Coming Back.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/22 みちしるべ (Short Size).m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/25 The Songstress Aria.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/06 Inconsolable.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/12 Always Watching Over You.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/05 The Ultimate Price.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/14 Intertwined Fates.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/21 Sincerely (Short Size).m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/11 Innocence.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 2/09 Torment.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/09 In Remembrance.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/16 Those Words You Spoke to Me.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/19 Each Memory a Message.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/20 The Long Night.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/04 Unspoken Words.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/06 Another Sunny Day.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/07 The Voice in My Heart.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/14 A Place to Call Home.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/01 Theme of Violet Evergarden.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/10 Ink to Paper.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/11 The Birth of a Legend.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/15 An Admirable Doll.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/12 To The Ends of Our World.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/08 Rust.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/13 Back in Business.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/21 Violet Snow for Orchestra.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/05 A Simple Mission.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/18 A Bit of Sass.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/17 Strangeling.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/03 One Last Message.m4a
+Mar 09 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 09 16:06 : update: added Anime_songs/Violet Evergarden/Disc 1/02 A Doll's Beginning.m4a
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.2 (MP3)/05- 偲傑偳偄價僞乕僠儏乕儞.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.2 (MP3)/03- secret base 乣孨偑偔傟偨傕偺乣 (10 years after Ver.).mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.2 (MP3)/02- 備傝備傜傜傜傜備傞備傝戝帠審.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.2 (MP3)/01- 僆儗儞僕.mp3
+Mar 09 16:06 : update: added Anime_songs/朑JAZZ vol.2 (MP3)/04- 楒垽僒乕僉儏儗乕僔儑儞.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/02. heartfelt fancy（ハートフェルトファンシー）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/04. Brilliant Girls（ハルトマンの妖怪少女）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/07. Slope of Intention（緑眼のジェラシー）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/05. 廃獄ララバイ（廃獄ララバイ）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/01. VAGUELY PASSION（封じられた妖怪 ～ Lost Place）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/03. ラテアート（霊知の太陽信仰 ～ Nuclear Fusion）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/08. Wanna be free（ラストリモート）.mp3
+Mar 09 16:06 : update: added Anime_songs/(C87) [DDBY] Cafe de Touhou 6/06. 地獄でお茶を（旧地獄街道を行く）.mp3
+Mar 09 16:06 : exception: Failed to access /home/alex/Music/Genki2: No such file or directory
+Mar 09 16:06 : client: [64] opened from [::1]:38820
+Mar 09 16:06 : client: [64] closed
+Mar 09 16:06 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 09 16:06 : client: [62] closed
+Mar 09 16:06 : client: [65] opened from [::1]:38822
+Mar 09 16:06 : client: [65] closed
+Mar 09 16:06 : client: [66] opened from [::1]:38824
+Mar 09 16:06 : client: [67] opened from [::1]:38826
+Mar 09 16:06 : player: played "Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3"
+Mar 09 16:06 : client: [66] closed
+Mar 09 16:06 : client: [67] closed
+Mar 09 16:06 : client: [68] opened from [::1]:38828
+Mar 09 16:06 : client: [68] closed
+Mar 09 16:06 : client: [69] opened from [::1]:38830
+Mar 09 19:22 : client: [69] closed
+Mar 09 19:23 : client: [70] opened from [::1]:40462
+Mar 10 16:40 : client: [71] opened from [::1]:46188
+Mar 10 16:40 : client: [71] closed
+Mar 10 16:40 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 10 16:40 : client: [70] closed
+Mar 10 16:40 : client: [72] opened from [::1]:46190
+Mar 10 16:40 : client: [72] closed
+Mar 10 16:40 : client: [73] opened from [::1]:46192
+Mar 10 16:40 : client: [74] opened from [::1]:46194
+Mar 10 16:40 : client: [73] closed
+Mar 10 16:40 : client: [74] closed
+Mar 10 16:40 : client: [75] opened from [::1]:46196
+Mar 10 16:40 : client: [75] closed
+Mar 10 16:40 : client: [76] opened from [::1]:46198
+Mar 10 16:40 : client: [77] opened from [::1]:46200
+Mar 10 16:40 : client: [76] closed
+Mar 10 16:40 : client: [77] closed
+Mar 10 16:40 : client: [78] opened from [::1]:46202
+Mar 10 16:40 : client: [78] closed
+Mar 10 16:40 : client: [79] opened from [::1]:46204
+Mar 10 16:40 : client: [80] opened from [::1]:46206
+Mar 10 16:40 : player: played "Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3"
+Mar 10 16:40 : client: [79] closed
+Mar 10 16:40 : client: [80] closed
+Mar 10 16:40 : client: [81] opened from [::1]:46208
+Mar 10 16:40 : client: [81] closed
+Mar 10 16:40 : client: [82] opened from [::1]:46210
+Mar 10 16:40 : client: [83] opened from [::1]:46212
+Mar 10 16:40 : client: [83] closed
+Mar 10 16:40 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 10 16:40 : client: [82] closed
+Mar 10 16:40 : client: [84] opened from [::1]:46214
+Mar 10 16:40 : client: [84] closed
+Mar 10 16:40 : client: [85] opened from [::1]:46216
+Mar 10 16:43 : client: [86] opened from [::1]:46230
+Mar 10 16:43 : client: [85] closed
+Mar 10 16:43 : client: [86] closed
+Mar 10 16:43 : client: [87] opened from [::1]:46232
+Mar 10 16:43 : client: [87] closed
+Mar 10 16:43 : client: [88] opened from [::1]:46234
+Mar 10 16:43 : client: [89] opened from [::1]:46236
+Mar 10 16:43 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 10 16:43 : client: [88] closed
+Mar 10 16:43 : client: [89] closed
+Mar 10 16:43 : client: [90] opened from [::1]:46238
+Mar 10 16:43 : client: [90] closed
+Mar 10 16:43 : client: [91] opened from [::1]:46240
+Mar 10 16:45 : player: played "Anime_songs/Cafe de Touhou 7/07. Smoky Carrot.mp3"
+Mar 10 16:45 : client: [91] closed
+Mar 10 16:45 : client: [92] opened from [::1]:46244
+Mar 10 16:45 : client: [92] closed
+Mar 10 16:45 : client: [93] opened from [::1]:46246
+Mar 10 16:49 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/03. Jam from memories of winter - ぴーえー.mp3"
+Mar 10 16:49 : client: [93] closed
+Mar 10 16:49 : client: [94] opened from [::1]:46248
+Mar 10 16:49 : client: [94] closed
+Mar 10 16:49 : client: [95] opened from [::1]:46250
+Mar 10 16:54 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/02 [ぴーえー] unknown.your smile.mp3"
+Mar 10 16:54 : client: [95] closed
+Mar 10 16:54 : client: [96] opened from [::1]:46268
+Mar 10 16:54 : client: [96] closed
+Mar 10 16:54 : client: [97] opened from [::1]:46270
+Mar 10 16:57 : client: [98] opened from [::1]:46272
+Mar 10 16:57 : client: [97] closed
+Mar 10 16:57 : client: [98] closed
+Mar 10 16:57 : client: [99] opened from [::1]:46274
+Mar 10 16:57 : client: [99] closed
+Mar 10 16:57 : client: [100] opened from [::1]:46276
+Mar 10 16:57 : client: [101] opened from [::1]:46278
+Mar 10 16:57 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 10 16:57 : client: [100] closed
+Mar 10 16:57 : client: [101] closed
+Mar 10 16:57 : client: [102] opened from [::1]:46280
+Mar 10 16:57 : client: [102] closed
+Mar 10 16:57 : client: [103] opened from [::1]:46282
+Mar 10 16:58 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Mar 10 16:58 : client: [103] closed
+Mar 10 16:58 : client: [104] opened from [::1]:46286
+Mar 10 16:58 : client: [104] closed
+Mar 10 16:58 : client: [105] opened from [::1]:46288
+Mar 10 17:02 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/05 [ひろさわけんぢ] Romance for you.mp3"
+Mar 10 17:02 : client: [105] closed
+Mar 10 17:02 : client: [106] opened from [::1]:46316
+Mar 10 17:02 : client: [106] closed
+Mar 10 17:02 : client: [107] opened from [::1]:46318
+Mar 10 17:06 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/04. Perfect Day Dream - ししまい3号.mp3"
+Mar 10 17:06 : client: [107] closed
+Mar 10 17:06 : client: [108] opened from [::1]:46336
+Mar 10 17:06 : client: [108] closed
+Mar 10 17:06 : client: [109] opened from [::1]:46338
+Mar 10 17:10 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/03 [ししまい3号] 濡れた素肌に.mp3"
+Mar 10 17:10 : client: [109] closed
+Mar 10 17:10 : client: [110] opened from [::1]:46354
+Mar 10 17:10 : client: [110] closed
+Mar 10 17:10 : client: [111] opened from [::1]:46356
+Mar 10 17:14 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/06. DDBY - 岎嵎揰偱楒偵棊偪偰.mp3"
+Mar 10 17:14 : client: [111] closed
+Mar 10 17:14 : client: [112] opened from [::1]:46370
+Mar 10 17:14 : client: [112] closed
+Mar 10 17:14 : client: [113] opened from [::1]:46372
+Mar 10 17:17 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Mar 10 17:17 : client: [113] closed
+Mar 10 17:17 : client: [114] opened from [::1]:46418
+Mar 10 17:17 : client: [114] closed
+Mar 10 17:17 : client: [115] opened from [::1]:46420
+Mar 10 17:22 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/09. Below Between Beyond - Ludo.mp3"
+Mar 10 17:22 : client: [115] closed
+Mar 10 17:22 : client: [116] opened from [::1]:46434
+Mar 10 17:22 : client: [116] closed
+Mar 10 17:22 : client: [117] opened from [::1]:46436
+Mar 10 17:26 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Mar 10 17:26 : client: [117] closed
+Mar 10 17:26 : client: [118] opened from [::1]:46438
+Mar 10 17:26 : client: [118] closed
+Mar 10 17:26 : client: [119] opened from [::1]:46440
+Mar 10 17:31 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/11 [F] Blue Wings.mp3"
+Mar 10 17:31 : client: [119] closed
+Mar 10 17:31 : client: [120] opened from [::1]:46444
+Mar 10 17:31 : client: [120] closed
+Mar 10 17:31 : client: [121] opened from [::1]:46446
+Mar 10 17:34 : player: played "Anime_songs/Cafe de Touhou 7/06. Mirage.mp3"
+Mar 10 17:34 : client: [121] closed
+Mar 10 17:34 : client: [122] opened from [::1]:46496
+Mar 10 17:34 : client: [122] closed
+Mar 10 17:34 : client: [123] opened from [::1]:46498
+Mar 10 17:38 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/03. DDBY - 儕僶乕僒僀僪僇僼僃.mp3"
+Mar 10 17:38 : client: [123] closed
+Mar 10 17:38 : client: [124] opened from [::1]:46596
+Mar 10 17:38 : client: [124] closed
+Mar 10 17:38 : client: [125] opened from [::1]:46598
+Mar 10 17:41 : client: [126] opened from [::1]:46646
+Mar 10 17:41 : client: [125] closed
+Mar 10 17:41 : client: [126] closed
+Mar 10 17:41 : client: [127] opened from [::1]:46648
+Mar 10 17:41 : client: [127] closed
+Mar 10 17:41 : client: [128] opened from [::1]:46650
+Mar 11 22:14 : client: [129] opened from [::1]:55440
+Mar 11 22:14 : exception: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 11 22:14 : client: [128] closed
+Mar 11 22:14 : client: [129] closed
+Mar 11 22:14 : client: [130] opened from [::1]:55442
+Mar 11 22:14 : client: [130] closed
+Mar 11 22:14 : client: [131] opened from [::1]:55444
+Mar 11 22:15 : client: [132] opened from [::1]:55446
+Mar 11 22:15 : client: [131] closed
+Mar 11 22:15 : client: [132] closed
+Mar 11 22:15 : client: [133] opened from [::1]:55448
+Mar 11 22:15 : client: [133] closed
+Mar 11 22:15 : client: [134] opened from [::1]:55450
+Mar 13 16:06 : client: [134] closed
+Mar 13 16:06 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/03. DDBY - 儕僶乕僒僀僪僇僼僃.mp3"
+Mar 13 16:07 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 13 16:07 : client: [0] opened from [::1]:50640
+Mar 13 16:15 : client: [0] closed
+Mar 13 16:16 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 13 16:16 : client: [0] opened from [::1]:41006
+Mar 13 17:01 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 13 17:01 : client: [0] opened from [::1]:48692
+Mar 13 17:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 13 17:35 : client: [0] opened from [::1]:50244
+Mar 13 17:51 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 13 17:51 : client: [0] opened from [::1]:35872
+Mar 13 18:09 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 13 18:09 : client: [0] opened from [::1]:39860
+Mar 13 18:09 : client: [0] closed
+Mar 13 18:10 : client: [1] opened from [::1]:39862
+Mar 13 18:10 : client: [1] closed
+Mar 13 18:10 : client: [2] opened from [::1]:39864
+Mar 15 18:43 : client: [2] closed
+Mar 15 18:44 : client: [3] opened from [::1]:48218
+Mar 17 20:06 : client: [4] opened from [::1]:55926
+Mar 17 20:06 : exception: Not playing
+Mar 17 20:06 : client: [4] closed
+Mar 17 20:06 : client: [5] opened from [::1]:55928
+Mar 17 20:06 : exception: Not playing
+Mar 17 20:06 : client: [5] closed
+Mar 22 12:31 : client: [3] closed
+Mar 22 12:32 : client: [6] opened from [::1]:45150
+Mar 30 16:25 : client: [7] opened from [::1]:43562
+Mar 30 16:25 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 30 16:25 : client: [7] closed
+Mar 30 16:25 : client: [8] opened from [::1]:43564
+Mar 30 16:25 : client: [8] closed
+Mar 30 16:25 : client: [9] opened from [::1]:43566
+Mar 30 16:25 : client: [10] opened from [::1]:43568
+Mar 30 16:25 : client: [10] closed
+Mar 30 16:25 : client: [11] opened from [::1]:43570
+Mar 30 16:25 : client: [11] closed
+Mar 30 16:25 : client: [12] opened from [::1]:43572
+Mar 30 16:25 : client: [12] closed
+Mar 30 16:25 : client: [9] closed
+Mar 30 17:01 : client: [6] closed
+Mar 30 17:03 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Mar 30 17:03 : client: [0] opened from [::1]:60470
+Mar 30 17:06 : client: [1] opened from [::1]:60472
+Mar 30 17:06 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Mar 30 17:06 : client: [1] closed
+Mar 30 17:06 : client: [2] opened from [::1]:60474
+Mar 30 17:06 : client: [2] closed
+Apr 03 00:43 : client: [3] opened from [::1]:49460
+Apr 03 00:43 : client: [3] closed
+Apr 03 00:44 : client: [4] opened from [::1]:49462
+Apr 03 00:44 : exception: Not playing
+Apr 03 00:44 : client: [4] closed
+Apr 13 22:16 : client: [0] closed
+Apr 13 22:18 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 13 22:18 : client: [0] opened from [::1]:46734
+Apr 19 23:55 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 19 23:55 : client: [0] opened from [::1]:46476
+Apr 20 13:39 : client: [0] closed
+Apr 20 13:41 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 20 13:41 : client: [0] opened from [::1]:45428
+Apr 21 12:39 : client: [0] closed
+Apr 21 12:39 : client: [1] opened from [::1]:50252
+Apr 21 12:46 : client: [1] closed
+Apr 21 12:47 : client: [2] opened from [::1]:50368
+Apr 25 07:57 : client: [2] closed
+Apr 25 16:46 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 25 16:46 : client: [0] opened from [::1]:59788
+Apr 25 16:46 : client: [0] closed
+Apr 25 16:46 : client: [1] opened from [::1]:59790
+Apr 28 21:10 : client: [1] closed
+Apr 28 21:11 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 28 21:11 : client: [0] opened from [::1]:42650
+May 03 17:17 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 03 17:17 : client: [0] opened from [::1]:37346
+May 06 20:33 : client: [0] closed
+May 06 20:33 : client: [1] opened from [::1]:41728
+May 17 11:43 : client: [1] closed
+May 17 11:45 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 17 11:45 : client: [0] opened from [::1]:43746
+May 17 23:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 17 23:04 : client: [0] opened from [::1]:50388
+May 18 17:08 : client: [1] opened from [::1]:51684
+May 18 17:08 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+May 18 17:08 : client: [1] closed
+May 18 17:12 : client: [2] opened from [::1]:51714
+May 18 17:12 : client: [2] closed
+May 18 17:12 : client: [3] opened from [::1]:51716
+May 18 17:12 : client: [3] closed
+May 18 17:12 : client: [4] opened from [::1]:51718
+May 18 17:12 : client: [4] closed
+May 18 17:12 : client: [5] opened from [::1]:51720
+May 18 17:12 : client: [5] closed
+May 18 23:28 : client: [6] opened from [::1]:51874
+May 18 23:28 : client: [6] closed
+May 18 23:28 : client: [7] opened from [::1]:51876
+May 18 23:28 : client: [7] closed
+May 18 23:28 : client: [8] opened from [::1]:51878
+May 18 23:29 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : player: problems opening audio device while playing "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/01. DDBY - 壠楬傪媫偄偱.mp3"
+May 18 23:29 : client: [9] opened from [::1]:51880
+May 18 23:29 : client: [0] closed
+May 18 23:29 : client: [9] closed
+May 18 23:29 : client: [10] opened from [::1]:51882
+May 18 23:29 : client: [10] closed
+May 18 23:29 : client: [11] opened from [::1]:51884
+May 18 23:29 : client: [12] opened from [::1]:51886
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : client: [11] closed
+May 18 23:29 : client: [12] closed
+May 18 23:29 : client: [13] opened from [::1]:51888
+May 18 23:29 : client: [13] closed
+May 18 23:29 : client: [14] opened from [::1]:51890
+May 18 23:29 : client: [15] opened from [::1]:51892
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : client: [14] closed
+May 18 23:29 : client: [15] closed
+May 18 23:29 : client: [16] opened from [::1]:51894
+May 18 23:29 : client: [16] closed
+May 18 23:29 : client: [17] opened from [::1]:51896
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : client: [17] closed
+May 18 23:29 : client: [18] opened from [::1]:51898
+May 18 23:29 : client: [18] closed
+May 18 23:29 : client: [19] opened from [::1]:51900
+May 18 23:29 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/01. DDBY - 壠楬傪媫偄偱.mp3"
+May 18 23:29 : client: [19] closed
+May 18 23:29 : client: [20] opened from [::1]:51902
+May 18 23:29 : client: [20] closed
+May 18 23:29 : client: [21] opened from [::1]:51904
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : player: problems opening audio device while playing "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/02. DDBY - 偄傠偳傝棳傟惎.mp3"
+May 18 23:29 : client: [21] closed
+May 18 23:29 : client: [22] opened from [::1]:51906
+May 18 23:29 : client: [22] closed
+May 18 23:29 : client: [23] opened from [::1]:51908
+May 18 23:29 : client: [23] closed
+May 18 23:29 : client: [24] opened from [::1]:51910
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:29 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:29 : client: [24] closed
+May 18 23:29 : client: [25] opened from [::1]:51912
+May 18 23:29 : client: [25] closed
+May 18 23:29 : client: [26] opened from [::1]:51914
+May 18 23:29 : client: [26] closed
+May 18 23:29 : client: [27] opened from [::1]:51916
+May 18 23:30 : client: [28] opened from [::1]:51918
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : client: [27] closed
+May 18 23:30 : client: [28] closed
+May 18 23:30 : client: [29] opened from [::1]:51920
+May 18 23:30 : client: [29] closed
+May 18 23:30 : client: [30] opened from [::1]:51922
+May 18 23:30 : client: [31] opened from [::1]:51924
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : client: [30] closed
+May 18 23:30 : client: [31] closed
+May 18 23:30 : client: [32] opened from [::1]:51926
+May 18 23:30 : client: [32] closed
+May 18 23:30 : client: [33] opened from [::1]:51928
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : client: [33] closed
+May 18 23:30 : client: [34] opened from [::1]:51930
+May 18 23:30 : client: [34] closed
+May 18 23:30 : client: [35] opened from [::1]:51932
+May 18 23:30 : client: [35] closed
+May 18 23:30 : client: [36] opened from [::1]:51934
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : client: [36] closed
+May 18 23:30 : client: [37] opened from [::1]:51936
+May 18 23:30 : client: [37] closed
+May 18 23:30 : client: [38] opened from [::1]:51938
+May 18 23:30 : client: [38] closed
+May 18 23:30 : client: [39] opened from [::1]:51940
+May 18 23:30 : client: [8] closed
+May 18 23:30 : client: [40] opened from [::1]:51942
+May 18 23:30 : client: [41] opened from [::1]:51944
+May 18 23:30 : client: [41] closed
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:30 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:30 : client: [39] closed
+May 18 23:30 : client: [42] opened from [::1]:51946
+May 18 23:30 : client: [42] closed
+May 18 23:30 : client: [43] opened from [::1]:51948
+May 18 23:30 : client: [43] closed
+May 18 23:30 : client: [44] opened from [::1]:51950
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [44] closed
+May 18 23:31 : client: [45] opened from [::1]:51952
+May 18 23:31 : client: [45] closed
+May 18 23:31 : client: [46] opened from [::1]:51954
+May 18 23:31 : client: [46] closed
+May 18 23:31 : client: [47] opened from [::1]:51956
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [47] closed
+May 18 23:31 : client: [48] opened from [::1]:51958
+May 18 23:31 : client: [48] closed
+May 18 23:31 : client: [49] opened from [::1]:51960
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [49] closed
+May 18 23:31 : client: [50] opened from [::1]:51962
+May 18 23:31 : client: [50] closed
+May 18 23:31 : client: [51] opened from [::1]:51964
+May 18 23:31 : client: [51] closed
+May 18 23:31 : client: [52] opened from [::1]:51966
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [52] closed
+May 18 23:31 : client: [53] opened from [::1]:51968
+May 18 23:31 : client: [53] closed
+May 18 23:31 : client: [54] opened from [::1]:51970
+May 18 23:31 : client: [54] closed
+May 18 23:31 : client: [55] opened from [::1]:51972
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [55] closed
+May 18 23:31 : client: [56] opened from [::1]:51974
+May 18 23:31 : client: [56] closed
+May 18 23:31 : client: [57] opened from [::1]:51976
+May 18 23:31 : client: [57] closed
+May 18 23:31 : client: [58] opened from [::1]:51978
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [58] closed
+May 18 23:31 : client: [59] opened from [::1]:51980
+May 18 23:31 : client: [59] closed
+May 18 23:31 : client: [60] opened from [::1]:51982
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [60] closed
+May 18 23:31 : client: [61] opened from [::1]:51984
+May 18 23:31 : client: [61] closed
+May 18 23:31 : client: [62] opened from [::1]:51986
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [62] closed
+May 18 23:31 : client: [63] opened from [::1]:51988
+May 18 23:31 : client: [63] closed
+May 18 23:31 : client: [64] opened from [::1]:51990
+May 18 23:31 : client: [65] opened from [::1]:51992
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [64] closed
+May 18 23:31 : client: [65] closed
+May 18 23:31 : client: [66] opened from [::1]:51994
+May 18 23:31 : client: [66] closed
+May 18 23:31 : client: [67] opened from [::1]:51996
+May 18 23:31 : client: [67] closed
+May 18 23:31 : client: [68] opened from [::1]:51998
+May 18 23:31 : client: [69] opened from [::1]:52000
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [68] closed
+May 18 23:31 : client: [69] closed
+May 18 23:31 : client: [70] opened from [::1]:52002
+May 18 23:31 : client: [70] closed
+May 18 23:31 : client: [71] opened from [::1]:52004
+May 18 23:31 : client: [71] closed
+May 18 23:31 : client: [72] opened from [::1]:52006
+May 18 23:31 : client: [73] opened from [::1]:52008
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [72] closed
+May 18 23:31 : client: [73] closed
+May 18 23:31 : client: [74] opened from [::1]:52010
+May 18 23:31 : client: [74] closed
+May 18 23:31 : client: [75] opened from [::1]:52012
+May 18 23:31 : client: [76] opened from [::1]:52014
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:31 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:31 : client: [75] closed
+May 18 23:31 : client: [76] closed
+May 18 23:31 : client: [77] opened from [::1]:52016
+May 18 23:31 : client: [77] closed
+May 18 23:31 : client: [78] opened from [::1]:52018
+May 18 23:32 : client: [40] closed
+May 18 23:32 : client: [79] opened from [::1]:52020
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+May 18 23:32 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:32 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:32 : exception: Failed to open "My ALSA Device" (alsa)
+May 18 23:32 : exception: nested: Failed to open ALSA device "default": No such file or directory
+May 18 23:32 : client: [78] closed
+May 18 23:32 : client: [79] closed
+May 18 23:32 : client: [80] opened from [::1]:52022
+May 18 23:32 : client: [80] closed
+May 18 23:32 : client: [81] opened from [::1]:52024
+May 19 23:38 : client: [81] closed
+May 19 23:38 : player: played "Anime_songs/(C89)[20151230] DDBY - 婣傝摴儈儏乕僕僢僋 [v0]/07. DDBY - 恀栭拞偑丄崱偦偺栚傪妎傑偡.mp3"
+May 19 23:39 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 19 23:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 19 23:39 : client: [0] opened from [::1]:42734
+May 30 12:01 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 30 12:01 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 30 12:01 : client: [0] opened from [::1]:49336
+Jun 04 12:07 : client: [1] opened from [::1]:43294
+Jun 04 12:07 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:07 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:07 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:07 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:07 : client: [0] closed
+Jun 04 12:07 : client: [1] closed
+Jun 04 12:07 : client: [2] opened from [::1]:43296
+Jun 04 12:07 : client: [2] closed
+Jun 04 12:07 : client: [3] opened from [::1]:43298
+Jun 04 12:07 : client: [4] opened from [::1]:43300
+Jun 04 12:07 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:07 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:07 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:07 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:07 : client: [3] closed
+Jun 04 12:07 : client: [4] closed
+Jun 04 12:07 : client: [5] opened from [::1]:43302
+Jun 04 12:07 : client: [5] closed
+Jun 04 12:07 : client: [6] opened from [::1]:43304
+Jun 04 12:08 : client: [7] opened from [::1]:43308
+Jun 04 12:08 : client: [8] opened from [::1]:43310
+Jun 04 12:08 : client: [8] closed
+Jun 04 12:08 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:08 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:08 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:08 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:08 : client: [6] closed
+Jun 04 12:08 : client: [9] opened from [::1]:43312
+Jun 04 12:08 : client: [9] closed
+Jun 04 12:08 : client: [10] opened from [::1]:43314
+Jun 04 12:08 : client: [10] closed
+Jun 04 12:08 : client: [11] opened from [::1]:43316
+Jun 04 12:08 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:08 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:08 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:08 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:08 : client: [11] closed
+Jun 04 12:08 : client: [12] opened from [::1]:43318
+Jun 04 12:08 : client: [12] closed
+Jun 04 12:08 : client: [13] opened from [::1]:43320
+Jun 04 12:08 : client: [13] closed
+Jun 04 12:08 : client: [14] opened from [::1]:43322
+Jun 04 12:08 : client: [7] closed
+Jun 04 12:08 : client: [15] opened from [::1]:43326
+Jun 04 12:08 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:08 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:08 : exception: Failed to open "My ALSA Device" (alsa)
+Jun 04 12:08 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Jun 04 12:08 : client: [14] closed
+Jun 04 12:08 : client: [15] closed
+Jun 04 12:08 : client: [16] opened from [::1]:43328
+Jun 04 12:08 : client: [16] closed
+Jun 04 12:08 : client: [17] opened from [::1]:43330
+Jun 19 08:18 : client: [17] closed
+Jun 19 08:19 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jun 19 08:20 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 08:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 08:20 : client: [0] opened from [::1]:41092
+Jun 20 07:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 20 07:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 20 07:34 : client: [0] opened from [::1]:41060
+Jun 22 01:35 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jun 22 01:38 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 22 01:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 22 01:38 : client: [0] opened from [::1]:40474
+Jun 23 01:56 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jun 23 09:56 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 23 09:56 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 23 09:56 : client: [0] opened from [::1]:34698
+Jun 29 21:20 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 29 21:20 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 29 21:20 : client: [0] opened from [::1]:58514
+Jul 06 08:32 : client: [0] closed
+Jul 06 08:32 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jul 06 08:54 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 06 08:54 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 06 08:54 : client: [0] opened from [::1]:50228
+Jul 22 12:19 : client: [0] closed
+Jul 22 12:19 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jul 22 15:39 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 22 15:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 22 15:39 : client: [0] opened from [::1]:58114
+Jul 31 20:11 : client: [0] closed
+Jul 31 20:11 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Jul 31 20:12 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 31 20:12 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jul 31 20:12 : client: [0] opened from [::1]:60640
+Aug 03 08:42 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Aug 03 08:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 03 08:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 03 08:43 : client: [0] opened from [::1]:58174
+Aug 04 09:31 : client: [0] closed
+Aug 04 09:31 : player: played "Anime_songs/[2015.08.14 (C88)][東方] 狐の工作室 — 喫茶白玉楼 (v0)/05. 夕暮れ色のカップ .mp3"
+Aug 04 09:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 09:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 04 09:35 : client: [0] opened from [::1]:60064
+Aug 05 13:56 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 05 13:56 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 05 13:56 : client: [0] opened from [::1]:58314
+Aug 15 15:19 : client: [0] closed
+Aug 15 15:19 : client: [1] opened from [::1]:41400
+Aug 15 15:30 : client: [1] closed
+Aug 15 15:31 : client: [2] opened from [::1]:41426
+Aug 15 20:18 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 15 20:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 15 20:18 : client: [0] opened from [::1]:54802
+Aug 16 12:10 : client: [0] closed
+Aug 16 12:10 : client: [1] opened from [::1]:59322
+Aug 16 12:21 : client: [1] closed
+Aug 16 12:21 : client: [2] opened from [::1]:59694
+Aug 16 12:27 : client: [2] closed
+Aug 16 12:27 : client: [3] opened from [::1]:59702
+Aug 16 12:29 : client: [4] opened from [::1]:59786
+Aug 16 12:29 : client: [3] closed
+Aug 16 12:29 : client: [4] closed
+Aug 16 12:29 : client: [5] opened from [::1]:59788
+Aug 16 12:29 : client: [5] closed
+Aug 16 12:29 : client: [6] opened from [::1]:59790
+Aug 16 12:29 : client: [7] opened from [::1]:59792
+Aug 16 12:29 : client: [6] closed
+Aug 16 12:29 : client: [7] closed
+Aug 16 12:29 : client: [8] opened from [::1]:59794
+Aug 16 12:29 : client: [8] closed
+Aug 16 12:29 : client: [9] opened from [::1]:59796
+Aug 16 12:30 : client: [9] closed
+Aug 16 12:30 : client: [10] opened from [::1]:59800
+Aug 16 12:30 : client: [11] opened from [::1]:59802
+Aug 16 12:30 : client: [10] closed
+Aug 16 12:30 : client: [11] closed
+Aug 16 12:30 : client: [12] opened from [::1]:59804
+Aug 16 12:30 : client: [12] closed
+Aug 16 12:30 : client: [13] opened from [::1]:59806
+Aug 16 12:30 : client: [14] opened from [::1]:59808
+Aug 16 12:30 : client: [13] closed
+Aug 16 12:30 : client: [14] closed
+Aug 16 12:30 : client: [15] opened from [::1]:59810
+Aug 16 12:30 : client: [15] closed
+Aug 16 12:30 : client: [16] opened from [::1]:59812
+Aug 16 12:30 : client: [17] opened from [::1]:59814
+Aug 16 12:30 : client: [16] closed
+Aug 16 12:30 : client: [17] closed
+Aug 16 12:30 : client: [18] opened from [::1]:59816
+Aug 16 12:30 : client: [18] closed
+Aug 16 12:30 : client: [19] opened from [::1]:59818
+Aug 16 12:30 : client: [20] opened from [::1]:59820
+Aug 16 12:30 : client: [19] closed
+Aug 16 12:30 : client: [20] closed
+Aug 16 12:30 : client: [21] opened from [::1]:59822
+Aug 16 12:30 : client: [21] closed
+Aug 16 12:30 : client: [22] opened from [::1]:59824
+Aug 16 12:30 : client: [23] opened from [::1]:59826
+Aug 16 12:30 : client: [22] closed
+Aug 16 12:30 : client: [23] closed
+Aug 16 12:30 : client: [24] opened from [::1]:59828
+Aug 16 12:30 : client: [24] closed
+Aug 16 12:30 : client: [25] opened from [::1]:59830
+Aug 16 12:33 : client: [25] closed
+Aug 16 12:33 : client: [26] opened from [::1]:59988
+Aug 16 12:33 : client: [27] opened from [::1]:60070
+Aug 16 12:33 : client: [26] closed
+Aug 16 12:33 : client: [27] closed
+Aug 16 12:33 : client: [28] opened from [::1]:60072
+Aug 16 12:33 : client: [28] closed
+Aug 16 12:33 : client: [29] opened from [::1]:60074
+Aug 16 12:33 : client: [30] opened from [::1]:60076
+Aug 16 12:33 : client: [29] closed
+Aug 16 12:33 : client: [30] closed
+Aug 16 12:33 : client: [31] opened from [::1]:60078
+Aug 16 12:33 : client: [31] closed
+Aug 16 12:33 : client: [32] opened from [::1]:60080
+Aug 16 12:33 : client: [33] opened from [::1]:60082
+Aug 16 12:33 : client: [32] closed
+Aug 16 12:33 : client: [33] closed
+Aug 16 12:33 : client: [34] opened from [::1]:60084
+Aug 16 12:33 : client: [34] closed
+Aug 16 12:33 : client: [35] opened from [::1]:60086
+Aug 16 12:33 : client: [36] opened from [::1]:60088
+Aug 16 12:33 : client: [35] closed
+Aug 16 12:33 : client: [36] closed
+Aug 16 12:33 : client: [37] opened from [::1]:60090
+Aug 16 12:33 : client: [37] closed
+Aug 16 12:33 : client: [38] opened from [::1]:60092
+Aug 16 12:35 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/02 [ぴーえー] unknown.your smile.mp3"
+Aug 16 12:35 : client: [38] closed
+Aug 16 12:35 : client: [39] opened from [::1]:60104
+Aug 16 12:35 : client: [39] closed
+Aug 16 12:35 : client: [40] opened from [::1]:60106
+Aug 16 12:37 : client: [41] opened from [::1]:60108
+Aug 16 12:37 : client: [42] opened from [::1]:60110
+Aug 16 12:37 : client: [42] closed
+Aug 16 12:37 : client: [41] closed
+Aug 16 12:39 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/03 [ししまい3号] 濡れた素肌に.mp3"
+Aug 16 12:39 : client: [40] closed
+Aug 16 12:39 : client: [43] opened from [::1]:60112
+Aug 16 12:39 : client: [43] closed
+Aug 16 12:39 : client: [44] opened from [::1]:60114
+Aug 16 12:43 : client: [45] opened from [::1]:60162
+Aug 16 12:43 : client: [44] closed
+Aug 16 12:43 : client: [45] closed
+Aug 16 12:43 : client: [46] opened from [::1]:60164
+Aug 16 12:43 : client: [46] closed
+Aug 16 12:43 : client: [47] opened from [::1]:60166
+Aug 16 12:46 : client: [48] opened from [::1]:60178
+Aug 16 12:46 : client: [47] closed
+Aug 16 12:46 : client: [48] closed
+Aug 16 12:46 : client: [49] opened from [::1]:60180
+Aug 16 12:46 : client: [49] closed
+Aug 16 12:46 : client: [50] opened from [::1]:60182
+Aug 16 12:46 : client: [51] opened from [::1]:60184
+Aug 16 12:46 : client: [50] closed
+Aug 16 12:46 : client: [51] closed
+Aug 16 12:46 : client: [52] opened from [::1]:60186
+Aug 16 12:46 : client: [52] closed
+Aug 16 12:46 : client: [53] opened from [::1]:60188
+Aug 16 12:46 : client: [54] opened from [::1]:60190
+Aug 16 12:46 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/05 [ひろさわけんぢ] Romance for you.mp3"
+Aug 16 12:46 : client: [53] closed
+Aug 16 12:46 : client: [54] closed
+Aug 16 12:46 : client: [55] opened from [::1]:60192
+Aug 16 12:46 : client: [55] closed
+Aug 16 12:46 : client: [56] opened from [::1]:60194
+Aug 16 12:46 : client: [57] opened from [::1]:60196
+Aug 16 12:46 : client: [57] closed
+Aug 16 12:46 : client: [56] closed
+Aug 16 12:46 : client: [58] opened from [::1]:60198
+Aug 16 12:46 : client: [58] closed
+Aug 16 12:46 : client: [59] opened from [::1]:60200
+Aug 16 12:46 : client: [60] opened from [::1]:60202
+Aug 16 12:46 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/05 [ひろさわけんぢ] Romance for you.mp3"
+Aug 16 12:46 : client: [59] closed
+Aug 16 12:46 : client: [60] closed
+Aug 16 12:46 : client: [61] opened from [::1]:60204
+Aug 16 12:46 : client: [61] closed
+Aug 16 12:46 : client: [62] opened from [::1]:60206
+Aug 16 12:46 : client: [63] opened from [::1]:60208
+Aug 16 12:46 : client: [62] closed
+Aug 16 12:46 : client: [64] opened from [::1]:60210
+Aug 16 12:46 : client: [63] closed
+Aug 16 12:46 : client: [64] closed
+Aug 16 12:46 : client: [65] opened from [::1]:60212
+Aug 16 12:48 : client: [66] opened from [::1]:60214
+Aug 16 12:48 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/05 [ひろさわけんぢ] Romance for you.mp3"
+Aug 16 12:48 : client: [65] closed
+Aug 16 12:48 : client: [66] closed
+Aug 16 12:48 : client: [67] opened from [::1]:60216
+Aug 16 12:48 : client: [67] closed
+Aug 16 12:48 : client: [68] opened from [::1]:60218
+Aug 16 12:57 : client: [69] opened from [::1]:60376
+Aug 16 12:57 : client: [68] closed
+Aug 16 12:57 : client: [69] closed
+Aug 16 12:57 : client: [70] opened from [::1]:60378
+Aug 16 12:57 : client: [70] closed
+Aug 16 12:57 : client: [71] opened from [::1]:60380
+Aug 16 12:57 : client: [72] opened from [::1]:60382
+Aug 16 12:57 : client: [71] closed
+Aug 16 12:57 : client: [72] closed
+Aug 16 12:57 : client: [73] opened from [::1]:60384
+Aug 16 12:57 : client: [73] closed
+Aug 16 12:57 : client: [74] opened from [::1]:60386
+Aug 16 12:57 : client: [75] opened from [::1]:60388
+Aug 16 12:57 : client: [74] closed
+Aug 16 12:57 : client: [75] closed
+Aug 16 12:57 : client: [76] opened from [::1]:60390
+Aug 16 12:57 : client: [76] closed
+Aug 16 12:57 : client: [77] opened from [::1]:60392
+Aug 16 12:57 : client: [78] opened from [::1]:60394
+Aug 16 12:57 : client: [77] closed
+Aug 16 12:57 : client: [78] closed
+Aug 16 12:57 : client: [79] opened from [::1]:60396
+Aug 16 12:57 : client: [79] closed
+Aug 16 12:57 : client: [80] opened from [::1]:60398
+Aug 16 13:02 : client: [81] opened from [::1]:60614
+Aug 16 13:02 : client: [80] closed
+Aug 16 13:02 : client: [81] closed
+Aug 16 13:02 : client: [82] opened from [::1]:60616
+Aug 16 13:02 : client: [82] closed
+Aug 16 13:02 : client: [83] opened from [::1]:60618
+Aug 16 13:02 : client: [84] opened from [::1]:60620
+Aug 16 13:02 : client: [83] closed
+Aug 16 13:02 : client: [84] closed
+Aug 16 13:02 : client: [85] opened from [::1]:60622
+Aug 16 13:02 : client: [85] closed
+Aug 16 13:02 : client: [86] opened from [::1]:60624
+Aug 16 13:03 : client: [86] closed
+Aug 16 13:03 : client: [87] opened from [::1]:60626
+Aug 16 13:03 : client: [87] closed
+Aug 16 13:03 : client: [88] opened from [::1]:60628
+Aug 16 13:03 : client: [89] opened from [::1]:60630
+Aug 16 13:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:03 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Aug 16 13:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:03 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Aug 16 13:03 : client: [88] closed
+Aug 16 13:03 : client: [89] closed
+Aug 16 13:03 : client: [90] opened from [::1]:60632
+Aug 16 13:03 : client: [90] closed
+Aug 16 13:03 : client: [91] opened from [::1]:60634
+Aug 16 13:03 : client: [92] opened from [::1]:60636
+Aug 16 13:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:03 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Aug 16 13:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:03 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Aug 16 13:03 : client: [91] closed
+Aug 16 13:03 : client: [92] closed
+Aug 16 13:03 : client: [93] opened from [::1]:60638
+Aug 16 13:03 : client: [93] closed
+Aug 16 13:03 : client: [94] opened from [::1]:60640
+Aug 16 13:03 : client: [95] opened from [::1]:60642
+Aug 16 13:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:03 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Aug 16 13:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:03 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Aug 16 13:03 : client: [94] closed
+Aug 16 13:03 : client: [95] closed
+Aug 16 13:03 : client: [96] opened from [::1]:60644
+Aug 16 13:03 : client: [96] closed
+Aug 16 13:03 : client: [97] opened from [::1]:60646
+Aug 16 13:03 : client: [97] closed
+Aug 16 13:03 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/05 [ひろさわけんぢ] Romance for you.mp3"
+Aug 16 13:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 16 13:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 16 13:04 : client: [0] opened from [::1]:34442
+Aug 16 13:04 : client: [0] closed
+Aug 16 13:04 : client: [1] opened from [::1]:34444
+Aug 16 13:04 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 16 13:04 : client: [1] closed
+Aug 16 13:04 : client: [2] opened from [::1]:34446
+Aug 16 13:04 : client: [3] opened from [::1]:34448
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 16 13:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 16 13:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 16 13:04 : client: [2] closed
+Aug 16 13:04 : client: [3] closed
+Aug 16 13:04 : client: [4] opened from [::1]:34450
+Aug 16 13:04 : client: [4] closed
+Aug 16 13:04 : client: [5] opened from [::1]:34452
+Aug 16 13:04 : client: [6] opened from [::1]:34454
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 16 13:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 16 13:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 16 13:04 : client: [5] closed
+Aug 16 13:04 : client: [6] closed
+Aug 16 13:04 : client: [7] opened from [::1]:34456
+Aug 16 13:04 : client: [7] closed
+Aug 16 13:04 : client: [8] opened from [::1]:34458
+Aug 16 13:05 : client: [9] opened from [::1]:34460
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 16 13:05 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:05 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 16 13:05 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:05 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 16 13:05 : client: [8] closed
+Aug 16 13:05 : client: [9] closed
+Aug 16 13:05 : client: [10] opened from [::1]:34462
+Aug 16 13:05 : client: [10] closed
+Aug 16 13:05 : client: [11] opened from [::1]:34464
+Aug 16 13:05 : client: [12] opened from [::1]:34466
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 16 13:05 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:05 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 16 13:05 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 16 13:05 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 16 13:05 : client: [11] closed
+Aug 16 13:05 : client: [12] closed
+Aug 16 13:05 : client: [13] opened from [::1]:34468
+Aug 16 13:05 : client: [13] closed
+Aug 16 13:05 : client: [14] opened from [::1]:34470
+Aug 16 21:58 : client: [14] closed
+Aug 16 21:59 : client: [15] opened from [::1]:35770
+Aug 17 20:59 : client: [15] closed
+Aug 17 20:59 : client: [16] opened from [::1]:38416
+Aug 17 21:00 : client: [17] opened from [::1]:38492
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 17 21:00 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:00 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:00 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:00 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:00 : client: [16] closed
+Aug 17 21:00 : client: [17] closed
+Aug 17 21:00 : client: [18] opened from [::1]:38494
+Aug 17 21:00 : client: [18] closed
+Aug 17 21:00 : client: [19] opened from [::1]:38496
+Aug 17 21:00 : client: [20] opened from [::1]:38500
+Aug 17 21:00 : client: [21] opened from [::1]:38502
+Aug 17 21:00 : client: [21] closed
+Aug 17 21:00 : client: [20] closed
+Aug 17 21:00 : client: [19] closed
+Aug 17 21:00 : client: [22] opened from [::1]:38506
+Aug 17 21:03 : client: [23] opened from [::1]:38550
+Aug 17 21:03 : client: [24] opened from [::1]:38552
+Aug 17 21:03 : client: [24] closed
+Aug 17 21:03 : client: [23] closed
+Aug 17 21:03 : client: [25] opened from [::1]:38554
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 17 21:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:03 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:03 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:03 : client: [22] closed
+Aug 17 21:03 : client: [25] closed
+Aug 17 21:03 : client: [26] opened from [::1]:38556
+Aug 17 21:03 : client: [26] closed
+Aug 17 21:03 : client: [27] opened from [::1]:38558
+Aug 17 21:03 : client: [28] opened from [::1]:38560
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 17 21:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:03 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:03 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:03 : client: [27] closed
+Aug 17 21:03 : client: [28] closed
+Aug 17 21:03 : client: [29] opened from [::1]:38562
+Aug 17 21:03 : client: [29] closed
+Aug 17 21:03 : client: [30] opened from [::1]:38564
+Aug 17 21:03 : client: [31] opened from [::1]:38566
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 17 21:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:03 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:03 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:03 : client: [30] closed
+Aug 17 21:03 : client: [31] closed
+Aug 17 21:03 : client: [32] opened from [::1]:38568
+Aug 17 21:03 : client: [32] closed
+Aug 17 21:03 : client: [33] opened from [::1]:38570
+Aug 17 21:03 : client: [34] opened from [::1]:38572
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 17 21:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:03 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:03 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:03 : client: [33] closed
+Aug 17 21:03 : client: [34] closed
+Aug 17 21:03 : client: [35] opened from [::1]:38574
+Aug 17 21:03 : client: [35] closed
+Aug 17 21:03 : client: [36] opened from [::1]:38576
+Aug 17 21:03 : client: [37] opened from [::1]:38578
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 17 21:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:03 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:03 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:03 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:03 : client: [36] closed
+Aug 17 21:03 : client: [37] closed
+Aug 17 21:03 : client: [38] opened from [::1]:38580
+Aug 17 21:03 : client: [38] closed
+Aug 17 21:03 : client: [39] opened from [::1]:38582
+Aug 17 21:03 : client: [40] opened from [::1]:38584
+Aug 17 21:03 : client: [41] opened from [::1]:38586
+Aug 17 21:03 : client: [41] closed
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 17 21:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:04 : client: [39] closed
+Aug 17 21:04 : client: [42] opened from [::1]:38588
+Aug 17 21:04 : client: [42] closed
+Aug 17 21:04 : client: [43] opened from [::1]:38590
+Aug 17 21:04 : client: [43] closed
+Aug 17 21:04 : client: [44] opened from [::1]:38592
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 17 21:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:04 : client: [44] closed
+Aug 17 21:04 : client: [45] opened from [::1]:38594
+Aug 17 21:04 : client: [45] closed
+Aug 17 21:04 : client: [46] opened from [::1]:38596
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 17 21:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:04 : client: [46] closed
+Aug 17 21:04 : client: [47] opened from [::1]:38598
+Aug 17 21:04 : client: [47] closed
+Aug 17 21:04 : client: [48] opened from [::1]:38600
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 17 21:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:04 : client: [48] closed
+Aug 17 21:04 : client: [49] opened from [::1]:38602
+Aug 17 21:04 : client: [49] closed
+Aug 17 21:04 : client: [50] opened from [::1]:38604
+ALSA lib /var/tmp/portage/media-libs/alsa-lib-1.1.8/work/alsa-lib-1.1.8/src/pcm/pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+Aug 17 21:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:04 : exception: Failed to open "My ALSA Device" (alsa)
+Aug 17 21:04 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Aug 17 21:04 : client: [50] closed
+Aug 17 21:04 : client: [51] opened from [::1]:38606
+Aug 17 21:04 : client: [51] closed
+Aug 17 21:04 : client: [52] opened from [::1]:38608
+Aug 17 21:04 : client: [40] closed
