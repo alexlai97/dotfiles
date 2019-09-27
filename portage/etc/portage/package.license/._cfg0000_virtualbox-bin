@@ -1,0 +1,3 @@
+app-emulation/virtualbox-bin PUEL
+# required by protonmail-bridge-bin (argument)
+>=mail-mta/protonmail-bridge-bin-1.2.2 protonmail-bridge-EULA

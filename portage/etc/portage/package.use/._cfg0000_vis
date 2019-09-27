@@ -1,0 +1,6 @@
+app-editors/vis tre 
+# required by gnome-base/gnome-keyring-3.28.2::gentoo
+# required by app-crypt/libsecret-0.18.8::gentoo
+# required by mail-mta/protonmail-bridge-bin-1.2.2::gentoo
+# required by protonmail-bridge-bin (argument)
+>=app-crypt/pinentry-1.1.0-r2 gnome-keyring

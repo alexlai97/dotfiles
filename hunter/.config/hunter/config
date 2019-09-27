@@ -1,0 +1,7 @@
+animation=off
+show_hidden=off
+select_cmd=find -type f | sk -m
+cd_cmd=find -type d | sk
+icons=off
+media_autostart=off
+media_mute=off

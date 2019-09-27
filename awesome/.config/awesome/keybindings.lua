@@ -79,20 +79,23 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
     --}}}
 
-    -- {{{ function key  
+    -- {{{ function key (PowerOff, Volume, Media, Brightness, Screenshot, LED)
       -- PowerOff show oblogout
       awful.key({}, "XF86PowerOff", function ()
         awful.spawn("oblogout")
       end),
       -- Volume Keys
       awful.key({}, "XF86AudioLowerVolume", function() 
-        awful.spawn("amixer -q sset Master 5%-")
+        -- awful.spawn("amixer -q sset Master 5%-")
+        awful.spawn("amixer -q -D pulse sset Master 5%-")
       end),
       awful.key({}, "XF86AudioRaiseVolume", function() 
-        awful.spawn("amixer -q sset Master 5%+")
+        -- awful.spawn("amixer -q sset Master 5%+")
+        awful.spawn("amixer -q -D pulse sset Master 5%+")
       end),
       awful.key({}, "XF86AudioMute", function() 
-        awful.spawn("amixer set Master 1+ toggle")
+        -- awful.spawn("amixer set Master 1+ toggle")
+        awful.spawn("amixer -D pulse set Master 1+ toggle")
       end),
       -- Media Keys
       awful.key({}, "XF86AudioPlay", function() 

@@ -27,12 +27,14 @@ amdgpu/raven2_vcn.bin
 amdgpu/vega12_pfp.bin
 amdgpu/carrizo_vce.bin
 amdgpu/kaveri_mec.bin
+amdgpu/navi10_gpu_info.bin
 amdgpu/polaris10_mec2_2.bin
 amdgpu/topaz_rlc.bin
 amdgpu/raven_asd.bin
 amdgpu/bonaire_k_smc.bin
 amdgpu/stoney_rlc.bin
 amdgpu/polaris11_ce.bin
+amdgpu/navi10_rlc.bin
 amdgpu/pitcairn_ce.bin
 amdgpu/pitcairn_k_smc.bin
 amdgpu/bonaire_smc.bin
@@ -49,6 +51,7 @@ amdgpu/polaris11_mec_2.bin
 amdgpu/polaris12_ce_2.bin
 amdgpu/vegam_sdma1.bin
 amdgpu/polaris10_mec2.bin
+amdgpu/navi10_smc.bin
 amdgpu/polaris12_sdma1.bin
 amdgpu/verde_me.bin
 amdgpu/mullins_sdma1.bin
@@ -94,6 +97,7 @@ amdgpu/raven2_mec.bin
 amdgpu/raven2_mec2.bin
 amdgpu/vega12_uvd.bin
 amdgpu/vega10_sdma1.bin
+amdgpu/navi10_sos.bin
 amdgpu/hawaii_vce.bin
 amdgpu/verde_mc.bin
 amdgpu/polaris10_uvd.bin
@@ -151,6 +155,7 @@ amdgpu/polaris12_vce.bin
 amdgpu/vega20_sdma.bin
 amdgpu/vegam_smc.bin
 amdgpu/kabini_sdma1.bin
+amdgpu/navi10_sdma1.bin
 amdgpu/mullins_sdma.bin
 amdgpu/fiji_vce.bin
 amdgpu/picasso_rlc.bin
@@ -185,6 +190,7 @@ amdgpu/polaris11_rlc.bin
 amdgpu/bonaire_vce.bin
 amdgpu/raven2_pfp.bin
 amdgpu/hawaii_k_smc.bin
+amdgpu/navi10_pfp.bin
 amdgpu/mullins_rlc.bin
 amdgpu/tahiti_smc.bin
 amdgpu/vega10_acg_smc.bin
@@ -196,6 +202,7 @@ amdgpu/tahiti_k_smc.bin
 amdgpu/polaris11_ce_2.bin
 amdgpu/polaris12_mec2.bin
 amdgpu/vegam_mec2.bin
+amdgpu/navi10_mec.bin
 amdgpu/stoney_me.bin
 amdgpu/polaris12_me.bin
 amdgpu/kabini_rlc.bin
@@ -220,6 +227,7 @@ amdgpu/bonaire_mec.bin
 amdgpu/bonaire_uvd.bin
 amdgpu/vega20_uvd.bin
 amdgpu/raven_pfp.bin
+amdgpu/navi10_ce.bin
 amdgpu/polaris12_ce.bin
 amdgpu/raven_me.bin
 amdgpu/vega20_me.bin
@@ -231,6 +239,7 @@ amdgpu/kabini_mec.bin
 amdgpu/vega10_asd.bin
 amdgpu/polaris12_sdma.bin
 amdgpu/vega10_gpu_info.bin
+amdgpu/navi10_mec2.bin
 amdgpu/vega20_sos.bin
 amdgpu/raven2_rlc.bin
 amdgpu/polaris10_ce_2.bin
@@ -247,6 +256,7 @@ amdgpu/verde_k_smc.bin
 amdgpu/carrizo_mec2.bin
 amdgpu/raven2_ce.bin
 amdgpu/vegam_uvd.bin
+amdgpu/navi10_vcn.bin
 amdgpu/hawaii_pfp.bin
 amdgpu/polaris12_mc.bin
 amdgpu/polaris12_k_smc.bin
@@ -292,6 +302,7 @@ amdgpu/kaveri_pfp.bin
 amdgpu/oland_me.bin
 amdgpu/raven2_gpu_info.bin
 amdgpu/kaveri_sdma.bin
+amdgpu/navi10_asd.bin
 amdgpu/fiji_mec2.bin
 amdgpu/vega12_mec.bin
 amdgpu/hawaii_ce.bin
@@ -302,6 +313,7 @@ amdgpu/carrizo_sdma1.bin
 amdgpu/hainan_ce.bin
 amdgpu/polaris10_k2_smc.bin
 amdgpu/vega12_gpu_info.bin
+amdgpu/navi10_sdma.bin
 amdgpu/polaris12_mec_2.bin
 amdgpu/vega20_vce.bin
 amdgpu/polaris11_k_mc.bin
@@ -310,6 +322,7 @@ amdgpu/verde_ce.bin
 amdgpu/fiji_mc.bin
 amdgpu/picasso_rlc_am4.bin
 amdgpu/polaris12_me_2.bin
+amdgpu/navi10_me.bin
 amdgpu/pitcairn_rlc.bin
 ar3k/1020201coex/ramps_0x01020201_26_HighPriority.dfu
 ar3k/ramps_0x01020201_26.dfu
@@ -514,6 +527,7 @@ bnx2x-e1h-5.2.13.0.fw
 bnx2x-e1h-5.2.7.0.fw
 brcm/brcmfmac43236b.bin
 brcm/brcmfmac43455-sdio.raspberrypi,3-model-b-plus.txt
+brcm/brcmfmac43455-sdio.MINIX-NEO Z83-4.txt
 brcm/bcm43xx_hdr-0.fw
 brcm/brcmfmac43340-sdio.meegopad-t08.txt
 brcm/brcmfmac4366c-pcie.bin
@@ -525,6 +539,7 @@ brcm/brcmfmac4373.bin
 brcm/brcmfmac43430a0-sdio.jumper-ezpad-mini3.txt
 brcm/brcmfmac43455-sdio.bin
 brcm/brcmfmac43362-sdio.lemaker,bananapro.txt
+brcm/brcmfmac43340-sdio.pov-tab-p1006w-data.txt
 brcm/brcmfmac4330-sdio.Prowise-PT301.txt
 brcm/bcm43xx-0.fw
 brcm/brcmfmac4354-sdio.bin
@@ -604,9 +619,17 @@ cxgb3/t3fw-7.4.0.bin
 cxgb3/ael2020_twx_edc.bin
 cxgb3/t3fw-7.1.0.bin
 cxgb3/t3fw-7.0.0.bin
+cxgb4/t5-config.txt
 cxgb4/t6fw-1.24.3.0.bin
 cxgb4/t4fw-1.24.3.0.bin
 cxgb4/t6fw.bin
+cxgb4/configs/t6-config-hashfilter.txt
+cxgb4/configs/t6-config-default.txt
+cxgb4/configs/t5-config-hashfilter.txt
+cxgb4/configs/t4-config-default.txt
+cxgb4/configs/t5-config-default.txt
+cxgb4/t6-config.txt
+cxgb4/t4-config.txt
 cxgb4/t4fw-1.15.37.0.bin
 cxgb4/t5fw-1.15.37.0.bin
 cxgb4/t5fw.bin
@@ -669,7 +692,10 @@ i2400m-fw-usb-1.5.sbcf
 i6050-fw-usb-1.5.sbcf
 i915/skl_guc_ver1.bin
 i915/skl_guc_ver4.bin
+i915/kbl_huc_4.0.0.bin
 i915/skl_dmc_ver1_27.bin
+i915/icl_huc_9.0.0.bin
+i915/cml_huc_4.0.0.bin
 i915/icl_huc_ver8_4_3238.bin
 i915/kbl_dmc_ver1_04.bin
 i915/skl_guc_ver6_1.bin
@@ -679,12 +705,17 @@ i915/glk_huc_ver03_01_2893.bin
 i915/glk_dmc_ver1_04.bin
 i915/kbl_guc_33.0.0.bin
 i915/skl_guc_ver6.bin
+i915/icl_dmc_ver1_09.bin
+i915/bxt_huc_2.0.0.bin
 i915/glk_guc_32.0.3.bin
 i915/skl_dmc_ver1_26.bin
 i915/cnl_dmc_ver1_06.bin
+i915/tgl_dmc_ver2_04.bin
 i915/bxt_dmc_ver1_07.bin
 i915/bxt_guc_32.0.3.bin
+i915/glk_huc_4.0.0.bin
 i915/skl_dmc_ver1_23.bin
+i915/cml_guc_33.0.0.bin
 i915/bxt_guc_ver8_7.bin
 i915/icl_guc_32.0.3.bin
 i915/bxt_dmc_ver1.bin
@@ -695,6 +726,7 @@ i915/skl_dmc_ver1.bin
 i915/skl_guc_33.0.0.bin
 i915/bxt_huc_ver01_8_2893.bin
 i915/skl_guc_32.0.3.bin
+i915/skl_huc_2.0.0.bin
 i915/cnl_dmc_ver1_07.bin
 i915/kbl_guc_ver9_39.bin
 i915/icl_dmc_ver1_07.bin
@@ -765,6 +797,7 @@ intel/dsp_fw_bxtn_v3366.bin
 intel/fw_sst_0f28.bin-48kHz_i2s_master
 intel/ipu3-fw.bin
 intel/ibt-17-0-1.ddc
+intel/ibt-19-32-4.ddc
 intel/ibt-12-16.ddc
 intel/dsp_fw_cnl_v1191.bin
 intel/ibt-19-16-4.sfi
@@ -776,6 +809,7 @@ intel/dsp_fw_release.bin
 intel/ibt-18-1.ddc
 intel/ibt-17-2.ddc
 intel/ibt-hw-37.7.bseq
+intel/ibt-19-32-4.sfi
 intel/ibt-19-0-0.ddc
 intel/dsp_fw_glk_v2880.bin
 intel/ibt-19-32-1.sfi
@@ -938,6 +972,7 @@ mediatek/mt7662u.bin
 mediatek/mt7615_cr4.bin
 mediatek/mt7668pr2h.bin
 mediatek/mt7650e.bin
+mellanox/mlxsw_spectrum-13.2000.1886.mfa2
 mellanox/mlxsw_spectrum-13.1530.152.mfa2
 mellanox/mlxsw_spectrum-13.1703.4.mfa2
 mellanox/mlxsw_spectrum-13.1420.122.mfa2
@@ -1140,6 +1175,7 @@ nvidia/gk20a/gpccs_data.bin
 nvidia/gk20a/sw_bundle_init.bin
 nvidia/gk20a/sw_ctx.bin
 nvidia/tegra210/xusb.bin
+nvidia/tegra210/vic.bin
 nvidia/tegra210/vic04_ucode.bin
 nvidia/gp108/nvdec/scrubber.bin
 nvidia/gp108/acr/ucode_load.bin
@@ -1290,6 +1326,7 @@ nvidia/gp102/sec2/image.bin
 nvidia/gp102/sec2/image-1.bin
 nvidia/gp102/sec2/sig-1.bin
 nvidia/tegra124/xusb.bin
+nvidia/tegra124/vic.bin
 nvidia/tegra124/vic03_ucode.bin
 nvidia/gp104/nvdec/scrubber.bin
 nvidia/gp104/acr/ucode_load.bin
@@ -1314,6 +1351,8 @@ nvidia/gp104/sec2/desc-1.bin
 nvidia/gp104/sec2/image.bin
 nvidia/gp104/sec2/image-1.bin
 nvidia/gp104/sec2/sig-1.bin
+nvidia/tegra186/xusb.bin
+nvidia/tegra186/vic.bin
 nvidia/tegra186/vic04_ucode.bin
 nvidia/gm200/acr/ucode_load.bin
 nvidia/gm200/acr/bl.bin
@@ -1367,6 +1406,7 @@ qcom/venus-4.2/venus.b00
 qcom/venus-4.2/venus.b01
 qcom/venus-4.2/venus.mdt
 qcom/venus-4.2/venus.b02
+qcom/a630_sqe.fw
 qcom/NOTICE.txt
 qcom/a530_zap.b02
 qcom/a530_zap.b00
@@ -1379,6 +1419,7 @@ qcom/venus-1.8/venus.b00
 qcom/venus-1.8/venus.b01
 qcom/venus-1.8/venus.mdt
 qcom/venus-1.8/venus.b02
+qcom/a630_gmu.bin
 qcom/venus-5.2/venus.b03
 qcom/venus-5.2/venus.b04
 qcom/venus-5.2/venus.b00
@@ -1711,6 +1752,7 @@ rtl_nic/rtl8168h-1.fw
 rtl_nic/rtl8168d-2.fw
 rtl_nic/rtl8168f-2.fw
 rtl_nic/rtl8106e-1.fw
+rtl_nic/rtl8125a-3.fw
 rtl_nic/rtl8168g-3.fw
 rtl_nic/rtl8168g-2.fw
 rtl_nic/rtl8107e-1.fw

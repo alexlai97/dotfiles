@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-wpg -rs Watercolor_Sunset_Clouds.png Watercolor_Sunset_Clouds.png
+wpg -rs violet_evergarden_doll.png violet_evergarden_doll.png

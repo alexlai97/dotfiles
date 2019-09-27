@@ -2904,3 +2904,339 @@ Aug 17 21:04 : client: [51] opened from [::1]:38606
 Aug 17 21:04 : client: [51] closed
 Aug 17 21:04 : client: [52] opened from [::1]:38608
 Aug 17 21:04 : client: [40] closed
+Aug 20 19:13 : client: [52] closed
+Aug 20 19:13 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/07 [KA=YA] Prime Star.mp3"
+Aug 20 19:14 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 20 19:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 20 19:14 : client: [0] opened from [::1]:60532
+Aug 20 23:10 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/07 [KA=YA] Prime Star.mp3"
+Aug 20 23:11 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 20 23:11 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 20 23:11 : client: [0] opened from [::1]:37272
+Aug 20 23:11 : client: [0] closed
+Aug 20 23:11 : client: [1] opened from [::1]:37274
+Aug 20 23:11 : exception: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 20 23:11 : client: [1] closed
+Aug 20 23:11 : client: [2] opened from [::1]:37276
+Aug 21 20:04 : client: [3] opened from [::1]:42732
+Aug 21 20:04 : client: [2] closed
+Aug 21 20:04 : client: [3] closed
+Aug 21 20:04 : client: [4] opened from [::1]:42734
+Aug 21 20:04 : client: [4] closed
+Aug 21 20:04 : client: [5] opened from [::1]:42736
+Aug 21 20:09 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/06 [OdiakeS] Skyscraper of Horizon.mp3"
+Aug 21 20:09 : client: [5] closed
+Aug 21 20:09 : client: [6] opened from [::1]:42738
+Aug 21 20:09 : client: [6] closed
+Aug 21 20:09 : client: [7] opened from [::1]:42740
+Aug 21 20:13 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/07 [KA=YA] Prime Star.mp3"
+Aug 21 20:13 : client: [7] closed
+Aug 21 20:13 : client: [8] opened from [::1]:42750
+Aug 21 20:13 : client: [8] closed
+Aug 21 20:13 : client: [9] opened from [::1]:42752
+Aug 21 20:17 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/08 [Bizen] 流星階段.mp3"
+Aug 21 20:17 : client: [9] closed
+Aug 21 20:17 : client: [10] opened from [::1]:42754
+Aug 21 20:17 : client: [10] closed
+Aug 21 20:17 : client: [11] opened from [::1]:42756
+Aug 21 20:21 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/09 [NOAH] SEAMOON.mp3"
+Aug 21 20:21 : client: [11] closed
+Aug 21 20:21 : client: [12] opened from [::1]:42766
+Aug 21 20:21 : client: [12] closed
+Aug 21 20:21 : client: [13] opened from [::1]:42768
+Aug 21 20:25 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/10 [Takayan] Old under the sun.mp3"
+Aug 21 20:25 : client: [13] closed
+Aug 21 20:25 : client: [14] opened from [::1]:42770
+Aug 21 20:25 : client: [14] closed
+Aug 21 20:25 : client: [15] opened from [::1]:42772
+Aug 21 20:29 : player: played "Anime_songs/[C80] DDBY - Cafe de Touhou 2/11 [F] Blue Wings.mp3"
+Aug 21 20:29 : client: [15] closed
+Aug 21 20:29 : client: [16] opened from [::1]:42774
+Aug 21 20:29 : client: [16] closed
+Aug 21 20:29 : client: [17] opened from [::1]:42776
+Aug 21 20:31 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/窓から外を見ると.mp3"
+Aug 21 20:31 : client: [17] closed
+Aug 21 20:31 : client: [18] opened from [::1]:42778
+Aug 21 20:31 : client: [18] closed
+Aug 21 20:31 : client: [19] opened from [::1]:42780
+Aug 21 20:34 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/思い出景色.mp3"
+Aug 21 20:34 : client: [19] closed
+Aug 21 20:34 : client: [20] opened from [::1]:42782
+Aug 21 20:34 : client: [20] closed
+Aug 21 20:34 : client: [21] opened from [::1]:42784
+Aug 21 20:37 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/迷い込んで迷路庭園.mp3"
+Aug 21 20:37 : client: [21] closed
+Aug 21 20:37 : client: [22] opened from [::1]:42786
+Aug 21 20:37 : client: [22] closed
+Aug 21 20:37 : client: [23] opened from [::1]:42788
+Aug 21 20:41 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/近く遠い斜め色の空.mp3"
+Aug 21 20:41 : client: [23] closed
+Aug 21 20:41 : client: [24] opened from [::1]:42800
+Aug 21 20:41 : client: [24] closed
+Aug 21 20:41 : client: [25] opened from [::1]:42802
+Aug 21 20:43 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/上昇気流.mp3"
+Aug 21 20:43 : client: [25] closed
+Aug 21 20:43 : client: [26] opened from [::1]:42806
+Aug 21 20:43 : client: [26] closed
+Aug 21 20:43 : client: [27] opened from [::1]:42808
+Aug 21 20:47 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/Bell of Mugen.mp3"
+Aug 21 20:47 : client: [27] closed
+Aug 21 20:47 : client: [28] opened from [::1]:42812
+Aug 21 20:47 : client: [28] closed
+Aug 21 20:47 : client: [29] opened from [::1]:42814
+Aug 21 20:51 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/Cramped space.mp3"
+Aug 21 20:51 : client: [29] closed
+Aug 21 20:51 : client: [30] opened from [::1]:42854
+Aug 21 20:51 : client: [30] closed
+Aug 21 20:51 : client: [31] opened from [::1]:42856
+Aug 21 20:54 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/Blue sky of wind.mp3"
+Aug 21 20:54 : client: [31] closed
+Aug 21 20:54 : client: [32] opened from [::1]:42858
+Aug 21 20:54 : client: [32] closed
+Aug 21 20:54 : client: [33] opened from [::1]:42860
+Aug 21 20:58 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/A Brief Vacation.mp3"
+Aug 21 20:58 : client: [33] closed
+Aug 21 20:58 : client: [34] opened from [::1]:42862
+Aug 21 20:58 : client: [34] closed
+Aug 21 20:58 : client: [35] opened from [::1]:42864
+Aug 21 21:02 : player: played "Anime_songs/[DDBY] 座って聴く東方文花帳/Cool shade.mp3"
+Aug 21 21:02 : client: [35] closed
+Aug 21 21:02 : client: [36] opened from [::1]:42878
+Aug 21 21:02 : client: [36] closed
+Aug 21 21:02 : client: [37] opened from [::1]:42880
+Aug 21 21:04 : client: [38] opened from [::1]:42892
+Aug 21 21:04 : client: [37] closed
+Aug 21 21:04 : client: [38] closed
+Aug 21 21:04 : client: [39] opened from [::1]:42894
+Aug 21 21:04 : client: [39] closed
+Aug 21 21:04 : client: [40] opened from [::1]:42896
+Aug 27 13:46 : client: [41] opened from [::1]:33654
+Aug 27 13:46 : client: [42] opened from [::1]:33656
+Aug 27 13:46 : client: [42] closed
+Aug 27 13:46 : client: [41] closed
+Aug 28 02:23 : client: [40] closed
+Aug 28 02:23 : client: [43] opened from [::1]:39390
+Aug 28 02:24 : client: [43] closed
+Aug 28 02:24 : client: [44] opened from [::1]:39394
+Aug 28 02:29 : client: [44] closed
+Aug 28 02:29 : client: [45] opened from [::1]:39536
+Aug 28 02:30 : client: [45] closed
+Aug 28 02:30 : client: [46] opened from [::1]:39538
+Aug 31 20:26 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/01. もし、空が晴れるなら - Bizen.mp3"
+Aug 31 20:27 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 31 20:27 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Aug 31 20:27 : client: [0] opened from [::1]:49778
+Aug 31 20:28 : client: [0] closed
+Aug 31 20:28 : client: [1] opened from [::1]:49780
+Sep 02 15:01 : client: [1] closed
+Sep 02 15:01 : client: [2] opened from [::1]:50904
+Sep 02 15:04 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/01. もし、空が晴れるなら - Bizen.mp3"
+Sep 02 15:05 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 02 15:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 02 15:05 : client: [0] opened from [::1]:50732
+Sep 02 15:05 : client: [0] closed
+Sep 02 15:05 : client: [1] opened from [::1]:50734
+Sep 02 15:05 : client: [1] closed
+Sep 02 15:05 : client: [2] opened from [::1]:50736
+Sep 03 12:38 : client: [2] closed
+Sep 03 12:38 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/01. もし、空が晴れるなら - Bizen.mp3"
+Sep 03 12:39 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 03 12:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 03 12:39 : client: [0] opened from [::1]:42380
+Sep 08 14:43 : client: [1] opened from [::1]:34012
+Sep 08 14:43 : client: [2] opened from [::1]:34014
+Sep 08 14:43 : exception: Failed to open "My ALSA Device" (alsa)
+Sep 08 14:43 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Sep 08 14:43 : exception: Failed to open "My ALSA Device" (alsa)
+Sep 08 14:43 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Sep 08 14:43 : client: [3] opened from [::1]:34016
+Sep 08 14:43 : exception: Failed to open "My ALSA Device" (alsa)
+Sep 08 14:43 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Sep 08 14:43 : exception: Failed to open "My ALSA Device" (alsa)
+Sep 08 14:43 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Sep 08 14:43 : exception: Failed to open "My ALSA Device" (alsa)
+Sep 08 14:43 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Sep 08 14:43 : exception: Failed to open "My ALSA Device" (alsa)
+Sep 08 14:43 : exception: nested: Failed to open ALSA device "default": Device or resource busy
+Sep 08 14:43 : client: [0] closed
+Sep 08 14:43 : client: [2] closed
+Sep 08 14:43 : client: [1] closed
+Sep 08 14:43 : client: [3] closed
+Sep 08 14:43 : client: [4] opened from [::1]:34018
+Sep 08 14:43 : client: [4] closed
+Sep 08 14:43 : client: [5] opened from [::1]:34020
+Sep 08 20:38 : client: [5] closed
+Sep 08 20:38 : client: [6] opened from [::1]:34252
+Sep 08 20:38 : client: [6] closed
+Sep 08 20:38 : client: [7] opened from [::1]:34254
+Sep 08 20:38 : client: [7] closed
+Sep 08 20:38 : client: [8] opened from [::1]:34256
+Sep 08 20:38 : client: [8] closed
+Sep 08 20:38 : client: [9] opened from [::1]:34258
+Sep 08 20:38 : client: [9] closed
+Sep 08 20:38 : client: [10] opened from [::1]:34260
+Sep 08 20:38 : client: [10] closed
+Sep 08 20:38 : client: [11] opened from [::1]:34262
+Sep 09 21:15 : client: [11] closed
+Sep 09 21:15 : client: [12] opened from [::1]:38358
+Sep 09 21:15 : client: [12] closed
+Sep 09 21:15 : client: [13] opened from [::1]:38360
+Sep 09 21:15 : client: [13] closed
+Sep 09 21:15 : client: [14] opened from [::1]:38362
+Sep 09 21:15 : client: [14] closed
+Sep 09 21:15 : client: [15] opened from [::1]:38364
+Sep 11 21:30 : client: [15] closed
+Sep 11 21:30 : client: [16] opened from [::1]:51728
+Sep 11 21:30 : client: [16] closed
+Sep 11 21:30 : client: [17] opened from [::1]:51730
+Sep 12 20:12 : client: [18] opened from [::1]:53714
+Sep 12 20:12 : client: [17] closed
+Sep 12 20:12 : client: [18] closed
+Sep 12 20:12 : client: [19] opened from [::1]:53716
+Sep 12 20:12 : client: [19] closed
+Sep 12 20:12 : client: [20] opened from [::1]:53718
+Sep 12 20:16 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/04. Perfect Day Dream - ししまい3号.mp3"
+Sep 12 20:16 : client: [20] closed
+Sep 12 20:16 : client: [21] opened from [::1]:53720
+Sep 12 20:16 : client: [21] closed
+Sep 12 20:16 : client: [22] opened from [::1]:53722
+Sep 12 20:20 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/05. 暖色系アリス - koutaq.mp3"
+Sep 12 20:20 : client: [22] closed
+Sep 12 20:20 : client: [23] opened from [::1]:53742
+Sep 12 20:20 : client: [23] closed
+Sep 12 20:20 : client: [24] opened from [::1]:53744
+Sep 12 20:23 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/06. 風の都 - Bizen.mp3"
+Sep 12 20:23 : client: [24] closed
+Sep 12 20:23 : client: [25] opened from [::1]:53748
+Sep 12 20:23 : client: [25] closed
+Sep 12 20:23 : client: [26] opened from [::1]:53750
+Sep 12 20:27 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/07. 無何有の郷 (KiRa Remix) - Coro.mp3"
+Sep 12 20:27 : client: [26] closed
+Sep 12 20:27 : client: [27] opened from [::1]:53752
+Sep 12 20:27 : client: [27] closed
+Sep 12 20:27 : client: [28] opened from [::1]:53754
+Sep 12 20:31 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/08. NaTuLaL AGeNcY - すみじゅん.mp3"
+Sep 12 20:31 : client: [28] closed
+Sep 12 20:31 : client: [29] opened from [::1]:53760
+Sep 12 20:31 : client: [29] closed
+Sep 12 20:31 : client: [30] opened from [::1]:53762
+Sep 12 20:36 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/09. Below Between Beyond - Ludo.mp3"
+Sep 12 20:36 : client: [30] closed
+Sep 12 20:36 : client: [31] opened from [::1]:53764
+Sep 12 20:36 : client: [31] closed
+Sep 12 20:36 : client: [32] opened from [::1]:53766
+Sep 12 20:38 : client: [33] opened from [::1]:53768
+Sep 12 20:38 : client: [32] closed
+Sep 12 20:38 : client: [33] closed
+Sep 12 20:38 : client: [34] opened from [::1]:53770
+Sep 12 20:38 : client: [34] closed
+Sep 12 20:38 : client: [35] opened from [::1]:53772
+Sep 12 20:39 : client: [35] closed
+Sep 12 20:39 : client: [36] opened from [::1]:53780
+Sep 12 20:39 : client: [36] closed
+Sep 12 20:39 : client: [37] opened from [::1]:53782
+Sep 12 20:39 : client: [37] closed
+Sep 12 20:39 : client: [38] opened from [::1]:53784
+Sep 12 20:39 : client: [38] closed
+Sep 12 20:39 : client: [39] opened from [::1]:53786
+Sep 12 20:39 : client: [39] closed
+Sep 12 20:39 : client: [40] opened from [::1]:53788
+Sep 12 20:39 : client: [40] closed
+Sep 12 20:39 : client: [41] opened from [::1]:53790
+Sep 12 20:39 : client: [41] closed
+Sep 12 20:39 : client: [42] opened from [::1]:53792
+Sep 12 20:39 : client: [42] closed
+Sep 12 20:39 : client: [43] opened from [::1]:53794
+Sep 12 20:39 : client: [43] closed
+Sep 12 20:39 : client: [44] opened from [::1]:53796
+Sep 12 20:39 : client: [44] closed
+Sep 12 20:39 : client: [45] opened from [::1]:53798
+Sep 12 20:39 : client: [45] closed
+Sep 12 20:39 : client: [46] opened from [::1]:53800
+Sep 12 20:39 : client: [46] closed
+Sep 12 20:39 : client: [47] opened from [::1]:53802
+Sep 12 20:39 : client: [48] opened from [::1]:53804
+Sep 12 20:39 : client: [47] closed
+Sep 12 20:39 : client: [48] closed
+Sep 12 20:39 : client: [49] opened from [::1]:53806
+Sep 12 20:39 : client: [49] closed
+Sep 12 20:39 : client: [50] opened from [::1]:53808
+Sep 12 20:39 : client: [50] closed
+Sep 12 20:39 : client: [51] opened from [::1]:53810
+Sep 12 20:39 : client: [51] closed
+Sep 12 20:39 : client: [52] opened from [::1]:53812
+Sep 12 20:39 : client: [52] closed
+Sep 12 20:39 : client: [53] opened from [::1]:53814
+Sep 12 20:39 : client: [53] closed
+Sep 12 20:39 : client: [54] opened from [::1]:53816
+Sep 12 20:42 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/10. Sky Garden - Takayan.mp3"
+Sep 12 20:42 : client: [54] closed
+Sep 12 20:42 : client: [55] opened from [::1]:53828
+Sep 12 20:42 : client: [55] closed
+Sep 12 20:42 : client: [56] opened from [::1]:53830
+Sep 12 20:47 : player: played "Anime_songs/2010.12.30 Cafe de Touhou [C79]/11. Lotus - KA=YA.mp3"
+Sep 12 20:47 : client: [56] closed
+Sep 12 20:47 : client: [57] opened from [::1]:53874
+Sep 12 20:47 : client: [57] closed
+Sep 12 20:47 : client: [58] opened from [::1]:53876
+Sep 12 20:49 : client: [58] closed
+Sep 12 20:49 : client: [59] opened from [::1]:53884
+Sep 12 20:49 : client: [59] closed
+Sep 12 20:49 : client: [60] opened from [::1]:53886
+Sep 12 20:49 : client: [60] closed
+Sep 12 20:49 : client: [61] opened from [::1]:53888
+Sep 12 20:49 : client: [61] closed
+Sep 12 20:49 : client: [62] opened from [::1]:53890
+Sep 12 20:51 : player: played "Anime_songs/Cafe de Touhou 7/01. Naive Face.mp3"
+Sep 12 20:51 : client: [62] closed
+Sep 12 20:51 : client: [63] opened from [::1]:53896
+Sep 12 20:51 : client: [63] closed
+Sep 12 20:51 : client: [64] opened from [::1]:53898
+Sep 12 20:55 : player: played "Anime_songs/Cafe de Touhou 7/02. Fall of summer memories -煌く水面-.mp3"
+Sep 12 20:55 : client: [64] closed
+Sep 12 20:55 : client: [65] opened from [::1]:53904
+Sep 12 20:55 : client: [65] closed
+Sep 12 20:55 : client: [66] opened from [::1]:53906
+Sep 12 20:59 : player: played "Anime_songs/Cafe de Touhou 7/03. autumn wind.mp3"
+Sep 12 20:59 : client: [66] closed
+Sep 12 20:59 : client: [67] opened from [::1]:53930
+Sep 12 20:59 : client: [67] closed
+Sep 12 20:59 : client: [68] opened from [::1]:53932
+Sep 12 21:03 : player: played "Anime_songs/Cafe de Touhou 7/04. Usual Place.mp3"
+Sep 12 21:03 : client: [68] closed
+Sep 12 21:03 : client: [69] opened from [::1]:53952
+Sep 12 21:03 : client: [69] closed
+Sep 12 21:03 : client: [70] opened from [::1]:53954
+Sep 12 21:06 : client: [71] opened from [::1]:54010
+Sep 12 21:06 : client: [70] closed
+Sep 12 21:06 : client: [71] closed
+Sep 12 21:06 : client: [72] opened from [::1]:54012
+Sep 12 21:06 : client: [72] closed
+Sep 12 21:06 : client: [73] opened from [::1]:54014
+Sep 12 21:22 : client: [73] closed
+Sep 12 21:22 : client: [74] opened from [::1]:54150
+Sep 12 21:22 : client: [74] closed
+Sep 12 21:22 : client: [75] opened from [::1]:54152
+Sep 12 21:23 : client: [75] closed
+Sep 12 21:23 : client: [76] opened from [::1]:54154
+Sep 12 21:23 : client: [76] closed
+Sep 12 21:23 : client: [77] opened from [::1]:54156
+Sep 13 00:09 : client: [77] closed
+Sep 13 00:09 : client: [78] opened from [::1]:55472
+Sep 13 00:09 : client: [78] closed
+Sep 13 00:09 : client: [79] opened from [::1]:55474
+Sep 13 10:31 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 13 10:31 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 13 10:31 : client: [0] opened from [::1]:56652
+Sep 15 00:45 : client: [0] closed
+Sep 15 00:46 : player: played "Anime_songs/Cafe de Touhou 7/05. River path.mp3"
+Sep 15 00:47 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 00:47 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 15 00:47 : client: [0] opened from [::1]:41442
+Sep 19 22:00 : client: [0] closed
+Sep 19 22:02 : client: [1] opened from [::1]:51790
+Sep 27 05:47 : client: [1] closed
+Sep 27 05:47 : player: played "Anime_songs/Cafe de Touhou 7/05. River path.mp3"
+Sep 27 05:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 27 05:49 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 27 05:49 : client: [0] opened from [::1]:47430

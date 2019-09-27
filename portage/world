@@ -1,0 +1,14 @@
+app-portage/gentoolkit
+app-portage/layman
+media-gfx/sxiv
+media-libs/libvpx
+media-libs/x264
+media-sound/mpc
+media-video/simplescreenrecorder
+net-libs/nodejs
+sys-apps/firejail
+sys-boot/syslinux
+sys-kernel/gentoo-sources
+www-client/brave-bin
+x11-libs/bamf::deepin
+x11-misc/plank

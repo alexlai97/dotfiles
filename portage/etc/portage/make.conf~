@@ -1,0 +1,26 @@
+COMMON_FLAGS="-O2 -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+
+PORTDIR="/usr/portage"
+DISTDIR="/usr/portage/distfiles"
+PKGDIR="/usr/portage/packages"
+
+MAKEOPTS="-j5"
+
+LC_MESSAGES=C
+
+GENTOO_MIRRORS="https://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ ftp://mirror.csclub.uwaterloo.ca/gentoo-distfiles/ http://distfiles.gentoo.org http://www.ibiblio.org/pub/Linux/distributions/gentoo"
+
+GRUB_PLATFORMS="efi-64"
+
+VIDEO_CARDS="intel nouveau"
+INPUT_DEVICES="libinput keyboard mouse synaptics"
+
+ACCEPT_LICENSE="* -@EULA"
+
+USE="gtk alsa pulseaudio X svg png jpg jpeg \
+     fish-completion dmenu consolekit rofi twolame fcitx4 mpd libnotify \
+     fat bluetooth dbus vim-syntax"

@@ -177,26 +177,26 @@ schemes:
 
 colors: 
   primary:
-    background: '0x231809'
-    foreground: '0xc8c5c1'
+    background: '0x272524'
+    foreground: '0xc9c8c8'
   normal:
-    black:   '0x231809'
-    red:     '0xb17b30'
-    green:   '0xc6aa47'
-    yellow:  '0xab9d53'
-    blue:    '0xc5bc6f'
-    magenta: '0x91ab67'
-    cyan:    '0x67a97d'
-    white:   '0xc8c5c1'
+    black:   '0x272524'
+    red:     '0xc6bcb9'
+    green:   '0xad8f83'
+    yellow:  '0xad7258'
+    blue:    '0xc5b29d'
+    magenta: '0x7977ab'
+    cyan:    '0xa598a5'
+    white:   '0xc9c8c8'
   bright:
-    black:   '0x5a5146'
-    red:     '0xb17b30'
-    green:   '0xc6aa47'
-    yellow:  '0xab9d53'
-    blue:    '0xc5bc6f'
-    magenta: '0x91ab67'
-    cyan:    '0x67a97d'
-    white:   '0xc8c5c1'
+    black:   '0x5d5b5a'
+    red:     '0xc6bcb9'
+    green:   '0xad8f83'
+    yellow:  '0xad7258'
+    blue:    '0xc5b29d'
+    magenta: '0x7977ab'
+    cyan:    '0xa598a5'
+    white:   '0xc9c8c8'
 
 #{{{ Visual Bell
 #

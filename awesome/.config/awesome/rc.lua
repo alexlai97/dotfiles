@@ -54,7 +54,7 @@ my_icon_path = home_path .. '.icons/'
 -- Themes define colours, icons, font and wallpapers.
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 beautiful.init(config_path .. "awesome/theme.lua")
-beautiful.useless_gap = 5
+beautiful.useless_gap = 7
 
 -- This is used later as the default terminal and editor to run.
 terminal = "/usr/local/bin/alacritty"
@@ -373,8 +373,8 @@ root.buttons(gears.table.join(
     awful.button({ }, 1, function () mymainmenu:toggle() end),
     awful.button({ }, 2, function () awful.spawn("sxiv " .. wallpaper_path) end),
     awful.button({ }, 3, function () awful.spawn("rightclickmenu") end),
-    awful.button({ }, 4, awful.tag.viewnext),
-    awful.button({ }, 5, awful.tag.viewprev)
+    awful.button({ }, 4, awful.tag.viewprev),
+    awful.button({ }, 5, awful.tag.viewnext)
 ))
 -- }}}
 
@@ -431,7 +431,17 @@ awful.rules.rules = {
       properties = { tag = "" } },
     { rule = { class = "Signal" },
       properties = { screen = 1, tag = "" } },
-}
+    { rule = { class = "multimc", "Minecraft" },
+      properties = { screen = 1, tag = "" } },
+    { rule = { class = "Plank" }, properties = { 
+      border_width = 0,
+      floating = true,
+      sticky = true,
+      ontop = true,
+      focusable = false,
+      below = false }
+    }
+} 
 -- }}}
 
 -- {{{ Signals

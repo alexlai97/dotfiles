@@ -1,0 +1,28 @@
+{
+    "wallpaper": "switherland-cloud-mountain-town.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#101408",
+        "foreground": "#d6d6d6",
+        "cursor": "#d6d6d6"
+    },
+    "colors": {
+        "color0": "#101408",
+        "color1": "#343d29",
+        "color2": "#8d8d8d",
+        "color3": "#7e7e79",
+        "color4": "#838383",
+        "color5": "#959595",
+        "color6": "#608387",
+        "color7": "#9a9a9a",
+        "color8": "#262c17",
+        "color9": "#495729",
+        "color10": "#b5b5b5",
+        "color11": "#b3b390",
+        "color12": "#a0b2b3",
+        "color13": "#c4c4c4",
+        "color14": "#6ab4b9",
+        "color15": "#d6d6d6"
+    }
+}

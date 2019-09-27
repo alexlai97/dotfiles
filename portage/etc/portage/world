@@ -34,6 +34,7 @@ app-shells/zsh
 app-text/pdftk
 app-text/zathura
 app-text/zathura-meta
+dev-db/sqlite
 dev-lang/lua
 dev-lang/python
 dev-libs/libxls
@@ -47,10 +48,12 @@ dev-python/pyopenssl
 dev-scheme/racket
 dev-util/cscope
 dev-vcs/git
+games-action/multimc5
 games-misc/lolcat
 gnome-extra/zenity
 mail-client/neomutt
 mail-mta/msmtp
+mail-mta/protonmail-bridge-bin
 media-fonts/dejavu
 media-fonts/fontawesome
 media-fonts/fontawesome-extension
@@ -67,6 +70,8 @@ media-libs/alsa-lib
 media-libs/imlib2
 media-libs/libexif
 media-libs/libsdl
+media-libs/libvpx
+media-libs/x264
 media-plugins/imlib2_loaders
 media-sound/alsa-utils
 media-sound/mpc
@@ -77,6 +82,7 @@ media-sound/pulseaudio
 media-sound/wildmidi
 media-video/ffmpeg
 media-video/mpv
+media-video/simplescreenrecorder
 net-analyzer/nmap
 net-dns/bind-tools
 net-fs/davfs2
@@ -84,6 +90,7 @@ net-im/signal-desktop-bin
 net-irc/hexchat
 net-libs/libsoup
 net-libs/libssh2
+net-libs/nodejs
 net-libs/webkit-gtk
 net-mail/isync
 net-mail/notmuch
@@ -96,6 +103,7 @@ net-wireless/crda
 net-wireless/iw
 net-wireless/wpa_supplicant
 sci-visualization/gnuplot
+sys-apps/firejail
 sys-apps/groff
 sys-apps/iucode_tool
 sys-apps/pciutils
@@ -106,6 +114,7 @@ sys-boot/grub:2
 sys-boot/os-prober
 sys-boot/syslinux
 sys-devel/gdb
+sys-devel/llvm
 sys-firmware/intel-microcode
 sys-fs/dosfstools
 sys-fs/ncdu
@@ -128,11 +137,13 @@ x11-apps/xkill
 x11-apps/xmodmap
 x11-apps/xsetroot
 x11-base/xorg-server
+x11-libs/bamf::deepin
 x11-misc/arandr
 x11-misc/compton
 x11-misc/dmenu
 x11-misc/dunst
 x11-misc/oblogout
+x11-misc/plank
 x11-misc/redshift
 x11-misc/rofi
 x11-misc/spacefm
