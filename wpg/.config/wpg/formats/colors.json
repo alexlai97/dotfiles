@@ -1,28 +1,28 @@
 {
-    "wallpaper": "/home/alex/.config/wpg/wallpapers/violet_evergarden_doll.png",
+    "wallpaper": "/home/alex/.config/wpg/wallpapers/Library_Night.jpg",
     "alpha": "100",
 
     "special": {
-        "background": "#272524",
-        "foreground": "#c9c8c8",
-        "cursor": "#c9c8c8"
+        "background": "#221e1c",
+        "foreground": "#c7c6c6",
+        "cursor": "#c7c6c6"
     },
     "colors": {
-        "color0": "#272524",
-        "color1": "#c6bcb9",
-        "color2": "#ad8f83",
-        "color3": "#ad7258",
-        "color4": "#c5b29d",
-        "color5": "#7977ab",
-        "color6": "#a598a5",
-        "color7": "#c9c8c8",
-        "color8": "#5d5b5a",
-        "color9": "#c6bcb9",
-        "color10": "#ad8f83",
-        "color11": "#ad7258",
-        "color12": "#c5b29d",
-        "color13": "#7977ab",
-        "color14": "#a598a5",
-        "color15": "#c9c8c8"
+        "color0": "#221e1c",
+        "color1": "#ab9890",
+        "color2": "#aa7e6a",
+        "color3": "#aa6237",
+        "color4": "#aa7250",
+        "color5": "#b08c47",
+        "color6": "#6c7ea2",
+        "color7": "#c7c6c6",
+        "color8": "#595654",
+        "color9": "#ab9890",
+        "color10": "#aa7e6a",
+        "color11": "#aa6237",
+        "color12": "#aa7250",
+        "color13": "#b08c47",
+        "color14": "#6c7ea2",
+        "color15": "#c7c6c6"
     }
 }

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "kimitsu_no_yaiba_神乐舞.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#010101",
+        "foreground": "#cccccc",
+        "cursor": "#cccccc"
+    },
+    "colors": {
+        "color0": "#010101",
+        "color1": "#683917",
+        "color2": "#746352",
+        "color3": "#6d4949",
+        "color4": "#664c62",
+        "color5": "#613330",
+        "color6": "#5d1c18",
+        "color7": "#909090",
+        "color8": "#151515",
+        "color9": "#8f4815",
+        "color10": "#a3805d",
+        "color11": "#995353",
+        "color12": "#905787",
+        "color13": "#873a34",
+        "color14": "#801d17",
+        "color15": "#cccccc"
+    }
+}

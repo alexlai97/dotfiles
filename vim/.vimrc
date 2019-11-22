@@ -30,11 +30,13 @@ if dein#load_state('~/.cache/dein')
     call dein#add('tpope/vim-fugitive')
     call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd']})
     call dein#add('neoclide/coc.nvim', {'merge':0, 'rev': 'release'})
+    call dein#add('dbeniamine/cheat.sh-vim')
     " call dein#add('Shougo/deoplete.nvim')
     call dein#add('dag/vim-fish')
     " call dein#add('Shougo/neosnippet.vim')
     " call dein#add('Shougo/neosnippet-snippets')
     call dein#add('honza/vim-snippets')
+    " call dein#add('deviantfero/wpgtk.vim')
     " call dein#add('epilande/vim-react-snippets')
     " call dein#add('baskerville/vim-sxhkdrc')
     " call dein#add('tbodt/deoplete-tabnine', { 'build': './install.sh' })
@@ -101,26 +103,24 @@ let g:mapleader = "\<Space>"
 let g:maplocalleader = ','
 "-}}}
 
-"{{{- multi cursor
-let g:multi_cursor_exit_from_insert_mode=0
-"-}}}
-
 "{{{- netrw
 let g:netrw_winsize=20
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
 nnoremap <F3> :Lexplore<CR>
 "-}}}
 
-"{{{- auto folding
+"{{{- foldmethod
 " autocmd Filetype vim,sh set foldmethod=marker
 set foldmethod=marker
 "-}}}
 
 "{{{- window/buffer/tab key shortcut
 " Split windows moving around
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
+" nnoremap <c-h> <c-w>h
+" nnoremap <c-l> <c-w>l
+" nnoremap <c-j> <c-w>j
+" nnoremap <c-k> <c-w>k
 
 " Buffers/Tab shortcuts
 nnoremap <A-h> :bprevious<cr>
@@ -139,7 +139,8 @@ nnoremap <A-8> :buffer 8<cr>
 nnoremap <A-9> :buffer 9<cr>
 "-}}}
 
-"{{{- bufwritepost
-" autocmd BufWritePost ~/.config/sxhkd/sxhkdrc !killall sxhkd; sxhkd
-"}}}
+"{{{- color
+source ~/.vim/colors.vim
+"-}}}
+
 

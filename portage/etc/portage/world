@@ -5,6 +5,7 @@ app-admin/sudo
 app-admin/sysklogd
 app-arch/unrar
 app-crypt/gcr
+app-crypt/seahorse
 app-dicts/dictd-wn
 app-editors/neovim
 app-editors/vim
@@ -17,6 +18,7 @@ app-misc/asciinema
 app-misc/figlet
 app-misc/neofetch
 app-misc/ranger
+app-misc/rlwrap
 app-misc/tmux
 app-pda/ideviceinstaller
 app-pda/ifuse
@@ -47,6 +49,8 @@ dev-python/pygame
 dev-python/pyopenssl
 dev-scheme/racket
 dev-util/cscope
+dev-util/ctags
+dev-util/valgrind
 dev-vcs/git
 games-action/multimc5
 games-misc/lolcat
@@ -62,7 +66,9 @@ media-fonts/terminus-font
 media-fonts/tex-gyre
 media-fonts/wqy-zenhei
 media-gfx/feh
+media-gfx/flameshot
 media-gfx/gimp
+media-gfx/gthumb
 media-gfx/imagemagick
 media-gfx/inkscape
 media-gfx/sxiv
@@ -148,6 +154,7 @@ x11-misc/redshift
 x11-misc/rofi
 x11-misc/spacefm
 x11-misc/sxhkd
+x11-misc/xsel
 x11-misc/xwinwrap
 x11-misc/zim
 x11-terms/cool-retro-term

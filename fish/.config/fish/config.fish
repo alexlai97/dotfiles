@@ -1,7 +1,7 @@
 # cat ~/.config/wpg/sequences &
 
 set -l home_path /home/alex
-set -xg PATH $home_path/.stack/programs/x86_64-linux/ghc-tinfo6-8.4.3/bin/ $home_path/.gem/ruby/2.4.0/bin /bin /usr/sbin/ $home_path/.scripts $home_path/.cargo/bin $home_path/.local/bin $home_path/.texlive/2019/bin/x86_64-linux/ /opt/bin /usr/local/bin /usr/bin /sbin/ $home_path/.node_modules/bin/ /usr/lib/llvm/8/bin/
+set -xg PATH /opt/bin /usr/local/bin /usr/bin /sbin/ $home_path/.stack/programs/x86_64-linux/ghc-tinfo6-8.4.3/bin/ $home_path/.gem/ruby/2.4.0/bin /bin /usr/sbin/ $home_path/.scripts $home_path/.cargo/bin $home_path/.local/bin $home_path/.texlive/2019/bin/x86_64-linux/  $home_path/.node_modules/bin/ 
 set -xg XDG_CONFIG_home_path $home_path/.config
 set -xg XDG_DATA_home_path $home_path/.local/share
 set -xg MANPATH $home_path/.texlive/2019/texmf-dist/doc/man $home_path/.local/share/man /usr/local/share/man /usr/share/man /usr/share/gcc-data/x86_64-pc-linux-gnu/8.2.0/man

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "kimitsu_no_yaiba_善逸_yellow.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#210603",
+        "foreground": "#c7c0c0",
+        "cursor": "#c7c0c0"
+    },
+    "colors": {
+        "color0": "#210603",
+        "color1": "#aa2010",
+        "color2": "#aa3a1a",
+        "color3": "#aa3706",
+        "color4": "#c49376",
+        "color5": "#c64e04",
+        "color6": "#c78b12",
+        "color7": "#c7c0c0",
+        "color8": "#584442",
+        "color9": "#aa2010",
+        "color10": "#aa3a1a",
+        "color11": "#aa3706",
+        "color12": "#c49376",
+        "color13": "#c64e04",
+        "color14": "#c78b12",
+        "color15": "#c7c0c0"
+    }
+}

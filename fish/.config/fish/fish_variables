@@ -27,10 +27,8 @@ SETUVAR _fish_abbr_fe:newsboat
 SETUVAR _fish_abbr_fi:firefox\x2dbin
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_gaa:git\x20add\x20\x2d\x2dall
-SETUVAR _fish_abbr_gc:git\x20commit\x20\x2dv
+SETUVAR _fish_abbr_gci:git\x20commit
 SETUVAR _fish_abbr_gco:git\x20checkout
-SETUVAR _fish_abbr_gl:git\x20pull
-SETUVAR _fish_abbr_gp:git\x20push
 SETUVAR _fish_abbr_gst:git\x20status
 SETUVAR _fish_abbr_h:htop
 SETUVAR _fish_abbr_his:history

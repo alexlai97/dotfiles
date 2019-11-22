@@ -64,9 +64,16 @@ let g:vimtex_view_general_viewer='/home/alex/.scripts/zathura-open.sh'
 "-}}}
 
 "{{{- quick-scope
-"let g:qs_highlight_on_keys = ['f', 'F']
+" let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
+highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
+" highlight QuickScopePrimary gui=underline cterm=underline
+" highlight QuickScopeSecondary gui=underline cterm=underline
 "-}}}
 
+"{{{- multi cursor
+let g:multi_cursor_exit_from_insert_mode=0
+"-}}}
 
 "{{{- tagbar
 let g:tagbar_ctags_bin='/usr/bin/ctags'
@@ -117,7 +124,6 @@ function! s:show_documentation()
 endfunction
 "-}}}
  
- 
 "{{{- coc snippet
 " Use <C-l> for trigger snippet expand.
 imap <C-l> <Plug>(coc-snippets-expand)
@@ -134,3 +140,4 @@ let g:coc_snippet_prev = '<c-k>'
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <C-j> <Plug>(coc-snippets-expand-jump)
 "-}}}
+

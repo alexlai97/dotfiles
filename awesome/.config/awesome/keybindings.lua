@@ -119,11 +119,12 @@ globalkeys = gears.table.join(
       end),
       -- Screenshot Keys
       awful.key({}, "Print", function()  
-        awful.spawn(scripts_path .. "screenshot.sh window")
+        awful.spawn("flameshot gui")
       end),
-      awful.key({"Shift"}, "Print", function()  
-        awful.spawn(scripts_path .. "screenshot.sh root")
-      end),
+      -- awful.key({"Shift"}, "Print", function()  
+      --   awful.spawn(scripts_path .. "screenshot.sh root")
+      -- end),
+
       -- Keyboard LED 
       awful.key({}, "Scroll_Lock", function()  
         awful.spawn("xset led 3")
@@ -196,7 +197,7 @@ globalkeys = gears.table.join(
       function () awful.spawn.easy_async("tmux has-session -t daily", 
         function(stdout, stderr, reason, exit_code) 
           if (exit_code ~= 0) then 
-            awful.spawn(terminal_cmd .. "tmux new-session -t daily")
+            awful.spawn(terminal_cmd .. "tmux new-session -s daily")
           else 
             awful.spawn(terminal_cmd .. "tmux attach -t daily")
           end

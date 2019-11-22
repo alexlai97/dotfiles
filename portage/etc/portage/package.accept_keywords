@@ -59,3 +59,5 @@
 # required by @selected
 # required by @world (argument)
 =dev-lua/luv-1.30.1.1 ~amd64
+# required by flameshot (argument)
+=media-gfx/flameshot-0.6.0_p20190812 ~amd64

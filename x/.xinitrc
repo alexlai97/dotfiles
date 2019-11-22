@@ -28,8 +28,9 @@ pgrep mpd || mpd &
 pgrep mpc || while true;do mpc idle 2>/dev/null;~/.ncmpcpp/nextsong.sh;done & # music control daemon
 pkill -U 1000 wpa_cli ||  wpa_cli -a /home/alex/.scripts/wpa_supplicant_action &  # notify wifi connection
 # pgrep sxhkd || /usr/bin/sxhkd & # Simple X hotkey daemon
-# pgrep compton || compton -b &
-pgrep plank || /usr/bin/plank &
+pgrep compton || compton -b &
+pgrep nextcloud_client || nextcloud_client --background &
+# pgrep plank || /usr/bin/plank &
 #-}}}
 
 
