@@ -39,7 +39,8 @@ SETUVAR _fish_abbr_md:mkdir
 SETUVAR _fish_abbr_p:ping\x20\x2dc\x2010\x20www\x2egentoo\x2eorg
 SETUVAR _fish_abbr_ra:ranger
 SETUVAR _fish_abbr_rd:rmdir
-SETUVAR _fish_abbr_startx:startx\x20\x5e\x20\x2ecache/xorg_startx\x2elog\x20\x3e\x20\x2ecache/xorg_startx_stdout\x2elog
+SETUVAR _fish_abbr_startx:startx\x20\x5e\x20\x7e/\x2ecache/xorg_startx_stderr\x2elog\x20\x3e\x20\x7e/\x2ecache/xorg_startx_stdout\x2elog
+SETUVAR _fish_abbr_vi:nvim
 SETUVAR _fish_abbr_za:zathura
 SETUVAR _fish_abbr_zc:zenity\x20\x2d\x2dcalendar
 SETUVAR _fish_abbr_zfd:zenity\x20\x2d\x2dfile\x2dselection\x20\x2d\x2ddirectory

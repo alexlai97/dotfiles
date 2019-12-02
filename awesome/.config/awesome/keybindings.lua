@@ -15,7 +15,7 @@ wallpaper_path = home_path .. "Pictures/Wallpaper/"
 config_path = home_path .. '.config/'
 my_icon_path = home_path .. '.icons/'
 
-terminal = "/usr/local/bin/alacritty"
+terminal = "/usr/bin/alacritty"
 terminal_cmd = terminal .. " -e "
 editor = os.getenv("EDITOR") or "vi"
 editor_cmd = terminal_cmd .. editor
@@ -215,10 +215,12 @@ globalkeys = gears.table.join(
               {description = "open neomutt in terminal", group = "programs"}),
 
     -- non terminal program
-    awful.key({ super_key, alt_key }, "f", function () awful.spawn("firefox-bin") end,
+    awful.key({ super_key, alt_key }, "f", function () awful.spawn("firefox") end,
               {description = "run firefox", group = "programs"}),
-    awful.key({ super_key, alt_key }, "s", function () awful.spawn("spacefm") end,
-              {description = "run spacefm", group = "programs"}),
+    awful.key({ super_key, alt_key }, "t", function () awful.spawn("thunar") end,
+              {description = "run thunar", group = "programs"}),
+    -- awful.key({ super_key, alt_key }, "s", function () awful.spawn("spacefm") end,
+    --           {description = "run spacefm", group = "programs"}),
 
     --}}}
 

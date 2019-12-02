@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/alex/myrepos/wat16rxl/md'
+let g:netrw_dirhist_0='/home/alex/BackupProject'
+let g:netrw_dirhist_9='/home/alex/myrepos/blog.alexlai.xyz/content/2019-11-24-what_are_git_objects_under_the_hood'
 let g:netrw_dirhist_8='/home/alex/myrepos'
 let g:netrw_dirhist_7='/home/alex/myrepos/personal.alexlai.xyz'
 let g:netrw_dirhist_6='/home/alex/myrepos/wat16rxl/book'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_5='/home/alex/myrepos/personal.alexlai.xyz'
 let g:netrw_dirhist_4='/home/alex/myrepos/Playground/python/django/mysite'
 let g:netrw_dirhist_3='/home/alex/myrepos/carpool-backend/carpoolBackend/carpoolBackend'
 let g:netrw_dirhist_2='/home/alex/myrepos/carpool-backend/carpoolBackend'
-let g:netrw_dirhist_1='/home/alex/myrepos/carpool-backend'
-let g:netrw_dirhist_0='/home/alex/myrepos/carpool-backend/carpoolBackend'
-let g:netrw_dirhist_9='/home/alex/myrepos/carpool-backend'

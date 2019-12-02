@@ -1,12 +1,12 @@
-rofi.modi:                           run,ssh
+rofi.modi:                           window,run,ssh
 rofi.width:                          50
 rofi.lines:                          15
 rofi.columns:                        1
 rofi.font:                           roboto mono 10
-rofi.color-normal:                   #221e1c, #c7c6c6, #221e1c, #874e2c, #c7c6c6
-rofi.color-urgent:                   #221e1c, #d6b48d, #22231D, #d6b48d, #c7c6c6
-rofi.color-active:                   #221e1c, #6c7ea2, #221e1c, #6c7ea2, #221e1c
-rofi.color-window:                   #221e1c, #874e2c, #5d351e
+rofi.color-normal:                   #212020, #c7c7c7, #212020, #608365, #c7c7c7
+rofi.color-urgent:                   #212020, #d6b48d, #22231D, #d6b48d, #c7c7c7
+rofi.color-active:                   #212020, #79a57f, #212020, #79a57f, #212020
+rofi.color-window:                   #212020, #608365, #425a45
 rofi.bw:                             5
 rofi.location:                       0
 rofi.padding:                        5

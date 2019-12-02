@@ -57,7 +57,7 @@ beautiful.init(config_path .. "awesome/theme.lua")
 beautiful.useless_gap = 7
 
 -- This is used later as the default terminal and editor to run.
-terminal = "/usr/local/bin/alacritty"
+terminal = "/usr/bin/alacritty"
 terminal_cmd = terminal .. " -e "
 editor = os.getenv("EDITOR") or "vi"
 editor_cmd = terminal_cmd .. editor
@@ -346,8 +346,8 @@ awful.screen.connect_for_each_screen(function(s)
             wibox.widget.textbox(' '),
             mybattery,
             wibox.widget.textbox(' | '),
-            -- myweather,
-            -- wibox.widget.textbox(' '),
+            myweather,
+            wibox.widget.textbox(' '),
             mytextclock,
             wibox.widget.textbox(' '),
             mydayornight,
@@ -421,7 +421,7 @@ awful.rules.rules = {
       }, properties = { titlebars_enabled = true }
     },
 
-    { rule = { class = "Firefox" },
+    { rule = { class = "firefox" },
       properties = { tag = "" } },
     { rule = { class = "Zim" },
       properties = { screen = 1, tag = "" } },

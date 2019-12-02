@@ -11,3 +11,5 @@ mutt/
 .netrwhist
 
 *-errors
+
+__pycache__

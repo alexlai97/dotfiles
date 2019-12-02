@@ -72,8 +72,9 @@ show_image() {
   else 
     n30f -x 1120 -y 34  $CACHEFILE_WHITE -c "sxiv $CACHEFILE_WHITE" &
   fi
+  pid_num=$!
   if [ $? -eq 0 ]; then 
-    sleep 10s && kill $! &
+    sleep 10s && kill $pid_num &
   fi
 }
 

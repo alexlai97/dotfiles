@@ -72,6 +72,7 @@ media-gfx/gthumb
 media-gfx/imagemagick
 media-gfx/inkscape
 media-gfx/sxiv
+media-gfx/ufraw
 media-libs/alsa-lib
 media-libs/imlib2
 media-libs/libexif
@@ -91,6 +92,7 @@ media-video/mpv
 media-video/simplescreenrecorder
 net-analyzer/nmap
 net-dns/bind-tools
+net-fs/curlftpfs
 net-fs/davfs2
 net-im/signal-desktop-bin
 net-irc/hexchat

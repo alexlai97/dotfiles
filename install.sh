@@ -39,5 +39,8 @@ stow -v -d . -t ~/ zim
 stow -v -d . -t ~/ zsh
 stow -v -d . -t ~/ x
 stow -v -d . -t ~/ newsboat
+stow -v -d . -t ~/ sunpinyin
+stow -v -d . -t ~/ picom
+stow -v -d . -t ~/ git
 
-sudo stow -v -d . -t / portage
+# sudo stow -v -d . -t / portage

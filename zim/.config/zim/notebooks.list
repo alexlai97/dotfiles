@@ -1,15 +1,8 @@
 [NotebookList]
-Default=~/Documents/Notebooks/Notes
-1=~/Documents/Notebooks/佛法
-2=~/Documents/Notebooks/Notes
+Default=
+1=~/Documents/Notebooks/Notes
 
 [Notebook 1]
-uri=~/Documents/Notebooks/佛法
-name=佛法
-interwiki=None
-icon=None
-
-[Notebook 2]
 uri=~/Documents/Notebooks/Notes
 name=Journal
 interwiki=None
