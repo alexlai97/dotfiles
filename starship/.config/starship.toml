@@ -1,9 +1,21 @@
 add_newline = false
 
-# Replace the "❯" symbol in the prompt with "➜"
+
 [character]      
 symbol = "❯"  
+error_symbol = "✗"
+use_symbol_for_status = true
+
+
+[git_state]
+progress_divider = " of "
+cherry_pick = "🍒 PICKING"
 
 [package]
 disabled = false
+
+
+[line_break]
+disabled = false
+
 

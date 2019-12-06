@@ -1,7 +1,48 @@
-#!/usr/bin/env bash
-set -eu
+#!/bin/dash
 
-IMAGE=$HOME"/.config/i3lock/startled_kitten.png"
+B='#00000000'  # blank
+C='#ffffff22'  # clear ish
+# D='#ff00ffcc'  # default
+D='#206fe5cc'  # default
+# T='#ee00eeee'  # text
+T='#0485dbee'  # text
+# W='#880000bb'  # wrong
+W='#880000bb'  # wrong
+# V='#bb00bbbb'  # verifying
+V='#04dbc5bb'  # verifying
 
-[[ -z "$(pgrep i3lock)" ]] || exit
-i3lock -t -i $IMAGE
+/usr/bin/i3lock \
+--insidevercolor=$C   \
+--ringvercolor=$V     \
+\
+--insidewrongcolor=$C \
+--ringwrongcolor=$W   \
+\
+--insidecolor=$B      \
+--ringcolor=$D        \
+--linecolor=$B        \
+--separatorcolor=$D   \
+\
+--verifcolor=$T        \
+--wrongcolor=$T        \
+--timecolor=$T        \
+--datecolor=$T        \
+--layoutcolor=$T      \
+--keyhlcolor=$W       \
+--bshlcolor=$W        \
+\
+--screen 1            \
+--blur 10             \
+--clock               \
+--indicator           \
+--timestr="%H:%M:%S"  \
+--datestr="%A, %m %Y" \
+--keylayout 2         \
+
+# --veriftext="Drinking verification can..."
+# --wrongtext="Nope!"
+# --textsize=20
+# --modsize=10
+# --timefont=comic-sans
+# --datefont=monofur
+# etc

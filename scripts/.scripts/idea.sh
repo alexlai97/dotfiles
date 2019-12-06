@@ -1,1 +1,0 @@
-/home/alex/intellij-idea/bin/idea.sh

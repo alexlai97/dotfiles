@@ -1,1 +1,0 @@
-/home/alex/myrepos/suckless_stuff/tabbed/colors.h

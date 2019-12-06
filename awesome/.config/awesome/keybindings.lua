@@ -1,29 +1,10 @@
---{{{ local library
+--{{{ imports
 local gears = require("gears")
 local awful = require("awful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
---}}}
-
---{{{ setup variables
-home_path = os.getenv("HOME") .. '/'
-bin_path = home_path .. '.local/bin/'
-scripts_path = home_path .. '.scripts/'
-cache_path = home_path .. '.cache/'
-wallpaper_path = home_path .. "Pictures/Wallpaper/"
-config_path = home_path .. '.config/'
-my_icon_path = home_path .. '.icons/'
-
-terminal = "/usr/bin/alacritty"
-terminal_cmd = terminal .. " -e "
-editor = os.getenv("EDITOR") or "vi"
-editor_cmd = terminal_cmd .. editor
-
-super_key = "Mod4"
-alt_key   = "Mod1"
-shift_key   = "Shift"
-tag_names = { "", "", "", "", "", "", "", "", "" }
+require("variables")
 --}}}
 
 --{{{ Global keys 
@@ -112,10 +93,10 @@ globalkeys = gears.table.join(
       end),
       -- Screen Brightness Control
       awful.key({}, "XF86MonBrightnessDown", function() 
-        awful.spawn("xbacklight -dec 5")
+        awful.spawn("light -U 5")
       end),
       awful.key({}, "XF86MonBrightnessUp", function() 
-        awful.spawn("xbacklight -inc 5")
+        awful.spawn("light -A 5")
       end),
       -- Screenshot Keys
       awful.key({}, "Print", function()  
@@ -143,7 +124,7 @@ globalkeys = gears.table.join(
               {description = "run prompt", group = "launcher"}),
     awful.key({ super_key },            "d",     function () awful.spawn("rofi -show run") end,
               {description = "run rofi", group = "launcher"}),
-    awful.key({ super_key, },           "w",     function () awful.spawn(scripts_path .. "dmenu_extended_run") end,
+    awful.key({ super_key, },           "w",     function () awful.spawn("dmenu_extended_run") end,
               {description = "run rofi-extended", group = "launcher"}),
     awful.key({ super_key }, "x",
               function ()

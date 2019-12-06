@@ -12,6 +12,13 @@ export XMODIFIERS=@im=fcitx
 # What is it doing again?
 # eval "$(dbus-launch --sh-syntax --exit-with-session)"
 
+source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
+
+#{{{- gnome-keying
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+#}}}
+
 #{{{- some configurations (screenlock timeout, touchpad orientation)
 synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-111 # touchpad
 xset s 1800 # sleep time
@@ -21,9 +28,9 @@ xset s 1800 # sleep time
 #{{{- processes to start
 ~/.fehbg # wallpaper
 pgrep fcitx || /usr/bin/fcitx & # input method
-# pgrep redshift || /usr/bin/redshift &
+pgrep redshift || /usr/bin/redshift &
 # mydwmstatus 2>/dev/null & # dwm status bar
-# xsidle.sh /usr/local/bin/slock &  # screenlock
+xsidle.sh i3lock.sh &  # screenlock
 # pgrep mpd || mpd &
 # pgrep mpc || while true;do mpc idle 2>/dev/null;~/.ncmpcpp/nextsong.sh;done & # music control daemon
 # pkill -U 1000 wpa_cli ||  wpa_cli -a /home/alex/.scripts/wpa_supplicant_action &  # notify wifi connection
@@ -36,7 +43,8 @@ pgrep nextcloud || nextcloud --background &
 
 
 #{{{- start user program in the background
-/usr/bin/zim &
+pgrep thunar || thunar --daemon &
+pgrep zim || zim &
 # pgrep emacs || emacs --daemon &
 #-}}}
 

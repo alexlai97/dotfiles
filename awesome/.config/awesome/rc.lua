@@ -11,6 +11,7 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
 require("awful.autofocus")
+require("variables")
 require("keybindings")
 -- Enable hotkeys help widget for VIM and other apps when client with a matching name is opened:
 -- require("awful.hotkeys_popup.keys")
@@ -41,47 +42,10 @@ do
 end
 -- }}}
 
--- {{{ Variable definitions
--- directories
-home_path = os.getenv("HOME") .. '/'
-bin_path = home_path .. '.local/bin/'
-scripts_path = home_path .. '.scripts/'
-cache_path = home_path .. '.cache/'
-wallpaper_path = home_path .. "Pictures/Wallpaper/"
-config_path = home_path .. '.config/'
-my_icon_path = home_path .. '.icons/'
-
 -- Themes define colours, icons, font and wallpapers.
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 beautiful.init(config_path .. "awesome/theme.lua")
 beautiful.useless_gap = 7
-
--- This is used later as the default terminal and editor to run.
-terminal = "/usr/bin/alacritty"
-terminal_cmd = terminal .. " -e "
-editor = os.getenv("EDITOR") or "vi"
-editor_cmd = terminal_cmd .. editor
-
--- icons
-gentoo_icon = my_icon_path .. "gentoo/gentoo.png"
-terminal_icon = "/usr/share/icons/Adwaita/16x16/apps/utilities-terminal.png"
-
--- commands
-dbus_consolekit_prefix = "dbus-send --system --print-reply --dest='org.freedesktop.ConsoleKit' /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager."
-suspend_command = dbus_consolekit_prefix .. "Suspend  boolean:true"
-shutdown_command = dbus_consolekit_prefix .. "Stop"
-reboot_command = dbus_consolekit_prefix .. "Restart"
-lockscreen_command = "slock"
-sxhkd_restart_command = "pkill sxhkd; sxhkd &; notify-send 'sxhkd' 'sxhkd restarted'"
-redshift_restart_command = "pkill redshift; /usr/bin/redshift"
-mpd_restart_command = "pkill mpd; mpd &; notify-send 'mpd' 'mpd restarted'"
-
-mailsync_command = "mailsync; 'Mailsync' 'mailsync completed'"
-emergesync_command = "sudo emerge --sync; notify-send 'emerge' 'emerge --sync completed'; eix-update; notify-send 'eix' 'eix-update completed'"
-
--- Default modkey.
-super_key = "Mod4"
-alt_key   = "Mod1"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
@@ -102,10 +66,6 @@ awful.layout.layouts = {
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
 }
-
--- Each screen has its own tag table.
-tag_names = { "", "", "", "", "", "", "", "", "" }
--- }}}
 
 -- {{{ Helper functions
 local function client_menu_toggle_fn()
@@ -142,21 +102,21 @@ mylogoutmenu = {
 
 myservicemenu = {
   { "redshift", function() awful.spawn.easy_async_with_shell(redshift_restart_command) end },
-  { "mpd", function() awful.spawn.easy_async_with_shell(mpd_restart_command) end },
+  -- { "mpd", function() awful.spawn.easy_async_with_shell(mpd_restart_command) end },
   -- { "emerge-sync", function() awful.spawn.easy_async_with_shell(emergesync_command) end }, -- cannot run sudo 
-  { "mailsync", function() awful.spawn.easy_async_with_shell(mailsync_command) end },
+  -- { "mailsync", function() awful.spawn.easy_async_with_shell(mailsync_command) end },
   -- { "sxhkd", function() awful.spawn.easy_async_with_shell(sxhkd_restart_command) end }
 }
 
 mymainmenu = awful.menu({ items = { 
-                                    { "menu", mylogoutmenu, gentoo_icon },
+                                    { "menu", mylogoutmenu, arch_icon },
                                     { "awesome", myawesomemenu, beautiful.awesome_icon },
                                     { "service", myservicemenu },
                                     { "open terminal", terminal, terminal_icon }
                                   }
                         })
 
-mylauncher = awful.widget.launcher({ image = gentoo_icon,
+mylauncher = awful.widget.launcher({ image = arch_icon,
                                      menu = mymainmenu })
 
 -- Menubar configuration
@@ -408,7 +368,6 @@ awful.rules.rules = {
 
         name = {
           "Event Tester",  -- xev.
-          "Openbox Logout",
         },
         role = {
           -- "AlarmWindow",  -- Thunderbird's calendar.
@@ -421,6 +380,9 @@ awful.rules.rules = {
       }, properties = { titlebars_enabled = true }
     },
 
+    { rule = { name = "Openbox Logout" },
+      properties = { fullscreen = true } },
+
     { rule = { class = "firefox" },
       properties = { tag = "" } },
     { rule = { class = "Zim" },
@@ -431,6 +393,8 @@ awful.rules.rules = {
       properties = { tag = "" } },
     { rule = { class = "Signal" },
       properties = { screen = 1, tag = "" } },
+    { rule = { class = "Thunar" },
+      properties = { screen = 1, tag = "" } },
     { rule = { class = "multimc", "Minecraft" },
       properties = { screen = 1, tag = "" } },
     { rule = { class = "Plank" }, properties = { 

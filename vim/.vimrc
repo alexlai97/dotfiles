@@ -23,7 +23,7 @@ if dein#load_state('~/.cache/dein')
   " nvim special (heavy tasks)
   if has('nvim')
     " call dein#add('autozimu/LanguageClient-neovim')
-    call dein#add('mrtazz/simplenote.vim')
+    call dein#add('simplenote-vim/simplenote.vim')
     call dein#add('racer-rust/vim-racer')
     call dein#add('lervag/vimtex')
     call dein#add('majutsushi/tagbar')
@@ -84,6 +84,7 @@ set mouse=a
 "{{{- Color Colorscheme  
 if exists("g:gnvim") 
   colorscheme desert
+  " let g:qs_enable=0
 endif
 " set termguicolors
 " set background=dark

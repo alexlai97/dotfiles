@@ -1,9 +1,16 @@
 [NotebookList]
-Default=
-1=~/Documents/Notebooks/Notes
+Default=~/Nextcloud/Zim_Notebooks/Journal
+1=~/Nextcloud/Zim_Notebooks/Journal
+2=~/Nextcloud/Zim_Notebooks/佛法
 
 [Notebook 1]
-uri=~/Documents/Notebooks/Notes
+uri=~/Nextcloud/Zim_Notebooks/Journal
 name=Journal
+interwiki=None
+icon=None
+
+[Notebook 2]
+uri=~/Nextcloud/Zim_Notebooks/佛法
+name=佛法
 interwiki=None
 icon=None

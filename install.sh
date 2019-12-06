@@ -42,5 +42,8 @@ stow -v -d . -t ~/ newsboat
 stow -v -d . -t ~/ sunpinyin
 stow -v -d . -t ~/ picom
 stow -v -d . -t ~/ git
+stow -v -d . -t ~/ dmenu-extended
+stow -v -d . -t ~/ termite
+stow -v -d . -t ~/ starship
 
 # sudo stow -v -d . -t / portage

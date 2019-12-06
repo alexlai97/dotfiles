@@ -1,6 +1,0 @@
-static const char* selbgcolor   = "#<COLOR1>";
-static const char* selfgcolor   = "#<COLOR2>";
-static const char* normbgcolor  = "#<COLOR0>";
-static const char* normfgcolor  = "#<COLOR7>";
-static const char* urgbgcolor   = "#<COLOR15>";
-static const char* urgfgcolor   = "#<COLOR0>";

@@ -2,7 +2,7 @@ rofi.modi:                           window,run,ssh
 rofi.width:                          50
 rofi.lines:                          15
 rofi.columns:                        1
-rofi.font:                           roboto mono 10
+rofi.font:                           noto sans 12
 rofi.color-normal:                   {color0}, {color15}, {color0}, {active}, {color15}
 rofi.color-urgent:                   {color0}, #d6b48d, #22231D, #d6b48d, {color15}
 rofi.color-active:                   {color0}, {color14}, {color0}, {color14}, {color0}

@@ -2,11 +2,11 @@ rofi.modi:                           window,run,ssh
 rofi.width:                          50
 rofi.lines:                          15
 rofi.columns:                        1
-rofi.font:                           roboto mono 10
-rofi.color-normal:                   #212020, #c7c7c7, #212020, #608365, #c7c7c7
+rofi.font:                           noto sans 12
+rofi.color-normal:                   #212020, #c7c7c7, #212020, #857434, #c7c7c7
 rofi.color-urgent:                   #212020, #d6b48d, #22231D, #d6b48d, #c7c7c7
 rofi.color-active:                   #212020, #79a57f, #212020, #79a57f, #212020
-rofi.color-window:                   #212020, #608365, #425a45
+rofi.color-window:                   #212020, #857434, #5b5024
 rofi.bw:                             5
 rofi.location:                       0
 rofi.padding:                        5
