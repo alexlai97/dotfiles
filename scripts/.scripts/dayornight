@@ -7,15 +7,15 @@ result=""
 getstatus() {
   h=$(date +%H)
   if [ $h -ge 7 -a $h -lt 11 ]; then # 7 - 11
-    result=""
+    result="🌅"
   elif [ $h -ge 11 -a $h -lt 15 ]; then # 11 - 15
-    result=""
+    result="🌞"
   elif [ $h -ge 15 -a $h -lt 19 ]; then # 15 - 19
-    result=""
+    result="🍁"
   elif [ $h -ge 19 -a $h -lt 23 ]; then # 19 - 23
-    result=""
+    result="🌜"
   else  # 23 - 7
-    result=""
+    result="🛌"
   fi
 }
 

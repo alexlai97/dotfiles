@@ -7,6 +7,7 @@ CACHE_ONELINE=$WEATHER_CACHE_DIR"/current_weather_oneline.txt"
 TIME=""
 OPTION=$2
 
+
 usage () {
   echo "Usage: $0 (help|show|get|reload|full|dark|white|text) [:help|p|q]"
   echo "  help    :   show this page
@@ -84,6 +85,10 @@ update_awesomewm() {
 }
 
 # main
+if [ ! -d $WEATHER_CACHE_DIR ]; then
+  mkdir $WEATHER_CACHE_DIR
+  get_image && update_awesomewm
+fi
 case "$1" in 
   h|-h*|--h*)    usage ;;
   show|s)        dark_or_white; show_image $TIME;;

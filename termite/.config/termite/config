@@ -5,8 +5,8 @@
 #cell_height_scale = 1.0
 #cell_width_scale = 1.0
 #clickable_url = true
-# dynamic_title = true
-font = Monospace 12
+#dynamic_title = true
+font = Monospace 11
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -17,7 +17,7 @@ font = Monospace 12
 scrollback_lines = 10000
 #search_wrap = true
 #urgent_on_bell = true
-# hyperlinks = false
+#hyperlinks = false
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
 #browser = xdg-open
@@ -57,22 +57,22 @@ scrollback_lines = 10000
 highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0  = #212020
-color1  = #a9a4a1
-color2  = #a99673
-color3  = #a79242
-color4  = #62aa1f
-color5  = #6daa4e
-color6  = #79a57f
-color7  = #c7c7c7
-color8  = #585757
-color9  = #a9a4a1
-color10 = #a99673
-color11 = #a79242
-color12 = #62aa1f
-color13 = #6daa4e
-color14 = #79a57f
-color15 = #c7c7c7
+color0  = #251809
+color1  = #ba7930
+color2  = #c2b39b
+color3  = #ad9c68
+color4  = #98a82b
+color5  = #2891c0
+color6  = #6da2bd
+color7  = #c8c5c1
+color8  = #5b5146
+color9  = #ba7930
+color10 = #c2b39b
+color11 = #ad9c68
+color12 = #98a82b
+color13 = #2891c0
+color14 = #6da2bd
+color15 = #c8c5c1
 
 [hints]
 #font = Monospace 12

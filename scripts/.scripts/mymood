@@ -1,7 +1,8 @@
 #!/bin/dash
 
-file="$HOME/.cache/mymood/mymood.txt"
-iconfile="$HOME/.cache/mymood/mymoodicons.txt"
+MYMOOD_CACHE_DIR=$HOME"/.cache/mymood"
+file=$MYMOOD_CACHE_DIR"/mymood.txt"
+iconfile=$MYMOOD_CACHE_DIR"/mymoodicons.txt"
 input=""
 usage() {
   echo "Usage: $0 (input|ask|choose|help)"
@@ -26,15 +27,21 @@ chooseicon() {
   input=`cat $iconfile | rofi -dmenu -p "icon"`
 }
 
+
 display() {
   cat $file
 }
 
 #main
+if [ ! -d $MYMOOD_CACHE_DIR ]; then
+  mkdir $MYMOOD_CACHE_DIR
+  touch $file $iconfile
+fi
 case $1 in 
   input|-i|--input|i) readfromterminal && seticon;;
   a|ask) askprompt && seticon;;
   choose|c) chooseicon && seticon;;
+  # e|emoji) choosefromemoji && seticon;;
   *help|*h) usage;;
   *) display;;
 esac

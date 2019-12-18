@@ -208,7 +208,7 @@ globalkeys = gears.table.join(
     --{{{ system group
     awful.key({ super_key, "Shift" }, "Page_Down", function () awful.spawn("oblogout") end,
     {description = "run oblogout", group = "system"}),
-    awful.key({ super_key, "Shift" }, "s", function () awful.spawn(suspend_command) end,
+    awful.key({ super_key, "Shift" }, "s", function () awful.spawn.easy_async_with_shell(suspend_command) end,
     {description = "suspend the system", group = "system"}
     ),
     awful.key({ super_key, "Shift" }, "l", function () awful.spawn(lockscreen_command) end,

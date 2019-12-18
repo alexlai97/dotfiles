@@ -96,7 +96,7 @@ mylogoutmenu = {
   { "logout", function() awesome.quit() end},
   { "restart", function() awful.spawn(reboot_command) end},
   { "shutdown", function() awful.spawn(shutdown_command) end},
-  { "suspend", function() awful.spawn(suspend_command) end},
+  { "suspend", function() awful.spawn.easy_async_with_shell(suspend_command) end},
   { "lock", function() awful.spawn(lockscreen_command) end}
 }
 
@@ -152,7 +152,7 @@ myweather:buttons(gears.table.join(
 
 -- Create a textclock widget
 -- mytextclock = wibox.widget.textclock( {format = " %a %b.%d  %T", refresh = 1})
-mytextclock = wibox.widget.textclock( " %a %b.%d  %T", 1)
+mytextclock = wibox.widget.textclock( "📅 %a %b.%d 🕦 %T", 1)
 month_calendar = awful.widget.calendar_popup.month({position = "tr"})
 mytextclock:buttons(gears.table.join(
   awful.button({ }, 1, function() month_calendar:toggle() end) ,
