@@ -1,16 +1,14 @@
 #!/bin/dash
 
-EXPLICIT_SORTED_PKGLIST_WITH_AUR=explicit_pkglist_with_aur.txt
-IMPLICIT_SORTED_PKGLIST_NO_AUR=implicit_pkglist_no_aur.txt
-EXPLICIT_SORTED_PKGLIST_NO_AUR=explicit_pkglist_no_aur.txt
-SORTED_AUR_PKGLIST=aur_pkglist.txt
+CACHE_DIR="arch_pkglist-`date -Ihours`"
+EXPLICIT_SORTED_PKGLIST_WITH_AUR="$CACHE_DIR/explicit_pkglist_with_aur.txt"
+IMPLICIT_SORTED_PKGLIST_NO_AUR="$CACHE_DIR/implicit_pkglist_no_aur.txt"
+EXPLICIT_SORTED_PKGLIST_NO_AUR="$CACHE_DIR/explicit_pkglist_no_aur.txt"
+SORTED_AUR_PKGLIST="$CACHE_DIR/aur_pkglist.txt"
 
 # clean up generated files
 cleanup() {
-  rm $EXPLICIT_SORTED_PKGLIST_WITH_AUR
-  rm $IMPLICIT_SORTED_PKGLIST_NO_AUR
-  rm $EXPLICIT_SORTED_PKGLIST_NO_AUR
-  rm $AUR_PKGLIST
+  rm -r $CACHE_DIR 
 }
 
 # generate pkglist 
@@ -32,6 +30,9 @@ usage() {
 }
 
 # main
+if [ ! -d $CACHE_DIR ]; then
+  mkdir $CACHE_DIR
+fi
 case "$1" in 
   h|-h|--help|help) usage;;
   gen|g) gen_pkglists;;

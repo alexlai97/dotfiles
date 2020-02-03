@@ -50,6 +50,7 @@
         "avi",
         "mpg",
         "mp4",
+        "flv",
         "mp3",
         "m4a",
         "ogg",

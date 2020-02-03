@@ -3,11 +3,14 @@
 " +-+-+-+-+-+-+
 
 set runtimepath^=~/.vim
-set runtimepath+=/home/alex/.local/lilypond/usr/share/lilypond/current/vim
-
 let &packpath = &runtimepath
 
 source ~/.vimrc
-source ~/.config/nvim/plugin-cfg.vim
-source ~/.config/nvim/whichkey.vim
 source ~/.config/nvim/.simplenoterc.vim
+
+"{{{- whick key setup
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+set timeoutlen=500
+call which_key#register('<Space>', "g:which_key_map")
+let g:which_key_map = {}
+"-}}}

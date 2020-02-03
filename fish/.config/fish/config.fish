@@ -15,10 +15,10 @@ set -xg BROWSER firefox
 set -xg TERMINAL alacritty
 
 # export SSH="x7lai@linux.student.cs.uwaterloo.ca"
-# export SPRING_2019="$home_path/Documents/School/Spring 2019"
-# export DOT_FILES="$home_path/myrepos/dotfiles"
+export WINTER_2020="$home_path/Documents/School/Winter 2020"
 # export SUCKLESS_REPO="$home_path/myrepos/suckless_stuff"
-# export PLAYGROUND="$home_path/myrepos/Playground"
+export DOT_FILES="$home_path/Projects/myrepos/dotfiles"
+export PLAYGROUND="$home_path/Projects/myrepos/Playground"
 
 bind -M insert \cf forward-char
 

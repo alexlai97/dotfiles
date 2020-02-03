@@ -1,0 +1,7 @@
+set surround
+set multiple-cursors
+set commentary
+
+let mapleader=","
+set easymotion
+map <Leader> <Plug>(easymotion-prefix)

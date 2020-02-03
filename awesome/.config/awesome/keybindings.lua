@@ -46,7 +46,7 @@ globalkeys = gears.table.join(
                 client.focus:raise()
             end
         end,
-        {description = "go back", group = "client"}),
+        {description = "focus back", group = "client"}),
 
     awful.key({ super_key, "Control" }, "n",
               function ()
@@ -58,6 +58,9 @@ globalkeys = gears.table.join(
                   end
               end,
               {description = "restore minimized", group = "client"}),
+
+    awful.key({ super_key },            "w",     function () awful.spawn("rofi -show window") end,
+              {description = "rofi switch program", group = "client"}),
     --}}}
 
     -- {{{ function key (PowerOff, Volume, Media, Brightness, Screenshot, LED)
@@ -124,7 +127,7 @@ globalkeys = gears.table.join(
               {description = "run prompt", group = "launcher"}),
     awful.key({ super_key },            "d",     function () awful.spawn("rofi -show run") end,
               {description = "run rofi", group = "launcher"}),
-    awful.key({ super_key, },           "w",     function () awful.spawn("dmenu_extended_run") end,
+    awful.key({ super_key, },           "o",     function () awful.spawn("dmenu_extended_run") end,
               {description = "run rofi-extended", group = "launcher"}),
     awful.key({ super_key }, "x",
               function ()
@@ -137,7 +140,7 @@ globalkeys = gears.table.join(
               end,
               {description = "lua execute prompt", group = "awesome"}),
     awful.key({ super_key }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"}),
+              {description = "show programs", group = "launcher"}),
     --}}}
     
     --{{{ layout group
@@ -174,16 +177,8 @@ globalkeys = gears.table.join(
     -- terminal
     awful.key({ super_key,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
-    awful.key({ super_key, shift_key }, "Return", 
-      function () awful.spawn.easy_async("tmux has-session -t daily", 
-        function(stdout, stderr, reason, exit_code) 
-          if (exit_code ~= 0) then 
-            awful.spawn(terminal_cmd .. "tmux new-session -s daily")
-          else 
-            awful.spawn(terminal_cmd .. "tmux attach -t daily")
-          end
-        end) end, 
-        {description = "open daily tmux", group = "launcher"}),
+    awful.key({ super_key, shift_key }, "Return", function () awful.spawn("tmux_daily.sh") end, 
+        {description = "open tmux with session Daily", group = "launcher"}),
     
     -- terminal program TODO write a function to simplify
     awful.key({ super_key, alt_key }, "h", function () awful.spawn(terminal_cmd .. "htop") end,
@@ -252,7 +247,7 @@ clientkeys = gears.table.join(
               {description = "toggle floating", group = "client"}),
     awful.key({ super_key, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
               {description = "move to master", group = "client"}),
-    awful.key({ super_key,           }, "o",      function (c) c:move_to_screen()               end,
+    awful.key({ super_key, "Shift"   }, "o",      function (c) c:move_to_screen()               end,
               {description = "move to screen", group = "client"}),
     --[[
     awful.key({ super_key,           }, "t",      function (c) c.ontop = not c.ontop            end,
@@ -336,3 +331,17 @@ for i = 1, 9 do
     )
 end
 --}}}
+
+
+-- Set keys
+root.keys(globalkeys)
+
+-- {{{ Mouse bindings of root desktop screen
+root.buttons(gears.table.join(
+    awful.button({ }, 1, function () mymainmenu:toggle() end),
+    awful.button({ }, 2, function () awful.spawn("sxiv " .. wallpaper_path) end),
+    awful.button({ }, 3, function () awful.spawn("rightclickmenu") end),
+    awful.button({ }, 4, awful.tag.viewprev),
+    awful.button({ }, 5, awful.tag.viewnext)
+))
+-- }}}

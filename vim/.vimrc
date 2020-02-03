@@ -22,40 +22,28 @@ if dein#load_state('~/.cache/dein')
 
   " nvim special (heavy tasks)
   if has('nvim')
-    " call dein#add('autozimu/LanguageClient-neovim')
     call dein#add('simplenote-vim/simplenote.vim')
-    call dein#add('racer-rust/vim-racer')
     call dein#add('lervag/vimtex')
     call dein#add('majutsushi/tagbar')
     call dein#add('tpope/vim-fugitive')
-    call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd']})
+    call dein#add('mhinz/vim-signify')
     call dein#add('neoclide/coc.nvim', {'merge':0, 'rev': 'release'})
-    call dein#add('dbeniamine/cheat.sh-vim')
-    " call dein#add('Shougo/deoplete.nvim')
-    call dein#add('dag/vim-fish')
-    " call dein#add('Shougo/neosnippet.vim')
-    " call dein#add('Shougo/neosnippet-snippets')
     call dein#add('honza/vim-snippets')
-    " call dein#add('deviantfero/wpgtk.vim')
-    " call dein#add('epilande/vim-react-snippets')
-    " call dein#add('baskerville/vim-sxhkdrc')
-    " call dein#add('tbodt/deoplete-tabnine', { 'build': './install.sh' })
-    " call dein#add('raghur/vim-ghost')
+    call dein#add('easymotion/vim-easymotion')
+    call dein#add('Shougo/denite.nvim')
   else " vim special
     call dein#add('roxma/nvim-yarp')
     call dein#add('roxma/vim-hug-neovim-rpc')
   endif
 
-  " My plugins
+  " Common plugins for vim and nvim
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('liuchengxu/vim-which-key')
-  call dein#add('unblevable/quick-scope')
   call dein#add('tpope/vim-commentary')
   call dein#add('terryma/vim-multiple-cursors')
   call dein#add('mhinz/vim-startify')
   call dein#add('tpope/vim-surround')
   call dein#add('junegunn/vim-easy-align')
-  call dein#add('cespare/vim-toml')
 
   " Required:
   call dein#end()
@@ -79,6 +67,7 @@ set relativenumber
 " set cursorline
 set timeoutlen=1000 ttimeoutlen=0
 set mouse=a
+set updatetime=100
 "-}}}
 
 "{{{- Color Colorscheme  
@@ -101,7 +90,7 @@ set shiftwidth=2 " << and >> moves 4 whitespaces
 "{{{- leader
 nnoremap <SPACE> <Nop>
 let g:mapleader = "\<Space>"
-let g:maplocalleader = ','
+let g:maplocalleader = '\'
 "-}}}
 
 "{{{- netrw
@@ -128,20 +117,14 @@ nnoremap <A-h> :bprevious<cr>
 nnoremap <A-l> :bnext<cr>
 nnoremap <A-j> :tabnext<cr>
 nnoremap <A-k> :tabprev<cr>
-nnoremap <A-b> :buffers<cr>
-nnoremap <A-1> :buffer 1<cr>
-nnoremap <A-2> :buffer 2<cr>
-nnoremap <A-3> :buffer 3<cr>
-nnoremap <A-4> :buffer 4<cr>
-nnoremap <A-5> :buffer 5<cr>
-nnoremap <A-6> :buffer 6<cr>
-nnoremap <A-7> :buffer 7<cr>
-nnoremap <A-8> :buffer 8<cr>
-nnoremap <A-9> :buffer 9<cr>
+" nnoremap <A-b> :buffers<cr>
+" nnoremap <A-1> :buffer 1<cr>
+" nnoremap <A-2> :buffer 2<cr>
+" nnoremap <A-3> :buffer 3<cr>
+" nnoremap <A-4> :buffer 4<cr>
+" nnoremap <A-5> :buffer 5<cr>
+" nnoremap <A-6> :buffer 6<cr>
+" nnoremap <A-7> :buffer 7<cr>
+" nnoremap <A-8> :buffer 8<cr>
+" nnoremap <A-9> :buffer 9<cr>
 "-}}}
-
-"{{{- color
-source ~/.vim/colors.vim
-"-}}}
-
-
