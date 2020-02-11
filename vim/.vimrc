@@ -30,7 +30,16 @@ if dein#load_state('~/.cache/dein')
     call dein#add('neoclide/coc.nvim', {'merge':0, 'rev': 'release'})
     call dein#add('honza/vim-snippets')
     call dein#add('easymotion/vim-easymotion')
-    call dein#add('Shougo/denite.nvim')
+    call dein#add('itchyny/lightline.vim')
+    call dein#add('deviantfero/wpgtk.vim')
+    call dein#add('preservim/nerdtree')
+    call dein#add('Yggdroot/indentLine')
+    " call dein#add('Shougo/denite.nvim')
+    " call dein#add('edkolev/tmuxline.vim')
+    " call dein#add('jupyter-vim/jupyter-vim')
+    " call dein#add('vim-airline/vim-airline')
+    " call dein#add('vim-airline/vim-airline-themes')
+
   else " vim special
     call dein#add('roxma/nvim-yarp')
     call dein#add('roxma/vim-hug-neovim-rpc')
@@ -67,7 +76,7 @@ set relativenumber
 " set cursorline
 set timeoutlen=1000 ttimeoutlen=0
 set mouse=a
-set updatetime=100
+set updatetime=300
 "-}}}
 
 "{{{- Color Colorscheme  
@@ -77,14 +86,14 @@ if exists("g:gnvim")
 endif
 " set termguicolors
 " set background=dark
-" colorscheme wal
+colorscheme wpgtkAlt
 "-}}}
 
-"{{{- Tab
-set tabstop=2 " length of one tab length
-set softtabstop=2 " length of how ch BackSpace delete
+"{{{- Tab space length
+set tabstop=4 " length of one tab length
+set softtabstop=4 " length of how ch BackSpace delete
 set expandtab     " Expand tabs to spaces
-set shiftwidth=2 " << and >> moves 4 whitespaces
+set shiftwidth=4 " << and >> moves 4 whitespaces
 "-}}}
 
 "{{{- leader
@@ -94,10 +103,30 @@ let g:maplocalleader = '\'
 "-}}}
 
 "{{{- netrw
-let g:netrw_winsize=20
-let g:netrw_liststyle = 3
-let g:netrw_banner = 0
-nnoremap <F3> :Lexplore %:p:h<CR>
+" let g:netrw_list_hide = join(split(system('git ls-files --other --ignored --exclude-standard --directory'), '\n'), ',')
+
+" let g:netrw_winsize=20
+" let g:netrw_liststyle=3
+" let g:netrw_banner=0
+" nnoremap <F3> :call ToggleNetrw()<CR>
+
+" let g:NetrwIsOpen=0
+" function! ToggleNetrw()
+"     if g:NetrwIsOpen
+"         let i = bufnr("$")
+"         while (i >= 1)
+"             if (getbufvar(i, "&filetype") == "netrw")
+"                 silent exe "bwipeout " . i 
+"             endif
+"             let i-=1
+"         endwhile
+"         let g:NetrwIsOpen=0
+"     else
+"         let g:NetrwIsOpen=1
+"         silent Lexplore
+"     endif
+" endfunction
+
 "-}}}
 
 "{{{- foldmethod
@@ -113,10 +142,14 @@ set foldmethod=marker
 " nnoremap <c-k> <c-w>k
 
 " Buffers/Tab shortcuts
-nnoremap <A-h> :bprevious<cr>
-nnoremap <A-l> :bnext<cr>
-nnoremap <A-j> :tabnext<cr>
-nnoremap <A-k> :tabprev<cr>
+" nnoremap <A-h> :bprevious<cr>
+" nnoremap <A-l> :bnext<cr>
+" nnoremap <A-j> :tabnext<cr>
+" nnoremap <A-k> :tabprev<cr>
+nnoremap [b :bprevious<cr>
+nnoremap ]b :bnext<cr>
+" nnoremap [t :tprev<cr>
+" nnoremap ]t :tnext<cr>
 " nnoremap <A-b> :buffers<cr>
 " nnoremap <A-1> :buffer 1<cr>
 " nnoremap <A-2> :buffer 2<cr>
@@ -128,3 +161,10 @@ nnoremap <A-k> :tabprev<cr>
 " nnoremap <A-8> :buffer 8<cr>
 " nnoremap <A-9> :buffer 9<cr>
 "-}}}
+
+"{{{- quickfix key shortcut
+nnoremap [q :cprevious<cr>
+nnoremap ]q :cnext<cr>
+nnoremap [Q :cfirst<cr>
+nnoremap ]Q :clast<cr>
+"}}}

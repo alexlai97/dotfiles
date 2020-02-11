@@ -6,6 +6,7 @@ set runtimepath^=~/.vim
 let &packpath = &runtimepath
 
 source ~/.vimrc
+source ~/.config/nvim/commontypos.vim
 source ~/.config/nvim/.simplenoterc.vim
 
 "{{{- whick key setup
