@@ -45,5 +45,7 @@ stow -v -d . -t ~/ git
 stow -v -d . -t ~/ dmenu-extended
 stow -v -d . -t ~/ termite
 stow -v -d . -t ~/ starship
+stow -v -d . -t ~/ vifm
+# maybe more
 
 # sudo stow -v -d . -t / portage

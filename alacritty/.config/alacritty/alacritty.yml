@@ -175,6 +175,7 @@ schemes:
   #}}}
 #}}}
 
+#{{{ colors
 colors: 
   primary:
     background: '0x231809'
@@ -197,6 +198,7 @@ colors:
     magenta: '0x91ab67'
     cyan:    '0x67a97d'
     white:   '0xc8c5c1'
+#}}}
 
 #{{{ Visual Bell
 #

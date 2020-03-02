@@ -1,29 +1,23 @@
 # cat ~/.config/wpg/sequences &
 
-set -l home_path /home/alex
-set -xg PATH /opt/bin /usr/local/bin /usr/bin /sbin/ $home_path/.stack/programs/x86_64-linux/ghc-tinfo6-8.4.3/bin/ $home_path/.gem/ruby/2.4.0/bin /bin /usr/sbin/ $home_path/.scripts $home_path/.cargo/bin $home_path/.local/bin $home_path/.texlive/2019/bin/x86_64-linux/  $home_path/.node_modules/bin/ /usr/bin/core_perl/
-set -xg XDG_CONFIG_home_path $home_path/.config
-set -xg XDG_DATA_home_path $home_path/.local/share
-set -xg MANPATH $home_path/.texlive/2019/texmf-dist/doc/man $home_path/.local/share/man /usr/local/share/man /usr/share/man /usr/share/gcc-data/x86_64-pc-linux-gnu/8.2.0/man
-set -xg INFOPATH $home_path/.texlive/2019/texmf-dist/doc/info 
-#set -xg DVTM_EDITOR $home_path/.scripts/dvtm-editor
+set -xg PATH $HOME/.scripts $HOME/.cargo/bin $HOME/.local/bin /opt/bin /usr/local/bin /usr/bin /sbin/ /bin /usr/sbin/ /usr/bin/core_perl/ $HOME/.local/share/texlive/2019/bin/x86_64-linux/
+set -xg XDG_CONFIG_HOME $HOME/.config
+set -xg XDG_DATA_HOME $HOME/.local/share
+set -xg MANPATH $HOME/.local/share/texlive/2019/texmf-dist/doc/man $HOME/.local/share/man /usr/local/share/man /usr/share/man 
+set -xg INFOPATH $HOME/.local/share/texlive/2019/texmf-dist/doc/info
+#set -xg DVTM_EDITOR $HOME/.scripts/dvtm-editor
 set -xg _JAVA_AWT_WM_NONREPARENTING 1
 set -xg JAVA_HOME /usr/lib/jvm/icedtea-bin-8/
 
 set -xg EDITOR nvim
 set -xg BROWSER firefox
-set -xg TERMINAL alacritty
+set -xg TERMINAL termite
+set -xg MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
-# export SSH="x7lai@linux.student.cs.uwaterloo.ca"
-export WINTER_2020="$home_path/Documents/School/Winter 2020"
-# export SUCKLESS_REPO="$home_path/myrepos/suckless_stuff"
-export DOT_FILES="$home_path/Projects/myrepos/dotfiles"
-export PLAYGROUND="$home_path/Projects/myrepos/Playground"
+set -xg WINTER_2020 "$HOME/Documents/School/Winter 2020"
+set -xg DOT_FILES "$HOME/Projects/myrepos/dotfiles"
+set -xg PLAYGROUND "$HOME/Projects/myrepos/Playground"
 
 bind -M insert \cf forward-char
-
-if test "$USER" = "root"
-    set -xg TERM xterm-256color
-end
 
 starship init fish | source

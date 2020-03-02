@@ -123,10 +123,10 @@ globalkeys = gears.table.join(
     -- }}}
     
     --{{{ launcher group
-    awful.key({ super_key },            "r",     function () awful.screen.focused().mypromptbox:run() end,
-              {description = "run prompt", group = "launcher"}),
-    awful.key({ super_key },            "d",     function () awful.spawn("rofi -show run") end,
-              {description = "run rofi", group = "launcher"}),
+    -- awful.key({ super_key },            "r",     function () awful.screen.focused().mypromptbox:run() end,
+    --           {description = "run prompt", group = "launcher"}),
+    awful.key({ super_key },            "r",     function () awful.spawn("rofi -show run") end,
+              {description = "rofi run", group = "launcher"}),
     awful.key({ super_key, },           "o",     function () awful.spawn("dmenu_extended_run") end,
               {description = "run rofi-extended", group = "launcher"}),
     awful.key({ super_key }, "x",
@@ -139,8 +139,9 @@ globalkeys = gears.table.join(
                   }
               end,
               {description = "lua execute prompt", group = "awesome"}),
-    awful.key({ super_key }, "p", function() menubar.show() end,
+    awful.key({ super_key },            "p",    function() awful.spawn("rofi -show drun -display-drun 'Program' -show-icons") end,
               {description = "show programs", group = "launcher"}),
+    -- awful.key({ super_key }, "p", function() menubar.show() end,
     --}}}
     
     --{{{ layout group

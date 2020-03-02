@@ -3,7 +3,7 @@
 #TODO
 # add feature that it can exec command after sleep
 #                  it can display custom info (e.g. This is time for class)
-# notify-send when start counting
+# notify-send when start counting and end counting
 
 
 usage() {
@@ -30,5 +30,5 @@ fi
 
 sleep $TIME
 
-# 
+#   🔔
 zenity --info --title="Timer Complete" --text="The timer for $WHATFOR has over.\n\n Slept for $TIME."

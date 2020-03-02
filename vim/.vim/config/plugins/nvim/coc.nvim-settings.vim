@@ -1,5 +1,7 @@
 "{{{- Coc
 
+" let g:coc_config_home="~/.vim"
+
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
@@ -24,7 +26,7 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
-nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>cw <Plug>(coc-rename)
 
 " Remap for format selected region
 " xmap <leader>=  <Plug>(coc-format-selected)
@@ -38,8 +40,10 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
-nmap <leader>ls :CocList buffers<CR>
-nmap <leader>f  :CocList files<CR>
-nmap <leader>/  :CocList grep<CR>
+nmap ,f  :CocList files<CR>
+nmap ,/  :CocList grep<CR>
+nmap ,b  :CocList buffers<CR>
+nmap ,t  :CocList tags<CR>
+nmap <F3> :CocCommand explorer<CR>
 
 "-}}}

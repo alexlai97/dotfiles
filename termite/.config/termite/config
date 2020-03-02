@@ -1,15 +1,15 @@
 [options]
-#allow_bold = true
+allow_bold = true
 #audible_bell = false
 #bold_is_bright = true
 #cell_height_scale = 1.0
 #cell_width_scale = 1.0
-#clickable_url = true
-#dynamic_title = true
+clickable_url = true
+dynamic_title = true
 font = Monospace 11
 #fullscreen = true
-#icon_name = terminal
-#mouse_autohide = false
+icon_name = terminal
+mouse_autohide = true
 #scroll_on_output = false
 #scroll_on_keystroke = true
 # Length of the scrollback buffer, 0 disabled the scrollback buffer
@@ -26,7 +26,7 @@ scrollback_lines = 10000
 #cursor_blink = system
 
 # "block", "underline" or "ibeam"
-#cursor_shape = block
+cursor_shape = block
 
 # Hide links that are no longer valid in url select overlay mode
 #filter_unmatched_urls = true
@@ -57,22 +57,22 @@ scrollback_lines = 10000
 highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0  = #251809
-color1  = #ba7930
-color2  = #c2b39b
-color3  = #ad9c68
-color4  = #98a82b
-color5  = #2891c0
-color6  = #6da2bd
-color7  = #c8c5c1
-color8  = #5b5146
-color9  = #ba7930
-color10 = #c2b39b
-color11 = #ad9c68
-color12 = #98a82b
-color13 = #2891c0
-color14 = #6da2bd
-color15 = #c8c5c1
+color0  = #dedede
+color1  = #CC6699
+color2  = #4b9670
+color3  = #CC9966
+color4  = #45678a
+color5  = #9966CC
+color6  = #79a151
+color7  = #666666
+color8  = #c5c5c5
+color9  = #a92c6b
+color10 = #217c4e
+color11 = #a96b2c
+color12 = #1e4772
+color13 = #6b2ca9
+color14 = #548523
+color15 = #2a2a2a
 
 [hints]
 #font = Monospace 12

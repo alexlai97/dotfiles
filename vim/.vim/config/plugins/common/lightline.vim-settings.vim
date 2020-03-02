@@ -4,16 +4,15 @@ let g:lightline = {}
 
 let g:lightline.active = {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
       \ 'right': [ [ 'lineinfo' ],
-      \            [ 'percent' ],
-      \            [ 'filetype' ] ] }
+      \            [ 'percent' ] ] }
 
 let g:lightline.component_function = {
-      \   'gitbranch': 'FugitiveHead'
+      \   'gitbranch': 'FugitiveStatusline'
       \ }
 
-let g:lightline.colorscheme = 'wombat'
+let g:lightline.colorscheme = 'one'
 
 let g:lightline.mode_map = {
       \ 'n' : 'N',
