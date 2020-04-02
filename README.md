@@ -31,10 +31,11 @@ stow -v -d . -t ~/ tmux
     - corona
 
 ## Screenshot
-![awewm](./awesomewm-screenshot.png)
-
-
-
-
+neofetch+coronascript
+![neofetch+coronascript](screenshot-neofetch+coronascript.png)
+tmux+nvim+vifm
+![tmux+nvim+vifm](screenshot-tmux+nvim+vifm.png)
+sxiv+neomutt+newsboat
+![sxiv+neomutt+newsboat](screenshot-sxiv+neomutt+newsboat.png)
 
 [gnustow]: https://www.gnu.org/software/stow/
