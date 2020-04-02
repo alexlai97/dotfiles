@@ -1,4 +1,5 @@
 #!/bin/dash
+# A wrapper around https://github.com/chubin/wttr.in
 
 WEATHER_CACHE_DIR="/home/alex/.cache/weather"
 CACHEFILE=$WEATHER_CACHE_DIR"/current_weather.png"

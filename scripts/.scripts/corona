@@ -1,4 +1,5 @@
 #!/bin/bash
+# A wrapper around https://github.com/sagarkarira/coronavirus-tracker-cli
 
 CACHED_FILE="/home/alex/.cache/corona_status.txt"
 FEW_COUNTRIES="USA|Canada|China"
