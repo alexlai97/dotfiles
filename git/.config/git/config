@@ -1,7 +1,7 @@
 [user]
 	email = alex@alexlai.xyz
 	name = Alex Lai
-    ; signingkey = 
+    signingkey = 577C37FAF0AAEA19
 
 
 [alias]
@@ -16,3 +16,6 @@
   lg = !"git lg1"
   st = status
   ; new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+  
+[commit]
+	gpgsign = true

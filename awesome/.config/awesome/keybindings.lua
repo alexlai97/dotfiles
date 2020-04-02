@@ -171,6 +171,8 @@ globalkeys = gears.table.join(
               {description = "open htop in terminal", group = "programs"}),
     awful.key({ super_key, alt_key }, "r", function () awful.spawn(terminal_cmd .. "fish -c ranger") end,
               {description = "open ranger in terminal", group = "programs"}),
+    awful.key({ super_key, alt_key }, "v", function () awful.spawn(terminal_cmd .. "fish -c vifmrun") end,
+              {description = "open vifm in terminal", group = "programs"}),
     awful.key({ super_key, alt_key }, "n", function () awful.spawn(terminal_cmd .. "fish -c ncmpcpp") end,
               {description = "open ncmpcpp in terminal", group = "programs"}),
     awful.key({ super_key, alt_key }, "m", function () awful.spawn(terminal_cmd .. "fish -c neomutt") end,

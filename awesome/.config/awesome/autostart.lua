@@ -26,7 +26,7 @@ require("variables")
 
 -- programs
 awful.spawn.once(home_path .. ".fehbg")
-awful.spawn.once(scripts_path .. "weather show")
+-- awful.spawn.once(scripts_path .. "weather show")
 awful.spawn.single_instance("fcitx")
 awful.spawn.single_instance("picom -b")
 -- awful.spawn.single_instance("zim")

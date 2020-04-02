@@ -56,9 +56,13 @@ set -xg TERMINAL alacritty
 set -xg MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 # directories
+set -xg KEYBASE_DIR "$XDG_RUNTIME_DIR/keybase/kbfs/"
 set -xg WINTER_2020 "$HOME/Documents/School/Winter 2020"
 set -xg DOT_FILES "$HOME/Projects/myrepos/dotfiles"
 set -xg PLAYGROUND "$HOME/Projects/myrepos/Playground"
+
+# personal
+set -xg KEYID_PRIMARY "F0AAEA19" 
 #}}}
 
 #{{{ bindings

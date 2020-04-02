@@ -32,7 +32,6 @@ daily terminal" | rofi -dmenu -p "lanuncher"
 execute () {
   case $(rofioption) in
     *Gnvim*) gnvim;;
-    # *emacs*) emacsclient --create-frame;;
     timer) timer;;
     calendar) zenity --calendar;;
     weather) weather show;;
@@ -43,18 +42,19 @@ execute () {
     'daily terminal') $termcmd tmux attach || $termcmd tmux ;;
     'mymood choose') mymood choose;;
     'mymood askprompt') mymood ask;;
-    'config awesomewm') $termcmd nvim ~/.config/awesome/rc.lua;;
-    'config rightclickmenu') $termcmd nvim ~/.scripts/rightclickmenu;;
+    'config awesomewm') gnvim ~/.config/awesome/rc.lua;;
+    'config rightclickmenu') gnvim ~/.scripts/rightclickmenu;;
     *ghci*) $termcmd ghci;;
-    spacefm*) spacefm;;
     htop) $termcmd htop;;
     xkill) xkill;;
     slock) slock;;
     *sxhkd*) pkill sxhkd; sxhkd;;
     *startx*) 
-      $termcmd tail -f $XDG_CACHE_HOME/xorg_startx.log &
+      $termcmd tail -f $XDG_CACHE_HOME/xorg_startx_stderr.log &
       $termcmd tail -f $XDG_CACHE_HOME/xorg_startx_stdout.log
       ;;
+    # *emacs*) emacsclient --create-frame;;
+    # spacefm*) spacefm;;
   esac
 }
 

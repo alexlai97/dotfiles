@@ -22,6 +22,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('roxma/vim-hug-neovim-rpc')
   endif
 
+  " Common plugins for vim and nvim
   call dein#add('simplenote-vim/simplenote.vim')
   call dein#add('lervag/vimtex')
   call dein#add('majutsushi/tagbar')
@@ -34,7 +35,6 @@ if dein#load_state('~/.cache/dein')
   call dein#add('deviantfero/wpgtk.vim')
   call dein#add('Yggdroot/indentLine')
 
-  " Common plugins for vim and nvim
   call dein#add('jiangmiao/auto-pairs')
   call dein#add('liuchengxu/vim-which-key')
   call dein#add('tpope/vim-commentary')
@@ -43,6 +43,8 @@ if dein#load_state('~/.cache/dein')
   call dein#add('tpope/vim-surround')
   call dein#add('junegunn/vim-easy-align')
   call dein#add('dag/vim-fish')
+  call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd'],
+              \ 'build': 'sh -c "cd app & yarn install"' })
 
   " Required:
   call dein#end()

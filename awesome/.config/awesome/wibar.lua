@@ -1,6 +1,7 @@
 local wibox = require("wibox")
 local gears = require("gears")
 local awful = require("awful")
+local naughty = require("naughty")
 local beautiful = require("beautiful")
 
 -- {{{ Helper functions
@@ -88,8 +89,10 @@ mydayornight:buttons(gears.table.join(
 -- mycorona
 mycorona = awful.widget.watch(scripts_path .. "corona oneline", 3600)
 mycorona:buttons(gears.table.join(
-  awful.button({ }, 1, function() awful.spawn("corona update") end) , 
-  awful.button({ }, 3, function() awful.spawn("corona download") end) 
+  awful.button({ }, 1, function() 
+      awful.spawn.easy_async("corona", function(stdout, stderr, reason, exit_code) naughty.notify { title = "Corona Update", text = stdout } end)
+  end) , 
+  awful.button({ }, 3, function() awful.spawn.easy_async_with_shell("corona download; corona update") end) 
 ))
 
 -- wifi widget
