@@ -1,6 +1,6 @@
 #!/bin/dash
 
-MYMOOD_CACHE_DIR=$HOME"/.cache/mymood"
+MYMOOD_CACHE_DIR="$XDG_CACHE_HOME/mymood"
 file=$MYMOOD_CACHE_DIR"/mymood.txt"
 iconfile=$MYMOOD_CACHE_DIR"/mymoodicons.txt"
 input=""

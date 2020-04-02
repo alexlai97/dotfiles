@@ -1,7 +1,16 @@
+*.db
+vim/.vim/sessions/
+.ccls-cache/
+*.log
+*.*log
 fcitx/clipboard/*
 fcitx/dbus/*
 fcitx/log/*
-mutt/
+# mutt/
+abook/.abook/
+calcurse/.local/share/calcurse/
+dmenu-extended/.config/dmenu-extended/plugins/
+remind/.config/remind/reminders.rem
 
 *.log
 *.dat

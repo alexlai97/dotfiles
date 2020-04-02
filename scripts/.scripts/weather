@@ -1,6 +1,6 @@
 #!/bin/dash
 
-WEATHER_CACHE_DIR=$HOME"/.cache/weather"
+WEATHER_CACHE_DIR="/home/alex/.cache/weather"
 CACHEFILE=$WEATHER_CACHE_DIR"/current_weather.png"
 CACHEFILE_WHITE=$WEATHER_CACHE_DIR"/current_weather_white.png"
 CACHE_ONELINE=$WEATHER_CACHE_DIR"/current_weather_oneline.txt"
@@ -9,7 +9,7 @@ OPTION=$2
 
 
 usage () {
-  echo "Usage: $0 (help|show|get|reload|full|dark|white|text) [:help|p|q]"
+  echo "Usage: $0 (help|update|show|get|reload|full|dark|white|text) [:help|p|q]"
   echo "  help    :   show this page
   show    :   show picture according to time
   get     :   get image from wttr.in
@@ -19,6 +19,7 @@ usage () {
   dark    :   show dark picture
   text    :   print one line text
   clear   :   clear text cache
+  update  :   update awesome wibar
 
   example: weather f 'Kitchener_0pq'
            weather f moon
@@ -50,15 +51,15 @@ negate_image() {
 }
 
 get_image() {
-  curl 'wttr.in/Kitchener_0pq.png' > $CACHEFILE
-  curl 'wttr.in/?format=%c+%t' > $CACHE_ONELINE
+  curl -s 'wttr.in/Kitchener_0pq.png' > $CACHEFILE
+  curl -s 'wttr.in/?format=%c+%t' > $CACHE_ONELINE
   negate_image
 }
 
 
 print_detail() {
-  echo curl "wttr.in/"$OPTION
-  curl "wttr.in"/$OPTION
+  echo curl -s "wttr.in/"$OPTION
+  curl -s "wttr.in"/$OPTION
 }
 
 
@@ -94,7 +95,8 @@ case "$1" in
   show|s)        dark_or_white; show_image $TIME;;
   dark|d)        show_image "dark";;
   white|w)       show_image "white";;
-  get|g)         get_image && update_awesomewm;;
+  get|g)         get_image ;;
+  update|u)      update_awesomewm ;;
   reload|r)      get_image && dark_or_white && show_image && update_awesomewm;;
   full|f)        print_detail; OPTION=$2;;
   negate|n)      negate_image;;

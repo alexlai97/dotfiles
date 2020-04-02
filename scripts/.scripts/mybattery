@@ -16,15 +16,15 @@ getstatus() {
   capacity=$(cat /sys/class/power_supply/BAT0/capacity)
 
   if [ $capacity -ge 100 ];then 
-    icon=""
+    icon=" "
   elif [ $capacity -ge 75 ];then 
-    icon=""
+    icon=" "
   elif [ $capacity -ge 50 ];then 
-    icon=""
+    icon=" "
   elif [ $capacity -ge 25 ];then 
-    icon=""
+    icon=" "
   else
-    icon=""
+    icon=" "
   fi
 
   result="$icon$capacity%$status"  

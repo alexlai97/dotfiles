@@ -1,0 +1,86 @@
+#!/bin/bash
+
+CACHED_FILE="/home/alex/.cache/corona_status.txt"
+FEW_COUNTRIES="USA|Canada|China"
+ONELINE_COUNTRY="Canada"
+
+usage() {
+    echo "Usage: $0 (''|download|full|few|help|oneline|[country]|update)"
+    echo "  help    : show this message
+  download: get fresh data
+  full    : pretty print downloaded data 
+  few     : pretty print few countries 
+  ''      : minimal print few countries with emoji
+  oneline : minimal print country $ONELINE_COUNTRY
+ [country]: minimal print oneline of [country]
+  update  : update awesome wibar
+
+few countries are hardcoded as $FEW_COUNTRIES" >&2
+    exit 0
+}
+
+download() {
+    if curl -s 'https://corona-stats.online' > $CACHED_FILE; then
+        echo "Cache updated."
+        notify-send "😷 Corona" "Cache updated."
+    else
+        echo "Failed to curl"
+        exit 1
+    fi
+}
+
+check_freshness() {
+    # check if the data of the cached file is same as today
+    if [ "$(stat -c %y $CACHED_FILE 2>/dev/null | cut -d' ' -f1)" != "$(date "+%Y-%m-%d")" ]; then
+        download || echo "Failed to update cache."
+    fi
+}
+
+print_full() {
+    cat $CACHED_FILE
+}
+
+print_full_minimal() {
+    print_full | 
+        sed -e '/║/!d' \
+            -e 's/\x1b\[[0-9;]*m//g' \
+            -e 's/\s*//g' \
+            -e 's/║//g'  \
+            -e 's/│/;/g' \
+            -e 's/([[:upper:]]*)//g' \
+            -e '1d' |
+            awk -F';' '{print $2 " 😷" $3"("$4")" " 💀" $5"("$6")"}'
+}
+
+# pretty print few countries
+print_few() {
+    rg --no-line-number -e "World" -e $FEW_COUNTRIES $CACHED_FILE
+}
+
+# minimal print few countries
+print_few_minimal() {
+    print_full_minimal | rg --no-line-number -e $FEW_COUNTRIES 
+}
+
+# minimal print one country
+# but it may produce multiple lines given partial name
+print_minimal_oneline() {
+    print_full_minimal | rg --ignore-case $ONELINE_COUNTRY
+}
+
+update_awesome() {
+  oneline=$(print_minimal_oneline)
+  echo "mycorona.text = \"$oneline\"" | awesome-client 
+}
+
+case "$1" in 
+    h|-h|--help)  usage;;
+    d|download) download;;
+    full) print_full;;
+    few) print_few;;
+    update) update_awesome;;
+    '') print_few_minimal;;
+    oneline) print_minimal_oneline;;
+    *) ONELINE_COUNTRY="$1" ; print_minimal_oneline;;
+    # *) usage;;
+esac

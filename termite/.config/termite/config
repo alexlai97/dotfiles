@@ -57,22 +57,22 @@ cursor_shape = block
 highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0  = #dedede
-color1  = #CC6699
-color2  = #4b9670
-color3  = #CC9966
-color4  = #45678a
-color5  = #9966CC
-color6  = #79a151
-color7  = #666666
-color8  = #c5c5c5
-color9  = #a92c6b
-color10 = #217c4e
-color11 = #a96b2c
-color12 = #1e4772
-color13 = #6b2ca9
-color14 = #548523
-color15 = #2a2a2a
+color0  = #061229
+color1  = #d07346
+color2  = #99bf52
+color3  = #fbd461
+color4  = #5299bf
+color5  = #9989cc
+color6  = #72b9bf
+color7  = #b8bbc2
+color8  = #717885
+color9  = #d07346
+color10 = #99bf52
+color11 = #fbd461
+color12 = #5299bf
+color13 = #9989cc
+color14 = #72b9bf
+color15 = #ffffff
 
 [hints]
 #font = Monospace 12

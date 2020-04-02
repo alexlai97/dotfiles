@@ -4,6 +4,7 @@ local awful = require("awful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
+-- local variables = require("variables") TODO change to local
 require("variables")
 --}}}
 
@@ -65,61 +66,44 @@ globalkeys = gears.table.join(
 
     -- {{{ function key (PowerOff, Volume, Media, Brightness, Screenshot, LED)
       -- PowerOff show oblogout
-      awful.key({}, "XF86PowerOff", function ()
-        awful.spawn("oblogout")
-      end),
+      awful.key({}, "XF86PowerOff", function () awful.spawn("oblogout") end,
+          {description = "run oblogout", group = "XF86 keys"}),
       -- Volume Keys
-      awful.key({}, "XF86AudioLowerVolume", function() 
-        -- awful.spawn("amixer -q sset Master 5%-")
-        awful.spawn("amixer -q -D pulse sset Master 5%-")
-      end),
-      awful.key({}, "XF86AudioRaiseVolume", function() 
-        -- awful.spawn("amixer -q sset Master 5%+")
-        awful.spawn("amixer -q -D pulse sset Master 5%+")
-      end),
-      awful.key({}, "XF86AudioMute", function() 
-        -- awful.spawn("amixer set Master 1+ toggle")
-        awful.spawn("amixer -D pulse set Master 1+ toggle")
-      end),
+      awful.key({}, "XF86AudioLowerVolume", function() awful.spawn("amixer -q -D pulse sset Master 5%-") end,
+          {description = "lower volumne", group = "XF86 keys"}),
+      awful.key({}, "XF86AudioRaiseVolume", function() awful.spawn("amixer -q -D pulse sset Master 5%+") end,
+          {description = "raise volumne", group = "XF86 keys"}),
+      awful.key({}, "XF86AudioMute", function() awful.spawn("amixer -D pulse set Master 1+ toggle") end,
+          {description = "mute", group = "XF86 keys"}),
       -- Media Keys
-      awful.key({}, "XF86AudioPlay", function() 
-        awful.spawn("mpc toggle")
-      end),
-      awful.key({}, "XF86AudioStop", function() 
-        awful.spawn("mpc stop")
-      end),
-      awful.key({}, "XF86AudioNext", function() 
-        awful.spawn("mpc next")
-      end),
-      awful.key({}, "XF86AudioPrev", function() 
-        awful.spawn("mpc prev")
-      end),
+      awful.key({}, "XF86AudioPlay", function() awful.spawn("mpc toggle") end,
+          {description = "mpc play", group = "XF86 keys"}),
+      awful.key({}, "XF86AudioStop", function() awful.spawn("mpc stop") end,
+          {description = "mpc stop", group = "XF86 keys"}),
+      awful.key({}, "XF86AudioNext", function() awful.spawn("mpc next") end,
+          {description = "mpc next", group = "XF86 keys"}),
+      awful.key({}, "XF86AudioPrev", function() awful.spawn("mpc prev") end,
+          {description = "mpc prev", group = "XF86 keys"}),
       -- Screen Brightness Control
-      awful.key({}, "XF86MonBrightnessDown", function() 
-        awful.spawn("light -U 5")
-      end),
-      awful.key({}, "XF86MonBrightnessUp", function() 
-        awful.spawn("light -A 5")
-      end),
+      awful.key({}, "XF86MonBrightnessDown", function() awful.spawn("light -U 5") end,
+          {description = "brightness -5%", group = "XF86 keys"}),
+      awful.key({}, "XF86MonBrightnessUp", function() awful.spawn("light -A 5") end,
+          {description = "brightness +5%", group = "XF86 keys"}),
       -- Screenshot Keys
-      awful.key({}, "Print", function()  
-        awful.spawn("flameshot gui")
-      end),
+      awful.key({}, "Print", function()  awful.spawn("flameshot gui") end,
+          {description = "capture screen", group = "XF86 keys"}),
       -- awful.key({"Shift"}, "Print", function()  
       --   awful.spawn(scripts_path .. "screenshot.sh root")
       -- end),
 
       -- Keyboard LED 
-      awful.key({}, "Scroll_Lock", function()  
-        awful.spawn("xset led 3")
-      end),
-      awful.key({"Shift"}, "Scroll_Lock", function()  
-        awful.spawn("xset -led 3")
-      end),
+      awful.key({}, "Scroll_Lock", function()  awful.spawn("xset led 3") end,
+          {description = "keyboard led on", group = "XF86 keys"}),
+      awful.key({"Shift"}, "Scroll_Lock", function()  awful.spawn("xset -led 3") end,
+          {description = "keyboard led off", group = "XF86 keys"}),
       -- Touchpad Toggle
-      awful.key({}, "XF86TouchpadToggle", function()  
-        awful.spawn(scripts_path .. "toggletouchpad.sh")
-      end),
+      awful.key({}, "XF86TouchpadToggle", function()  awful.spawn(scripts_path .. "toggletouchpad.sh") end,
+          {description = "touchpad toggle", group = "XF86 keys"}),
     -- }}}
     
     --{{{ launcher group
@@ -178,17 +162,18 @@ globalkeys = gears.table.join(
     -- terminal
     awful.key({ super_key,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
-    awful.key({ super_key, shift_key }, "Return", function () awful.spawn("tmux_daily.sh") end, 
+    -- awful.key({ super_key, shift_key }, "Return", function () awful.spawn(terminal_cmd .. "fish -c" .. 'tmux_load_or_new_session Daily') end, 
+    awful.key({ super_key, shift_key }, "Return", function () awful.spawn(terminal_cmd .. "fish -c 'tmux_load_or_new_session Daily'") end, 
         {description = "open tmux with session Daily", group = "launcher"}),
     
     -- terminal program TODO write a function to simplify
-    awful.key({ super_key, alt_key }, "h", function () awful.spawn(terminal_cmd .. "htop") end,
+    awful.key({ super_key, alt_key }, "h", function () awful.spawn(terminal_cmd .. "fish -c htop") end,
               {description = "open htop in terminal", group = "programs"}),
-    awful.key({ super_key, alt_key }, "r", function () awful.spawn(terminal_cmd .. "ranger") end,
+    awful.key({ super_key, alt_key }, "r", function () awful.spawn(terminal_cmd .. "fish -c ranger") end,
               {description = "open ranger in terminal", group = "programs"}),
-    awful.key({ super_key, alt_key }, "n", function () awful.spawn(terminal_cmd .. "ncmpcpp") end,
+    awful.key({ super_key, alt_key }, "n", function () awful.spawn(terminal_cmd .. "fish -c ncmpcpp") end,
               {description = "open ncmpcpp in terminal", group = "programs"}),
-    awful.key({ super_key, alt_key }, "m", function () awful.spawn(terminal_cmd .. "neomutt") end,
+    awful.key({ super_key, alt_key }, "m", function () awful.spawn(terminal_cmd .. "fish -c neomutt") end,
               {description = "open neomutt in terminal", group = "programs"}),
 
     -- non terminal program
@@ -196,6 +181,12 @@ globalkeys = gears.table.join(
               {description = "run firefox", group = "programs"}),
     awful.key({ super_key, alt_key }, "t", function () awful.spawn("thunar") end,
               {description = "run thunar", group = "programs"}),
+    awful.key({ super_key, alt_key }, "e", function () awful.spawn("rofiunicode") end,
+              {description = "select unicode/emojis", group = "programs"}),
+    awful.key({ super_key, alt_key }, "p", function () awful.spawn("passmenu") end,
+              {description = "select passwords", group = "programs"}),
+    awful.key({ super_key, alt_key }, "c", function () awful.spawn("clipmenu") end,
+              {description = "select from clipboards", group = "programs"}),
     -- awful.key({ super_key, alt_key }, "s", function () awful.spawn("spacefm") end,
     --           {description = "run spacefm", group = "programs"}),
 

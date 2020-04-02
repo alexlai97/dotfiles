@@ -1,0 +1,750 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'d
+	/home/alex/Downloads
+	vifm-v0.10.1-builtin-normal.pdf
+1581807850
+'h
+	/home/alex/
+	..
+1583010339
+'s
+	/home/alex/.scripts/
+	..
+1581780688
+'v
+	/home/alex/Videos
+	Buddhism
+1582218266
+
+# Bookmarks:
+b/home/alex/Documents/School/Winter 2020/
+	winter2020
+	1581869864
+b/home/alex/Nextcloud/
+	nextcloud
+	1581808056
+b/home/alex/Pictures/
+	pictures
+	1581808081
+b/home/alex/Projects/myrepos/Playground/
+	playground
+	1581808097
+b/home/alex/Projects/
+	projects
+	1581808107
+b/home/alex/Tmp/
+	tmp
+	1581808141
+b/home/alex/Documents/Buddism/2016rxl/
+	rxl2016
+	1581825447
+
+# TUI:
+al
+q1
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/alex/.local/share/mail/gmail/[Gmail].Drafts
+	cur
+1
+d/home/alex/.local/share/mail/gmail
+	[Gmail].Important
+5
+d/home/alex/.local/share/mail/gmail/[Gmail].Important
+	cur
+1
+d/home/alex/.local/share/mail/gmail/[Gmail].Important/cur
+	1585537717.2569606_299.Dell-Arch-Alex,U=2:2,S
+2
+d/home/alex/.local/share/mail/gmail/[Gmail].Important
+	cur
+1
+d/home/alex/.local/share/mail/gmail/[Gmail].Important/cur
+	1585537717.2569606_299.Dell-Arch-Alex,U=2:2,S
+2
+d/home/alex/.local/share/mail/gmail/[Gmail].Important
+	cur
+1
+d/home/alex/.local/share/mail/gmail
+	INBOX
+1
+d/home/alex/Projects/myrepos/dotfiles/mutt/.config/mutt
+	accounts
+1
+d/home/alex/Projects/myrepos/dotfiles/mutt/.config/mutt/accounts
+	1-cockli.muttrc
+1
+d/home/alex/Projects/myrepos/dotfiles/mutt/.config/mutt
+	accounts
+1
+d/home/alex/Projects/myrepos/dotfiles/mutt/.config/mutt/accounts
+	1-cockli.muttrc
+1
+d/home/alex/Projects/myrepos/dotfiles/mutt/.config/mutt
+	muttrc
+3
+d/home/alex/Projects/myrepos/dotfiles/mutt/.config
+	mutt
+1
+d/home/alex/Projects/myrepos/dotfiles/mutt/.config/mutt
+	accounts
+1
+d/home/alex/Projects/myrepos/dotfiles/mutt/.config/mutt/accounts
+	1-cockli.muttrc
+1
+d/home/alex/.local/share/mail/gmail/[Gmail].Sent Mail/cur
+	..
+0
+d/home/alex/.local/share/mail/gmail/[Gmail].Sent Mail
+	tmp
+3
+d/home/alex/.local/share/mail/gmail
+	INBOX
+1
+d/home/alex/.local/share/mail/gmail/INBOX
+	cur
+1
+d/home/alex/.local/share/mail/gmail/INBOX/cur
+	1585551033.2657432_1.Dell-Arch-Alex,U=21:2,S
+20
+d/home/alex/.local/share/mail/uwaterloo
+	Sent Items
+20
+d/home/alex/.local/share/mail/uwaterloo/Sent Items
+	cur
+1
+d/home/alex/.local/share/mail/uwaterloo/Sent Items/cur
+	1585584606.2700972_1.Dell-Arch-Alex,U=248:2,S
+40
+d/home/alex/.gnupg
+	crls.d
+1
+d/home/alex/.gnupg/crls.d
+	..
+0
+d/home/alex/.gnupg
+	crls.d
+1
+d/home/alex/.gnupg/crls.d
+	DIR.txt
+1
+d/home/alex/.gnupg
+	openpgp-revocs.d
+2
+d/home/alex/.gnupg/openpgp-revocs.d
+	D666AA627B3BF729ADA63342B48F9E2987F379BE.rev
+5
+d/home/alex/.gnupg
+	private-keys-v1.d
+3
+d/home/alex/.gnupg/private-keys-v1.d
+	1CE58BCEE257882DC318ECA209464C7A9CDFC88D.key
+1
+d/home/alex/.gnupg
+	private-keys-v1.d
+3
+d/home/alex/.gnupg/private-keys-v1.d
+	91A7F086A723754CB0C471C7B8C917961C9C6E01.key
+6
+d/home/alex/.gnupg
+	trustdb.gpg
+20
+d/home/alex
+	.gnupg
+9
+d/home/alex/Nextcloud
+	Notability
+3
+d/home/alex/Downloads
+	replication-mp4.mp4
+4
+d/home/alex
+	Tmp
+36
+d/home/alex/Tmp
+	翻译1.png
+14
+d/home/alex/.config/awesome
+	rc.lua
+3
+d/home/alex/Videos
+	mpsyt
+4
+d/home/alex/Videos/mpsyt
+	..
+0
+d/home/alex/Videos
+	Sreensharing
+3
+d/home/alex/Videos/Sreensharing
+	Daily
+1
+d/home/alex/Videos/Sreensharing/Daily
+	..
+0
+d/home/alex/Videos/Sreensharing
+	Daily
+1
+d/home/alex/Videos
+	Fun
+2
+d/home/alex/Videos/Fun
+	VR
+1
+d/home/alex/Videos/Fun/VR
+	ctrlv-with-gide-20191217
+1
+d/home/alex/Videos/Fun/VR/ctrlv-with-gide-20191217
+	beat-saber-1.mp4
+1
+d/home/alex/Videos/Fun/VR
+	ctrlv-with-gide-20191217
+1
+d/home/alex/Videos/Fun
+	VR
+1
+d/home/alex/Videos/Fun/VR
+	ctrlv-with-gide-20191217
+1
+d/home/alex/Videos/Fun/VR/ctrlv-with-gide-20191217
+	skyfront-tutorial.mp4
+5
+d/home/alex/.config/vifm
+	..
+0
+d/home/alex/Videos
+	Buddhism
+1
+d/home/alex/Videos/Buddhism
+	rxl入行论
+2
+d/home/alex/Videos/Buddhism/rxl入行论
+	入菩薩行論  第九品  智慧.mp4
+1
+d/home/alex/.config/vifm
+	colors
+1
+d/home/alex/Videos
+	Buddhism
+1
+d/home/alex/Videos/Buddhism
+	rxl入行论
+2
+d/home/alex/Videos/Buddhism/rxl入行论
+	入菩薩行論  第九品  智慧.mp4
+1
+d/home/alex/Pictures
+	signal-2019-12-22-195227.png
+5
+d/home/alex/.local/share/rua/checked_tars
+	..
+0
+d/home/alex/.config/vifm
+	scripts
+2
+d/home/alex/.config/vifm/scripts
+	vifmimg
+2
+d/home/alex/Videos
+	Buddhism
+1
+d/home/alex/Pictures
+	avatars
+4
+d/home/alex/Pictures/avatars
+	avataaars.png
+1
+d/home/alex/Pictures
+	signal-2019-12-22-195227.png
+5
+d/home/alex/Projects/myrepos/dotfiles/awesome/.config/awesome
+	..
+0
+d/home/alex/Videos
+	Buddhism
+1
+d/home/alex/Videos/Buddhism
+	rxl入行论
+2
+d/home/alex/Videos/Buddhism/rxl入行论
+	入菩薩行論  第九品  智慧.mp4
+1
+d/home/alex/Videos/Buddhism
+	rxl入行论
+2
+d/home/alex/Videos/Buddhism/rxl入行论
+	入菩薩行論  第九品  智慧.mp4
+1
+d/home/alex/Pictures
+	signal-2019-12-22-195227.png
+5
+d/home/alex/.config/vifm
+	scripts
+2
+d/home/alex/.config/vifm/scripts
+	README
+1
+d/home/alex/.config/vifm
+	scripts
+2
+d/home/alex/.config/vifm/scripts
+	vifmimg
+2
+d/home/alex/Videos/Buddhism/rxl入行论
+	入菩薩行論  第九品  智慧.mp4
+1
+d/home/alex/Projects/myrepos/dotfiles/awesome/.config/awesome
+	keybindings.lua
+2
+d/home/alex/Videos
+	Buddhism
+1
+d/home/alex/Videos/Buddhism
+	rxl入行论
+2
+d/home/alex/Videos/Buddhism/rxl入行论
+	入菩薩行論  第九品  智慧.mp4
+1
+d/home/alex/Videos/Buddhism
+	rxl入行论
+2
+d/home/alex/Pictures
+	signal-2019-12-22-195227.png
+5
+d/home/alex/.config/vifm
+	scripts
+2
+d/home/alex/.config/vifm/scripts
+	README
+1
+d/home/alex/.config/vifm
+	scripts
+2
+d/home/alex/.config/vifm/scripts
+	vifmimg
+2
+d/home/alex/.config/vifm
+	scripts
+2
+d/home/alex/.config/vifm/scripts
+	vifmrun
+3
+d/home/alex/.config/vifm
+	scripts
+2
+d/home/alex
+	Videos
+37
+d/home/alex/Videos
+	mpsyt
+4
+d/home/alex/Pictures
+	signal-2019-12-22-195227.png
+5
+d/home/alex/Tmp
+	翻译1.png
+16
+
+# Right window history (oldest to newest):
+D/home/alex/Projects/myrepos/dotfiles/awesome/.config/awesome
+	
+0
+D/home/alex/.config/vifm
+	
+0
+D/home/alex/.config/awesome
+	..
+0
+D/home/alex/Projects/myrepos/dotfiles/mutt/.config/mutt
+	
+0
+D/home/alex/Projects/myrepos/Playground/c++
+	
+0
+D/home/alex
+	
+0
+D/home/alex/Projects/myrepos/Playground/c++
+	
+0
+D/home/alex
+	..
+0
+D/home/alex/Projects/myrepos/dotfiles/vifm/.vifm
+	..
+0
+D/home/alex
+	Desktop
+1
+D/home/alex/Projects/notmyrepos
+	
+0
+D/home/alex/Projects/notmyrepos/rust
+	
+0
+D/home/alex/Projects/myrepos/Playground/c++
+	..
+0
+D/home/alex/Downloads
+	..
+0
+D/home/alex/Documents/School/Winter 2020
+	CS486
+2
+D/home/alex/Documents/School/Winter 2020/CS486
+	Assignments
+1
+D/home/alex/Documents/School/Winter 2020/CS486/Assignments
+	A2
+2
+D/home/alex/Documents/School/Winter 2020/CS486/Assignments/A2
+	..
+0
+D/home/alex/Documents/School/Winter 2020/CS486/Assignments
+	A2
+2
+D/home/alex/Documents/School/Winter 2020/CS486
+	Exams
+2
+D/home/alex/Documents/School/Winter 2020/CS486/Exams
+	samplemidtermsolns.pdf
+2
+D/home/alex/Projects/myrepos/WatDFS_CS454/src
+	..
+0
+D/home/alex/Documents/School/Winter 2020/CS486
+	Exams
+2
+D/home/alex/Nextcloud/Tmp
+	cs486_midterm.pdf
+3
+D/home/alex/Projects/myrepos/WatDFS_CS454/src
+	debug.h
+4
+D/home/alex
+	Desktop
+1
+D/home/alex/Documents/Buddism/2016rxl/meetings
+	
+0
+D/home/alex
+	
+0
+D/home/alex/.vim/config/common
+	
+0
+D/home/alex/Projects/myrepos/Playground/c++
+	
+0
+D/home/alex/Projects/myrepos/dotfiles/awesome/.config/awesome
+	
+0
+D/home/alex/Projects/myrepos/WatDFS_CS454/tests/python/__pycache__
+	
+0
+D/home/alex/.config/wpg
+	
+0
+D/home/alex/Tmp
+	
+0
+D/home/alex
+	
+0
+D/home/alex/Tmp
+	
+0
+D/home/alex
+	
+0
+D/home/alex/Downloads
+	..
+0
+D/home/alex/Documents/Buddism/2016rxl/pin1to10入菩萨行论分品法本，思考题及答案，科判
+	
+0
+D/home/alex/Tmp/matlab
+	
+0
+D/home/alex
+	
+0
+D/home/alex/Projects/myrepos/dotfiles/mutt/.config/mutt
+	
+0
+D/home/alex/.local/share/mail/gmail/[Gmail].Sent Mail/cur
+	
+0
+D/home/alex
+	
+0
+D/home/alex/Projects/myrepos/dotfiles/mutt/.config/mutt
+	
+0
+D/home/alex/Nextcloud
+	
+0
+D/home/alex/.config/awesome
+	..
+0
+D/home/alex/.config/vifm
+	
+0
+D/home/alex/Projects/myrepos/dotfiles/awesome/.config/awesome
+	..
+0
+D/home/alex/.config/vifm
+	
+0
+D/home/alex
+	
+0
+D/home/alex/Tmp
+	
+0
+
+# Command line history (oldest to newest):
+:bmgo tmp
+:!fzf
+:!cd (fzf)
+:!cd (fzf
+:!cd (fd . -t directory | sk) 
+:!cd $(fd . -t directory | sk) 
+:cd $(fd . -t directory | sk)
+:cd (fd . -t directory | sk)
+:execute 
+:execute 'cd' system('fd . -t d | sk')
+:h cd
+:cds Mus
+:h vifm-!!
+:FZFfind
+:FZFlocate
+:FZFfind Desktop
+:bmgo nextcloud
+:FZFfind 
+:execute 'cd' system('fzf')
+:bmgo docu
+:bmark 20
+:bmgo 201
+:bmark rxl2016
+:cd ~/.local/share/mime/
+:cd .config/
+:screen!
+:screen?
+:marks
+:filter
+:help
+:grep i
+:bmgo playground
+:grep test
+:grep main
+:cd !fzf
+:cd (fzf)
+:!cd ..
+:cd Downloads/
+:cd Games/
+:tabn
+:sync
+:tabnew what
+:tabnew Documents/
+:tabnew Games/
+:.,.+0tabnew
+:tabnew
+:tabnew,
+:.,.+0q
+:clone
+:make
+:mkdir ctrlv-with-wendy-20200214
+:touch files.txt
+:bmgo 2020Winter
+:bmarks
+:bmark winter2020
+:cd ~/.vifm/
+:bmgo winter2020
+:colorscheme astrell-root
+:colorscheme astrell-user
+:colorscheme dmilith-user
+:colorscheme istib-solarized-dark
+:colorscheme juef-zenburn
+:colorscheme reicheltd-light
+:colorscheme Default
+:qa
+:cd ~/Nextcloud/Tmp/
+:h Vifm
+:select
+:cd .cache/rua/build/
+:e ~/.vifm/scripts/
+:mkdir exams考试
+:mkdir 入行论第二次
+:cd ~/Tmp/
+:mkdir 思考题
+:bmgo rxl2016
+:e ~/.config/Bitcoin/
+:e ~/.config/vifm/vifmrc
+:h
+:source ~/.config/vifm/vifmrc
+:open gnvim
+:edit
+:!rg signal
+:e
+:ls
+:lstrash
+:grep gears
+:grep require
+:winrun
+:reload
+:bmgo 
+:cd ~/.local/share/rua/checked_tars/
+:h 
+:wq
+:cd ~/.config/vifm/
+:chmod 
+:chmod +x
+:view
+:echo $FIFO_UEBERZUG
+:bmgo pictures
+:q
+
+# Search history (oldest to newest):
+/Trash
+/trash
+/star
+/Down
+/me
+/Sent
+/Tmp
+
+# Prompt history (oldest to newest):
+pMusic Database
+pArdour_sessions
+pmeeting-L178-200222.md
+pevasion_1
+pAUTO165403_Feb.14.2020-16.19.02-Eastern Standard Time2020-02-14-16-19-02-0500.mp4
+pevasion1.mp4
+pevasion2.mp4
+pA2_decision_tree-numpy_version.ipynb
+pA2_decision_tree-using-lists_version_faster.ipynb
+pa2q1_hand_written.pdf
+pa2q2_python_code.pdf
+pbaiziming_百字明-吉美秋巴.mp3
+p百字明-吉美秋巴.mp3
+pmeeting-L179-200229.md
+pmeeting-L180-200307.md
+pmeeting-L181-200314.md
+p预科系教学大纲.pdf
+ptmp.xls
+p加行.xls
+p学修安排.xls
+p预科系19届教学大纲.pdf
+p19届学修安排.xls
+pschedule&records安
+pschedule安排
+p入行论复习资料
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/alex/.local/share/vifm/Trash/000_CS 486
+	/home/alex/Nextcloud/Notability/CS 486
+t/home/alex/.local/share/vifm/Trash/000_loadScript.m
+	/home/alex/Documents/School/Winter 2020/CS486/Assignments/A2/datasets/loadScript.m
+t/home/alex/.local/share/vifm/Trash/000_testData.txt
+	/home/alex/Documents/School/Winter 2020/CS486/Assignments/A2/datasets/testData.txt
+t/home/alex/.local/share/vifm/Trash/000_testLabel.txt
+	/home/alex/Documents/School/Winter 2020/CS486/Assignments/A2/datasets/testLabel.txt
+t/home/alex/.local/share/vifm/Trash/000_trainData.txt
+	/home/alex/Documents/School/Winter 2020/CS486/Assignments/A2/datasets/trainData.txt
+t/home/alex/.local/share/vifm/Trash/000_trainLabel.txt
+	/home/alex/Documents/School/Winter 2020/CS486/Assignments/A2/datasets/trainLabel.txt
+t/home/alex/.local/share/vifm/Trash/000_words.txt
+	/home/alex/Documents/School/Winter 2020/CS486/Assignments/A2/datasets/words.txt
+t/home/alex/.local/share/vifm/Trash/000_submit.aux
+	/home/alex/Documents/School/Winter 2020/CS486/Assignments/A2/submit/submit.aux
+t/home/alex/.local/share/vifm/Trash/000_submit.log
+	/home/alex/Documents/School/Winter 2020/CS486/Assignments/A2/submit/submit.log
+t/home/alex/.local/share/vifm/Trash/000_Untitled.ipynb
+	/home/alex/Videos/Buddhism/Untitled.ipynb
+t/home/alex/.local/share/vifm/Trash/000_fscrypt-git
+	/home/alex/.cache/rua/build/fscrypt-git
+t/home/alex/.local/share/vifm/Trash/000_multimc5
+	/home/alex/.cache/rua/build/multimc5
+t/home/alex/.local/share/vifm/Trash/000_leaderkey.vim
+	/home/alex/.vim/config/common/leaderkey.vim
+t/home/alex/.local/share/vifm/Trash/000_.netrwhist
+	/home/alex/Projects/myrepos/WatDFS_CS454/tests/python/__pycache__/.netrwhist
+t/home/alex/.local/share/vifm/Trash/000_.BUILDINFO
+	/home/alex/Tmp/.BUILDINFO
+t/home/alex/.local/share/vifm/Trash/000_.MTREE
+	/home/alex/Tmp/.MTREE
+t/home/alex/.local/share/vifm/Trash/000_.PKGINFO
+	/home/alex/Tmp/.PKGINFO
+t/home/alex/.local/share/vifm/Trash/000_nextcloud.log
+	/home/alex/Tmp/nextcloud.log
+t/home/alex/.local/share/vifm/Trash/000_.steampath
+	/home/alex/.steampath
+t/home/alex/.local/share/vifm/Trash/000_19教学大纲.zip
+	/home/alex/Downloads/19教学大纲.zip
+t/home/alex/.local/share/vifm/Trash/000_quiz小测
+	/home/alex/Documents/Buddism/2016rxl/quiz小测
+t/home/alex/.local/share/vifm/Trash/000_pin8
+	/home/alex/Tmp/pin8
+t/home/alex/.local/share/vifm/Trash/000_pin9
+	/home/alex/Tmp/pin9
+t/home/alex/.local/share/vifm/Trash/000_pin10
+	/home/alex/Tmp/pin10
+t/home/alex/.local/share/vifm/Trash/000_&VAxrZZXumJg-
+	/home/alex/.local/share/mail/uwaterloo/&VAxrZZXumJg-
+t/home/alex/.local/share/vifm/Trash/000_&VAxrZZXumJg-.&UbJ6gQ-
+	/home/alex/.local/share/mail/uwaterloo/&VAxrZZXumJg-.&UbJ6gQ-
+t/home/alex/.local/share/vifm/Trash/000_&VAxrZZXumJg-.&Zw1SoVZoZUWWnA-
+	/home/alex/.local/share/mail/uwaterloo/&VAxrZZXumJg-.&Zw1SoVZoZUWWnA-
+t/home/alex/.local/share/vifm/Trash/000_&VAxrZZXumJg-.&ZyxXMGVFlpw-
+	/home/alex/.local/share/mail/uwaterloo/&VAxrZZXumJg-.&ZyxXMGVFlpw-
+t/home/alex/.local/share/vifm/Trash/000_Archives.2020
+	/home/alex/.local/share/mail/uwaterloo/Archives.2020
+t/home/alex/.local/share/vifm/Trash/000_RSS &bpA-
+	/home/alex/.local/share/mail/uwaterloo/RSS &bpA-
+t/home/alex/.local/share/vifm/Trash/000_Calendar.Birthdays
+	/home/alex/.local/share/mail/uwaterloo/Calendar.Birthdays
+t/home/alex/.local/share/vifm/Trash/000_Calendar.Canada holidays
+	/home/alex/.local/share/mail/uwaterloo/Calendar.Canada holidays
+t/home/alex/.local/share/vifm/Trash/000_Calendar
+	/home/alex/.local/share/mail/uwaterloo/Calendar
+t/home/alex/.local/share/vifm/Trash/000_Journal
+	/home/alex/.local/share/mail/uwaterloo/Journal
+t/home/alex/.local/share/vifm/Trash/000_Contacts
+	/home/alex/.local/share/mail/uwaterloo/Contacts
+t/home/alex/.local/share/vifm/Trash/000_Archives
+	/home/alex/.local/share/mail/uwaterloo/Archives
+t/home/alex/.local/share/vifm/Trash/000_Conversation History
+	/home/alex/.local/share/mail/uwaterloo/Conversation History
+t/home/alex/.local/share/vifm/Trash/000_Scheduled
+	/home/alex/.local/share/mail/uwaterloo/Scheduled
+t/home/alex/.local/share/vifm/Trash/000_Tasks
+	/home/alex/.local/share/mail/uwaterloo/Tasks
+t/home/alex/.local/share/vifm/Trash/000_Trash
+	/home/alex/.local/share/mail/uwaterloo/Trash
+t/home/alex/.local/share/vifm/Trash/000_Notes
+	/home/alex/.local/share/mail/uwaterloo/Notes
+
+# State:
+f
+i1
+[.0
+[F
+F
+I1
+].1
+]F
+s1

@@ -1,0 +1,111 @@
+IMAPStore cockli-remote
+Host mail.cock.li
+Port  993
+User alexlai97@cock.li
+PassCmd "pass email/cock.li/alexlai97"
+AuthMechs LOGIN
+SSLType IMAPS
+AuthMech LOGIN
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore cockli-local
+Subfolders Verbatim
+Path ~/.local/share/mail/cockli/
+Inbox ~/.local/share/mail/cockli/INBOX
+Flatten .
+
+Channel cockli
+Expunge Both
+Master :cockli-remote:
+Slave :cockli-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+
+IMAPStore uwaterloo-remote
+Host outlook.office365.com
+Port  993
+User x7lai@edu.uwaterloo.ca
+PassCmd "pass email/uwaterloo"
+AuthMechs LOGIN
+SSLType IMAPS
+AuthMech LOGIN
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore uwaterloo-local
+Subfolders Verbatim
+Path ~/.local/share/mail/uwaterloo/
+Inbox ~/.local/share/mail/uwaterloo/INBOX
+Flatten .
+
+Channel uwaterloo
+Expunge Both
+Master :uwaterloo-remote:
+Slave :uwaterloo-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+
+
+IMAPStore gmail-remote
+Host imap.gmail.com
+Port  993
+User alexlaixy97@gmail.com
+PassCmd "pass email/gmail/alexlaixy97"
+AuthMechs LOGIN
+SSLType IMAPS
+AuthMech LOGIN
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore gmail-local
+Subfolders Verbatim
+Path ~/.local/share/mail/gmail/
+Inbox ~/.local/share/mail/gmail/INBOX
+Flatten .
+
+Channel gmail
+Expunge Both
+Master :gmail-remote:
+Slave :gmail-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore hover-remote
+Host mail.hover.com
+Port  993
+User alex@alexlai.xyz
+PassCmd "pass email/hover/alex@alexlai.xyz"
+AuthMechs LOGIN
+SSLType IMAPS
+AuthMech LOGIN
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore hover-local
+Subfolders Verbatim
+Path ~/.local/share/mail/hover/
+Inbox ~/.local/share/mail/hover/INBOX
+Flatten .
+
+Channel hover
+Expunge Both
+Master :hover-remote:
+Slave :hover-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+

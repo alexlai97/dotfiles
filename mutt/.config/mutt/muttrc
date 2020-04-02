@@ -1,0 +1,48 @@
+#++++++++++++++++++++++++++++++++++++
+#                  _   _            
+#                 | | | |           
+#  _ __ ___  _   _| |_| |_ _ __ ___ 
+# | '_ ` _ \| | | | __| __| '__/ __|
+# | | | | | | |_| | |_| |_| | | (__ 
+# |_| |_| |_|\__,_|\__|\__|_|  \___|
+#                                   
+#++++++++++++++++++++++++++++++++++++
+
+# mutt-wizzard
+source /usr/share/mutt-wizard/mutt-wizard.muttrc 
+
+# change to account gmail
+source /home/alex/.config/mutt/accounts/1-gmail.muttrc 
+
+# {{{ keybinding 
+# change to gmail
+macro index,pager i1 '<sync-mailbox><enter-command>source /home/alex/.config/mutt/accounts/1-gmail.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to alexlaixy97@gmail.com" 
+
+# change to uwaterloo
+macro index,pager i2 '<sync-mailbox><enter-command>source /home/alex/.config/mutt/accounts/2-uwaterloo.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to x7lai@edu.uwaterloo.ca" 
+
+# change to cockli
+macro index,pager i3 '<sync-mailbox><enter-command>source /home/alex/.config/mutt/accounts/3-hover.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to alexlai97@cock.li" 
+
+# change to hover
+macro index,pager i4 '<sync-mailbox><enter-command>source /home/alex/.config/mutt/accounts/4-cockli.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to alex@alexlai.xyz" 
+
+# urlscan
+macro index,pager U "\
+<enter-command> set my_pipe_decode=\$pipe_decode pipe_decode<Enter>\
+<pipe-message> urlscan<Enter>\
+<enter-command> set pipe_decode=\$my_pipe_decode; unset my_pipe_decode<Enter>" \
+"call urlscan to extract URLs out of a message"
+# }}}
+
+# {{{ common
+set sidebar_width = 30
+
+# aliases
+set alias_file = /home/alex/.config/mutt/aliases
+set sort_alias = alias
+set reverse_alias = yes
+source $alias_file
+# }}} 
+
+# vim: filetype=neomuttrc

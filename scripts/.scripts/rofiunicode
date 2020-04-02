@@ -1,0 +1,15 @@
+#!/bin/dash
+
+EMOJI_FILE=$HOME/.scripts/emojis.txt
+
+chosen=$(cut -d ';' -f1 $EMOJI_FILE | dmenu -i -l 20 | sed "s/ .*//" | tr -d '\n')  
+
+[ $chosen != "" ] || exit
+
+echo "$chosen" | xclip -selection clipboard
+notify-send "'$chosen' copied to clipboard." &
+
+# echo "$chosen" | xclip -selection primary
+# xdotool key Shift+Insert
+
+# vim: syntax=sh

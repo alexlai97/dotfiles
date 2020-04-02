@@ -1,0 +1,75 @@
+#+++++++++++++++++++++++++++++
+#   ____                 _ _ 
+#  / ___|_ __ ___   __ _(_) |
+# | |  _| '_ ` _ \ / _` | | |
+# | |_| | | | | | | (_| | | |
+#  \____|_| |_| |_|\__,_|_|_|
+#                            
+#+++++++++++++++++++++++++++++
+
+
+#{{{ variables
+source /home/alex/.config/mutt/myvariables.muttrc
+set realname = "Alex Lai"
+set from = "alexlaixy97@gmail.com"
+set sendmail = "msmtp -a gmail"
+alias me Alex Lai <alexlaixy97@gmail.com>
+set folder = "/home/alex/.local/share/mail/gmail"
+set header_cache = /home/alex/.cache/mutt-wizard/gmail/headers
+set message_cachedir = /home/alex/.cache/mutt-wizard/gmail/bodies
+set mbox_type = Maildir
+
+# my variables
+set my_inbox = "INBOX"
+set my_importantbox = "[Gmail].Important" 
+set my_starredbox = "[Gmail].Starred" 
+set my_draftbox = "[Gmail].Drafts" 
+set my_sentbox = "[Gmail].Sent\ Mail" 
+set my_trashbox = "[Gmail].Bin" 
+set my_spambox = "[Gmail].Spam"    
+
+set spoolfile = "+$my_inbox"
+set record = "+$my_sentbox"
+set postponed = "+$my_draftbox"
+set trash = "+$my_trashbox"
+#}}} 
+
+#{{{ keybindings
+# disable keybindings
+bind index,pager gg noop
+bind index,pager g noop
+bind index,pager M noop
+bind index,pager C noop
+bind index gg first-entry
+
+# macros
+macro index o "<shell-escape>mailsync -V gmail<enter>" "run mbsync to sync gmail"
+macro index,pager gi "<change-folder>=$my_inbox<enter>" "go to inbox" 
+macro index,pager Mi ";<save-message>=$my_inbox<enter>" "move mail to inbox" 
+macro index,pager Ci ";<copy-message>=$my_inbox<enter>" "copy mail to inbox" 
+macro index,pager gs "<change-folder>=$my_sentbox<enter>" "go to sent" 
+macro index,pager Ms ";<save-message>=$my_sentbox<enter>" "move mail to sent" 
+macro index,pager Cs ";<copy-message>=$my_sentbox<enter>" "copy mail to sent" 
+macro index,pager gd "<change-folder>=$my_draftbox<enter>" "go to drafts" 
+macro index,pager Md ";<save-message>=$my_draftbox<enter>" "move mail to drafts" 
+macro index,pager Cd ";<copy-message>=$my_draftbox<enter>" "copy mail to drafts" 
+macro index,pager gt "<change-folder>=$my_trashbox<enter>" "go to trash" 
+macro index,pager Mt ";<save-message>=$my_trashbox<enter>" "move mail to trash" 
+macro index,pager Ct ";<copy-message>=$my_trashbox<enter>" "copy mail to trash" 
+macro index,pager gS "<change-folder>=$my_spambox<enter>" "go to spam" 
+macro index,pager MS ";<save-message>=$my_spambox<enter>" "move mail to spam" 
+macro index,pager CS ";<copy-message>=$my_spambox<enter>" "copy mail to spam" 
+#}}} 
+
+#{{{ mailboxes
+unmailboxes *
+named-mailboxes "$my_icon_gmail Gmail Inbox" "=$my_inbox"
+named-mailboxes $my_important_mailbox "=$my_importantbox" 
+named-mailboxes $my_starred_mailbox "=$my_starredbox" 
+named-mailboxes $my_draft_mailbox "=$my_draftbox" 
+named-mailboxes $my_sent_mailbox "=$my_sentbox" 
+named-mailboxes $my_trash_mailbox "=$my_trashbox" 
+named-mailboxes $my_spam_mailbox "=$my_spambox"    
+#}}}
+
+# vim: filetype=neomuttrc

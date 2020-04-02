@@ -1,0 +1,70 @@
+#+++++++++++++++++++++++++++++
+#                 _      _ _ 
+#   ___ ___   ___| | __ | (_)
+#  / __/ _ \ / __| |/ / | | |
+# | (_| (_) | (__|   < _| | |
+#  \___\___/ \___|_|\_(_)_|_|
+#                            
+#+++++++++++++++++++++++++++++
+
+# {{{ variables
+source /home/alex/.config/mutt/myvariables.muttrc
+set realname = "Alex Lai"
+set from = "alexlai97@cock.li"
+set sendmail = "msmtp -a cockli"
+alias me Alex Lai <alexlai97@cock.li>
+set folder = "/home/alex/.local/share/mail/cockli"
+set header_cache = /home/alex/.cache/mutt-wizard/cockli/headers
+set message_cachedir = /home/alex/.cache/mutt-wizard/cockli/bodies
+set mbox_type = Maildir
+
+# my variables
+set my_inbox = "INBOX"
+set my_draftbox = "Drafts" 
+set my_sentbox = "Sent" 
+set my_trashbox = "Trash" 
+set my_spambox = "Junk"
+
+set spoolfile = "+$my_inbox"
+set record = "+$my_sentbox"
+set postponed = "+$my_draftbox"
+set trash = "+$my_trashbox"
+# }}} 
+
+# {{{ keybindings
+# disable keybindings
+bind index,pager gg noop
+bind index,pager g noop
+bind index,pager M noop
+bind index,pager C noop
+bind index gg first-entry
+
+# macros
+macro index o "<shell-escape>mailsync -V cockli<enter>" "run mbsync to sync cockli"
+macro index,pager gi "<change-folder>=$my_inbox<enter>" "go to inbox" 
+macro index,pager Mi ";<save-message>=$my_inbox<enter>" "move mail to inbox" 
+macro index,pager Ci ";<copy-message>=$my_inbox<enter>" "copy mail to inbox" 
+macro index,pager gs "<change-folder>=$my_sentbox<enter>" "go to sent" 
+macro index,pager Ms ";<save-message>=$my_sentbox<enter>" "move mail to sent" 
+macro index,pager Cs ";<copy-message>=$my_sentbox<enter>" "copy mail to sent" 
+macro index,pager gd "<change-folder>=$my_draftbox<enter>" "go to drafts" 
+macro index,pager Md ";<save-message>=$my_draftbox<enter>" "move mail to drafts" 
+macro index,pager Cd ";<copy-message>=$my_draftbox<enter>" "copy mail to drafts" 
+macro index,pager gt "<change-folder>=$my_trashbox<enter>" "go to trash" 
+macro index,pager Mt ";<save-message>=$my_trashbox<enter>" "move mail to trash" 
+macro index,pager Ct ";<copy-message>=$my_trashbox<enter>" "copy mail to trash" 
+macro index,pager gS "<change-folder>=$my_spambox<enter>" "go to spam/junk" 
+macro index,pager MS ";<save-message>=$my_spambox<enter>" "move mail to spam/junk" 
+macro index,pager CS ";<copy-message>=$my_spambox<enter>" "copy mail to spam/junk" 
+# }}}
+
+# {{{ mailboxes
+unmailboxes *
+named-mailboxes "$my_icon_cockli Cockli Inbox" "=$my_inbox"
+named-mailboxes $my_draft_mailbox "=$my_draftbox" 
+named-mailboxes $my_sent_mailbox "=$my_sentbox" 
+named-mailboxes $my_trash_mailbox "=$my_trashbox" 
+named-mailboxes $my_spam_mailbox "=$my_spambox"    
+# }}}
+
+# vim: filetype=neomuttrc

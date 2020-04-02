@@ -12,7 +12,7 @@ icon_path = home_path .. '.local/share/icons/'
 
 
 -- termial and editor
-terminal = "/usr/bin/termite"
+terminal = os.getenv("TERMINAL") or "termite"
 terminal_cmd = terminal .. " -e "
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal_cmd .. editor
@@ -45,7 +45,31 @@ alt_key   = "Mod1"
 shift_key   = "Shift"
 
 -- Each screen has its own tag table.
-tag_names = { "", "", "", "", "", "", "", "", "" }
+icons = {}
+icons.home = " "
+-- icons.home = ""
+icons.code = " "
+-- icons.code = ""
+icons.document = " "
+icons.firefox = " "
+icons.play = " "
+icons.wechat = " "
+icons.steam = " "
+icons.leaf  = " "
+icons.notebook = " "
+
+tag_names = {
+    icons.home,  -- 1
+    icons.code,  -- 2 
+    icons.document,  -- 3  
+    icons.firefox, -- 4
+    icons.play, -- 5
+    icons.wechat, -- 6 
+    icons.steam, -- 7
+    icons.leaf, -- 8
+    icons.notebook  -- 9
+}
+-- tag_names = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {

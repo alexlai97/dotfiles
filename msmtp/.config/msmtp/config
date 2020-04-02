@@ -1,0 +1,40 @@
+# vim:filetype=msmtp
+
+defaults
+
+aliases ~/.config/mutt/aliases
+
+auth	on
+tls	on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile	~/.config/msmtp/msmtp.log
+
+account cockli
+host mail.cock.li
+port 587
+from alexlai97@cock.li
+user alexlai97@cock.li
+passwordeval "pass email/cock.li/alexlai97"
+
+account uwaterloo
+host smtp.office365.com
+port 587
+from x7lai@edu.uwaterloo.ca
+user x7lai@edu.uwaterloo.ca
+passwordeval "pass email/uwaterloo"
+
+account gmail
+host smtp.gmail.com
+port 587
+from alexlaixy97@gmail.com
+user alexlaixy97@gmail.com
+passwordeval "pass email/gmail/alexlaixy97"
+
+account hover
+host mail.hover.com
+port 587
+from alex@alexlai.xyz
+user alex@alexlai.xyz
+passwordeval "pass email/hover/alex@alexlai.xyz"
+
+account default : hover

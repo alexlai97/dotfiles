@@ -34,3 +34,4 @@ nnoremap ]b :bnext<cr>
 " nnoremap <A-9> :buffer 9<cr>
 "-}}}
 
+nnoremap ,cd :cd %:p:h<CR>:pwd<CR>

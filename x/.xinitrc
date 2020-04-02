@@ -20,31 +20,32 @@ export SSH_AUTH_SOCK
 #}}}
 
 #{{{- some configurations (screenlock timeout, touchpad orientation)
-synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-111 # touchpad
+synclient HorizEdgeScroll=1 VertEdgeScroll=1 HorizTwoFingerScroll=1 VertScrollDelta=-111 HorizScrollDelta=-20 TapButton1=1 TapButton2=3 TapButton3=2 # touchpad
 xset s 1800 # sleep time
-# wmname LG3D
+wmname LG3D
 #-}}}
 
 #{{{- processes to start
-~/.fehbg # wallpaper
-pgrep fcitx || /usr/bin/fcitx & # input method
-pgrep redshift || /usr/bin/redshift &
+# ~/.fehbg # wallpaper
+# pgrep fcitx || /usr/bin/fcitx & # input method
+# pgrep redshift || /usr/bin/redshift &
 # mydwmstatus 2>/dev/null & # dwm status bar
-xsidle.sh i3lock.sh &  # screenlock
+# xsidle.sh i3lock.sh &  # screenlock
 # pgrep mpd || mpd &
 # pgrep mpc || while true;do mpc idle 2>/dev/null;~/.ncmpcpp/nextsong.sh;done & # music control daemon
 # pkill -U 1000 wpa_cli ||  wpa_cli -a /home/alex/.scripts/wpa_supplicant_action &  # notify wifi connection
 # pgrep sxhkd || /usr/bin/sxhkd & # Simple X hotkey daemon
 # pgrep compton || compton -b &
-pgrep picom || picom -b &
-pgrep nextcloud || nextcloud --background &
+# pgrep picom || picom -b &
+# pgrep nextcloud || nextcloud --background &
+# pgrep dunst || dunst &
 # pgrep plank || /usr/bin/plank &
 #-}}}
 
 
 #{{{- start user program in the background
-pgrep thunar || thunar --daemon &
-pgrep zim || zim &
+# pgrep thunar || thunar --daemon &
+# pgrep zim || zim &
 # pgrep emacs || emacs --daemon &
 #-}}}
 

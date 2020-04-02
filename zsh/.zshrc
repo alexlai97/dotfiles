@@ -2,7 +2,7 @@
 #clear
 #
 
-export ZSH=$HOME/.oh-my-zsh
+# export ZSH=$HOME/.oh-my-zsh
 source $HOME/.zshenv
 
 fpath+=~/.zfunc
@@ -25,7 +25,7 @@ ENABLE_CORRECTION="true"
 plugins=(git z tmux vi-mode cargo rust
 )
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 # source $ZSH/plugins/z/z.sh
 # source $ZSH/plugins/git/git.plugin.zsh#
 

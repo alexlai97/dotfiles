@@ -1,0 +1,16 @@
+# vim: filetype=neomuttrc
+
+# icons
+set my_icon_gmail=""
+set my_icon_office=""
+set my_icon_cockli=""
+set my_icon_hover=""
+
+# mailbox names
+set my_important_mailbox=" Important"
+set my_starred_mailbox=" Starred"
+set my_draft_mailbox=" Drafts" 
+set my_sent_mailbox=" Sent" 
+set my_trash_mailbox=" Trash" 
+set my_spam_mailbox=" Spam" 
+set my_archive_mailbox = " Archive" 

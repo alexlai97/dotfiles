@@ -1,6 +1,7 @@
 local wibox = require("wibox")
 local gears = require("gears")
 local awful = require("awful")
+local beautiful = require("beautiful")
 
 -- {{{ Helper functions
 local function client_menu_toggle_fn()
@@ -36,11 +37,12 @@ mymood:buttons(gears.table.join(
   awful.button({ }, 3, function() awful.spawn("mymood ask") end)
 ))
 
+
 -- myweather
-myweather = wibox.widget.textbox(read_line_from_a_file(cache_path .. 'weather/current_weather_oneline.txt'))
+myweather = awful.widget.watch(scripts_path .. "weather", 3600)
 myweather:buttons(gears.table.join(
   awful.button({ }, 1, function() awful.spawn("weather show") end) ,
-  awful.button({ }, 3, function() awful.spawn("weather get") end)
+  awful.button({ }, 3, function() awful.spawn("weather reload") end)
 ))
 
 
@@ -49,10 +51,10 @@ myweather:buttons(gears.table.join(
 mytextclock = wibox.widget.textclock( "📅 %a %b.%d 🕦 %T", 1)
 month_calendar = awful.widget.calendar_popup.month({position = "tr"})
 mytextclock:buttons(gears.table.join(
-  awful.button({ }, 1, function() month_calendar:toggle() end) ,
+  awful.button({ }, 1, function() month_calendar:toggle() end) 
   -- awful.button({ }, 1, function() awful.spawn("zsh_rofi") end) ,
-  awful.button({ }, 2, function() awful.spawn("oblogout") end) ,
-  awful.button({ }, 3, function() awful.spawn("rightclickmenu") end)
+  -- awful.button({ }, 2, function() awful.spawn("oblogout") end) ,
+  -- awful.button({ }, 3, function() awful.spawn("rightclickmenu") end)
 ))
 
 -- battery widget
@@ -81,6 +83,13 @@ mydayornight = awful.widget.watch(scripts_path .. "dayornight", 3600)
 mydayornight:buttons(gears.table.join(
   awful.button({ }, 1, function() awful.spawn("dayornight update") end) ,
   awful.button({ }, 3, function() awful.spawn("dayornight update") end) 
+))
+
+-- mycorona
+mycorona = awful.widget.watch(scripts_path .. "corona oneline", 3600)
+mycorona:buttons(gears.table.join(
+  awful.button({ }, 1, function() awful.spawn("corona update") end) , 
+  awful.button({ }, 3, function() awful.spawn("corona download") end) 
 ))
 
 -- wifi widget
@@ -199,6 +208,8 @@ awful.screen.connect_for_each_screen(function(s)
             mymem,
             wibox.widget.textbox(' '),
             mybattery,
+            wibox.widget.textbox(' | '),
+            mycorona,
             wibox.widget.textbox(' | '),
             myweather,
             wibox.widget.textbox(' '),

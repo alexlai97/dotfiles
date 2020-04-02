@@ -1,6 +1,6 @@
 #!/bin/dash
 
-termcmd="alacritty -e"
+termcmd="$TERMINAL -e fish -c"
 
 usage () {
   echo "Usage: $0 (help)"
@@ -44,7 +44,7 @@ execute () {
     'mymood choose') mymood choose;;
     'mymood askprompt') mymood ask;;
     'config awesomewm') $termcmd nvim ~/.config/awesome/rc.lua;;
-    'config rightclickmenu') alacritty -e nvim ~/.scripts/rightclickmenu;;
+    'config rightclickmenu') $termcmd nvim ~/.scripts/rightclickmenu;;
     *ghci*) $termcmd ghci;;
     spacefm*) spacefm;;
     htop) $termcmd htop;;
@@ -52,8 +52,8 @@ execute () {
     slock) slock;;
     *sxhkd*) pkill sxhkd; sxhkd;;
     *startx*) 
-      $termcmd tail -f ~/.cache/xorg_startx.log &
-      $termcmd tail -f ~/.cache/xorg_startx_stdout.log
+      $termcmd tail -f $XDG_CACHE_HOME/xorg_startx.log &
+      $termcmd tail -f $XDG_CACHE_HOME/xorg_startx_stdout.log
       ;;
   esac
 }

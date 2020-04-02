@@ -9,13 +9,13 @@
     "frequently_used": 0,
     "global_ignore_folders": [],
     "ignore_folders": [],
-    "include_applications": true,
+    "include_applications": false,
     "include_binaries": false,
     "include_hidden_files": false,
     "include_hidden_folders": false,
     "include_items": [
-        "htop",
-        "https://youtube.com"
+        "https://youtube.com",
+        "https://alexlai.xyz"
     ],
     "indicator_alias": "",
     "indicator_edit": "*",
@@ -31,7 +31,7 @@
         "--title={prompt}"
     ],
     "path_aliasFile": "",
-    "path_shellCommand": "~/.dmenuEextended_shellCommand.sh",
+    "path_shellCommand": "~/.config/dmenu-extended/dmenuEextended_shellCommand.sh",
     "prompt": "Open:",
     "scan_hidden_folders": false,
     "terminal": "alacritty",

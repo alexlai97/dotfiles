@@ -3,7 +3,7 @@
 # See the LICENSE file for copyright and license details. 
 #
 
-xidfile="$HOME/.cache/suckless/tabbed-zathura.xid"
+xidfile="$XDG_CACHE_HOME/suckless/tabbed-zathura.xid"
 file=""
 
 if [ "$#" -gt 0 ];

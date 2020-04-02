@@ -6,7 +6,7 @@ usage() {
 result=""
 getstatus() {
   status=$(wpa_cli -i wlp6s0 status | grep "^ssid" | cut -d '=' -f 2)
-  result="$status"
+  result=" $status"
 }
 
 update_awesome() {
