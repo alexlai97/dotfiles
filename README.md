@@ -1,15 +1,15 @@
 # dotfiles
 
-Just copy or skim at whatever files you need.
+**Just copy whatever you need.** 
 
 ## Notes
-I use [stow](https://www.gnu.org/software/stow/) to manage my dotfiles.
+I use [stow][gnustow] to manage my dotfiles.
 However, there are a lot of good dotfile manager [alternatives](https://wiki.archlinux.org/index.php/Dotfiles).
 
 ### Use case
 Say I am on a new machine, and I want to grab my configurations for x related, vifm, vim, nvim, tmux.
 
-I would run the following script.
+I would run the following script. [stow][gnustow] creates symlinks 
 ```
 # install.sh
 stow -v -d . -t ~/ x
@@ -24,11 +24,17 @@ stow -v -d . -t ~/ tmux
 - tmux
 - vim
 - nvim
-- awesome (awesomewm)
-
+- awesomewm
+- (neo)mutt (config modified after generating from [mutt-wizard](https://github.com/LukeSmithxyz/mutt-wizard))
 - scripts
     - weather
     - corona
 
-## Additional Notes
-I am currently using [archlinux](https://wiki.archlinux.org/).
+## Screenshot
+![awewm](./awesomewm-screenshot.png)
+
+
+
+
+
+[gnustow]: https://www.gnu.org/software/stow/
