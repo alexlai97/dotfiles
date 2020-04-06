@@ -45,7 +45,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('dag/vim-fish')
   call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd'],
               \ 'build': 'sh -c "cd app & yarn install"' })
-
+  call dein#add('luffah/vim-zim') 
   " Required:
   call dein#end()
   call dein#save_state()

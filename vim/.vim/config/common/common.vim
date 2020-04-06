@@ -7,4 +7,6 @@ set timeoutlen=500
 set mouse=a
 set updatetime=300
 set clipboard=unnamed
+
+set autochdir
 "-}}}

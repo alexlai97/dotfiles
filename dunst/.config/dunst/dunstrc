@@ -1,6 +1,6 @@
 [colors]
-	background = "#<COLOR8>"
-	foreground = "#<COLOR15>"
+	background = "#717885"
+	foreground = "#ffffff"
 
 [global]
     ### Display ###
@@ -18,7 +18,7 @@
     horizontal_padding = 12
     frame_width = 3
 
-    frame_color = "#<COLORACT>"
+    frame_color = "#7a9841"
     separator_color = auto
     sort = yes
     idle_threshold = 120
@@ -52,7 +52,7 @@
     ### Icons ###
     icon_position = left
     max_icon_size = 64
-    icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
+    icon_path = .icons/flattrcolor/status/24:.icons/flattrcolor/devices/48:.icons/flattrcolor/apps/scalable:.icons/flattrcolor/actions/scalable
 
     ### History ###
     sticky_history = yes
@@ -60,7 +60,7 @@
 
     ### Misc/Advanced ###
     dmenu = /usr/bin/rofi -show run -p dunst:
-    browser = /usr/bin/firefox
+    browser = /usr/bin/google-chrome-stable
     always_run_script = true
     title = Dunst
     class = Dunst
@@ -88,5 +88,5 @@
 [urgency_critical]
     background = colors.background
     foreground = colors.foreground
-    frame_color = "#<COLOR9>"
+    frame_color = "#d07346"
     timeout = 0

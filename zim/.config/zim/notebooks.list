@@ -1,16 +1,37 @@
 [NotebookList]
-Default=~/Nextcloud/Zim_Notebooks/Journal
-1=~/Nextcloud/Zim_Notebooks/Journal
-2=~/Nextcloud/Zim_Notebooks/佛法
+Default=
+1=~/Nextcloud/Notebooks/Journal
+2=~/Nextcloud/Notebooks/Notes
+3=~/Nextcloud/Notebooks/佛法
+4=~/Notebooks/test
+5=~/Nextcloud/Zim_Notebooks/Journal
 
 [Notebook 1]
-uri=~/Nextcloud/Zim_Notebooks/Journal
+uri=~/Nextcloud/Notebooks/Journal
 name=Journal
+interwiki=journal
+icon=/usr/share/icons/breeze-dark/actions/22/journal-new.svg
+
+[Notebook 2]
+uri=~/Nextcloud/Notebooks/Notes
+name=Notes
+interwiki=notes
+icon=/usr/share/icons/breeze-dark/apps/48/knotes.svg
+
+[Notebook 3]
+uri=~/Nextcloud/Notebooks/佛法
+name=佛法
+interwiki=buddhism
+icon=~/.local/share/icons/hicolor/64x64/apps/my-buddhism.png
+
+[Notebook 4]
+uri=~/Notebooks/test
+name=test
 interwiki=None
 icon=None
 
-[Notebook 2]
-uri=~/Nextcloud/Zim_Notebooks/佛法
-name=佛法
+[Notebook 5]
+uri=~/Nextcloud/Zim_Notebooks/Journal
+name=Journal
 interwiki=None
 icon=None

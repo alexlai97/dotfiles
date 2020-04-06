@@ -2,6 +2,7 @@
 if exists("g:gnvim") 
   colorscheme desert
   autocmd VimResized * call gnvim#set_gui_colors()
+  set guifont=Monospace:h10
   " set guicursor+=a:blinkon333
   " let g:qs_enable=0
 elseif has('nvim')

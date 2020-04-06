@@ -29,7 +29,7 @@ set my_trashbox = "[Gmail].Bin"
 set my_spambox = "[Gmail].Spam"    
 
 set spoolfile = "+$my_inbox"
-set record = "+$my_sentbox"
+# set record = "+$my_sentbox" gmail takes care of that
 set postponed = "+$my_draftbox"
 set trash = "+$my_trashbox"
 #}}} 

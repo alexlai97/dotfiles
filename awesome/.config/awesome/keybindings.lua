@@ -167,16 +167,20 @@ globalkeys = gears.table.join(
         {description = "open tmux with session Daily", group = "launcher"}),
     
     -- terminal program TODO write a function to simplify
+    awful.key({ super_key, alt_key }, "b", function () awful.spawn(terminal .. " -t newsboat -e fish -c newsboat") end,
+              {description = "open newsboat in terminal", group = "programs"}),
     awful.key({ super_key, alt_key }, "h", function () awful.spawn(terminal .. " -t htop -e fish -c htop") end,
               {description = "open htop in terminal", group = "programs"}),
-    awful.key({ super_key, alt_key }, "r", function () awful.spawn(terminal .. " -t ranger -e fish -c ranger") end,
-              {description = "open ranger in terminal", group = "programs"}),
+    -- awful.key({ super_key, alt_key }, "r", function () awful.spawn(terminal .. " -t ranger -e fish -c ranger") end,
+    --           {description = "open ranger in terminal", group = "programs"}),
     awful.key({ super_key, alt_key }, "v", function () awful.spawn(terminal .. " -t vifm -e fish -c vifmrun") end,
               {description = "open vifm in terminal", group = "programs"}),
     awful.key({ super_key, alt_key }, "n", function () awful.spawn(terminal .. " -t ncmpcpp -e fish -c ncmpcpp") end,
               {description = "open ncmpcpp in terminal", group = "programs"}),
     awful.key({ super_key, alt_key }, "m", function () awful.spawn(terminal .. " -t neomutt -e fish -c neomutt") end,
               {description = "open neomutt in terminal", group = "programs"}),
+    awful.key({ super_key, alt_key }, "w", function () awful.spawn(terminal .. " -t weechat -e fish -c 'tmux -L weechat attach'") end,
+              {description = "open weechat in tmux", group = "programs"}),
 
     -- non terminal program
     awful.key({ super_key, alt_key }, "f", function () awful.spawn("firefox") end,
@@ -189,6 +193,8 @@ globalkeys = gears.table.join(
               {description = "select passwords", group = "programs"}),
     awful.key({ super_key, alt_key }, "c", function () awful.spawn("clipmenu") end,
               {description = "select from clipboards", group = "programs"}),
+    awful.key({ super_key, alt_key }, "r", function () awful.spawn("editconfig") end,
+              {description = "edit config", group = "programs"}),
     -- awful.key({ super_key, alt_key }, "s", function () awful.spawn("spacefm") end,
     --           {description = "run spacefm", group = "programs"}),
 

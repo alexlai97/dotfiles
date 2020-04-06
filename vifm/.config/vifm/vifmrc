@@ -110,8 +110,8 @@ set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
 
 " What should be saved automatically between vifm sessions.  Drop "savedirs"
 " value if you don't want vifm to remember last visited directories for you.
-"set vifminfo=dhistory,chistory,state,tui,shistory,phistory,fhistory,dirstack,registers,bookmarks,bmarks
-set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,phistory,fhistory,dirstack,registers,bookmarks,bmarks 
+set vifminfo=dhistory,chistory,state,tui,shistory,phistory,fhistory,dirstack,registers,bookmarks,bmarks
+"set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,phistory,fhistory,dirstack,registers,bookmarks,bmarks 
 
 "}}}
 
@@ -395,9 +395,9 @@ filextype */
 "
 " fileviewer *.jpg,*.png shellpic %c
  
-fileviewer */
-         \ tree -a %c
-"        \ exa -T -L 1 --colour=always %c 
+fileviewer */ exa -T -L 3 --colour=always %c 
+fileviewer .*/ exa -T -L 3 --colour=always %c 
+         " \ tree -a %c
 
 fileviewer *
         \ env -uCOLORTERM bat --color always --wrap never --paging never --plain %c 
@@ -433,8 +433,17 @@ fileviewer *
 
 "{{{ mappings
 
+nnoremap ; :
+
 " Start shell in current directory
 nnoremap s :shell<cr>
+
+" cd 
+nnoremap cd :cd<space>
+
+" tab
+" nnoremap <tab> <C-w>w
+
 
 " bookmarks
 nnoremap b :bmgo<space>
@@ -447,9 +456,10 @@ nnoremap w :view<cr>
 vnoremap w :view<cr>gv
 
 " Open file in existing instance of gvim
-" nnoremap o :!gvim --remote-tab-silent %f<cr>
+nnoremap o :!gnvim %f<cr>
+"nnoremap o :!gnvim --remote-tab-silent %f<cr>
 " Open file in new instance of gvim
-" nnoremap O :!gvim %f<cr>
+"nnoremap O :!gnvim %f<cr>
 
 " Open file in the background using its default program
 nnoremap gb :file &<cr>l
@@ -469,7 +479,7 @@ nnoremap A cw
 nnoremap <c-t> :tabnew<cr>
 
 " Open console in current directory
-nnoremap ,t :!termite &<cr>
+"nnoremap ,t :!termite &<cr>
 
 " Open editor to edit vifmrc and apply settings after returning to vifm
 nnoremap ,c :write | edit $MYVIFMRC | restart<cr>

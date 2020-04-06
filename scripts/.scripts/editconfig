@@ -1,0 +1,40 @@
+#!/bin/dash
+
+termcmd="$TERMINAL -e fish -c"
+guiedit="gnvim"
+
+usage () {
+  echo "Usage: $0 (help)"
+}
+
+rofioption () {
+  echo "awesome rc.lua
+awesome keybindings
+alacritty
+neomutt
+newsboat
+ncmpcpp
+editconfig
+(n)vim" | rofi -dmenu -p "edit config:"
+}
+
+# excute rofioption
+execute () {
+  case $(rofioption) in
+    'awesome rc.lua') $guiedit ~/.config/awesome/rc.lua;;
+    'awesome keybindings') $guiedit ~/.config/awesome/rc.lua;;
+    'alacritty') $guiedit ~/.config/alacritty/alacritty.yml;;
+    '(n)vim') $guiedit ~/.vim;;
+    'neomutt') $guiedit ~/.config/mutt/muttrc;;
+    'newsboat') $guiedit ~/.newsboat/;;
+    'editconfig') $guiedit ~/.scripts/editconfig;;
+  esac
+}
+
+# main
+case "$1" in
+  -h|-help|h|help) usage;exit 0 ;;
+  *) execute ;;
+esac
+
+# vim: filetype=sh

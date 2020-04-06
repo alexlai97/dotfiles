@@ -64,7 +64,7 @@ macro index,pager Ca ";<copy-message>=$my_archivebox<enter>" "copy mail to archi
 
 # {{{ mailboxes
 unmailboxes *
-named-mailboxes "$my_icon_office uwaterloo Inbox" "=$my_inbox"
+named-mailboxes "$my_icon_office UW Inbox" "=$my_inbox"
 named-mailboxes $my_draft_mailbox "=$my_draftbox" 
 named-mailboxes $my_sent_mailbox "=$my_sentbox" 
 named-mailboxes $my_trash_mailbox "=$my_trashbox" 

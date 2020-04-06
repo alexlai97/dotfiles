@@ -8,6 +8,12 @@ CACHE_ONELINE=$WEATHER_CACHE_DIR"/current_weather_oneline.txt"
 TIME=""
 OPTION=$2
 
+screen_resolution=$( xrandr | awk '/\*/ { print $1 }' ) 
+screen_x=$(echo $screen_resolution | cut -d'x' -f1)
+screen_y=$(echo $screen_resolution | cut -d'x' -f2)
+
+SHOW_IMAGE_X=$((screen_x - 400))
+SHOW_IMAGE_Y=$((35))
 
 usage () {
   echo "Usage: $0 (help|update|show|get|reload|full|dark|white|text) [:help|p|q]"
@@ -54,6 +60,7 @@ negate_image() {
 get_image() {
   curl -s 'wttr.in/Kitchener_0pq.png' > $CACHEFILE
   curl -s 'wttr.in/?format=%c+%t' > $CACHE_ONELINE
+  notify-send "🌤 weather""Cache update"
   negate_image
 }
 
@@ -71,9 +78,9 @@ show_image() {
 
   echo showing $1
   if [ ! $1 = "white" ]; then
-    n30f -x 1120 -y 34  $CACHEFILE -c "sxiv $CACHEFILE" &
+    n30f -x $SHOW_IMAGE_X -y $SHOW_IMAGE_Y $CACHEFILE -c "sxiv $CACHEFILE" &
   else 
-    n30f -x 1120 -y 34  $CACHEFILE_WHITE -c "sxiv $CACHEFILE_WHITE" &
+    n30f -x $SHOW_IMAGE_X -y $SHOW_IMAGE_Y $CACHEFILE_WHITE -c "sxiv $CACHEFILE_WHITE" &
   fi
   pid_num=$!
   if [ $? -eq 0 ]; then 
