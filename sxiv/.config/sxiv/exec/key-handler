@@ -1,43 +1,141 @@
-#!/bin/dash
-CACHE=/home/alex/.cache/sxiv/clipboard.log
+#!/bin/bash
+trashcmd="gio trash"
+trashdir="$XDG_DATA_HOME/Trash/"
+editcmd="gnvim"
 
-PID=$$
+help() {
+    echo "script: $0
+  C-x-h: show this help
+  C-x-H: show sxiv manual
+  C-x-m: move image(s) to new directory
+  C-x-d: trash image(s) to $trashdir
+  C-x-D: delete image permanently
+  C-x-r: (in-place) rotate image(s) 90°
+  C-x-R: (in-place) rotate image(s) 270°
+  C-x-n: (in-place) negate image(s) color
+  C-x-f: (in-place) flip image(s)
+  C-x-y: copy *single* image to clipboard
+            - kill xclip if it stuck at pasting
+            - because the image might be too big
+  C-x-Y: copy image filenames to clipboard
+  C-x-w: *single* image set as wallpaper using feh
+  C-x-W: *single* set as colorscheme using wpg
+  C-x-g: open images in gimp
+  C-x-t: open directory of *single* image in thunar
+  C-x-e: edit this script using gnvim
+  C-x-T: for debugging purpose"
+}
 
-while read file
-do
-  base=$(basename $file)
-  case "$1" in
+# main
+case "$1" in 
+    # show help
     "C-h")
-      notify-send "help" "please refer to $0"
-      ;;
-    "C-m")
-      newDirectory=$(zenity --file-selection --directory)
-      logs=$(cat $CACHE)
-      trucated=$(cat $CACHE | xargs echo -n)
-      mv $trucated $newDirectory && notify-send "Moved pictures" "$logs moved to $newDirectory";;
-    "C-d")
-      mv "$file" ~/.trash && notify-send "Trashed picture" "$base moved to ~/.trash";;
-    "C-D")
-      rm "$file" && notify-send "Deleted picture" "$base is permanently deleted";;
-    "C-r")
-      convert -rotate 90 "$file" "$file" && notify-send "Picture rotated π/2" "$base is rotated for 90 clockwise";;
-    "C-n")
-      convert "$file" -negate "$file" && notify-send "Picture color inversion" "$base is negated";;
-    "C-f")
-      convert -flip "$file" "$file" && notify-send "Picture flipped" "$base flipped";;
-    "C-y")
-      echo "$file" | xclip -selection clipboard && notify-send "Picture copied to clipboard" "$base filename copied";;
-    "C-w")
-      feh --bg-scale "$file" && notify-send "Picture set as wallpaper" "$base set as wallpaper";;
-    "C-W")
-      wpg -s "$file" && notify-send "Picture set as colorscheme" "$base set as colorscheme globally";;
-    "C-l")
-      echo "$file" >> $CACHE && notify-send "Picture name sent to clipboard.log" "$base sent to $CACHE.\nC-x-L to copy from log";;
-    "C-L")
-      cat "$CACHE" | xclip -selection clipboard && notify-send "clipboard.log copied to clipboard" "$(cat $CACHE)";;
-    "C-c")
-      num=$(cat $CACHE | wc -l) && rm "$CACHE" && notify-send "clipboard.log deleted" "$num entries and $CACHE deleted";;
-  esac
-done
+        notify-send -t 15000 "sxiv key-handler help" "$(help)" ;;
 
-# vim:filetype=sh
+    # show manual
+    "C-H")
+        $TERMINAL -e sh -c "man sxiv" &;;
+
+    # move images
+    "C-m") 
+        newDirectory="$(zenity --file-selection --directory)"
+        while read -r filename; do
+            mv "$filename" "$newDirectory" &&
+                notify-send "$filename moved to $newDirectory"
+        done
+        ;;
+
+    # trash images
+    "C-d")
+        tr '\n' '\0' | xargs -0 "$trashcmd" &&
+                notify-send "$filename trashed to $trashdir"
+        ;;
+
+    # delete images
+    "C-D")
+        tr '\n' '\0' | xargs -0 rm &&
+                notify-send "$filename trashed to $trashdir"
+        ;;
+
+    # rotate images 90' in place
+    "C-r")
+        while read -r filename; do
+            convert -rotate 90 "$filename" "$filename" && 
+                notify-send "$filename rotated for 90" 
+        done
+        ;;
+
+    # rotate images 270' in place
+    "C-R")
+        while read -r filename; do
+            convert -rotate 270 "$filename" "$filename" && 
+                notify-send "$filename rotated for 270°" 
+        done
+        ;;
+
+    # negate images in place
+    "C-n")
+        while read -r filename; do
+            convert "$filename" -negate "$filename" &&
+                notify-send "$filename negated its color"
+        done
+        ;;
+
+    # flip images in place
+    "C-f")
+        while read -r filename; do
+            convert -flip "$filename" "$filename" &&
+                notify-send "$filename flipped"
+        done
+        ;;
+
+    # copy single image to clipboard
+    "C-y")
+        read -r filename
+        basename=$(basename "$filename")
+        suffix=${basename##*.}
+        echo "xclip -selection clipboard -t image/$suffix -i $filename" | xargs -I'{}' notify-send "debug" '{}'
+        xclip -selection clipboard -t "image/$suffix" -i "$filename" && notify-send "Picture copied to clipboard" "$filename copied";;
+
+    # copy image filenames to clipboard
+    "C-Y")
+        filenames=$(tr '\n' ' ') # it might not handle backslashes properly
+        echo "$filenames" | xclip -selection clipboard &&
+            notify-send "filenames copied" "$filenames" 
+        ;;
+
+    # set *single* image as wallpaper using feh
+    "C-w")
+        read -r filename
+        feh --bg-scale "$filename" && notify-send "Picture set as wallpaper" "$filename set as wallpaper using feh"
+        ;;
+
+    # set *single* image as colorscheme using wpg
+    "C-W")
+        read -r filename
+        wpg -s "$filename" && notify-send "Picture set as colorscheme" "$filename set using wpg"
+        ;;
+
+    # open images using gimp
+    "C-g")
+        tr '\n' '\0' | xargs -0 gimp &;;
+
+    # open directory 
+    "C-t")
+        read -r filename
+        dirname=$(dirname "$filename")
+        thunar "$dirname" &;;
+
+    # edit this file
+    "C-e")
+        $editcmd "$0" >/dev/null &;;
+
+    # for testing/debugging
+    # you can play with it
+    "C-T")
+        # tr '\n' '\0' | xargs -I'{}' notify-send "s" '{}';;
+        tr '\n' ' ' | xargs -0 -I'{}' notify-send "s" '{}';;
+        # xargs -0 -I'{}' notify-send "s" '{}';;
+esac
+
+# vim:filetype=bash

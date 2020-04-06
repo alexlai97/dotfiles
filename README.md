@@ -29,6 +29,7 @@ stow -v -d . -t ~/ tmux
 - scripts
     - weather
     - corona
+    - key-handler for sxiv
 
 ## Screenshot
 neofetch+coronascript
