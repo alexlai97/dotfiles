@@ -1,6 +1,38 @@
-#+TITLE: config
+#+TITLE: config.org
 
-* user name and email
+* Table of contents :TOC:
+- [[#about][about]]
+  - [[#doom-emacs][doom emacs]]
+  - [[#notes][notes]]
+  - [[#files][files]]
+- [[#common][common]]
+  - [[#user-name-and-email][user name and email]]
+  - [[#line-number][line number]]
+  - [[#browser-url][browser url]]
+- [[#doom][doom]]
+  - [[#font][font]]
+  - [[#theme][theme]]
+- [[#org][org]]
+  - [[#directory][directory]]
+  - [[#open-file][open file]]
+- [[#packages][packages]]
+  - [[#org-][org-*]]
+  - [[#other-packages][other packages]]
+
+* about
+** doom emacs
+[[https://github.com/hlissner/doom-emacs][doom-emacs]] repo
+
+** notes
+- [[file:config.el][config.el]] is generated from [[file:config.org][config.org]] by enabling =literate= flag in ~inIt.el~ followed by ~doom sync~
+
+** files
+- [[file:config.org][config.org]] contains various configurations
+- [[file:init.el][init.el]] specifies the modules doom loads
+- [[file:packages.el][packages.el]] specifies the additional packages you would install
+
+* common
+** user name and email
 Some functionality uses this to identify you, e.g. GPG configuration, email
 clients, file templates and snippets.
 
@@ -8,6 +40,19 @@ clients, file templates and snippets.
 (setq user-full-name "Alex Lai"
       user-mail-address "alex@alexlai.xyz")
 #+end_src
+
+** line number
+This determines the style of line numbers in effect. If set to `nil', line
+numbers are disabled. For relative line numbers, set this to `relative'.
+#+begin_src emacs-lisp :tangle yes
+(setq display-line-numbers-type t)
+#+end_src
+
+** browser url
+#+begin_src emacs-lisp :tangle yes
+(setq browse-url-browser-function 'browse-url-firefox)
+#+end_src
+
 
 * doom
 ** font
@@ -33,10 +78,12 @@ There are two ways to load a theme. Both assume the theme is installed and avail
 
 
 * org
+** directory
 #+begin_src emacs-lisp :tangle yes
 (setq org-directory "~/Nextcloud/org/")
 #+end_src
 
+** open file
 #+begin_src emacs-lisp :tangle yes
 ;; open apps
 (setq org-file-apps
@@ -55,18 +102,6 @@ There are two ways to load a theme. Both assume the theme is installed and avail
         ))
 #+end_src
 
-* line number
-This determines the style of line numbers in effect. If set to `nil', line
-numbers are disabled. For relative line numbers, set this to `relative'.
-#+begin_src emacs-lisp :tangle yes
-(setq display-line-numbers-type t)
-#+end_src
-
-* browser url
-#+begin_src emacs-lisp :tangle yes
-(setq browse-url-browser-function 'browse-url-firefox)
-#+end_src
-
 
 
 * packages
@@ -78,25 +113,65 @@ numbers are disabled. For relative line numbers, set this to `relative'.
     this file. Emacs searches the `load-path' when you load packages with
     `require' or `use-package'.
   - `map!' for binding new keys
-
-** simplenote
+   
+** org-*
+*** org-roam
 #+begin_src emacs-lisp :tangle yes
-(use-package simplenote2
+(use-package org-roam
+  :ensure t
   :config
-  (load-file "~/.config/doom/simplenote.el")
-  (simplenote2-setup))
-#+end_src
-
-
-** org-roam
-#+begin_src emacs-lisp :tangle yes
-(after! org-roam
   (setq org-roam-directory "~/Nextcloud/roam")
   )
 #+end_src
 
+*** org-roam-server
+#+begin_src emacs-lisp :tangle yes
+(use-package org-roam-server
+  :ensure t
+  :config
+  (setq org-roam-server-host "127.0.0.1"
+        org-roam-server-port 8080
+        org-roam-server-export-inline-images t
+        org-roam-server-authenticate nil
+        org-roam-server-label-truncate t
+        org-roam-server-label-truncate-length 60
+        org-roam-server-label-wrap-length 20))
+#+end_src
 
-** deft
+*** org-journal
+#+begin_src emacs-lisp :tangle yes
+(after! org-journal
+(setq org-journal-file-type 'weekly)
+  )
+#+end_src
+
+#+RESULTS:
+: weekly
+
+*** org-re-reveal
+#+begin_src emacs-lisp :tangle yes
+(setq org-re-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
+#+end_src
+
+#+RESULTS:
+: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+
+** other packages
+*** simplenote
+#+begin_src emacs-lisp :tangle yes
+(require 'simplenote2)
+(load-file "~/.config/doom/simplenote.el")
+(simplenote2-setup)
+#+end_src
+
+(use-package simplenote2
+  :ensure t
+  :config
+  (load-file "~/.config/doom/simplenote.el")
+  (simplenote2-setup)
+  )
+
+*** deft
 #+begin_src emacs-lisp :tangle yes
 (after! deft
   (setq deft-directory "~/Nextcloud/roam")

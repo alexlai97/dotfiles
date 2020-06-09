@@ -40,7 +40,7 @@
        ophints           ; highlight the region an operation acts on
        (popup +defaults)   ; tame sudden yet inevitable temporary windows
        ;; pretty-code       ; ligatures or substitute text with pretty symbols
-       tabs              ; an tab bar for Emacs
+       ;; tabs              ; an tab bar for Emacs
        ;;treemacs          ; a project drawer, like neotree but cooler
        ;;unicode           ; extended unicode support for various languages
        vc-gutter         ; vcs diff in the fringe
@@ -48,6 +48,7 @@
        window-select     ; visually switch windows
        workspaces        ; tab emulation, persistence & separate workspaces
        zen               ; distraction-free coding or writing
+
 
        :editor
        (evil +everywhere); come to the dark side, we have cookies
@@ -138,7 +139,7 @@
        ;;nim               ; python + lisp at the speed of c
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
-       (org +roam +dragndrop +gnuplot +hugo +pandoc +pomodoro +present)               ; organize your plain life in plain text
+       (org +roam +journal +dragndrop +gnuplot +hugo +pandoc +pomodoro +present)               ; organize your plain life in plain text
        ;;perl              ; write code no one else can comprehend
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
