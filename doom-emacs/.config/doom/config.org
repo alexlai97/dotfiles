@@ -24,7 +24,7 @@
 [[https://github.com/hlissner/doom-emacs][doom-emacs]] repo
 
 ** notes
-- [[file:config.el][config.el]] is generated from [[file:config.org][config.org]] by enabling =literate= flag in ~inIt.el~ followed by ~doom sync~
+- [[file:config.el][config.el]] is generated from [[file:config.org][config.org]] by enabling =literate= flag in [[file:init.el][init.el]] followed by ~doom sync~
 
 ** files
 - [[file:config.org][config.org]] contains various configurations
