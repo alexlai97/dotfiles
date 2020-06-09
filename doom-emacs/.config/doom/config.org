@@ -1,0 +1,104 @@
+#+TITLE: config
+
+* user name and email
+Some functionality uses this to identify you, e.g. GPG configuration, email
+clients, file templates and snippets.
+
+#+begin_src emacs-lisp :tangle yes
+(setq user-full-name "Alex Lai"
+      user-mail-address "alex@alexlai.xyz")
+#+end_src
+
+* doom
+** font
+Doom exposes five (optional) variables for controlling fonts in Doom. Here are the three important ones:
+
++ `doom-font'
++ `doom-variable-pitch-font'
++ `doom-big-font' -- used for `doom-big-font-mode'; use this for
+  presentations or streaming.
+
+They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
+font string. You generally only need these two:
+#+begin_src emacs-lisp :tangle yes
+(setq doom-font (font-spec :family "DejaVuSansMono" :size 14))
+#+end_src
+
+** theme
+There are two ways to load a theme. Both assume the theme is installed and available. You can either set `doom-theme' or manually load a theme with the
+`load-theme' function. This is the default:
+#+begin_src emacs-lisp :tangle yes
+(setq doom-theme 'doom-one)
+#+end_src
+
+
+* org
+#+begin_src emacs-lisp :tangle yes
+(setq org-directory "~/Nextcloud/org/")
+#+end_src
+
+#+begin_src emacs-lisp :tangle yes
+;; open apps
+(setq org-file-apps
+      '((auto-mode . emacs)
+        (directory . emacs)
+        ("\\.mm\\'" . default)
+        ("\\.x?html?\\'" . default)
+        ("\\.pdf\\'" . default)
+        ("\\.png\\'" . "sxiv \"%s\"" )
+        ("\\.jpg\\'" . "sxiv \"%s\"" )
+        ("\\.svg\\'" . "sxiv \"%s\"" )
+        ("\\.gif\\'" . "mpv \"%s\""  )
+        ("\\.mkv\\'" . "mpv \"%s\""  )
+        ("\\.mp3\\'" . "mpv \"%s\""  )
+        ("\\.mp4\\'" . "mpv \"%s\""  )
+        ))
+#+end_src
+
+* line number
+This determines the style of line numbers in effect. If set to `nil', line
+numbers are disabled. For relative line numbers, set this to `relative'.
+#+begin_src emacs-lisp :tangle yes
+(setq display-line-numbers-type t)
+#+end_src
+
+* browser url
+#+begin_src emacs-lisp :tangle yes
+(setq browse-url-browser-function 'browse-url-firefox)
+#+end_src
+
+
+
+* packages
+- functions
+  - `load!' for loading external *.el files relative to this one
+  - `use-package' for configuring packages
+  - `after!' for running code after a package has loaded
+  - `add-load-path!' for adding directories to the `load-path', relative to
+    this file. Emacs searches the `load-path' when you load packages with
+    `require' or `use-package'.
+  - `map!' for binding new keys
+
+** simplenote
+#+begin_src emacs-lisp :tangle yes
+(use-package simplenote2
+  :config
+  (load-file "~/.config/doom/simplenote.el")
+  (simplenote2-setup))
+#+end_src
+
+
+** org-roam
+#+begin_src emacs-lisp :tangle yes
+(after! org-roam
+  (setq org-roam-directory "~/Nextcloud/roam")
+  )
+#+end_src
+
+
+** deft
+#+begin_src emacs-lisp :tangle yes
+(after! deft
+  (setq deft-directory "~/Nextcloud/roam")
+  )
+#+end_src
