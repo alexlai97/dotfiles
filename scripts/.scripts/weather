@@ -89,7 +89,7 @@ show_image() {
 }
 
 update_awesomewm() {
-  oneline=`cat $CACHE_ONELINE`
+  oneline=`head -1 $CACHE_ONELINE`
   echo "myweather.text = \"$oneline\"" | awesome-client 
 }
 

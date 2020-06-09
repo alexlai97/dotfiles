@@ -462,7 +462,7 @@ nnoremap o :!gnvim %f<cr>
 "nnoremap O :!gnvim %f<cr>
 
 " Open file in the background using its default program
-nnoremap gb :file &<cr>l
+nnoremap gb :!open %f &<cr>
 
 " Interaction with system clipboard
 " Yank current directory path into the clipboard

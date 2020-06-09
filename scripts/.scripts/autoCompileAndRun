@@ -1,6 +1,7 @@
 #!/bin/dash 
 
-file=$1
+file="$1"
+flags="$2"
 base=${file%.*}
 suffix=${file##*.}
 
@@ -24,6 +25,7 @@ runcommand=""
 case $suffix in 
    c|C|cc|c++|cpp|rs) runcommand="./$base";;
    java) runcommand="java $base"  ;;
+   go) runcommand="./$base"  ;;
    ly) runcommand="echo "  ;;
    *) unknownMesg ;;
 esac
@@ -31,6 +33,6 @@ esac
 echo "##Auto compile when the source $1 changed"
 
 # pkill -f "entr compiler" && exit
-echo "$file" | entr -s "compiler $file; and echo '======Running======';and $runcommand; and echo '======Finish======='"
+echo "$file" | entr -s "compiler $file $flags; and echo '======Running======';and $runcommand; and echo '======Finish======='"
 
 # vim: filetype=sh

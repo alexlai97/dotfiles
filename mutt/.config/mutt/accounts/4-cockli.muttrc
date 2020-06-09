@@ -40,7 +40,7 @@ bind index,pager C noop
 bind index gg first-entry
 
 # macros
-macro index o "<shell-escape>mailsync -V cockli<enter>" "run mbsync to sync cockli"
+macro index o "<shell-escape>mailsync cockli<enter>" "run mbsync to sync cockli"
 macro index,pager gi "<change-folder>=$my_inbox<enter>" "go to inbox" 
 macro index,pager Mi ";<save-message>=$my_inbox<enter>" "move mail to inbox" 
 macro index,pager Ci ";<copy-message>=$my_inbox<enter>" "copy mail to inbox" 

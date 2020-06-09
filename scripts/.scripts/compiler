@@ -1,8 +1,9 @@
 #!/bin/env dash
 
-file=$1
-base=${file%.*}
-suffix=${file##*.}
+file="$1"
+flags="$2"
+base="${file%.*}"
+suffix="${file##*.}"
 
 if [ $# -eq 0 ]; then
   echo "Usage: $0 (file)"
@@ -34,12 +35,15 @@ unknownMesg(){
   exit 1
 }
 
+CXXFLAGS="-g -fsanitize=address -fsanitize=undefined -fsanitize=integer-divide-by-zero"
+
 case $suffix in 
-   c|C) gcc -g $file -o $base && successMesg || failMesg ;;
-   cc|c++|cpp) g++ -g $file -o $base && successMesg || failMesg ;;
-   rs) rustc $file -o $base && successMesg || failMesg ;;
-   java) javac $file && successMesg || failMesg ;;
-   ly) lilypond $file && successMesg || failMesg ;;
+   c|C) gcc -g $flags $file -o $base && successMesg || failMesg ;;
+   cc|c++|cpp) g++ $CXXFLAGS $flags $file -o $base && successMesg || failMesg ;;
+   go) go build $file && successMesg || failMesg ;;
+   rs) rustc $file $flags -o $base && successMesg || failMesg ;;
+   java) javac $file $flags && successMesg || failMesg ;;
+   ly) lilypond $file $flags && successMesg || failMesg ;;
    *) unknownMesg ;;
 esac
 

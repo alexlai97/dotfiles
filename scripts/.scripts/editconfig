@@ -22,7 +22,7 @@ editconfig
 execute () {
   case $(rofioption) in
     'awesome rc.lua') $guiedit ~/.config/awesome/rc.lua;;
-    'awesome keybindings') $guiedit ~/.config/awesome/rc.lua;;
+    'awesome keybindings') $guiedit ~/.config/awesome/keybindings.lua;;
     'alacritty') $guiedit ~/.config/alacritty/alacritty.yml;;
     '(n)vim') $guiedit ~/.vim;;
     'neomutt') $guiedit ~/.config/mutt/muttrc;;

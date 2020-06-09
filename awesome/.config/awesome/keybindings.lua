@@ -123,7 +123,7 @@ globalkeys = gears.table.join(
                   }
               end,
               {description = "lua execute prompt", group = "awesome"}),
-    awful.key({ super_key },            "p",    function() awful.spawn("rofi -show drun -display-drun 'Program' -show-icons") end,
+    awful.key({ super_key },            "p",    function() awful.spawn("rofi -show drun -display-drun 'Program'") end,
               {description = "show programs", group = "launcher"}),
     -- awful.key({ super_key }, "p", function() menubar.show() end,
     --}}}
@@ -187,6 +187,8 @@ globalkeys = gears.table.join(
               {description = "run firefox", group = "programs"}),
     awful.key({ super_key, alt_key }, "t", function () awful.spawn("thunar") end,
               {description = "run thunar", group = "programs"}),
+    awful.key({ super_key, alt_key }, "x", function () awful.spawn("emacsclient -nc") end,
+              {description = "run emacsclient gui", group = "programs"}),
     awful.key({ super_key, alt_key }, "e", function () awful.spawn("rofiunicode") end,
               {description = "select unicode/emojis", group = "programs"}),
     awful.key({ super_key, alt_key }, "p", function () awful.spawn("passmenu") end,

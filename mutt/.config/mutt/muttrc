@@ -22,10 +22,10 @@ macro index,pager i1 '<sync-mailbox><enter-command>source /home/alex/.config/mut
 macro index,pager i2 '<sync-mailbox><enter-command>source /home/alex/.config/mutt/accounts/2-uwaterloo.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to x7lai@edu.uwaterloo.ca" 
 
 # change to cockli
-macro index,pager i3 '<sync-mailbox><enter-command>source /home/alex/.config/mutt/accounts/3-hover.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to alexlai97@cock.li" 
+macro index,pager i3 '<sync-mailbox><enter-command>source /home/alex/.config/mutt/accounts/3-hover.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to alex@alexlai.xyz" 
 
 # change to hover
-macro index,pager i4 '<sync-mailbox><enter-command>source /home/alex/.config/mutt/accounts/4-cockli.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to alex@alexlai.xyz" 
+macro index,pager i4 '<sync-mailbox><enter-command>source /home/alex/.config/mutt/accounts/4-cockli.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to alexlai97@cock.li" 
 
 # urlscan
 macro index,pager ,u "\
@@ -37,6 +37,7 @@ macro index,pager ,u "\
 
 # {{{ common
 set sidebar_width = 25
+set sort=reverse-threads
 
 # aliases
 set alias_file = /home/alex/.config/mutt/aliases

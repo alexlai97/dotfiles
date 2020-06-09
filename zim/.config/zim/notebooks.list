@@ -4,7 +4,6 @@ Default=
 2=~/Nextcloud/Notebooks/Notes
 3=~/Nextcloud/Notebooks/佛法
 4=~/Notebooks/test
-5=~/Nextcloud/Zim_Notebooks/Journal
 
 [Notebook 1]
 uri=~/Nextcloud/Notebooks/Journal
@@ -27,11 +26,5 @@ icon=~/.local/share/icons/hicolor/64x64/apps/my-buddhism.png
 [Notebook 4]
 uri=~/Notebooks/test
 name=test
-interwiki=None
-icon=None
-
-[Notebook 5]
-uri=~/Nextcloud/Zim_Notebooks/Journal
-name=Journal
 interwiki=None
 icon=None

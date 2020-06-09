@@ -2,7 +2,10 @@
 
 #{{{ load wpg sequences 
 if ! set -q TMUX
-    load_wpg_sequences
+    if test (id -u) -eq 0
+    else
+        load_wpg_sequences
+    end
 end
 #}}}
 
@@ -20,9 +23,10 @@ set -xg XDG_DATA_HOME $HOME/.local/share
 set -xg XDG_CACHE_HOME $HOME/.cache
 
 # path
-set -xg PATH $HOME/.scripts $CARGO_HOME/bin $HOME/.luarocks/bin $HOME/.config/vifm/scripts $HOME/.local/bin /opt/bin /usr/local/bin /usr/bin /sbin/ /bin /usr/sbin/ /usr/bin/core_perl/ $HOME/.local/share/texlive/2019/bin/x86_64-linux/
-set -xg MANPATH $HOME/.local/share/texlive/2019/texmf-dist/doc/man $HOME/.local/share/man /usr/local/share/man /usr/share/man 
-set -xg INFOPATH $HOME/.local/share/texlive/2019/texmf-dist/doc/info
+set -xg GOPATH "$HOME/go"
+set -xg PATH $HOME/.scripts $GOPATH/bin $CARGO_HOME/bin $HOME/.luarocks/bin $HOME/.emacs.d/bin $HOME/.config/vifm/scripts $HOME/.local/bin /opt/bin /usr/local/bin /usr/bin /sbin/ /bin /usr/sbin/ /usr/bin/core_perl/ $HOME/.local/share/texlive/2020/bin/x86_64-linux/
+# set -xg MANPATH $HOME/.local/share/texlive/2019/texmf-dist/doc/man $HOME/.local/share/man /usr/local/share/man /usr/share/man 
+# set -xg INFOPATH $HOME/.local/share/texlive/2019/texmf-dist/doc/info
 
 # xdg config
 set -xg GTK2_RC_FILES $XDG_CONFIG_HOME/gtk-2.0/gtkrc
@@ -34,7 +38,7 @@ set -xg NOTMUCH_CONFIG $XDG_CONFIG_HOME/notmuch/config
 set -xg TERMINFO $XDG_DATA_HOME/terminfo
 set -xg TERMINFO_DIRS $XDG_DATA_HOME/terminfo /usr/share/terminfo
 set -xg CARGO_HOME $XDG_DATA_HOME/cargo
-set -xg PASSWORD_STORE_DIR $XDG_DATA_HOME/pass
+set -xg PASSWORD_STORE_DIR $XDG_DATA_HOME/password-store
 set -xg MYSQL_HISTFILE $XDG_DATA_HOME/mysql_history
 set -xg SQLITE_HISTORY $XDG_DATA_HOME/sqlite_history
 set -xg GRADLE_USER_HOME $XDG_DATA_HOME/gradle
@@ -59,7 +63,7 @@ set -xg MANPAGER "sh -c 'col -bx | bat -l man -p'"
 set -xg KBFS "$XDG_RUNTIME_DIR/keybase/kbfs/"
 set -xg WINTER_2020 "$HOME/Documents/School/Winter 2020"
 set -xg DOT_FILES "$HOME/Projects/myrepos/dotfiles"
-set -xg PLAYGROUND "$HOME/Projects/myrepos/Playground"
+set -xg PLAYGROUND "$HOME/Projects/Playground"
 
 # personal
 set -xg KEYID_PRIMARY "F0AAEA19" 

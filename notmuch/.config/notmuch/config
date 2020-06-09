@@ -2,7 +2,7 @@
 path=/home/alex/.local/share/mail
 [user]
 name=Alex Lai
-primary_email=alexlaixy97@gmail.com
+primary_email=alex@alexlai.xyz
 [new]
 tags=unread;inbox;
 ignore=

@@ -43,9 +43,12 @@ if dein#load_state('~/.cache/dein')
   call dein#add('tpope/vim-surround')
   call dein#add('junegunn/vim-easy-align')
   call dein#add('dag/vim-fish')
+  call dein#add('cespare/vim-toml')
   call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd'],
               \ 'build': 'sh -c "cd app & yarn install"' })
   call dein#add('luffah/vim-zim') 
+  call dein#add('ap/vim-css-color') 
+
   " Required:
   call dein#end()
   call dein#save_state()
