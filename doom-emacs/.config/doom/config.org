@@ -6,32 +6,59 @@
   - [[#notes][notes]]
   - [[#files][files]]
 - [[#common][common]]
+  - [[#variables-and-functions-for-org-files][variables and functions for org files]]
   - [[#user-name-and-email][user name and email]]
   - [[#line-number][line number]]
-  - [[#browser-url][browser url]]
-- [[#doom][doom]]
+  - [[#hooks][hooks]]
+  - [[#tex-engine-using-xetex][TeX engine (using xetex)]]
+  - [[#org-what-programs-to-open-file][org what programs to open file]]
+  - [[#org-todo-keywords-faces][org todo-keywords, faces]]
+- [[#ui][UI]]
   - [[#font][font]]
   - [[#theme][theme]]
-- [[#org][org]]
-  - [[#directory][directory]]
-  - [[#open-file][open file]]
 - [[#packages][packages]]
-  - [[#org-][org-*]]
-  - [[#other-packages][other packages]]
+  - [[#org-capture][org-capture]]
+  - [[#org-roam][org-roam]]
+  - [[#org-roam-server][org-roam-server]]
+  - [[#org-re-reveal][org-re-reveal]]
+  - [[#simplenote][simplenote]]
+  - [[#deft][deft]]
 
 * about
 ** doom emacs
-[[https://github.com/hlissner/doom-emacs][doom-emacs]] repo
+[[https://github.com/hlissner/doom-emacs][doom-emacs]] github repo
 
 ** notes
 - [[file:config.el][config.el]] is generated from [[file:config.org][config.org]] by enabling =literate= flag in [[file:init.el][init.el]]
 
 ** files
-- [[file:config.org][config.org]] contains various configurations
+- [[file:config.org][config.org]] (this file) contains various configurations
 - [[file:init.el][init.el]] specifies the modules doom loads
 - [[file:packages.el][packages.el]] specifies the additional packages you would install
 
 * common
+** variables and functions for org files
+#+begin_src emacs-lisp :tangle yes
+(setq org-directory "~/Nextcloud/org/")
+(defvar +org-life-file (expand-file-name "life.org" org-directory)
+  "The org file for life.")
+(defvar +org-daily-file (expand-file-name "daily.org" org-directory)
+  "The org file for daily.")
+(defvar +org-goals-file (expand-file-name "goals.org" org-directory)
+  "The org file for goals.")
+(defvar +org-journal-file (expand-file-name "journal.org" org-directory)
+  "The org file for journal.")
+(defvar +org-people-file (expand-file-name "people.org" org-directory)
+  "The org file for people.")
+(defvar +org-reflect-file (expand-file-name "reflect.org" org-directory)
+  "The org file for reflect.")
+(defvar +org-knowledge-base-dir (expand-file-name "knowledge-base/" org-directory)
+  "The org-roam directory for knowledge.")
+#+end_src
+
+#+RESULTS:
+: +org-knowledge-base-dir
+
 ** user name and email
 Some functionality uses this to identify you, e.g. GPG configuration, email
 clients, file templates and snippets.
@@ -48,13 +75,54 @@ numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 #+end_src
 
-** browser url
+** hooks
 #+begin_src emacs-lisp :tangle yes
-(setq browse-url-browser-function 'browse-url-firefox)
+(add-hook 'org-mode-hook 'auto-fill-mode)
+(add-hook 'after-init-hook #'global-emojify-mode)
+#+end_src
+
+** TeX engine (using xetex)
+#+begin_src emacs-lisp :tangle yes
+(setq-default TeX-engine 'xetex)
+(setq org-latex-pdf-process '("xelatex -interaction nonstopmode %f"
+                              "xelatex -interaction nonstopmode %f"))
 #+end_src
 
 
-* doom
+** org what programs to open file
+#+begin_src emacs-lisp :tangle yes
+;; open apps
+(setq org-file-apps
+      '((auto-mode . emacs)
+        (directory . emacs)
+        ("\\.mm\\'" . default)
+        ("\\.x?html?\\'" . "firefox %s")
+        ("\\.pdf\\'" . default)
+        ("\\.png\\'" . "sxiv \"%s\"" )
+        ("\\.jpg\\'" . "sxiv \"%s\"" )
+        ("\\.svg\\'" . "sxiv \"%s\"" )
+        ("\\.gif\\'" . "mpv \"%s\""  )
+        ("\\.mkv\\'" . "mpv \"%s\""  )
+        ("\\.mp3\\'" . "mpv \"%s\""  )
+        ("\\.mp4\\'" . "mpv \"%s\""  )
+        ))
+#+end_src
+** org todo-keywords, faces
+#+begin_src emacs-lisp :tangle yes
+(after! org
+  (setq
+   org-todo-keywords
+   '((sequence "TODO(t)" "DOING(i!)"  "|" "DONE(d!)" "KILL(k!)" )
+     (sequence "MOVED(m@/!)" "CANCELED(c@)" "|"))
+   org-todo-keyword-faces
+   '(("DOING" . "green")
+     ("MOVED" . "brown")
+     ("KILL" . "grey")
+     ("CANCELED" . (:foreground "blue" :weight bold))
+     )))
+#+end_src
+
+* UI
 ** font
 Doom exposes five (optional) variables for controlling fonts in Doom. Here are the three important ones:
 
@@ -73,36 +141,8 @@ font string. You generally only need these two:
 There are two ways to load a theme. Both assume the theme is installed and available. You can either set `doom-theme' or manually load a theme with the
 `load-theme' function. This is the default:
 #+begin_src emacs-lisp :tangle yes
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-gruvbox)
 #+end_src
-
-
-* org
-** directory
-#+begin_src emacs-lisp :tangle yes
-(setq org-directory "~/Nextcloud/org/")
-#+end_src
-
-** open file
-#+begin_src emacs-lisp :tangle yes
-;; open apps
-(setq org-file-apps
-      '((auto-mode . emacs)
-        (directory . emacs)
-        ("\\.mm\\'" . default)
-        ("\\.x?html?\\'" . "firefox %s")
-        ("\\.pdf\\'" . default)
-        ("\\.png\\'" . "sxiv \"%s\"" )
-        ("\\.jpg\\'" . "sxiv \"%s\"" )
-        ("\\.svg\\'" . "sxiv \"%s\"" )
-        ("\\.gif\\'" . "mpv \"%s\""  )
-        ("\\.mkv\\'" . "mpv \"%s\""  )
-        ("\\.mp3\\'" . "mpv \"%s\""  )
-        ("\\.mp4\\'" . "mpv \"%s\""  )
-        ))
-#+end_src
-
-
 
 * packages
 - functions
@@ -114,17 +154,44 @@ There are two ways to load a theme. Both assume the theme is installed and avail
     `require' or `use-package'.
   - `map!' for binding new keys
    
-** org-*
-*** org-roam
+** org-capture
 #+begin_src emacs-lisp :tangle yes
-(use-package org-roam
-  :ensure t
-  :config
-  (setq org-roam-directory "~/Nextcloud/roam")
+(after! org-capture
+  (setq org-capture-templates
+        '(
+          ("d" "daily" entry
+           (file+olp+datetree +org-daily-file)
+           "* TODO %?\n%i\n%a" :prepend t)
+          ("l" "life" entry
+           (file+headline +org-life-file "Unfiled")
+           "* %?\nCAPTURED: %U\n%i\n%a" :prepend t)
+          ("t" "todo(life)" entry
+           (file+headline +org-life-file "Unfiled")
+           "* TODO %?\nCAPTURED: %U\n%i\n%a" :prepend t)
+          ("j" "journal" entry
+           (file+olp+datetree +org-journal-file)
+           "* %U %?\n%i\n%a")
+          ("r" "reflect" entry
+           (file+olp+datetree +org-reflect-file)
+           "* %U %?\n%i\n%a" :prepend t)
+          )
+        )
   )
 #+end_src
 
-*** org-roam-server
+#+RESULTS:
+| d | daily | entry | (file+olp+datetree +org-daily-file) | * TODO %? |
+
+** org-roam
+#+begin_src emacs-lisp :tangle yes
+(use-package org-roam
+      :hook
+      (after-init . org-roam-mode)
+      :custom
+      (org-roam-directory +org-knowledge-base-dir))
+#+end_src
+
+** org-roam-server
 #+begin_src emacs-lisp :tangle yes
 (use-package org-roam-server
   :ensure t
@@ -138,31 +205,39 @@ There are two ways to load a theme. Both assume the theme is installed and avail
         org-roam-server-label-wrap-length 20))
 #+end_src
 
-*** org-journal
+** org-re-reveal
 #+begin_src emacs-lisp :tangle yes
-(after! org-journal
-(setq org-journal-file-type 'weekly)
-  )
-#+end_src
-
-#+RESULTS:
-: weekly
-
-*** org-re-reveal
-#+begin_src emacs-lisp :tangle yes
-(setq org-re-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
+(use-package org-re-reveal
+  :ensure t
+  :config
+  (setq org-re-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/"))
 #+end_src
 
 #+RESULTS:
 : http://cdn.jsdelivr.net/reveal.js/3.0.0/
 
-** other packages
-*** simplenote
+** simplenote
 #+begin_src emacs-lisp :tangle yes
 (require 'simplenote2)
-(load-file "~/.config/doom/simplenote.el")
+(load! "simplenote.el")
 (simplenote2-setup)
+(map! :leader
+      (:prefix-map ("S" . "simplenote")
+       :desc "browse" "b" 'simplenote2-browse
+       :desc "new-from-buffer" "n" 'simplenote2-create-note-from-buffer
+       :desc "sync" "s" 'simplenote2-sync-notes
+       )
+      )
+(use-package simplenote2
+  :config
+  (setq simplenote2-markdown-notes-mode 'markdown-mode
+        simplenote2-notes-mode 'markdown-mode
+        )
+  )
 #+end_src
+
+#+RESULTS:
+: t
 
 (use-package simplenote2
   :ensure t
@@ -171,9 +246,11 @@ There are two ways to load a theme. Both assume the theme is installed and avail
   (simplenote2-setup)
   )
 
-*** deft
+** deft
 #+begin_src emacs-lisp :tangle yes
 (after! deft
-  (setq deft-directory "~/Nextcloud/roam")
+  (setq deft-directory +org-knowledge-base-dir)
   )
 #+end_src
+
+#+RESULTS:

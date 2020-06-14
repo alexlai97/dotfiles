@@ -187,6 +187,8 @@ globalkeys = gears.table.join(
               {description = "run firefox", group = "programs"}),
     awful.key({ super_key, alt_key }, "t", function () awful.spawn("thunar") end,
               {description = "run thunar", group = "programs"}),
+    awful.key({ super_key }, "c", function () awful.spawn("org-capture") end,
+              {description = "run org-capture in emacs", group = "programs"}),
     awful.key({ super_key, alt_key }, "x", function () awful.spawn("emacsclient -nc") end,
               {description = "run emacsclient gui", group = "programs"}),
     awful.key({ super_key, alt_key }, "e", function () awful.spawn("rofiunicode") end,
