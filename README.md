@@ -9,7 +9,7 @@ However, there are a lot of good dotfile manager [alternatives](https://wiki.arc
 ### Use case
 Say I am on a new machine, and I want to grab my configurations for x related, vifm, vim, nvim, tmux.
 
-I would run the following script. [stow][gnustow] creates symlinks 
+I would run the following script. [stow][gnustow] creates symlinks.
 ```
 # install.sh
 stow -v -d . -t ~/ x
@@ -20,16 +20,17 @@ stow -v -d . -t ~/ tmux
 ```
 
 ## Highlights you may be interested
-- vifm
-- tmux
-- vim
-- nvim
-- awesomewm
-- (neo)mutt (config modified after generating from [mutt-wizard](https://github.com/LukeSmithxyz/mutt-wizard))
-- scripts
-    - weather
-    - corona
-    - key-handler for sxiv
+- [vifm](./vifm/.config/vifm/)
+- [tmux](./tmux/.tmux.conf)
+- [vim](./vim/.vim/)
+- [nvim](./nvim/.config/nvim/)
+- [doom-emacs](./doom-emacs/.config/doom/)
+- [awesomewm](./awesome/.config/awesome/)
+- [(neo)mutt](./mutt/.config/mutt/) (config modified after generating from [mutt-wizard](https://github.com/LukeSmithxyz/mutt-wizard))
+- [scripts](./scripts/.scripts/)
+    - [weather](./scripts/.scripts/weather)
+    - [corona](./scripts/.scripts/corona)
+    - [key-handler for sxiv](./sxiv/.config/sxiv/exec/key-handler)
 
 ## Screenshot
 neofetch+coronascript
