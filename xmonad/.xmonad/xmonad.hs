@@ -3,13 +3,15 @@ import XMonad
 import Data.Monoid
 import XMonad.Util.SpawnOnce
 import XMonad.Util.Run
-import XMonad.Util.EZConfig (additionalKeys, additionalKeysP)
+import XMonad.Util.EZConfig (checkKeymap, additionalKeys, additionalKeysP)
 import XMonad.Hooks.ManageDocks
 import System.Exit
 import XMonad.Hooks.DynamicLog (dynamicLogWithPP, wrap, xmobarPP, sjanssenPP, xmobarColor, shorten, PP(..))
+import XMonad.Actions.CycleWS (toggleWS, prevWS, nextWS)
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
+import qualified XMonad.Layout.ToggleLayouts as T (toggleLayouts, ToggleLayout(Toggle))
 
 ------------------------------------------------------------------------
 -- Variables
@@ -108,110 +110,83 @@ myEventHook = mempty
 -- myLogHook = return ()
 
 ------------------------------------------------------------------------
--- Key bindings. Add, modify or remove key bindings here.
---
-myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
+-- Key bindings
+myEZKeys :: [(String, X())]
+myEZKeys =
+  -- Xmonad
+     [ ("M-C-r", spawn "xmonad --recompile; pkill xmobar; xmonad --restart")
+     , ("M-S-<Escape>", io (exitWith ExitSuccess))  -- Quits Xmonad
 
-    -- launch a terminal
-    [ ((modm,               xK_Return), spawn $ XMonad.terminal conf)
+  -- Windows & Tiling
+     , ("M-S-q", kill) -- kill focused window
+     , ("M-h", sendMessage Shrink) -- Shrink the master area
+     , ("M-l", sendMessage Expand) -- Expand the master area
+     -- Increment the number of windows in the master area
+     --, ("M-<KP_Equal>", sendMessage (IncMasterN 1)) -- FIXME doesn't work
+     -- Deincrement the number of windows in the master area
+     --, ("M-<KP_Subtract>", sendMessage (IncMasterN (-1))) -- FIXME
+     , ("M-t", withFocused $ windows . W.sink)  -- Push floating window back to tile
 
-    -- launch rofi
-    , ((modm,               xK_r     ), spawn "rofi -show run")
+  -- Windows Navigation
+     , ("M-m", windows W.focusMaster)  -- Move focus to the master window
+     , ("M-j", windows W.focusDown) -- Move focus to the next window
+     , ("M-k", windows W.focusUp  ) -- Move focus to the previous window
+     , ("M-S-m", windows W.swapMaster) -- Swap the focused window and the master window
+     , ("M-S-j", windows W.swapDown)   -- Swap focused window with next window
+     , ("M-S-k", windows W.swapUp)     -- Swap focused window with prev window
 
-    -- launch rofi switch window
-    , ((modm,               xK_w     ), spawn "rofi -show window")
+     , ("M-<Left>", prevWS)     -- jump to previous workspace
+     , ("M-<Right>", nextWS)     -- jump to previous workspace
+     , ("M-<Tab>", toggleWS)     -- jump to last workspace
 
-    -- launch rofi run program
-    , ((modm,               xK_p     ), spawn "rofi -show drun -display-drun 'Program'")
-
-    -- launch dmenu_extended_run
-    , ((modm,               xK_o     ), spawn "dmenu_extended_run")
-
-    -- toggle dock gaps
-    ,((modm,                xK_b     ), sendMessage ToggleStruts)
-
-    -- close focused window
-    , ((modm .|. shiftMask, xK_q     ), kill)
-
+  -- Layouts
      -- Rotate through the available layout algorithms
-    , ((modm,               xK_space ), sendMessage NextLayout)
+     , ("M-<Space>", sendMessage NextLayout)
+     --  Reset the layouts on the current workspace to default
+     --, ("M-S-<Space>", setLayout $ XMonad.layoutHook conf)
 
-    --  Reset the layouts on the current workspace to default
-    , ((modm .|. shiftMask, xK_space ), setLayout $ XMonad.layoutHook conf)
+  -- Misc
+     ,("M-b", sendMessage ToggleStruts) -- toggle structs, e.g. xmobar
+     ,("M-<F1>", spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
 
-    -- Resize viewed windows to the correct size
-    , ((modm,               xK_n     ), refresh)
+  -- Launcher
+     , ("M-r", spawn "rofi -show run") -- run
+     , ("M-p", spawn "rofi -show drun -display-drun 'Program'") -- programs
 
-    -- Move focus to the next window
-    , ((modm,               xK_Tab   ), windows W.focusDown)
+  -- Applications
+     , ("M-<Return>", spawn myTerminal) -- terminal
+     , ("M-S-<Return>", spawn (myTerminal ++ " -e fish -c 'tmux_load_or_new_session Daily'")) -- tmux "Daily"
+     , ("M-M1-f", spawn "firefox")
+     , ("M-M1-x", spawn "emacsclient -nc")
+     , ("M-M1-e", spawn "rofiunicode")
+     , ("M-M1-p", spawn "passmenu")
 
-    -- Move focus to the next window
-    , ((modm,               xK_j     ), windows W.focusDown)
+  -- System
+     , ("M-S-<Page_Down>", spawn "oblogout")
+     , ("<XF86PowerOff>", spawn "oblogout") -- PowerOff show oblogout
+     , ("M-S-s", spawn "i3lock.sh && systemctl suspend") -- suspend
+     , ("M-S-l", spawn "i3lock.sh") -- lock
 
-    -- Move focus to the previous window
-    , ((modm,               xK_k     ), windows W.focusUp  )
-
-    -- Move focus to the master window
-    , ((modm,               xK_m     ), windows W.focusMaster  )
-
-    -- Swap the focused window and the master window
-    , ((modm .|. controlMask,  xK_Return), windows W.swapMaster)
-
-    -- Swap the focused window with the next window
-    , ((modm .|. shiftMask, xK_j     ), windows W.swapDown  )
-
-    -- Swap the focused window with the previous window
-    , ((modm .|. shiftMask, xK_k     ), windows W.swapUp    )
-
-    -- Shrink the master area
-    , ((modm,               xK_h     ), sendMessage Shrink)
-
-    -- Expand the master area
-    , ((modm,               xK_l     ), sendMessage Expand)
-
-    -- Push window back into tiling
-    , ((modm,               xK_t     ), withFocused $ windows . W.sink)
-
-    -- Increment the number of windows in the master area
-    , ((modm              , xK_equal ), sendMessage (IncMasterN 1))
-
-    -- Deincrement the number of windows in the master area
-    , ((modm              , xK_minus ), sendMessage (IncMasterN (-1)))
-
-    -- Toggle the status bar gap
-    -- Use this binding with avoidStruts from Hooks.ManageDocks.
-    -- See also the statusBar function from Hooks.DynamicLog.
-    --
-    -- , ((modm              , xK_b     ), sendMessage ToggleStruts)
-
-    -- Quit xmonad
-    , ((modm .|. shiftMask, xK_Escape     ), io (exitWith ExitSuccess))
-
-    -- Restart xmonad
-    , ((modm .|. controlMask , xK_r     ), spawn "xmonad --recompile; pkill xmobar; xmonad --restart")
-
-    -- Run xmessage with a summary of the default keybindings (useful for beginners)
-    , ((modm,  xK_F1 ), spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
-    ]
-    ++
-
-    --
-    -- mod-[1..9], Switch to workspace N
-    -- mod-shift-[1..9], Move client to workspace N
-    --
-    [((m .|. modm, k), windows $ f i)
-        | (i, k) <- zip (XMonad.workspaces conf) [xK_1 .. xK_9]
-        , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
-    -- ++
-
-    --
-    -- mod-{w,e,r}, Switch to physical/Xinerama screens 1, 2, or 3
-    -- mod-shift-{w,e,r}, Move client to screen 1, 2, or 3
-    --
-    -- [((m .|. modm, key), screenWorkspace sc >>= flip whenJust (windows . f))
-    --     | (key, sc) <- zip [xK_w, xK_e, xK_r] [0..]
-    --     , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
-
+      -- Volume Keys
+     , ("<XF86AudioLowerVolume>", spawn "amixer -q -D pulse sset Master 5%-")
+     , ("<XF86AudioRaiseVolume>", spawn "amixer -q -D pulse sset Master 5%+")
+     , ("<XF86AudioMute>", spawn "amixer -D pulse set Master 1+ toggle")
+      -- Media Keys
+     , ("<XF86AudioPlay>", spawn "mpc toggle")
+     , ("<XF86AudioStop>", spawn "mpc stop")
+     , ("<XF86AudioNext>", spawn "mpc next")
+     , ("<XF86AudioPrev>", spawn "mpc prev")
+      -- Screen Brightness Control
+     , ("<XF86MonBrightnessDown>", spawn "light -U 5")
+     , ("<XF86MonBrightnessUp>", spawn "light -A 5")
+      -- Screenshot Keys
+     , ("<Print>", spawn "flameshot gui")
+      -- Keyboard LED
+     , ("<Scroll_lock>", spawn "xset led 3")
+     , ("S-<Scroll_lock>", spawn "xset j-led 3")
+      -- Touchpad Toggle
+     , ("<XF86TouchpadToggle>", spawn "~/.scripts/toggletouchpad.sh")
+     ]
 
 ------------------------------------------------------------------------
 -- Mouse bindings: default actions bound to mouse events
@@ -287,18 +262,14 @@ myManageHook = composeAll
 --
 -- By default, do nothing.
 myStartupHook = do
+  return ()
+  checkKeymap myConfig myEZKeys
   spawnOnce "~/.fehbg &"
   spawnOnce "fcitx"
   spawnOnce "picom -b"
   spawnOnce "thunar --daemon"
 
--- mydefaults =
-
--- Main
-main :: IO ()
-main = do
-  xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobarrc"
-  xmonad $ docks def {
+myConfig = def {
       -- simple stuff
         terminal           = myTerminal,
         focusFollowsMouse  = myFocusFollowsMouse,
@@ -310,15 +281,27 @@ main = do
         focusedBorderColor = myFocusedBorderColor,
 
       -- key bindings
-        keys               = myKeys,
+        --keys               = myKeys,
         mouseBindings      = myMouseBindings,
 
       -- hooks, layouts
         layoutHook         = myLayout,
         manageHook         = myManageHook,
         handleEventHook    = myEventHook,
-        logHook            = dynamicLogWithPP $ sjanssenPP {
-            ppOutput = hPutStrLn xmproc
-            },
         startupHook        = myStartupHook
-    } -- `additionalKeys` myKeys
+    }
+    `additionalKeysP` myEZKeys
+    `additionalKeys`
+    [((myModMask  , xK_equal ), sendMessage (IncMasterN 1)) -- Increment the number of windows in the master area
+    , ((myModMask , xK_minus ), sendMessage (IncMasterN (-1))) -- Decrement the number of windows in the master area
+    ]
+
+-- Main
+main :: IO ()
+main = do
+  xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobarrc"
+  xmonad $ docks myConfig {
+        logHook = dynamicLogWithPP $ sjanssenPP {
+            ppOutput = hPutStrLn xmproc
+        }
+      }
