@@ -1,0 +1,76 @@
+Config { 
+    -- appearance
+    font = "xft:DejaVuSansMono Nerd Font Bold:size=10"
+    , additionalFonts = [ "xft:Mononoki Nerd Font:pixelsize=11:antialias=true:hinting=true"
+    , "xft:FontAwesome:pixelsize=13"]
+    , borderColor = "#646464"
+    , border = TopB
+    , bgColor = "#282c34"
+    , fgColor = "grey"
+    , alpha = 255
+    -- , position = Top
+    , position = TopW L 90
+    , textOffset = -1
+    , iconOffset = -1
+
+    -- general behavior
+    , lowerOnStart = True
+    , pickBroadest = False
+    , persistent = False
+    , hideOnStart = False
+    , iconRoot = "/home/alex/.config/xmobar/xpm/"
+    , allDesktops = True
+    , overrideRedirect = True
+
+    -- layout
+    , sepChar = "%"
+    , alignSep = "}{"
+    , template = "<icon=haskell_20.xpm/>: %StdinReader% }{ %cpu% | %memory% | %battery% | %dynnetwork% | <fc=#f4d7a4>%date%</fc> |"
+
+    -- plugins
+    , commands = [ Run Weather "EGPF" ["-t","<station>: <tempC>C",
+                    "-L","18","-H","25",
+                    "--normal","green",
+                    "--high","red",
+                    "--low","lightblue"] 36000
+        , Run Network "eth0" ["-L","0","-H","32",
+                "--normal","green","--high","red"] 10
+        , Run Network "eth1" ["-L","0","-H","32",
+                    "--normal","green","--high","red"] 10
+        , Run Cpu ["-t", "<icon=cpu_20.xpm/> <total>%", "-L","3","-H","50",
+                    "--normal","green","--high","red"] 10
+
+        , Run Memory ["-t","<icon=memory-icon_20.xpm/> <usedratio>%"] 10
+        , Run Swap [] 10
+        , Run Com "uname" ["-s","-r"] "" 36000
+        , Run Date "%a %b %d %H:%M:%S" "date" 10
+
+        -- battery monitor
+        , Run Battery  [ "--template" , "B: <acstatus>"
+                       , "--Low"      , "10"        -- units: %
+                       , "--High"     , "80"        -- units: %
+                       , "--low"      , "darkred"
+                       , "--normal"   , "darkorange"
+                       , "--high"     , "darkgreen"
+
+                       , "--" -- battery specific options
+                       -- discharging status
+                       , "-o"	, "<left>% (<timeleft>)"
+                       -- AC "on" status
+                       , "-O"	, "<fc=#dAA520><left>% Charging</fc>"
+                       -- charged status
+                       , "-i"	, "<fc=#006000><left>% Charged</fc>"
+                       ] 50
+
+        -- network activity monitor (dynamic interface resolution)
+        , Run DynNetwork     [ "--template" , "N: <tx>kB/s <icon=net_up_20.xpm/>:<rx>kB/s<icon=net_down_20.xpm/>"
+                             , "--Low"      , "1000"       -- units: B/s
+                             , "--High"     , "5000"       -- units: B/s
+                             , "--low"      , "darkgreen"
+                             , "--normal"   , "darkorange"
+                             , "--high"     , "darkred"
+                             ] 10
+        , Run StdinReader
+    ]
+
+}

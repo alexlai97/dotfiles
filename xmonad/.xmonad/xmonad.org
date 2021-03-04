@@ -1,7 +1,6 @@
 #+TITLE: XMonad Config
 #+PROPERTY: header-args :tangle xmonad.hs
 
-
 * Imports
 #+begin_src haskell
 -- IMPORTS
@@ -18,6 +17,19 @@ import XMonad.Actions.CycleWS (toggleWS, prevWS, nextWS)
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 import qualified XMonad.Layout.ToggleLayouts as T (toggleLayouts, ToggleLayout(Toggle))
+import qualified XMonad.Layout.MultiToggle as MT (Toggle(..))
+
+import XMonad.Layout.MultiToggle (mkToggle, single, EOT(EOT), (??))
+import XMonad.Layout.MultiToggle.Instances (StdTransformers(NBFULL, MIRROR, NOBORDERS))
+
+import XMonad.Layout.Spiral
+import XMonad.Layout.NoBorders (noBorders, smartBorders)
+import XMonad.Layout.Fullscreen (fullscreenFull, fullscreenSupport)
+import XMonad.Layout.Grid (Grid(..))
+import XMonad.Layout.TwoPane (TwoPane(..))
+import XMonad.Layout.Tabbed (simpleTabbed, tabbed)
+import XMonad.Layout.Spacing
+import XMonad.Hooks.EwmhDesktops  -- for some fullscreen events, also for xcomposite in obs.
 #+end_src
 
 * Variables
@@ -141,6 +153,9 @@ myEZKeys =
      -- Deincrement the number of windows in the master area
      --, ("M-<KP_Subtract>", sendMessage (IncMasterN (-1))) -- FIXME
      , ("M-t", withFocused $ windows . W.sink)  -- Push floating window back to tile
+     ,("M-f", sendMessage (MT.Toggle NBFULL) >> sendMessage ToggleStruts) -- toggle fullscreen (to no border full layout and toggle struct)
+     , ("M-C-<Page_Down>", decWindowSpacing 2)           -- Decrease window spacing
+     , ("M-C-<Page_Up>", incWindowSpacing 2)           -- Increase window spacing
 
   -- Windows Navigation
      , ("M-m", windows W.focusMaster)  -- Move focus to the master window
@@ -158,14 +173,15 @@ myEZKeys =
      -- Rotate through the available layout algorithms
      , ("M-<Space>", sendMessage NextLayout)
      --  Reset the layouts on the current workspace to default
-     --, ("M-S-<Space>", setLayout $ XMonad.layoutHook conf)
+     --, ("M-S-<Space>", setLayout $ XMonad.layoutHook conf) -- On by default
 
   -- Misc
-     ,("M-b", sendMessage ToggleStruts) -- toggle structs, e.g. xmobar
+     ,("M-b", sendMessage ToggleStruts) -- toggle structs
      ,("M-<F1>", spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
 
   -- Launcher
      , ("M-r", spawn "rofi -show run") -- run
+     , ("M-w", spawn "rofi -show window") -- select window
      , ("M-p", spawn "rofi -show drun -display-drun 'Program'") -- programs
 
   -- Applications
@@ -225,19 +241,13 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 #+end_src
 * Layouts
 #+begin_src haskell
+mySpacing i = spacingRaw False (Border i i i i) True (Border i i i i) True
+
 ------------------------------------------------------------------------
 -- Layouts:
-
--- You can specify and transform your layouts by modifying these values.
--- If you change layout bindings be sure to use 'mod-shift-space' after
--- restarting (with 'mod-q') to reset your layout state to the new
--- defaults, as xmonad preserves your old layout settings by default.
---
--- The available layouts.  Note that each layout is separated by |||,
--- which denotes layout choice.
---
-myLayout = avoidStruts (tiled ||| Mirror tiled ||| Full)
+myLayoutHook = avoidStruts $ smartBorders $ mkToggle (NBFULL ?? EOT) myDefaultLayout
   where
+     myDefaultLayout = (mySpacing 8 tiled) ||| simpleTabbed ||| noBorders Full
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
 
@@ -293,6 +303,8 @@ myStartupHook = do
   spawnOnce "fcitx"
   spawnOnce "picom -b"
   spawnOnce "thunar --daemon"
+  spawnOnce "nextcloud --background"
+  spawnOnce "trayer --edge top --align right --width 10  --SetDockType true --SetPartialStrut true --expand true --transparent true --alpha 0 --tint 0x282c34  --height 21 &"
 #+end_src
 
 * myConfig and Main
@@ -313,7 +325,7 @@ myConfig = def {
         mouseBindings      = myMouseBindings,
 
       -- hooks, layouts
-        layoutHook         = myLayout,
+        layoutHook         = myLayoutHook,
         manageHook         = myManageHook,
         handleEventHook    = myEventHook,
         startupHook        = myStartupHook
@@ -328,8 +340,8 @@ myConfig = def {
 main :: IO ()
 main = do
   xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobarrc"
-  xmonad $ docks myConfig {
-        logHook = dynamicLogWithPP $ sjanssenPP {
+  xmonad $ docks $ ewmh myConfig {
+        logHook = dynamicLogWithPP $ xmobarPP {
             ppOutput = hPutStrLn xmproc
         }
       }
