@@ -10,6 +10,9 @@ import System.Exit
 import XMonad.Hooks.DynamicLog (dynamicLogWithPP, wrap, xmobarPP, sjanssenPP, xmobarColor, shorten, PP(..))
 import XMonad.Actions.CycleWS (toggleWS, toggleWS', prevWS, nextWS, moveTo, WSType( NonEmptyWS ))
 
+import XMonad.Prompt
+import XMonad.Prompt.XMonad
+
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 import qualified XMonad.Layout.ToggleLayouts as T (toggleLayouts, ToggleLayout(Toggle))
@@ -31,7 +34,7 @@ import XMonad.Hooks.EwmhDesktops  -- for some fullscreen events, also for xcompo
 -- Variables
 myTerminal      = "alacritty"
 myModMask       = mod4Mask -- "windows key"
-myWorkspaces    = ["home","code","files","web"] ++ map show [5..9]
+myWorkspaces    = ["home","code","files","web","media"] ++ map show [5..9]
 
 -- Border colors for unfocused and focused windows, respectively.
 myNormalBorderColor  = "#cfd5d6"
@@ -183,6 +186,7 @@ myEZKeys =
      , ("M-r", spawn "rofi -show run") -- run
      , ("M-w", spawn "rofi -show window") -- select window
      , ("M-p", spawn "rofi -show drun -display-drun 'Program'") -- programs
+     , ("M-M1-h", xmonadPrompt amberXPConfig { promptKeymap = vimLikeXPKeymap }) -- xmonad Prompt, useful ?
 
   -- Applications
      , ("M-<Return>", spawn myTerminal) -- terminal
@@ -277,8 +281,8 @@ myManageHook = composeAll
     [
       className =? "firefox"        --> doShift ( myWorkspaces !! 3 ) -- sends to workspace 4
     , (className =? "firefox" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
-    , className =? "MPlayer"        --> doFloat
-    , className =? "Event Tester"        --> doFloat
+    , className =? "mpv"        --> doFloat <+> doShift ( myWorkspaces !! 4 )
+    , className =? "Event Tester"   --> doFloat
     , className =? "Oblogout"        --> doFloat
     , className =? "Sxiv"        --> doFloat
     , className =? "Gimp"           --> doFloat
