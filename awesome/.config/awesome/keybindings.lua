@@ -12,7 +12,7 @@ require("variables")
 globalkeys = gears.table.join(
     -- {{{ awesome group 
     -- TODO press window key for 1 s then spawn
-    awful.key({ super_key,           }, "s",      hotkeys_popup.show_help,
+    awful.key({ super_key,           }, "F1",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
     awful.key({ super_key, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),

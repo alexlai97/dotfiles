@@ -69,6 +69,7 @@
        ;; electric          ; smarter, keyword-based electric-indent
        ibuffer         ; interactive buffer management
        vc                ; version-control and Emacs, sitting in a tree
+       (undo +tree)
 
        :term
        eshell            ; a consistent, cross-platform shell (WIP)
@@ -139,7 +140,7 @@
        ;;nim               ; python + lisp at the speed of c
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
-       (org +roam +dragndrop +gnuplot +hugo +pandoc +pomodoro +present)               ; organize your plain life in plain text
+       (org +roam +dragndrop +gnuplot +hugo +pandoc +present)               ; organize your plain life in plain text
        ;;perl              ; write code no one else can comprehend
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more

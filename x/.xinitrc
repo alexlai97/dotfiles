@@ -50,9 +50,8 @@ wmname LG3D
 #-}}}
 
 #{{{- start window manager
-# exec ck-launch-session dbus-launch --sh-syntax --exit-with-session dwm
-# exec ck-launch-session dbus-launch --sh-syntax --exit-with-session awesome
-exec awesome
+# exec awesome
+exec xmonad
 #-}}}
 
 

@@ -1,65 +1,37 @@
-;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
+(setq org-directory "~/Nextcloud/org/")
+(defvar +org-life-file (expand-file-name "life.org" org-directory)
+  "The org file for life.")
+(defvar +org-daily-file (expand-file-name "daily.org" org-directory)
+  "The org file for daily.")
+(defvar +org-goals-file (expand-file-name "goals.org" org-directory)
+  "The org file for goals.")
+(defvar +org-journal-file (expand-file-name "journal.org" org-directory)
+  "The org file for journal.")
+(defvar +org-people-file (expand-file-name "people.org" org-directory)
+  "The org file for people.")
+(defvar +org-reflect-file (expand-file-name "reflect.org" org-directory)
+  "The org file for reflect.")
+(defvar +org-knowledge-base-dir (expand-file-name "knowledge-base/" org-directory)
+  "The org-roam directory for knowledge.")
 
-;; Place your private configuration here! Remember, you do not need to run 'doom
-;; sync' after modifying this file!
-
-
-;; Some functionality uses this to identify you, e.g. GPG configuration, email
-;; clients, file templates and snippets.
 (setq user-full-name "Alex Lai"
       user-mail-address "alex@alexlai.xyz")
 
-;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
-;; are the three important ones:
-;;
-;; + `doom-font'
-;; + `doom-variable-pitch-font'
-;; + `doom-big-font' -- used for `doom-big-font-mode'; use this for
-;;   presentations or streaming.
-;;
-;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
-;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "DejaVuSansMono" :size 14))
-
-;; There are two ways to load a theme. Both assume the theme is installed and
-;; available. You can either set `doom-theme' or manually load a theme with the
-;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
-
-;; If you use `org' and don't want your org files in the default location below,
-;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/Nextcloud/org/")
-
-;; This determines the style of line numbers in effect. If set to `nil', line
-;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
+(add-hook 'org-mode-hook 'auto-fill-mode)
+(add-hook 'after-init-hook #'global-emojify-mode)
 
-;; Here are some additional functions/macros that could help you configure Doom:
-;;
-;; - `load!' for loading external *.el files relative to this one
-;; - `use-package' for configuring packages
-;; - `after!' for running code after a package has loaded
-;; - `add-load-path!' for adding directories to the `load-path', relative to
-;;   this file. Emacs searches the `load-path' when you load packages with
-;;   `require' or `use-package'.
-;; - `map!' for binding new keys
-;;
-;; To get information about any of these functions/macros, move the cursor over
-;; the highlighted symbol at press 'K' (non-evil users must press 'C-c g k').
-;; This will open documentation for it, including demos of how they are used.
-;;
-;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
-;; they are implemented.
-
-(setq browse-url-browser-function 'browse-url-firefox)
+(setq-default TeX-engine 'xetex)
+(setq org-latex-pdf-process '("xelatex -interaction nonstopmode %f"
+                              "xelatex -interaction nonstopmode %f"))
 
 ;; open apps
 (setq org-file-apps
       '((auto-mode . emacs)
         (directory . emacs)
         ("\\.mm\\'" . default)
-        ("\\.x?html?\\'" . default)
+        ("\\.x?html?\\'" . "firefox %s")
         ("\\.pdf\\'" . default)
         ("\\.png\\'" . "sxiv \"%s\"" )
         ("\\.jpg\\'" . "sxiv \"%s\"" )
@@ -70,19 +42,83 @@
         ("\\.mp4\\'" . "mpv \"%s\""  )
         ))
 
-;; simplenote
-(use-package simplenote2
-  :config
-  (load-file "~/.config/doom/simplenote.el")
-  (simplenote2-setup))
+(after! org
+  (setq
+   org-todo-keywords
+   '((sequence "TODO(t)" "DOING(i!)"  "|" "DONE(d!)" "KILL(k!)" )
+     (sequence "MOVED(m@/!)" "CANCELED(c@)" "|"))
+   org-todo-keyword-faces
+   '(("DOING" . "green")
+     ("MOVED" . "brown")
+     ("KILL" . "grey")
+     ("CANCELED" . (:foreground "blue" :weight bold))
+     )))
 
+(setq doom-font (font-spec :family "DejaVuSansMono" :size 14))
 
-;; org-roam
-(after! org-roam
-  (setq org-roam-directory "~/Nextcloud/roam")
+(setq doom-theme 'doom-nord)
+
+(after! org-capture
+  (setq org-capture-templates
+        '(
+          ("d" "daily" entry
+           (file+olp+datetree +org-daily-file)
+           "* TODO %?\n%i\n%a" :prepend t)
+          ("l" "life" entry
+           (file+headline +org-life-file "Unfiled")
+           "* %?\nCAPTURED: %U\n%i\n%a" :prepend t)
+          ("t" "todo(life)" entry
+           (file+headline +org-life-file "Unfiled")
+           "* TODO %?\nCAPTURED: %U\n%i\n%a" :prepend t)
+          ("j" "journal" entry
+           (file+olp+datetree +org-journal-file)
+           "* %U %?\n%i\n%a")
+          ("r" "reflect" entry
+           (file+olp+datetree +org-reflect-file)
+           "* %U %?\n%i\n%a")
+          )
+        )
   )
 
-;; deft
+(use-package org-roam
+      :hook
+      (after-init . org-roam-mode)
+      :custom
+      (org-roam-directory +org-knowledge-base-dir))
+
+;; (use-package org-roam-server
+;;   :ensure t
+;;   :config
+;;   (setq org-roam-server-host "127.0.0.1"
+;;         org-roam-server-port 8080
+;;         org-roam-server-export-inline-images t
+;;         org-roam-server-authenticate nil
+;;         org-roam-server-label-truncate t
+;;         org-roam-server-label-truncate-length 60
+;;         org-roam-server-label-wrap-length 20))
+
+(use-package org-re-reveal
+  :ensure t
+  :config
+  (setq org-re-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/"))
+
+(require 'simplenote2)
+(load! "simplenote.el")
+(simplenote2-setup)
+(map! :leader
+      (:prefix-map ("S" . "simplenote")
+       :desc "browse" "b" 'simplenote2-browse
+       :desc "new-from-buffer" "n" 'simplenote2-create-note-from-buffer
+       :desc "sync" "s" 'simplenote2-sync-notes
+       )
+      )
+(use-package simplenote2
+  :config
+  (setq simplenote2-markdown-notes-mode 'markdown-mode
+        simplenote2-notes-mode 'markdown-mode
+        )
+  )
+
 (after! deft
-  (setq deft-directory "~/Nextcloud/roam")
+  (setq deft-directory +org-knowledge-base-dir)
   )

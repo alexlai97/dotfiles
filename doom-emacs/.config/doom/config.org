@@ -193,16 +193,16 @@ There are two ways to load a theme. Both assume the theme is installed and avail
 
 ** org-roam-server
 #+begin_src emacs-lisp :tangle yes
-(use-package org-roam-server
-  :ensure t
-  :config
-  (setq org-roam-server-host "127.0.0.1"
-        org-roam-server-port 8080
-        org-roam-server-export-inline-images t
-        org-roam-server-authenticate nil
-        org-roam-server-label-truncate t
-        org-roam-server-label-truncate-length 60
-        org-roam-server-label-wrap-length 20))
+;; (use-package org-roam-server
+;;   :ensure t
+;;   :config
+;;   (setq org-roam-server-host "127.0.0.1"
+;;         org-roam-server-port 8080
+;;         org-roam-server-export-inline-images t
+;;         org-roam-server-authenticate nil
+;;         org-roam-server-label-truncate t
+;;         org-roam-server-label-truncate-length 60
+;;         org-roam-server-label-wrap-length 20))
 #+end_src
 
 ** org-re-reveal

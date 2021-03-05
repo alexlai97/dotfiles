@@ -23,7 +23,7 @@ unknownMesg(){
 
 runcommand=""
 case $suffix in 
-   c|C|cc|c++|cpp|rs) runcommand="./$base";;
+   c|C|cc|c++|cpp|rs) runcommand="timeout 5 ./$base";;
    java) runcommand="java $base"  ;;
    go) runcommand="./$base"  ;;
    ly) runcommand="echo "  ;;

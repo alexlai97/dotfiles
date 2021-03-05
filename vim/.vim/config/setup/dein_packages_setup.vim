@@ -16,27 +16,25 @@ if dein#load_state('~/.cache/dein')
 
   " nvim special (heavy tasks)
   if has('nvim')
-
+      call dein#add('simplenote-vim/simplenote.vim')
+      call dein#add('lervag/vimtex')
+      call dein#add('tpope/vim-fugitive')
+      call dein#add('mhinz/vim-signify')
+      call dein#add('neoclide/coc.nvim', {'merge':0, 'rev': 'release'})
+      call dein#add('majutsushi/tagbar')
+      call dein#add('easymotion/vim-easymotion')
+      call dein#add('deviantfero/wpgtk.vim')
   else " vim special
     call dein#add('roxma/nvim-yarp')
     call dein#add('roxma/vim-hug-neovim-rpc')
   endif
 
   " Common plugins for vim and nvim
-  call dein#add('simplenote-vim/simplenote.vim')
-  call dein#add('lervag/vimtex')
-  call dein#add('majutsushi/tagbar')
-  call dein#add('tpope/vim-fugitive')
-  call dein#add('mhinz/vim-signify')
-  call dein#add('neoclide/coc.nvim', {'merge':0, 'rev': 'release'})
-  call dein#add('honza/vim-snippets')
-  call dein#add('easymotion/vim-easymotion')
-  " call dein#add('itchyny/lightline.vim')
-  call dein#add('deviantfero/wpgtk.vim')
-  call dein#add('Yggdroot/indentLine')
-
-  call dein#add('jiangmiao/auto-pairs')
   call dein#add('liuchengxu/vim-which-key')
+  call dein#add('honza/vim-snippets')
+  " call dein#add('itchyny/lightline.vim')
+  " call dein#add('Yggdroot/indentLine')
+  call dein#add('jiangmiao/auto-pairs')
   call dein#add('tpope/vim-commentary')
   call dein#add('terryma/vim-multiple-cursors')
   call dein#add('mhinz/vim-startify')
@@ -46,8 +44,8 @@ if dein#load_state('~/.cache/dein')
   call dein#add('cespare/vim-toml')
   call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd'],
               \ 'build': 'sh -c "cd app & yarn install"' })
-  call dein#add('luffah/vim-zim') 
-  call dein#add('ap/vim-css-color') 
+  " call dein#add('luffah/vim-zim') 
+  " call dein#add('ap/vim-css-color') 
 
   " Required:
   call dein#end()
