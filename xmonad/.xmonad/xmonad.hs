@@ -4,14 +4,28 @@ import Data.Monoid
 import XMonad.Util.SpawnOnce
 import XMonad.Util.Run
 import XMonad.Util.EZConfig (checkKeymap, additionalKeys, additionalKeysP)
+import XMonad.Util.NamedScratchpad
 import XMonad.Hooks.ManageDocks
 import System.Exit
 import XMonad.Hooks.DynamicLog (dynamicLogWithPP, wrap, xmobarPP, sjanssenPP, xmobarColor, shorten, PP(..))
-import XMonad.Actions.CycleWS (toggleWS, prevWS, nextWS)
+import XMonad.Actions.CycleWS (toggleWS, toggleWS', prevWS, nextWS, moveTo, WSType( NonEmptyWS ))
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 import qualified XMonad.Layout.ToggleLayouts as T (toggleLayouts, ToggleLayout(Toggle))
+import qualified XMonad.Layout.MultiToggle as MT (Toggle(..))
+
+import XMonad.Layout.MultiToggle (mkToggle, single, EOT(EOT), (??))
+import XMonad.Layout.MultiToggle.Instances (StdTransformers(NBFULL, MIRROR, NOBORDERS))
+
+import XMonad.Layout.Spiral
+import XMonad.Layout.NoBorders (noBorders, smartBorders)
+import XMonad.Layout.Fullscreen (fullscreenFull, fullscreenSupport)
+import XMonad.Layout.Grid (Grid(..))
+import XMonad.Layout.TwoPane (TwoPane(..))
+import XMonad.Layout.Tabbed (simpleTabbed, tabbed)
+import XMonad.Layout.Spacing
+import XMonad.Hooks.EwmhDesktops  -- for some fullscreen events, also for xcomposite in obs.
 
 ------------------------------------------------------------------------
 -- Variables
@@ -109,6 +123,19 @@ myEventHook = mempty
 --
 -- myLogHook = return ()
 
+myScratchPads :: [NamedScratchpad]
+myScratchPads = [ NS "terminal" spawnTerm findTerm manageTerm
+                ]
+  where
+    spawnTerm  = myTerminal ++ " --class ScratchPaD"
+    findTerm   = resource =? "ScratchPaD"
+    manageTerm = customFloating $ W.RationalRect l t w h
+               where
+                 h = 0.9
+                 w = 0.9
+                 t = 0.95 -h
+                 l = 0.95 -w
+
 ------------------------------------------------------------------------
 -- Key bindings
 myEZKeys :: [(String, X())]
@@ -126,6 +153,9 @@ myEZKeys =
      -- Deincrement the number of windows in the master area
      --, ("M-<KP_Subtract>", sendMessage (IncMasterN (-1))) -- FIXME
      , ("M-t", withFocused $ windows . W.sink)  -- Push floating window back to tile
+     ,("M-f", sendMessage (MT.Toggle NBFULL) >> sendMessage ToggleStruts) -- toggle fullscreen (to no border full layout and toggle struct)
+     , ("M-C-<Page_Down>", decWindowSpacing 2)           -- Decrease window spacing
+     , ("M-C-<Page_Up>", incWindowSpacing 2)           -- Increase window spacing
 
   -- Windows Navigation
      , ("M-m", windows W.focusMaster)  -- Move focus to the master window
@@ -137,20 +167,21 @@ myEZKeys =
 
      , ("M-<Left>", prevWS)     -- jump to previous workspace
      , ("M-<Right>", nextWS)     -- jump to previous workspace
-     , ("M-<Tab>", toggleWS)     -- jump to last workspace
+     , ("M-<Tab>", toggleWS' ["NSP"])     -- jump to last workspace
 
   -- Layouts
      -- Rotate through the available layout algorithms
      , ("M-<Space>", sendMessage NextLayout)
      --  Reset the layouts on the current workspace to default
-     --, ("M-S-<Space>", setLayout $ XMonad.layoutHook conf)
+     --, ("M-S-<Space>", setLayout $ XMonad.layoutHook conf) -- On by default
 
   -- Misc
-     ,("M-b", sendMessage ToggleStruts) -- toggle structs, e.g. xmobar
+     ,("M-b", sendMessage ToggleStruts) -- toggle structs
      ,("M-<F1>", spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
 
   -- Launcher
      , ("M-r", spawn "rofi -show run") -- run
+     , ("M-w", spawn "rofi -show window") -- select window
      , ("M-p", spawn "rofi -show drun -display-drun 'Program'") -- programs
 
   -- Applications
@@ -160,6 +191,7 @@ myEZKeys =
      , ("M-M1-x", spawn "emacsclient -nc")
      , ("M-M1-e", spawn "rofiunicode")
      , ("M-M1-p", spawn "passmenu")
+     , ("M-M1-d", namedScratchpadAction myScratchPads "terminal")
 
   -- System
      , ("M-S-<Page_Down>", spawn "oblogout")
@@ -207,19 +239,13 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
     -- you may also bind events to the mouse scroll wheel (button4 and button5)
     ]
 
+mySpacing i = spacingRaw False (Border i i i i) True (Border i i i i) True
+
 ------------------------------------------------------------------------
 -- Layouts:
-
--- You can specify and transform your layouts by modifying these values.
--- If you change layout bindings be sure to use 'mod-shift-space' after
--- restarting (with 'mod-q') to reset your layout state to the new
--- defaults, as xmonad preserves your old layout settings by default.
---
--- The available layouts.  Note that each layout is separated by |||,
--- which denotes layout choice.
---
-myLayout = avoidStruts (tiled ||| Mirror tiled ||| Full)
+myLayoutHook = avoidStruts $ smartBorders $ mkToggle (NBFULL ?? EOT) myDefaultLayout
   where
+     myDefaultLayout = (mySpacing 8 tiled) ||| simpleTabbed ||| noBorders Full
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
 
@@ -248,10 +274,17 @@ myLayout = avoidStruts (tiled ||| Mirror tiled ||| Full)
 -- 'className' and 'resource' are used below.
 --
 myManageHook = composeAll
-    [ className =? "MPlayer"        --> doFloat
+    [
+      className =? "firefox"        --> doShift ( myWorkspaces !! 3 ) -- sends to workspace 4
+    , (className =? "firefox" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
+    , className =? "MPlayer"        --> doFloat
+    , className =? "Event Tester"        --> doFloat
+    , className =? "Oblogout"        --> doFloat
+    , className =? "Sxiv"        --> doFloat
     , className =? "Gimp"           --> doFloat
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore ]
+     <+> namedScratchpadManageHook myScratchPads
 
 ------------------------------------------------------------------------
 -- Startup hook
@@ -268,6 +301,8 @@ myStartupHook = do
   spawnOnce "fcitx"
   spawnOnce "picom -b"
   spawnOnce "thunar --daemon"
+  spawnOnce "nextcloud --background"
+  spawnOnce "trayer --edge top --align right --width 10  --SetDockType true --SetPartialStrut true --expand true --transparent true --alpha 0 --tint 0x282c34  --height 21 &"
 
 myConfig = def {
       -- simple stuff
@@ -285,7 +320,7 @@ myConfig = def {
         mouseBindings      = myMouseBindings,
 
       -- hooks, layouts
-        layoutHook         = myLayout,
+        layoutHook         = myLayoutHook,
         manageHook         = myManageHook,
         handleEventHook    = myEventHook,
         startupHook        = myStartupHook
@@ -300,8 +335,8 @@ myConfig = def {
 main :: IO ()
 main = do
   xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobarrc"
-  xmonad $ docks myConfig {
-        logHook = dynamicLogWithPP $ sjanssenPP {
+  xmonad $ docks $ ewmh myConfig {
+        logHook = dynamicLogWithPP $ xmobarPP {
             ppOutput = hPutStrLn xmproc
         }
       }

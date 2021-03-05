@@ -9,10 +9,11 @@ import Data.Monoid
 import XMonad.Util.SpawnOnce
 import XMonad.Util.Run
 import XMonad.Util.EZConfig (checkKeymap, additionalKeys, additionalKeysP)
+import XMonad.Util.NamedScratchpad
 import XMonad.Hooks.ManageDocks
 import System.Exit
 import XMonad.Hooks.DynamicLog (dynamicLogWithPP, wrap, xmobarPP, sjanssenPP, xmobarColor, shorten, PP(..))
-import XMonad.Actions.CycleWS (toggleWS, prevWS, nextWS)
+import XMonad.Actions.CycleWS (toggleWS, toggleWS', prevWS, nextWS, moveTo, WSType( NonEmptyWS ))
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -134,6 +135,22 @@ myEventHook = mempty
 -- myLogHook = return ()
 #+end_src
 
+* Drop down terminal (scratchpad)
+#+BEGIN_SRC haskell
+myScratchPads :: [NamedScratchpad]
+myScratchPads = [ NS "terminal" spawnTerm findTerm manageTerm
+                ]
+  where
+    spawnTerm  = myTerminal ++ " --class ScratchPaD"
+    findTerm   = resource =? "ScratchPaD"
+    manageTerm = customFloating $ W.RationalRect l t w h
+               where
+                 h = 0.9
+                 w = 0.9
+                 t = 0.95 -h
+                 l = 0.95 -w
+#+END_SRC
+
 * Keybindings
 #+begin_src haskell
 ------------------------------------------------------------------------
@@ -167,7 +184,7 @@ myEZKeys =
 
      , ("M-<Left>", prevWS)     -- jump to previous workspace
      , ("M-<Right>", nextWS)     -- jump to previous workspace
-     , ("M-<Tab>", toggleWS)     -- jump to last workspace
+     , ("M-<Tab>", toggleWS' ["NSP"])     -- jump to last workspace
 
   -- Layouts
      -- Rotate through the available layout algorithms
@@ -191,6 +208,7 @@ myEZKeys =
      , ("M-M1-x", spawn "emacsclient -nc")
      , ("M-M1-e", spawn "rofiunicode")
      , ("M-M1-p", spawn "passmenu")
+     , ("M-M1-d", namedScratchpadAction myScratchPads "terminal")
 
   -- System
      , ("M-S-<Page_Down>", spawn "oblogout")
@@ -279,11 +297,17 @@ myLayoutHook = avoidStruts $ smartBorders $ mkToggle (NBFULL ?? EOT) myDefaultLa
 -- 'className' and 'resource' are used below.
 --
 myManageHook = composeAll
-    [ className =? "MPlayer"        --> doFloat
+    [
+      className =? "firefox"        --> doShift ( myWorkspaces !! 3 ) -- sends to workspace 4
+    , (className =? "firefox" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
+    , className =? "MPlayer"        --> doFloat
+    , className =? "Event Tester"        --> doFloat
+    , className =? "Oblogout"        --> doFloat
+    , className =? "Sxiv"        --> doFloat
     , className =? "Gimp"           --> doFloat
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore ]
-
+     <+> namedScratchpadManageHook myScratchPads
 #+end_src
 
 * Startup
