@@ -1,4 +1,5 @@
 -- IMPORTS
+import Data.Maybe (fromJust, isJust)
 import XMonad
 import Data.Monoid
 import XMonad.Util.SpawnOnce
@@ -34,7 +35,23 @@ import XMonad.Hooks.EwmhDesktops  -- for some fullscreen events, also for xcompo
 -- Variables
 myTerminal      = "alacritty"
 myModMask       = mod4Mask -- "windows key"
-myWorkspaces    = ["home","code","files","web","media"] ++ map show [5..9]
+myWorkspaces    = [
+   "<fn=2>\xf015</fn>" --  home
+  ,"<fn=2>\xf120</fn>" --  code
+  ,"<fn=2>\xf15b</fn>" --  files
+  ,"<fn=2>\xf269</fn>" --  firefox
+  ,"<fn=2>\xf144</fn>" --  media
+  ,"<fn=2>\xf06c</fn>" --  leaf
+  ] ++ map show [7..9]
+
+-- clickable: FIXME not working
+myWorkspaceIndices = M.fromList $ zipWith (,) myWorkspaces [1..] -- (,) == \x y -> (x,y)
+clickable ws = "<action=xdotool key super+"++show i++">"++ws++"</action>"
+    where i = fromJust $ M.lookup ws myWorkspaceIndices
+
+
+windowCount :: X (Maybe String)
+windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace . W.current . windowset
 
 -- Border colors for unfocused and focused windows, respectively.
 myNormalBorderColor  = "#cfd5d6"
@@ -300,7 +317,7 @@ myManageHook = composeAll
 -- By default, do nothing.
 myStartupHook = do
   return ()
-  checkKeymap myConfig myEZKeys
+  checkKeymap myXConfig myEZKeys
   spawnOnce "~/.fehbg &"
   spawnOnce "fcitx"
   spawnOnce "picom -b"
@@ -308,7 +325,8 @@ myStartupHook = do
   spawnOnce "nextcloud --background"
   spawnOnce "trayer --edge top --align right --width 10  --SetDockType true --SetPartialStrut true --expand true --transparent true --alpha 0 --tint 0x282c34  --height 21 &"
 
-myConfig = def {
+-- my Xconfig
+myXConfig = def {
       -- simple stuff
         terminal           = myTerminal,
         focusFollowsMouse  = myFocusFollowsMouse,
@@ -335,12 +353,32 @@ myConfig = def {
     , ((myModMask , xK_minus ), sendMessage (IncMasterN (-1))) -- Decrement the number of windows in the master area
     ]
 
+-- myPP
+myPP = def {
+             ppCurrent = xmobarColor "#98be65" "" . wrap "[" "]"           -- Current workspace in xmobar
+            , ppVisible = xmobarColor "#98be65" ""  -- Visible but not current workspace
+            , ppHidden = xmobarColor "#82AAFF" ""   -- Hidden workspaces in xmobar
+            -- , ppHiddenNoWindows = xmobarColor "#c792ea" "" -- Hidden workspaces (no windows)
+            , ppTitle = xmobarColor "#b3afc2" "" . shorten 60               -- Title of active window in xmobar
+            , ppSep =  "<fc=#666666> <fn=1>|</fn> </fc>"                    -- Separators in xmobar
+            , ppUrgent = xmobarColor "#C45500" "" . wrap "!" "!"            -- Urgent workspace
+            , ppExtras  = [windowCount]                                     -- # of windows current workspace
+            , ppLayout = (\x -> case x of
+                                  "Spacing Tall" -> "Tall"
+                                  "Tabbed Simplest" -> "Tabbed"
+                                  "Full" -> "Full"
+                         )
+            , ppOrder  = \(ws:l:t:ex) -> [ws,l]++ex++[t]
+        }
+
+-- set a handle
+myPP' h = myPP { ppOutput = hPutStrLn h }
+
+-- set a handle
+myXConfig' h = myXConfig {logHook = dynamicLogWithPP $ myPP' h}
+
 -- Main
 main :: IO ()
 main = do
   xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobarrc"
-  xmonad $ docks $ ewmh myConfig {
-        logHook = dynamicLogWithPP $ xmobarPP {
-            ppOutput = hPutStrLn xmproc
-        }
-      }
+  xmonad $ docks $ ewmh $ myXConfig' xmproc
