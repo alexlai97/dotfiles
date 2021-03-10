@@ -2,14 +2,14 @@ Config {
     -- appearance
     font = "xft:DejaVuSansMono Nerd Font Bold:size=10"
     , additionalFonts = [ "xft:DejaVuSansMono Nerd Font:pixelsize=13:antialias=true:hinting=true"
-    , "xft:FontAwesome:pixelsize=13"]
+    , "xft:FontAwesome:pixelsize=13", "xft:Noto Sans CJK:size=10:antialias=true"]
     , borderColor = "#646464"
     , border = TopB
     , bgColor = "#282c34"
     , fgColor = "grey"
     , alpha = 255
-    -- , position = Top
-    , position = TopW L 90
+    , position = TopW L 91
+    --, position = Static { xpos = 0 , ypos = 0, width = 1240, height = 24 }
     , textOffset = -1
     , iconOffset = -1
 
@@ -25,7 +25,13 @@ Config {
     -- layout
     , sepChar = "%"
     , alignSep = "}{"
-    , template = "%UnsafeStdinReader% }{ %cpu% | %memory% | %battery% | %dynnetwork% | <fc=#f4d7a4>%date%</fc> |"
+    , template = "%UnsafeStdinReader% }{ \
+        \<action=`rofi -show run`><fn=1> </fn></action>| \
+        \<fc=#E06C00>%cpu% | </fc>\
+        \<fc=#7F7B4D>%memory% | </fc>\
+        \<fc=#4E8374>%battery% | </fc>\
+        \<fc=#1D8A9A>%dynnetwork% | </fc>\
+        \%date% || "
 
     -- plugins
     , commands = [ Run Weather "EGPF" ["-t","<station>: <tempC>C",
@@ -37,22 +43,25 @@ Config {
                 "--normal","green","--high","red"] 10
         , Run Network "eth1" ["-L","0","-H","32",
                     "--normal","green","--high","red"] 10
-        , Run Cpu ["-t", "<fn=1> </fn><total>%", "-L","3","-H","50",
-                    "--normal","green","--high","red"] 10
+        , Run Cpu ["-t", "<fn=1> </fn><total>%", "-L","10","-H","50",
+                   -- "--low","darkgreen",
+                    "--normal","darkorange",
+                    "--high","#E45525"] 10
 
         , Run Memory ["-t","<fn=1> </fn><usedratio>%"] 10
         -- , Run Memory ["-t","<icon=memory-icon_20.xpm/> <usedratio>%"] 10
         , Run Swap [] 10
         , Run Com "uname" ["-s","-r"] "" 36000
-        , Run Date "%a %b %d %H:%M:%S" "date" 10
+        , Run Date "<fc=#89B8A9><fn=1> </fn>%a %b %d | </fc>\
+                \<fc=#F4E5B8><fn=1> </fn>%H:%M:%S</fc>" "date" 10
 
         -- battery monitor
-        , Run Battery  [ "--template" , "<acstatus>"
+        , Run Battery  [ "--template" , "<fn=1> </fn> <acstatus>"
                        , "--Low"      , "10"        -- units: %
                        , "--High"     , "80"        -- units: %
                        , "--low"      , "darkred"
                        , "--normal"   , "darkorange"
-                       , "--high"     , "darkgreen"
+                       --, "--high"     , "darkgreen"
 
                        , "--" -- battery specific options
                        -- discharging status
@@ -60,7 +69,7 @@ Config {
                        -- AC "on" status
                        , "-O"	, "<left>% Charging"
                        -- charged status
-                       , "-i"	, "<left>% <fn=1> </fn>"
+                       , "-i"	, "<left>%"
                        , "-a", "notify-send -u critical 'Battery running out!!'"
                        ] 50
 
@@ -68,9 +77,9 @@ Config {
         , Run DynNetwork     [ "--template" , "<fn=1> </fn>↑<tx>kB/s ↓<rx>kB/s"
                              , "--Low"      , "1000"       -- units: B/s
                              , "--High"     , "5000"       -- units: B/s
-                             , "--low"      , "darkgreen"
+                             , "--low"      , "#4E8374"
                              , "--normal"   , "darkorange"
-                             , "--high"     , "darkred"
+                             , "--high"     , "#E45525"
                              ] 10
         , Run UnsafeStdinReader
     ]
