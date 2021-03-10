@@ -19,13 +19,14 @@ stow -v -d . -t ~/ nvim
 stow -v -d . -t ~/ tmux
 ```
 
-## Highlights you may be interested
+## you may be interested in
 - [vifm](./vifm/.config/vifm/)
 - [tmux](./tmux/.tmux.conf)
 - [vim](./vim/.vim/)
 - [nvim](./nvim/.config/nvim/)
 - [doom-emacs](./doom-emacs/.config/doom/)
 - [awesomewm](./awesome/.config/awesome/)
+- [xmonad](./xmonad)
 - [(neo)mutt](./mutt/.config/mutt/) (config modified after generating from [mutt-wizard](https://github.com/LukeSmithxyz/mutt-wizard))
 - [scripts](./scripts/.scripts/)
     - [weather](./scripts/.scripts/weather)
@@ -33,11 +34,13 @@ stow -v -d . -t ~/ tmux
     - [key-handler for sxiv](./sxiv/.config/sxiv/exec/key-handler)
 
 ## Screenshot
-neofetch+coronascript
+xmonad+doom-emacs
+![xmonad+doom-emacs](screenshot-xmonad-doom-emacs.png)
+awesome+neofetch+coronascript
 ![neofetch+coronascript](screenshot-neofetch+coronascript.png)
-tmux+nvim+vifm
+awesome+tmux+nvim+vifm
 ![tmux+nvim+vifm](screenshot-tmux+nvim+vifm.png)
-sxiv+neomutt+newsboat
+awesome+sxiv+neomutt+newsboat
 ![sxiv+neomutt+newsboat](screenshot-sxiv+neomutt+newsboat.png)
 
 [gnustow]: https://www.gnu.org/software/stow/
