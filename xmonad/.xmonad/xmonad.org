@@ -39,8 +39,9 @@ import XMonad.Util.SpawnOnce
 #+begin_src haskell
 ------------------------------------------------------------------------
 -- Variables
-
 myTerminal = "alacritty"
+myBrowser = "firefox"
+myEmacs = "emacsclient -c "
 
 myModMask = mod4Mask -- "windows key"
 
@@ -180,18 +181,27 @@ myEZKeys =
     -- Launcher
     ("M-r", spawn "rofi -show run"), -- run
     ("M-w", spawn "rofi -show window"), -- select window
-    ("M-o", spawn "dmenu_extended_run"), -- dmenu_extended_run
-    ("M-p", spawn "rofi -show drun -display-drun 'Program'"), -- programs
-    ("M-M1-h", xmonadPrompt amberXPConfig {promptKeymap = vimLikeXPKeymap}), -- xmonad Prompt, useful ?
+    ("M-p f", spawn "dmenu_extended_run"), -- dmenu_extended_run
+    ("M-p p", spawn "rofi -show drun -display-drun 'Program'"), -- programs
+    ("M-p u", spawn "rofiunicode"),
+    -- ("M-M1-h", xmonadPrompt amberXPConfig {promptKeymap = vimLikeXPKeymap}), -- xmonad Prompt, useful ?
 
     -- Applications
     ("M-<Return>", spawn myTerminal), -- terminal
     ("M-S-<Return>", spawn (myTerminal ++ " -e fish -c 'tmux_load_or_new_session Daily'")), -- tmux "Daily"
     ("M-M1-f", spawn "firefox"),
-    ("M-M1-x", spawn "emacsclient -nc"),
-    ("M-M1-e", spawn "rofiunicode"),
-    ("M-M1-p", spawn "passmenu"),
-    ("M-M1-d", namedScratchpadAction myScratchPads "terminal"),
+    ("M-M1-p", spawn "passmenu"), -- password manager
+    ("M-d", namedScratchpadAction myScratchPads "terminal"), -- drop down terminal
+    ("M-<F2>", spawn "sxiv -t ~/Pictures/Wallpaper/"),
+
+    ("M-e e", spawn myEmacs),
+    ("M-e b", spawn (myEmacs ++ "--eval '(ibuffer)'")),
+    ("M-e d", spawn (myEmacs ++ "--eval '(dired nil)'")),
+    ("M-e s", spawn (myEmacs ++ "--eval '(eshell)'")),
+    ("M-e n", spawn (myEmacs ++ "--eval '(simplenote2-browse)'")),
+    ("M-e x", spawn (myEmacs ++ "--eval '(org-capture)'")),
+    ("M-e r", spawn (myEmacs ++ "--eval '(org-roam-find-file)'")),
+
     -- System
     ("M-S-<Page_Down>", spawn "oblogout"),
     ("<XF86PowerOff>", spawn "oblogout"), -- PowerOff show oblogout
@@ -220,6 +230,9 @@ myEZKeys =
   ]
 
 #+end_src
+
+#+RESULTS:
+: <interactive>:84:3: error: parse error on input ‘]’
 
 * Drop down terminal (scratchpad)
 #+BEGIN_SRC haskell
@@ -304,16 +317,22 @@ myStartupHook = do
 --
 myManageHook =
   composeAll
-    [ className =? "firefox" --> doShift (myWorkspaces !! 3), -- sends to workspace 4
-      (className =? "firefox" <&&> resource =? "Dialog") --> doFloat, -- Float Firefox Dialog
+    [ className =? "confirm"         --> doFloat,
+      className =? "file_progress"   --> doFloat,
+      className =? "dialog"          --> doFloat,
+      className =? "download"        --> doFloat,
+      className =? "error"           --> doFloat,
+      className =? "notification"    --> doFloat,
+      className =? "pinentry-gtk-2"  --> doFloat,
+      className =? "splash"          --> doFloat,
+      className =? "toolbar"         --> doFloat,
+      className =? "firefox" --> doShift (myWorkspaces !! 3), -- sends to workspace 4
       className =? "mpv" --> doFloat <+> doShift (myWorkspaces !! 4),
       className =? "Event Tester" --> doFloat,
       className =? "Oblogout" --> doFloat,
       className =? "Sxiv" --> doFloat,
       className =? "Gimp" --> doFloat,
-      className =? "trayer" --> doIgnore,
-      resource =? "desktop_window" --> doIgnore,
-      resource =? "kdesktop" --> doIgnore
+      className =? "trayer" --> doIgnore
     ]
     <+> namedScratchpadManageHook myScratchPads
 
@@ -380,8 +399,7 @@ myPP' h = myPP {ppOutput = hPutStrLn h}
 #+begin_src haskell
 ------------------------------------------------------------
 -- my Xconfig
-myXConfig =
-  def
+myXConfig = ewmh $ docks $ def
     { -- simple stuff
       terminal = myTerminal,
       focusFollowsMouse = myFocusFollowsMouse,
@@ -420,5 +438,5 @@ myXConfig' h = myXConfig {logHook = dynamicLogWithPP $ myPP' h}
 main :: IO ()
 main = do
   xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobarrc"
-  xmonad $ docks $ ewmh $ myXConfig' xmproc
+  xmonad $ myXConfig' xmproc
 #+end_src
