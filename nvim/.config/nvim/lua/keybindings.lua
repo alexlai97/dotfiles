@@ -57,7 +57,14 @@ wk.register({
     ["<leader>."] = { "<cmd>lua require('telescope.builtin').find_files()<CR>", "Find File" },
     ["<leader>/"] = { "<cmd>lua require('telescope.builtin').live_grep()<CR>", "Live grep at current directory" },
     -- ["<leader><"] = { "<cmd>lua require('telescope.builtin').buffers()<CR>", "switch buffer"},
-    ["<localleader>cd"] = { ":cd %:p:h<CR>", "cd to directory of this file"},
+
+    -- change directory
+    ["<localleader>cd"] = {
+        name = "+cd",
+        d = { ":cd %:p:h<CR>", "cd" },
+        l = { ":lcd %:p:h<CR>", "cd for current window" },
+        t = { ":tcd %:p:h<CR>", "cd for current tab and window" },
+    },
 
     -- switch buffer
     ["[b"] = { ":bprevious<CR>", "Switch to previous buffer"},
@@ -95,5 +102,6 @@ wk.register({
 --}}}
 
 -- Commands {{{
+-- FIXME add c tabshift in filetype/c.vim
 vim.cmd[[ command! Format execute 'lua vim.lsp.buf.formatting()']]
 -- }}}
