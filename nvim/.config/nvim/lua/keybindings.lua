@@ -29,7 +29,7 @@ wk.register({
         
         },
         h = {
-            name = "+help",
+            name = "+help/hunk",
             c = {"<cmd>lua require('telescope.builtin').commands()<CR>", "Commands"},
             k = {"<cmd>lua require('telescope.builtin').keymaps()<CR>", "Keymaps"},
             h = {"<cmd>lua require('telescope.builtin').help_tags()<CR>", "Help Tags"},
@@ -66,6 +66,10 @@ wk.register({
         t = { ":tcd %:p:h<CR>", "cd for current tab and window" },
     },
 
+    -- move line shortcuts
+    ["<A-j>"] = { ":m .+1<CR>==", "move current line down"},
+    ["<A-k>"] = { ":m .-2<CR>==", "move current line up"},
+
     -- switch buffer
     ["[b"] = { ":bprevious<CR>", "Switch to previous buffer"},
     ["]b"] = { ":bnext<CR>", "Switch to next buffer"},
@@ -95,9 +99,23 @@ wk.register({
             n = { "increment to upper named parent"},
             m = { "decrement to previous named node"},
             c = { "increment to upper scope"},
-    }
+    },
+
+    -- move line shortcuts
+    ["<A-j>"] = { ":m \'>+1<CR>gv=gv", "move current line down"},
+    ["<A-k>"] = { ":m \'<-2<CR>gv=gv", "move current line up"},
 },
     {mode = "v", silent = false, noremap = true}
+)
+--}}}
+
+--{{{ insert mode 
+wk.register({
+    -- move line shortcuts
+    ["<A-j>"] = { "<Esc>:m .+1<CR>==gi", "move current line down"},
+    ["<A-k>"] = { "<Esc>:m .-2<CR>==gi", "move current line up"},
+},
+    {mode = "i", silent = false, noremap = true}
 )
 --}}}
 

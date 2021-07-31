@@ -1,4 +1,4 @@
--- bootstrapping
+--{{{ bootstrapping for packer.nvim
 -- automatically ensure that packer.nvim is installed on any machine you clone your configuration to
 local execute = vim.api.nvim_command
 local fn = vim.fn
@@ -9,10 +9,12 @@ if fn.empty(fn.glob(install_path)) > 0 then
     fn.system({'git', 'clone', 'https://github.com/wbthomason/packer.nvim', install_path})
     execute 'packadd packer.nvim'
 end
+--}}} 
 
 vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 
 -- https://github.com/rockerBOO/awesome-neovim
+-- {{{ config for packer
 return require('packer').startup(function()
     -- packer can manage itself
     use 'wbthomason/packer.nvim'
@@ -128,10 +130,8 @@ return require('packer').startup(function()
         requires = {
             'nvim-lua/plenary.nvim'
         },
-        config = function()
-            require('gitsigns').setup()
-        end	,
-        opt = true
+        config = [[require('config.gitsigns')]];
+        opt = false
     }
 
     -- gruvbox
@@ -140,7 +140,7 @@ return require('packer').startup(function()
     -- colorizer
     use { 'norcalli/nvim-colorizer.lua', config = [[require'colorizer'.setup()]], opt = true, disable = true }
 
-    -- todoist
+    -- todoist FIXME. not working
     -- https://github.com/romgrk/todoist.nvim
     use { 'romgrk/todoist.nvim', run = ':TodoistInstall', 
         opt = true, 
@@ -152,3 +152,4 @@ return require('packer').startup(function()
     -- https://github.com/folke/lua-dev.nvim
     -- https://github.com/tjdevries/nlua.nvim
 end)
+-- }}}
