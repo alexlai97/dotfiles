@@ -1,21 +1,17 @@
---{{{ Window movement keybinding
---[[ vim.api.nvim_set_keymap('n', '<c-h>', '<c-w>h', { noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<c-l>', '<c-w>l', { noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<c-j>', '<c-w>j', { noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<c-k>', '<c-w>k', { noremap = true, silent = true}) ]]
---}}}
-
 local wk = require("which-key")
 
 --{{{ normal mode
 wk.register({
-    [";"] = {":", ":"},
+    [";"] = {":", ":"}, -- ";" has one less stroke than ":" 
     ["<leader>"] = {
+        --{{{ <leader>f "+file"
         f = {
             name = "+file",
             f = { "<cmd>lua require('telescope.builtin').find_files()<CR>", "Find File" },
             r = { "<cmd>lua require('telescope.builtin').oldfiles()<CR>", "Open Recent Files" },
         },
+        --}}}
+        --{{{ <leader>b "+buffer"
         b = {
             name = "+buffer",
             p = { ":bprevious<CR>", "Switch to previous buffer"},
@@ -23,14 +19,18 @@ wk.register({
             l = { "<cmd>lua require('telescope.builtin').buffers()<CR>", "switch buffer"},
             s = { ":source %<CR>", "Source current lua/vim file"}
         },
+        --}}}
+        --{{{ <leader>o "+open"
         o = {
             name = "+open",
             p = {"<cmd>lua require 'nvim-tree'.toggle()<CR>", "Toggle nvim-tree (project sidebar)"},
             P = {":NvimTreeFindFile<CR>", "Find file in nvim-tree (project sidebar)"},
             ['-'] = { "<cmd>lua require('telescope.builtin').file_browser()<CR>", "File Browser in Telescope" },
             t = {":vsplit term://fish<CR>", "Open terminal"}
-        
+
         },
+        --}}}
+        --{{{ <leader>h "+help/hunk"
         h = {
             name = "+help/hunk",
             c = {"<cmd>lua require('telescope.builtin').commands()<CR>", "Commands"},
@@ -45,11 +45,15 @@ wk.register({
             R = {"(gitsigns) buffer reset"},
             b = {"(gitsigns) blame line"},
         },
+        --}}}
+        --{{{ <leader>g "+git"
         g = {
             name = "+git",
             g = {":Neogit<CR>", "NeogitStatus"},
             b = {"<cmd>lua require('telescope.builtin').git_branches()<CR>", "Show branches"},
         },
+        --}}}
+        --{{{ <leader>c "+code"
         c = {
             name = "+code",
             D = { "<cmd>lua vim.lsp.buf.declaration()<CR>", "Go to declaration"},
@@ -62,6 +66,8 @@ wk.register({
             i = { "<cmd>lua vim.lsp.buf.implementation()<CR>", "List implementations"},
             s = { "<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", "List implementations"},
         },
+        --}}}
+        --{{{ <leader>S "+Simplenote"
         S = {
             name = "+Simplenote",
             l = { ":SimplenoteList<CR>", "List notes" },
@@ -75,72 +81,86 @@ wk.register({
             P = { ":SimplenotePin<CR>", "Unpin this note" },
             g = { ":SimplenoteGo<CR>", "Go to the linked note" },
         },
+        --}}}
+        --{{{ <leader>q "+quit/session"
         q = {
             name = "+quit/session",
             Q = {":qa!<CR>", "quit nvim without saving"},
             q = {":wqa<CR>", "quit nvim after saving"},
         },
+        --}}}
+        --{{{ <leader>[c] single char shortcuts
+        ["."] = { "<cmd>lua require('telescope.builtin').find_files()<CR>", "Find File" },
+        ["/"] = { "<cmd>lua require('telescope.builtin').live_grep()<CR>", "Live grep at current directory" },
+        ["~"] = { ":messages<CR>", "See messages" },
+        -- ["<"] = { "<cmd>lua require('telescope.builtin').buffers()<CR>", "switch buffer"},
+        --}}} 
     },
 
-    -- misc
-    ["<leader>."] = { "<cmd>lua require('telescope.builtin').find_files()<CR>", "Find File" },
-    ["<leader>/"] = { "<cmd>lua require('telescope.builtin').live_grep()<CR>", "Live grep at current directory" },
-    ["<leader>~"] = { ":messages<CR>", "See messages" },
-    -- ["<leader><"] = { "<cmd>lua require('telescope.builtin').buffers()<CR>", "switch buffer"},
 
-    -- change directory
-    ["<localleader>cd"] = {
-        name = "+cd",
-        d = { ":cd %:p:h<CR>", "cd" },
-        l = { ":lcd %:p:h<CR>", "cd for current window" },
-        t = { ":tcd %:p:h<CR>", "cd for current tab and window" },
+    ["<localleader>"] = {
+        --{{{ <localleader>cd "+cd change directory"
+        ["cd"] = {
+            name = "+cd change directory",
+            d = { ":cd %:p:h<CR>", "cd for the environment" },
+            l = { ":lcd %:p:h<CR>", "cd for current window" },
+            t = { ":tcd %:p:h<CR>", "cd for current tab and window" },
+        },
+        --}}}
+        --{{{ <localleader>rc "+rc edit misc config files"
+        ["rc"] = {
+            name = "+rc edit misc config files",
+            t = {":edit ~/.tmux.conf<cr>", "tmux.conf"}, 
+            n = {
+                name = "nvim",
+                i = {":edit ~/.config/nvim/init.lua<cr>", "init.lua"},
+                p = {":edit ~/.config/nvim/lua/plugins.lua<cr>", "lua/plugins.lua"},
+                k = {":edit ~/.config/nvim/lua/keybindings.lua<cr>", "lua/keybinding.lua"},
+                g = {":edit ~/.config/nvim/lua/general.lua<cr>", "lua/general.lua"},
+            }, 
+            a = {":edit ~/.config/alacritty/alacritty.yml<cr>", "alacritty/alacritty.yml"}, 
+            k = {":edit ~/.config/awesome/keybindings.lua<cr>", "awesome/keybinding.lua"}, 
+            f = {":edit ~/.config/fish/config.fish<cr>", "fish/config.fish"}, 
+        },
+        --}}}
     },
 
-    -- edit rc (config) files
-    ["<localleader>rc"] = {
-        name = "+rc edit",
-        t = {":edit ~/.tmux.conf<cr>", "tmux.conf"}, 
-        n = {
-            name = "nvim",
-            i = {":edit ~/.config/nvim/init.lua<cr>", "init.lua"},
-            p = {":edit ~/.config/nvim/lua/plugins.lua<cr>", "lua/plugins.lua"},
-            k = {":edit ~/.config/nvim/lua/keybindings.lua<cr>", "lua/keybinding.lua"},
-            g = {":edit ~/.config/nvim/lua/general.lua<cr>", "lua/general.lua"},
-        }, 
-        a = {":edit ~/.config/alacritty/alacritty.yml<cr>", "alacritty/alacritty.yml"}, 
-        k = {":edit ~/.config/awesome/keybindings.lua<cr>", "awesome/keybinding.lua"}, 
-        f = {":edit ~/.config/fish/config.fish<cr>", "fish/config.fish"}, 
-    },
-
-    -- move line shortcuts
+    --{{{ move line up/down
     ["<A-j>"] = { ":m .+1<CR>==", "move current line down"},
     ["<A-k>"] = { ":m .-2<CR>==", "move current line up"},
+    --}}}
 
-    -- switch buffer
+    --{{{ buffer next/prev
     ["[b"] = { ":bprevious<CR>", "Switch to previous buffer"},
     ["]b"] = { ":bnext<CR>", "Switch to next buffer"},
+    --}}}
 
-    -- quickfix shortcuts
+    --{{{ quickfix move to next/prev/first/last entry
     ["[q"] =  { ":cprevious<cr>", "quickfix previous"},
     ["]q"] =  { ":cnext<cr>", "quickfix next"}    ,
     ["[Q"] =  { ":cfirst<cr>", "quickfix first"}    ,
     ["]Q"] =  { ":clast<cr>", "quickfix last"}     ,
+    --}}}
 
-    -- gitsigns hunk stuff
+    --{{{ gitsigns move to next/previous hunk
     ["[c"] =  { "(gitsigns) previous diff hunk" },
     ["]c"] =  { "(gitsigns) next diff hunk" },
+    --}}}
 
-    -- toggle nvim-tree
+    --{{{ <F3> toggle nvim-tree 
     ["<F3>"] = {"<cmd>lua require 'nvim-tree'.toggle()<CR>", "Toggle nvim-tree"},
+    --}}}
 
-    -- LSP stuff
+    --{{{ LSP hover/signature_help/diagnostic_prev/next
     ["K"] = { "<cmd>lua vim.lsp.buf.hover()<CR>", "Hover doc"},
     ["<C-k>"] = { "<cmd>lua vim.lsp.buf.signature_help()<CR>", "Display signature info about the symbol"},
     ["[d"] = {"<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>", "Move to previous diagnostic"},
     ["]d"] = {"<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", "Move to next diagnostic"},
+    --}}} 
 
-    -- Treesitter
+    --{{{ gnn start treesitter incremental selection 
     ["gnn"] = { "(treesitter) start incremental selection"},
+    --}}}
 },
 
     -- Options
@@ -150,28 +170,34 @@ wk.register({
 
 --{{{ visual mode 
 wk.register({
-    [";"] = {":", ":"},
+    [";"] = {":", ":"}, -- ";" has one less stroke than ":" 
+    --{{{ gr  Treesitter incremental selection
     ["gr"] = {
         name = "+treesitter",
             n = { "increment to upper named parent"},
             m = { "decrement to previous named node"},
             c = { "increment to upper scope"},
     },
+    --}}}
 
-    -- move line shortcuts
-    ["<A-j>"] = { ":m \'>+1<CR>gv=gv", "move current line down"},
-    ["<A-k>"] = { ":m \'<-2<CR>gv=gv", "move current line up"},
+    --{{{ move lines up/down 
+    ["<A-j>"] = { ":m \'>+1<CR>gv=gv", "move lines down"},
+    ["<A-k>"] = { ":m \'<-2<CR>gv=gv", "move lines up"},
+    --}}} 
 },
+    -- Options
     {mode = "v", silent = false, noremap = true}
 )
 --}}}
 
 --{{{ insert mode 
 wk.register({
-    -- move line shortcuts
+    --{{{move current line up/down
     ["<A-j>"] = { "<Esc>:m .+1<CR>==gi", "move current line down"},
     ["<A-k>"] = { "<Esc>:m .-2<CR>==gi", "move current line up"},
+    --}}}
 },
+    -- Options
     {mode = "i", silent = false, noremap = true}
 )
 --}}}
