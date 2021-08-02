@@ -16,5 +16,6 @@
     }
   },
 
+  "explorer.root.strategies": ["sourceBuffer"],
   "explorer.icon.enableNerdfont": true
 }

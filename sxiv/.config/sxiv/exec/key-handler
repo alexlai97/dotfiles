@@ -47,7 +47,7 @@ case "$1" in
 
     # trash images
     "C-d")
-        tr '\n' '\0' | xargs -0 "$trashcmd" &&
+        tr '\n' '\0' | xargs -0 "$(trashcmd)" &&
                 notify-send "$filename trashed to $trashdir"
         ;;
 

@@ -211,7 +211,7 @@ myEZKeys =
     ("<Print>", spawn "flameshot gui"),
     -- Keyboard LED
     ("<Scroll_lock>", spawn "xset led 3"),
-    ("S-<Scroll_lock>", spawn "xset j-led 3"),
+    ("S-<Scroll_lock>", spawn "xset -led 3"),
     -- Touchpad Toggle
     ("<XF86TouchpadToggle>", spawn "~/.scripts/toggletouchpad.sh")
   ]

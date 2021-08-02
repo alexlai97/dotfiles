@@ -29,8 +29,11 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap ,cw <Plug>(coc-rename)
 
 " Remap for format selected region
-" xmap <leader>=  <Plug>(coc-format-selected)
-" nmap <leader>=  <Plug>(coc-format-selected)
+xmap ,=  <Plug>(coc-format-selected)
+nmap ,=  <Plug>(coc-format-selected)
+
+" Format the whole buffer
+command! -nargs=0 Format :call CocAction('format')
 
 augroup mygroup
   autocmd!
@@ -44,6 +47,7 @@ nmap ,f  :CocList files<CR>
 nmap ,/  :CocList grep<CR>
 nmap ,b  :CocList buffers<CR>
 nmap ,t  :CocList tags<CR>
+nmap ,s  :CocList symbols<CR>
 nmap <F3> :CocCommand explorer<CR>
 
 "-}}}

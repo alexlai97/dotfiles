@@ -12,9 +12,9 @@ icon_path = home_path .. '.local/share/icons/'
 
 
 -- termial and editor
-terminal = os.getenv("TERMINAL") or "termite"
+terminal = os.getenv("TERMINAL") or "st" or "termite"
 terminal_cmd = terminal .. " -e "
-editor = os.getenv("EDITOR") or "nvim"
+editor = os.getenv("EDITOR") or "nvim" or "subl"
 editor_cmd = terminal_cmd .. editor
 
 -- icons
@@ -73,18 +73,19 @@ tag_names = {
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    awful.layout.suit.floating,
     awful.layout.suit.tile, -- master stack mode
-    -- awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
+    awful.layout.suit.magnifier,
+    awful.layout.suit.floating,
+
+    -- awful.layout.suit.tile.left,
     -- awful.layout.suit.tile.top,
-    awful.layout.suit.fair, -- like grid
+    -- awful.layout.suit.fair, -- like grid
     -- awful.layout.suit.fair.horizontal,
     -- awful.layout.suit.spiral,
     -- awful.layout.suit.spiral.dwindle,
     -- awful.layout.suit.max,
     -- awful.layout.suit.max.fullscreen,
-    -- awful.layout.suit.magnifier,
     -- awful.layout.suit.corner.nw,
     -- awful.layout.suit.corner.ne,
     -- awful.layout.suit.corner.sw,

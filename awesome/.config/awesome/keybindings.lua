@@ -112,7 +112,7 @@ globalkeys = gears.table.join(
     awful.key({ super_key },            "r",     function () awful.spawn("rofi -show run") end,
               {description = "rofi run", group = "launcher"}),
     awful.key({ super_key, },           "o",     function () awful.spawn("dmenu_extended_run") end,
-              {description = "run rofi-extended", group = "launcher"}),
+              {description = "run dmenu-extended (e.g. to search files)", group = "launcher"}),
     awful.key({ super_key }, "x",
               function ()
                   awful.prompt.run {
@@ -161,7 +161,7 @@ globalkeys = gears.table.join(
     --{{{ programs group
     -- terminal
     awful.key({ super_key,           }, "Return", function () awful.spawn(terminal) end,
-              {description = "open a terminal", group = "launcher"}),
+              {description = "open a terminal" .. " (" .. terminal .. ")", group = "launcher"}),
     -- awful.key({ super_key, shift_key }, "Return", function () awful.spawn(terminal_cmd .. "fish -c" .. 'tmux_load_or_new_session Daily') end, 
     awful.key({ super_key, shift_key }, "Return", function () awful.spawn(terminal_cmd .. "fish -c 'tmux_load_or_new_session Daily'") end, 
         {description = "open tmux with session Daily", group = "launcher"}),
@@ -173,14 +173,14 @@ globalkeys = gears.table.join(
               {description = "open htop in terminal", group = "programs"}),
     -- awful.key({ super_key, alt_key }, "r", function () awful.spawn(terminal .. " -t ranger -e fish -c ranger") end,
     --           {description = "open ranger in terminal", group = "programs"}),
-    awful.key({ super_key, alt_key }, "v", function () awful.spawn(terminal .. " -t vifm -e fish -c vifmrun") end,
+    awful.key({ super_key, alt_key }, "v", function () awful.spawn(terminal .. " -t vifm -e fish -c vifm") end,
               {description = "open vifm in terminal", group = "programs"}),
-    awful.key({ super_key, alt_key }, "n", function () awful.spawn(terminal .. " -t ncmpcpp -e fish -c ncmpcpp") end,
-              {description = "open ncmpcpp in terminal", group = "programs"}),
-    awful.key({ super_key, alt_key }, "m", function () awful.spawn(terminal .. " -t neomutt -e fish -c neomutt") end,
-              {description = "open neomutt in terminal", group = "programs"}),
-    awful.key({ super_key, alt_key }, "w", function () awful.spawn(terminal .. " -t weechat -e fish -c 'tmux -L weechat attach'") end,
-              {description = "open weechat in tmux", group = "programs"}),
+    -- awful.key({ super_key, alt_key }, "n", function () awful.spawn(terminal .. " -t ncmpcpp -e fish -c ncmpcpp") end,
+    --           {description = "open ncmpcpp in terminal", group = "programs"}),
+    -- awful.key({ super_key, alt_key }, "m", function () awful.spawn(terminal .. " -t neomutt -e fish -c neomutt") end,
+              -- {description = "open neomutt in terminal", group = "programs"}),
+    --[[ awful.key({ super_key, alt_key }, "w", function () awful.spawn(terminal .. " -t weechat -e fish -c 'tmux -L weechat attach'") end,
+              {description = "open weechat in tmux", group = "programs"}), ]]
 
     -- non terminal program
     awful.key({ super_key, alt_key }, "f", function () awful.spawn("firefox") end,

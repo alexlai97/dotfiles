@@ -35,6 +35,7 @@
     "prompt": "Open:",
     "scan_hidden_folders": false,
     "terminal": "alacritty",
+    "terminal_editor": "vim",
     "valid_extensions": [
         "py",
         "svg",

@@ -50,8 +50,8 @@ wmname LG3D
 #-}}}
 
 #{{{- start window manager
-# exec awesome
-exec xmonad
+exec awesome
+#exec xmonad
 #-}}}
 
 

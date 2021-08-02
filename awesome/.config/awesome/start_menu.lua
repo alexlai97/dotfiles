@@ -1,6 +1,8 @@
 local awful = require("awful")
 local beautiful = require("beautiful")
 local menubar = require("menubar")
+local hotkeys_popup = require("awful.hotkeys_popup").widget
+require("variables")
 
 -- {{{ Start Menu
 -- Create a launcher widget and a main menu

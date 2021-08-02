@@ -24,6 +24,7 @@ if dein#load_state('~/.cache/dein')
       call dein#add('majutsushi/tagbar')
       call dein#add('easymotion/vim-easymotion')
       call dein#add('deviantfero/wpgtk.vim')
+      call dein#add('andrejlevkovitch/vim-lua-format')
   else " vim special
     call dein#add('roxma/nvim-yarp')
     call dein#add('roxma/vim-hug-neovim-rpc')

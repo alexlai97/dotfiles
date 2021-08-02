@@ -1,7 +1,7 @@
 #!/bin/dash
 
 termcmd="$TERMINAL -e fish -c"
-guiedit="gnvim"
+guiedit=$GUIEDITOR
 
 usage () {
   echo "Usage: $0 (help)"
@@ -15,7 +15,7 @@ neomutt
 newsboat
 ncmpcpp
 editconfig
-(n)vim" | rofi -dmenu -p "edit config:"
+nvim" | rofi -dmenu -p "edit config:"
 }
 
 # excute rofioption
@@ -24,7 +24,7 @@ execute () {
     'awesome rc.lua') $guiedit ~/.config/awesome/rc.lua;;
     'awesome keybindings') $guiedit ~/.config/awesome/keybindings.lua;;
     'alacritty') $guiedit ~/.config/alacritty/alacritty.yml;;
-    '(n)vim') $guiedit ~/.vim;;
+    'nvim') $guiedit ~/.config/nvim/init.lua;;
     'neomutt') $guiedit ~/.config/mutt/muttrc;;
     'newsboat') $guiedit ~/.newsboat/;;
     'editconfig') $guiedit ~/.scripts/editconfig;;

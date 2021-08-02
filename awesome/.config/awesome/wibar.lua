@@ -5,6 +5,7 @@ local naughty = require("naughty")
 local beautiful = require("beautiful")
 
 -- {{{ Helper functions
+-- FIXME: what does it do again ?
 local function client_menu_toggle_fn()
     local instance = nil
 
@@ -17,11 +18,6 @@ local function client_menu_toggle_fn()
         end
     end
 end
--- }}}
-
--- {{{ Wibar
--- Keyboard map indicator and switcher
--- mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- Helper function to read all content in a file
 local function read_line_from_a_file(file)
@@ -31,6 +27,26 @@ local function read_line_from_a_file(file)
   return t
 end
 
+-- set wallpaper
+local function set_wallpaper(s)
+    -- Wallpaper
+    -- if beautiful.wallpaper then
+    --     local wallpaper = beautiful.wallpaper
+    --     -- If wallpaper is a function, call it with the screen
+    --     if type(wallpaper) == "function" then
+    --         wallpaper = wallpaper(s)
+    --     end
+    --     gears.wallpaper.maximized(wallpaper, s, true)
+    -- end
+    awful.spawn.with_shell(home_path .. ".fehbg")
+end
+-- }}}
+
+-- {{{ Wibar
+-- Keyboard map indicator and switcher
+-- mykeyboardlayout = awful.widget.keyboardlayout()
+
+-- {{{ myXXX programs
 -- mymood
 mymood = wibox.widget.textbox(read_line_from_a_file(cache_path .. 'mymood/mymood.txt'))
 mymood:buttons(gears.table.join(
@@ -101,66 +117,60 @@ mywifi:buttons(gears.table.join(
   awful.button({ }, 1, function() awful.spawn("mywifi update") end) ,
   awful.button({ }, 3, function() awful.spawn("mywifi update") end) 
 ))
+-- }}}
 
--- Create a wibox for each screen and add it
+-- {{{ mouse buttons for taglist
 local taglist_buttons = gears.table.join(
-                    awful.button({ }, 1, function(t) t:view_only() end),
-                    awful.button({ super_key }, 1, function(t)
-                                              if client.focus then
-                                                  client.focus:move_to_tag(t)
-                                              end
-                                          end),
-                    awful.button({ }, 3, awful.tag.viewtoggle),
-                    awful.button({ super_key }, 3, function(t)
-                                              if client.focus then
-                                                  client.focus:toggle_tag(t)
-                                              end
-                                          end),
-                    awful.button({ }, 4, function(t) awful.tag.viewnext(t.screen) end),
-                    awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end)
-                )
+    -- view tag #
+    awful.button({ }, 1, function(t) t:view_only() end), 
+    awful.button({ super_key }, 1, function(t) 
+                              if client.focus then
+                                  client.focus:move_to_tag(t)
+                              end
+                          end),
+    awful.button({ }, 3, awful.tag.viewtoggle),
+    awful.button({ super_key }, 3, function(t)
+                              if client.focus then
+                                  client.focus:toggle_tag(t)
+                              end
+                          end),
+    awful.button({ }, 4, function(t) awful.tag.viewnext(t.screen) end),
+    awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end)
+)
+-- }}} 
 
+-- {{{ mouse buttons for tasklist
 local tasklist_buttons = gears.table.join(
-                     awful.button({ }, 1, function (c)
-                                              if c == client.focus then
-                                                  c.minimized = true
-                                              else
-                                                  -- Without this, the following
-                                                  -- :isvisible() makes no sense
-                                                  c.minimized = false
-                                                  if not c:isvisible() and c.first_tag then
-                                                      c.first_tag:view_only()
-                                                  end
-                                                  -- This will also un-minimize
-                                                  -- the client, if needed
-                                                  client.focus = c
-                                                  c:raise()
-                                              end
-                                          end),
-                     awful.button({ }, 3, client_menu_toggle_fn()),
-                     awful.button({ }, 4, function ()
-                                              awful.client.focus.byidx(1)
-                                          end),
-                     awful.button({ }, 5, function ()
-                                              awful.client.focus.byidx(-1)
-                                          end))
+     awful.button({ }, 1, function (c)
+                              if c == client.focus then
+                                  c.minimized = true
+                              else
+                                  -- Without this, the following
+                                  -- :isvisible() makes no sense
+                                  c.minimized = false
+                                  if not c:isvisible() and c.first_tag then
+                                      c.first_tag:view_only()
+                                  end
+                                  -- This will also un-minimize
+                                  -- the client, if needed
+                                  client.focus = c
+                                  c:raise()
+                              end
+                          end),
+     awful.button({ }, 3, client_menu_toggle_fn()),
+     awful.button({ }, 4, function ()
+                              awful.client.focus.byidx(1)
+                          end),
+     awful.button({ }, 5, function ()
+                              awful.client.focus.byidx(-1)
+                          end))
+--}}}
 
-local function set_wallpaper(s)
-    -- Wallpaper
-    -- if beautiful.wallpaper then
-    --     local wallpaper = beautiful.wallpaper
-    --     -- If wallpaper is a function, call it with the screen
-    --     if type(wallpaper) == "function" then
-    --         wallpaper = wallpaper(s)
-    --     end
-    --     gears.wallpaper.maximized(wallpaper, s, true)
-    -- end
-    awful.spawn.with_shell(home_path .. ".fehbg")
-end
 
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
+-- {{{ set wibar for each screen
 awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
     set_wallpaper(s)
@@ -226,4 +236,6 @@ awful.screen.connect_for_each_screen(function(s)
         },
     }
 end)
+-- }}}
+
 -- }}}

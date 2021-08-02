@@ -11,6 +11,8 @@ nnoremap <silent> ,             :<c-u>WhichKey ','<CR>
 vnoremap <silent> <leader>      :<c-u>WhichKeyVisual '<Space>'<CR>
 vnoremap <silent> <localleader> :<c-u>WhichKeyVisual '\'<CR>
 vnoremap <silent> ,             :<c-u>WhichKeyVisual ','<CR>
+"nnoremap <silent> g             :<c-u>WhichKey 'g'<CR>
+"nnoremap <silent> g             :<c-u>WhichKeyVisual 'g'<CR>
 "}}}
 
 "{{{ setup
