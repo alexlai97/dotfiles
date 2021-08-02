@@ -77,6 +77,14 @@ return require('packer').startup(function()
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {'kyazdani42/nvim-web-devicons'}, -- for file icons
+        config = function()
+            vim.g.nvim_tree_tab_open = 1
+            -- because :e dir/ doesn't work
+            vim.g.nvim_tree_hijack_netrw = 0
+            vim.g.nvim_tree_disable_netrw = 0
+
+            vim.g.nvim_tree_update_cwd = 1
+        end,
         disable = false,
     }
 
@@ -92,7 +100,8 @@ return require('packer').startup(function()
     use {
         "blackCauldron7/surround.nvim",
         config = function()
-            vim.g.surround_prefix = 'S'
+            -- vim.g.surround_prefix = 'S'
+            vim.g.surround_mappings_style = 'surround'
             require "surround".setup {}
         end
     }
@@ -114,8 +123,7 @@ return require('packer').startup(function()
     use { 
         'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' ,
         config = [[require('neogit').setup{}]],
-        opt = true
-
+        opt = false
     }
 
     -- which-key
@@ -145,6 +153,53 @@ return require('packer').startup(function()
     use { 'romgrk/todoist.nvim', run = ':TodoistInstall', 
         opt = true, 
         disable = true
+    }
+
+    -- simplenote.vim
+    -- https://github.com/simplenote-vim/simplenote.vim
+    use { 'simplenote-vim/simplenote.vim', config = [[vim.cmd("source ~/.vim/config/plugins/nvim/simplenote-credentials.vim")]]}
+
+    -- Multiple cursor
+    -- https://github.com/mg979/vim-visual-multi
+    use { 
+        'mg979/vim-visual-multi', branch = 'master', disable= false,
+        config = function()
+            vim.g.VM_theme = 'iceblue'
+            vim.g.VM_mouse_mappings = 1
+        end
+    }
+
+    -- statusline
+    -- https://github.com/hoob3rt/lualine.nvim
+    use {
+        'hoob3rt/lualine.nvim',
+        requires = 'kyazdani42/nvim-web-devicons', opt = false,
+        config = function()
+            require('lualine').setup{
+                options = {
+                    icons_enabled = true,
+                    theme = 'gruvbox',
+                    disabled_filetypes = {"NvimTree"}
+                },
+            }
+        end 
+    }
+
+    -- nvim-tree-textsubjects
+    -- https://github.com/RRethy/nvim-treesitter-textsubjects
+    use {
+        'RRethy/nvim-treesitter-textsubjects',
+        config = function()
+            require'nvim-treesitter.configs'.setup {
+                textsubjects = {
+                    enable = true,
+                    keymaps = {
+                        ['.'] = 'textsubjects-smart',
+                        [';'] = 'textsubjects-container-outer',
+                    }
+                },
+            }
+        end
     }
 
     -- plugins I might check out

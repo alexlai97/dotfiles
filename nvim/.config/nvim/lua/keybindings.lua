@@ -33,6 +33,14 @@ wk.register({
             c = {"<cmd>lua require('telescope.builtin').commands()<CR>", "Commands"},
             k = {"<cmd>lua require('telescope.builtin').keymaps()<CR>", "Keymaps"},
             h = {"<cmd>lua require('telescope.builtin').help_tags()<CR>", "Help Tags"},
+            s = {"(gitsigns) hunk stage"},
+            S = {"(gitsigns) buffer stage"},
+            u = {"(gitsigns) hunk stage undo"},
+            U = {"(gitsigns) reset buffer index"},
+            p = {"(gitsigns) hunk preview"},
+            r = {"(gitsigns) hunk reset"},
+            R = {"(gitsigns) buffer reset"},
+            b = {"(gitsigns) blame line"},
         },
         g = {
             name = "+git",
@@ -50,7 +58,20 @@ wk.register({
             a = {"<cmd>lua vim.lsp.buf.code_action()<CR>", "Select a code action"},
             i = { "<cmd>lua vim.lsp.buf.implementation()<CR>", "List implementations"},
             s = { "<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", "List implementations"},
-        }
+        },
+        S = {
+            name = "+Simplenote",
+            l = { ":SimplenoteList<CR>", "List notes" },
+            u = { ":SimplenoteUpdate<CR>", "Update this note" },
+            t = { ":SimplenoteTrash<CR>", "Trash this note" },
+            d = { ":SimplenoteDelete<CR>", "Completely delete this note" },
+            n = { ":SimplenoteNew<CR>", "Create a note from this buffer" },
+            t = { ":SimplenoteTag<CR>", "Tag this note" },
+            t = { ":SimplenoteTag<CR>", "Tag this note" },
+            p = { ":SimplenotePin<CR>", "Pin this note" },
+            P = { ":SimplenotePin<CR>", "Unpin this note" },
+            g = { ":SimplenoteGo<CR>", "Go to the linked note" },
+        },
     },
 
     -- misc
@@ -66,6 +87,16 @@ wk.register({
         t = { ":tcd %:p:h<CR>", "cd for current tab and window" },
     },
 
+    -- edit rc (config) files
+    ["<localleader>rc"] = {
+        name = "+rc edit",
+        t = {":edit ~/.tmux.conf<cr>", "tmux.conf"}, 
+        n = {":edit ~/.config/nvim/init.lua<cr>", "nvim/init.lua"}, 
+        a = {":edit ~/.config/alacritty/alacritty.yml<cr>", "alacritty/alacritty.yml"}, 
+        k = {":edit ~/.config/awesome/keybindings.lua<cr>", "awesome/keybinding.lua"}, 
+        f = {":edit ~/.config/fish/config.fish<cr>", "fish/config.fish"}, 
+    },
+
     -- move line shortcuts
     ["<A-j>"] = { ":m .+1<CR>==", "move current line down"},
     ["<A-k>"] = { ":m .-2<CR>==", "move current line up"},
@@ -73,6 +104,16 @@ wk.register({
     -- switch buffer
     ["[b"] = { ":bprevious<CR>", "Switch to previous buffer"},
     ["]b"] = { ":bnext<CR>", "Switch to next buffer"},
+
+    -- quickfix shortcuts
+    ["[q"] =  { ":cprevious<cr>", "quickfix previous"},
+    ["]q"] =  { ":cnext<cr>", "quickfix next"}    ,
+    ["[Q"] =  { ":cfirst<cr>", "quickfix first"}    ,
+    ["]Q"] =  { ":clast<cr>", "quickfix last"}     ,
+
+    -- gitsigns hunk stuff
+    ["[c"] =  { "(gitsigns) previous diff hunk" },
+    ["]c"] =  { "(gitsigns) next diff hunk" },
 
     -- toggle nvim-tree
     ["<F3>"] = {"<cmd>lua require 'nvim-tree'.toggle()<CR>", "Toggle nvim-tree"},
