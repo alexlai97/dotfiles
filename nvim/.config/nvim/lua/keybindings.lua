@@ -9,12 +9,12 @@ local wk = require("which-key")
 
 --{{{ normal mode
 wk.register({
+    [";"] = {":", ":"},
     ["<leader>"] = {
         f = {
             name = "+file",
             f = { "<cmd>lua require('telescope.builtin').find_files()<CR>", "Find File" },
             r = { "<cmd>lua require('telescope.builtin').oldfiles()<CR>", "Open Recent Files" },
-            b = { "<cmd>lua require('telescope.builtin').file_browser()<CR>", "File Browser in Telescope" },
         },
         b = {
             name = "+buffer",
@@ -23,9 +23,12 @@ wk.register({
             l = { "<cmd>lua require('telescope.builtin').buffers()<CR>", "switch buffer"},
             s = { ":source %<CR>", "Source current lua/vim file"}
         },
-        t = {
-            name = "+toggle",
-            t = {"<cmd>lua require 'nvim-tree'.toggle()<CR>", "Toggle nvim-tree"},
+        o = {
+            name = "+open",
+            p = {"<cmd>lua require 'nvim-tree'.toggle()<CR>", "Toggle nvim-tree (project sidebar)"},
+            P = {":NvimTreeFindFile<CR>", "Find file in nvim-tree (project sidebar)"},
+            ['-'] = { "<cmd>lua require('telescope.builtin').file_browser()<CR>", "File Browser in Telescope" },
+            t = {":vsplit term://fish<CR>", "Open terminal"}
         
         },
         h = {
@@ -72,11 +75,17 @@ wk.register({
             P = { ":SimplenotePin<CR>", "Unpin this note" },
             g = { ":SimplenoteGo<CR>", "Go to the linked note" },
         },
+        q = {
+            name = "+quit/session",
+            Q = {":qa!<CR>", "quit nvim without saving"},
+            q = {":wqa<CR>", "quit nvim after saving"},
+        },
     },
 
     -- misc
     ["<leader>."] = { "<cmd>lua require('telescope.builtin').find_files()<CR>", "Find File" },
     ["<leader>/"] = { "<cmd>lua require('telescope.builtin').live_grep()<CR>", "Live grep at current directory" },
+    ["<leader>~"] = { ":messages<CR>", "See messages" },
     -- ["<leader><"] = { "<cmd>lua require('telescope.builtin').buffers()<CR>", "switch buffer"},
 
     -- change directory
@@ -91,7 +100,13 @@ wk.register({
     ["<localleader>rc"] = {
         name = "+rc edit",
         t = {":edit ~/.tmux.conf<cr>", "tmux.conf"}, 
-        n = {":edit ~/.config/nvim/init.lua<cr>", "nvim/init.lua"}, 
+        n = {
+            name = "nvim",
+            i = {":edit ~/.config/nvim/init.lua<cr>", "init.lua"},
+            p = {":edit ~/.config/nvim/lua/plugins.lua<cr>", "lua/plugins.lua"},
+            k = {":edit ~/.config/nvim/lua/keybindings.lua<cr>", "lua/keybinding.lua"},
+            g = {":edit ~/.config/nvim/lua/general.lua<cr>", "lua/general.lua"},
+        }, 
         a = {":edit ~/.config/alacritty/alacritty.yml<cr>", "alacritty/alacritty.yml"}, 
         k = {":edit ~/.config/awesome/keybindings.lua<cr>", "awesome/keybinding.lua"}, 
         f = {":edit ~/.config/fish/config.fish<cr>", "fish/config.fish"}, 
@@ -135,6 +150,7 @@ wk.register({
 
 --{{{ visual mode 
 wk.register({
+    [";"] = {":", ":"},
     ["gr"] = {
         name = "+treesitter",
             n = { "increment to upper named parent"},
