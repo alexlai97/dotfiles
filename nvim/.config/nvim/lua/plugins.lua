@@ -12,7 +12,7 @@ end
 --}}} 
 
 -- PackerCompile everything this file gets written
--- vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
+vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 
 -- Packages
 -- references: https://github.com/rockerBOO/awesome-neovim
@@ -77,12 +77,20 @@ return require('packer').startup(function()
         config = function()
             require'lspconfig'.ccls.setup{}
             require'lspconfig'.pylsp.setup{}
-            -- TODO
-            -- rust_analyzer
+            require'lspconfig'.rust_analyzer.setup{}
         end,
         opt = false
     }
     --}}}
+
+    --{{{ vsnip: snippets
+    use {
+        'hrsh7th/vim-vsnip',
+        requires = {{'hrsh7th/vim-vsnip-integ'}, {'rafamadriz/friendly-snippets'}},
+        config = [[require('config.vim-vsnip')]],
+        disable = true,
+    }
+    ---}}}
 
     --{{{ telescope.nvim
     use {
@@ -173,7 +181,7 @@ return require('packer').startup(function()
         requires = {
             'nvim-lua/plenary.nvim'
         },
-        config = [[require('config.gitsigns')]];
+        config = [[require('config.gitsigns')]],
         opt = false
     }
     --}}}
