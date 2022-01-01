@@ -52,9 +52,9 @@ awful.rules.rules = {
     { rule = { name = "Openbox Logout" },
       properties = { fullscreen = true } },
 
-    { rule = { class = "firefox" },
-      properties = { tag = icons.firefox } },
-    { rule_any = { class = {  "Zim" , "Notion" } } ,
+    --[[ { rule = { class = "firefox" },
+      properties = { tag = icons.firefox } }, ]]
+    { rule_any = { class = {  "Zim" } } ,
       properties = { screen = 1, tag = icons.notebook } },
     { rule = { class = "mpv" },
       properties = { tag = icons.play } },

@@ -193,7 +193,7 @@ fileviewer .*/ exa -T -L 3 --colour=always %c
          " \ tree -a %c
 
 " using bat
-fileviewer *.md,*.txt,*.cc,*.c,*.cpp,*.cxx,*.h,*.hs,*.py,*rs,*.log,*.org,*.sql,*.html,*.htm,*.css,*.js,*.json,*.vim,*.lua,*.log
+fileviewer *.md,*.yaml,*.toml,*.txt,*.cc,*.c,*.cpp,*.java,*.cxx,*.h,*.go,*.hs,*.py,*rs,*.log,*.org,*.sql,*.html,*.htm,*.css,*.js,*.json,*.vim,*.lua,*.log
         \ env -uCOLORTERM bat --color always --wrap never --paging never --plain %c 
 
 
@@ -390,7 +390,7 @@ filetype *.7z
 fileviewer *.7z 7z l %c
 
 " Office files
-filextype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx libreoffice %f &
+filextype *.odt,*.ods,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx libreoffice %f &
 fileviewer *.doc catdoc %c
 fileviewer *.docx docx2txt.pl %f -
 

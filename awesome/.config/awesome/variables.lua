@@ -1,7 +1,8 @@
 local awful = require("awful")
 
--- {{{ Variable definitions
--- directories
+-- Variable definitions
+
+--{{{ directory paths
 home_path = os.getenv("HOME") .. '/'
 bin_path = home_path .. '.local/bin/'
 scripts_path = home_path .. '.scripts/'
@@ -9,20 +10,22 @@ cache_path = home_path .. '.cache/'
 wallpaper_path = home_path .. "Pictures/Wallpaper/"
 config_path = home_path .. '.config/'
 icon_path = home_path .. '.local/share/icons/'
+--}}}
 
-
--- termial and editor
+--{{{ termial and editor
 terminal = os.getenv("TERMINAL") or "st" or "termite"
 terminal_cmd = terminal .. " -e "
 editor = os.getenv("EDITOR") or "nvim" or "subl"
 editor_cmd = terminal_cmd .. editor
+--}}}
 
--- icons
+--{{{ icons for archlinux/terminal
 -- gentoo_icon = my_icon_path .. "gentoo/gentoo.png"
 arch_icon = icon_path .. "hicolor/16x16/apps/example-archlinux_icon.png"
 terminal_icon = "/usr/share/icons/Adwaita/16x16/legacy/utilities-terminal.png"
+--}}}
 
--- commands
+--{{{ commands
 -- dbus_consolekit_prefix = "dbus-send --system --print-reply --dest='org.freedesktop.ConsoleKit' /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager."
 -- suspend_command = dbus_consolekit_prefix .. "Suspend  boolean:true"
 -- shutdown_command = dbus_consolekit_prefix .. "Stop"
@@ -38,13 +41,15 @@ mpd_restart_command = "pkill mpd; mpd &; notify-send 'mpd' 'mpd restarted'"
 
 -- mailsync_command = "mailsync; 'Mailsync' 'mailsync completed'"
 -- emergesync_command = "sudo emerge --sync; notify-send 'emerge' 'emerge --sync completed'; eix-update; notify-send 'eix' 'eix-update completed'"
+--}}}
 
--- Default modkey.
+--{{{ Default modkey.
 super_key = "Mod4"
 alt_key   = "Mod1"
 shift_key   = "Shift"
+--}}}
 
--- Each screen has its own tag table.
+--{{{ icons for tag_names
 icons = {}
 icons.home = " "
 -- icons.home = ""
@@ -57,7 +62,9 @@ icons.wechat = " "
 icons.steam = " "
 icons.leaf  = " "
 icons.notebook = " "
+--}}}
 
+--{{{ tag names
 tag_names = {
     icons.home,  -- 1
     icons.code,  -- 2 
@@ -70,7 +77,9 @@ tag_names = {
     icons.notebook  -- 9
 }
 -- tag_names = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }
+--}}}
 
+-- {{{ table of layouts
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.tile, -- master stack mode

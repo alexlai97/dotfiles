@@ -1,12 +1,7 @@
 #{{{ run functions
 
 #{{{ load wpg sequences 
-if ! set -q TMUX
-    if test (id -u) -eq 0
-    else
-        load_wpg_sequences
-    end
-end
+# load_wpg_sequences
 #}}}
 
 #{{{ fzf key bindings
@@ -17,14 +12,24 @@ fzf_key_bindings
 
 #{{{ set variables
 
+# proxy
+# set -xg ALL_PROXY "127.0.0.1:7890"  # 同时设置http、https以及ftp代理
+set -xg http_proxy "http://127.0.0.1:7890"
+set -xg https_proxy $http_proxy
+set -xg HTTP_PROXY $http_proxy
+set -xg HTTPS_PROXY $http_proxy
+set -xg ftp_proxy $http_proxy
+
 # xdg 
 set -xg XDG_CONFIG_HOME $HOME/.config
 set -xg XDG_DATA_HOME $HOME/.local/share
+# set -xg XDG_DATA_DIRS /var/lib/snapd/desktop/
 set -xg XDG_CACHE_HOME $HOME/.cache
 
 # path
 set -xg GOPATH "$HOME/go"
-set -xg PATH $HOME/.scripts $GOPATH/bin $CARGO_HOME/bin $HOME/.luarocks/bin $HOME/.emacs.d/bin $HOME/.config/vifm/scripts $HOME/.local/bin /opt/bin /usr/local/bin /usr/bin /sbin/ /bin /usr/sbin/ /usr/bin/core_perl/ $HOME/.local/share/texlive/2020/bin/x86_64-linux/
+set -xg NODE_PATH "$XDG_DATA_HOME/npm/lib/node_modules"
+set -xg PATH $HOME/.scripts $XDG_DATA_HOME/npm/bin $GOPATH/bin $CARGO_HOME/bin $HOME/.luarocks/bin $HOME/.emacs.d/bin $HOME/.config/vifm/scripts $HOME/.local/share/texlive/2020/bin/x86_64-linux/ /usr/bin/core_perl/ $HOME/.local/bin /opt/bin /usr/local/bin /usr/bin /sbin/ /bin /usr/sbin/ 
 # set -xg MANPATH $HOME/.local/share/texlive/2019/texmf-dist/doc/man $HOME/.local/share/man /usr/local/share/man /usr/share/man 
 # set -xg INFOPATH $HOME/.local/share/texlive/2019/texmf-dist/doc/info
 
@@ -54,7 +59,7 @@ set -xg CM_LAUNCHER rofi # clipmenu
 
 # common
 set -xg EDITOR nvim
-set -xg GUIEDITOR gnvim
+set -xg GUIEDITOR neovide
 set -xg BROWSER firefox
 set -xg TERMINAL alacritty
 set -xg MANPAGER "sh -c 'col -bx | bat -l man -p'"
@@ -67,6 +72,10 @@ set -xg PLAYGROUND "$HOME/Projects/Playground"
 
 # personal
 set -xg KEYID_PRIMARY "F0AAEA19" 
+set -xg EMAIL "alexlai97@outlook.com"
+
+# todoist
+# set -xg TODOIST_API_KEY (pass tools/todoist-api)
 #}}}
 
 #{{{ bindings

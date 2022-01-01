@@ -26,8 +26,8 @@ wk.register({
             p = {"<cmd>lua require 'nvim-tree'.toggle()<CR>", "Toggle nvim-tree (project sidebar)"},
             P = {":NvimTreeFindFile<CR>", "Find file in nvim-tree (project sidebar)"},
             ['-'] = { "<cmd>lua require('telescope.builtin').file_browser()<CR>", "File Browser in Telescope" },
-            t = {":vsplit term://fish<CR>", "Open terminal"}
-
+            t = {":vsplit term://fish<CR>", "Open terminal"},
+            T = {":TagbarToggle<CR>", "Toggle Tagbar"},
         },
         --}}}
         --{{{ <leader>h "+help/hunk"
@@ -67,18 +67,25 @@ wk.register({
             s = { "<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", "List implementations"},
         },
         --}}}
+        --{{{ <leader>s "+session/startify"
+        s = {
+            name = "+session/startify",
+            t = { ":Startify<CR>", "Open Startify buffer"},
+            s = { ":SSave<CR>", "Save a session"},
+            d = { ":SDelete<CR>", "Delete a session"},
+            l = { ":SLoad<CR>", "Load a session"},
+            c = { ":SClose<CR>", "Save and close current session"},
+        },
+        --}}}
         --{{{ <leader>S "+Simplenote"
         S = {
             name = "+Simplenote",
             l = { ":SimplenoteList<CR>", "List notes" },
             u = { ":SimplenoteUpdate<CR>", "Update this note" },
-            t = { ":SimplenoteTrash<CR>", "Trash this note" },
             d = { ":SimplenoteDelete<CR>", "Completely delete this note" },
             n = { ":SimplenoteNew<CR>", "Create a note from this buffer" },
-            t = { ":SimplenoteTag<CR>", "Tag this note" },
-            t = { ":SimplenoteTag<CR>", "Tag this note" },
             p = { ":SimplenotePin<CR>", "Pin this note" },
-            P = { ":SimplenotePin<CR>", "Unpin this note" },
+            P = { ":SimplenoteUnpin<CR>", "Unpin this note" },
             g = { ":SimplenoteGo<CR>", "Go to the linked note" },
         },
         --}}}
@@ -158,6 +165,10 @@ wk.register({
 
     --{{{ <F3> toggle nvim-tree 
     ["<F3>"] = {"<cmd>lua require 'nvim-tree'.toggle()<CR>", "Toggle nvim-tree"},
+    --}}}
+    
+    --{{{ <F3> toggle nvim-tree 
+    ["<F8>"] = {":TagbarToggle<CR>", "Toggle Tagbar"},
     --}}}
 
     --{{{ LSP hover/signature_help/diagnostic_prev/next

@@ -2,7 +2,8 @@ local naughty = require("naughty")
 local awful = require("awful")
 require("variables")
 
---  {{{ examples
+--  {{{ examples for spawn callback
+-- reference https://awesomewm.org/doc/api/libraries/awful.spawn.html
 --
 -- local noisy = [[bash -c '
 --   for I in $(seq 1 5); do
@@ -22,9 +23,8 @@ require("variables")
 -- })
 --  }}}
 
--- reference https://awesomewm.org/doc/api/libraries/awful.spawn.html
 
--- programs
+--{{{ programs to spawn on start
 awful.spawn.once(home_path .. ".fehbg")
 -- awful.spawn.once(scripts_path .. "weather show")
 awful.spawn.single_instance("fcitx")
@@ -32,3 +32,4 @@ awful.spawn.single_instance("picom -b")
 -- awful.spawn.single_instance("zim")
 awful.spawn.single_instance("nextcloud --background")
 awful.spawn.single_instance("thunar --daemon")
+--}}} 

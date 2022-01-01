@@ -1,21 +1,25 @@
 add_newline = false
 
-
 [character]      
-symbol = "❯"  
-error_symbol = "✗"
-use_symbol_for_status = true
-
-
-[git_state]
-progress_divider = " of "
-cherry_pick = "🍒 PICKING"
+success_symbol = "[❯](bold green)"
+error_symbol = "[✗](bold red)"
+# vicmd_symbol = "[❮](bold white)"
+vicmd_symbol = "[N](bold white)"
 
 [package]
 disabled = false
 
-
 [line_break]
 disabled = false
 
+[memory_usage]
+disabled = false
+threshold = 75
 
+[status]
+# style = "bg:blue"
+symbol = "🔴"
+format = '[\[$symbol$signal_number $common_meaning$signal_name$maybe_int\]]($style) '
+map_symbol = true
+pipestatus = false
+disabled = false

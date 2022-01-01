@@ -78,12 +78,13 @@ return require('packer').startup(function()
             require'lspconfig'.ccls.setup{}
             require'lspconfig'.pylsp.setup{}
             require'lspconfig'.rust_analyzer.setup{}
+            require'lspconfig'.gopls.setup{}
         end,
         opt = false
     }
     --}}}
 
-    --{{{ vsnip: snippets
+    --{{{ vsnip: snippets (disabled)
     use {
         'hrsh7th/vim-vsnip',
         requires = {{'hrsh7th/vim-vsnip-integ'}, {'rafamadriz/friendly-snippets'}},
@@ -91,6 +92,13 @@ return require('packer').startup(function()
         disable = true,
     }
     ---}}}
+
+    -- {{{ luasnip
+    use {
+        'L3MON4D3/LuaSnip',
+        config = [[require('config.luasnip')]]
+    }
+    -- }}}
 
     --{{{ telescope.nvim
     use {
@@ -103,14 +111,23 @@ return require('packer').startup(function()
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {'kyazdani42/nvim-web-devicons'}, -- for file icons
-        config = function()
-            vim.g.nvim_tree_tab_open = 1
+        config = function() require'nvim-tree'.setup {
+            open_on_tab = true,
+            disable_netrw = false,
+            hijack_netrw = false,
+            hijack_cursor = true,
+            update_cwd = true,
+            update_focused_file = {
+                enable = true,
+                update_cwd = true,
+            },
+        } end,
+            -- vim.g.open_on_tab = 1
             -- because :e dir/ doesn't work
-            vim.g.nvim_tree_hijack_netrw = 0
-            vim.g.nvim_tree_disable_netrw = 0
+            -- vim.g.nvim_tree_hijack_netrw = 0
+            -- vim.g.nvim_tree_disable_netrw = 0
 
-            vim.g.nvim_tree_update_cwd = 1
-        end,
+            -- vim.g.nvim_tree_update_cwd = 1
         disable = false,
     }
     --}}}
@@ -167,11 +184,18 @@ return require('packer').startup(function()
     use 'b3nj5m1n/kommentary'
     --}}} 
 
-    --{{{ neogit: git controls
+    --{{{ neogit: git controls (disabled)
     use { 
         'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' ,
         config = [[require('neogit').setup{}]],
-        opt = false
+        opt = false,
+        disable = true,
+    }
+    --}}}
+    
+    --{{{ vim-fugitive 
+    use {
+        "tpope/vim-fugitive"
     }
     --}}}
 
@@ -182,7 +206,8 @@ return require('packer').startup(function()
             'nvim-lua/plenary.nvim'
         },
         config = [[require('config.gitsigns')]],
-        opt = false
+        opt = false,
+        disable = false,
     }
     --}}}
 
@@ -190,11 +215,11 @@ return require('packer').startup(function()
     use {"npxbr/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
     --}}} 
 
-    --{{{ colorizer
+    --{{{ colorizer (disabled)
     use { 'norcalli/nvim-colorizer.lua', config = [[require'colorizer'.setup()]], opt = true, disable = true }
     --}}} 
 
-    -- {{{ todoist.nvim
+    -- {{{ todoist.nvim (disabled)
     -- FIXME. not working
     -- https://github.com/romgrk/todoist.nvim
     use { 'romgrk/todoist.nvim', run = ':TodoistInstall', 
@@ -207,9 +232,26 @@ return require('packer').startup(function()
     -- https://github.com/simplenote-vim/simplenote.vim
     use { 'simplenote-vim/simplenote.vim', config = [[vim.cmd("source ~/.vim/config/plugins/nvim/simplenote-credentials.vim")]]}
     --}}} 
+    
+    --{{{ nvim-luapad
+    use {
+        "rafcamlet/nvim-luapad",
+        opt = true,
+        disable = false,
+    }
+    --}}}
 
-    -- plugins I might check out
-    -- https://github.com/rafcamlet/nvim-luapad
-    -- https://github.com/folke/lua-dev.nvim
-    -- https://github.com/tjdevries/nlua.nvim
+    --{{{ Tagbar
+    use {
+        "preservim/tagbar",
+    }
+    --}}}
+    
+    --{{{ vim-startify
+    use {
+        'mhinz/vim-startify',
+        config = [[require('config.vim-startify')]]
+    }
+    --}}}
+
 end)
