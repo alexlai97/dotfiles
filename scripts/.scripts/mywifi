@@ -5,8 +5,8 @@ usage() {
 
 result=""
 getstatus() {
-  status=$(wpa_cli -i wlp6s0 status | grep "^ssid" | cut -d '=' -f 2)
-  if [ status != "" ]; then
+  status=$(wpa_cli -i wlp6s0 status | grep "^id_str" | cut -d '=' -f 2)
+  if [ -n $status ]; then
      result=" $status"
   fi
 }

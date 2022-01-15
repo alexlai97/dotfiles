@@ -3,5 +3,14 @@
     "nbextensions_configurator/config_menu/main": true,
     "contrib_nbextensions_help_item/main": true,
     "vim_binding/vim_binding": true
+  },
+  "Notebook": {
+    "Toolbar": true,
+    "Header": true
+  },
+  "Cell": {
+    "cm_config": {
+      "lineNumbers": false
+    }
   }
 }

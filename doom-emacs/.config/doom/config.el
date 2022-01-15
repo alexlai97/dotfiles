@@ -54,6 +54,11 @@
      ("CANCELED" . (:foreground "blue" :weight bold))
      )))
 
+(setq url-proxy-services
+   '(("no_proxy" . "^\\(localhost\\|10.*\\)")
+     ("http" . "localhost:7890")
+     ("https" . "localhost:7890")))
+
 (setq doom-font (font-spec :family "DejaVuSansMono" :size 14))
 
 (setq doom-theme 'doom-nord)
