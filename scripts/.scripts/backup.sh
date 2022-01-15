@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BACKUP_DIR1="/mnt/largefs/Backups/"
-BACKUP_DIR2="/run/media/alex/backup/backups/"
+BACKUP_DIR2="/run/media/alex/linux-backup/backups/"
 secret_backup="secret-backups"
 normal_backup="normal-backups"
 root_backup="root-backups"
@@ -27,17 +27,13 @@ backup() {
     echo $whether_sudo borg create --stats --progress $target_dir::$backup_name-{user}-{now} $backup_files
 }
 
-echo "--------backup pkg list of archlinux--------"
-echo cd ~/Documents/ArchLinux/
-echo arch_pkglist_gen.sh gen
-echo cd -
 
-echo "--------backup to $BACKUP_DIR1 --------"
-backup "$BACKUP_DIR1$secret_backup" "gnupg" "/home/alex/.gnupg"
-backup "$BACKUP_DIR1$normal_backup" "home-some-dirs" "$normal_file_list"
-backup "$BACKUP_DIR1$root_backup" "etc" "/etc" "sudo"
+#echo "--------backup to $BACKUP_DIR1 --------"
+#backup "$BACKUP_DIR1$secret_backup" "gnupg" "/home/alex/.gnupg"
+#backup "$BACKUP_DIR1$normal_backup" "home-some-dirs" "$normal_file_list"
+#backup "$BACKUP_DIR1$root_backup" "etc" "/etc" "sudo"
 
 echo "--------backup to $BACKUP_DIR2 --------"
-backup "$BACKUP_DIR2$secret_backup" "gnupg" "/home/alex/.gnupg"
-backup "$BACKUP_DIR2$normal_backup" "home-some-dirs" "$normal_file_list"
+backup "$BACKUP_DIR2$secret_backup" "gnupg-ssh-git" "~/.gnupg ~/.ssh ~/.config/git/"
+backup "$BACKUP_DIR2$normal_backup" "home-common-dirs" "$normal_file_list"
 backup "$BACKUP_DIR2$root_backup" "etc" "/etc" "sudo"

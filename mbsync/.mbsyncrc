@@ -29,7 +29,7 @@ ExpireUnread no
 IMAPStore uwaterloo-remote
 Host outlook.office365.com
 Port  993
-User x7lai@edu.uwaterloo.ca
+User x7lai@uwaterloo.ca
 PassCmd "pass email/uwaterloo"
 AuthMechs LOGIN
 SSLType IMAPS
