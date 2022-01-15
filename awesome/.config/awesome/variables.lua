@@ -13,7 +13,7 @@ icon_path = home_path .. '.local/share/icons/'
 --}}}
 
 --{{{ termial and editor
-terminal = os.getenv("TERMINAL") or "st" or "termite"
+terminal = os.getenv("TERMINAL") or "alacritty" or "st" or "termite"
 terminal_cmd = terminal .. " -e "
 editor = os.getenv("EDITOR") or "nvim" or "subl"
 editor_cmd = terminal_cmd .. editor
@@ -31,10 +31,10 @@ terminal_icon = "/usr/share/icons/Adwaita/16x16/legacy/utilities-terminal.png"
 -- shutdown_command = dbus_consolekit_prefix .. "Stop"
 -- reboot_command = dbus_consolekit_prefix .. "Restart"
 -- suspend_command = "systemctl suspend; i3lock.sh"
-suspend_command = "i3lock.sh && systemctl suspend"
-shutdown_command = "myshutdown.sh"
-reboot_command = "myreboot.sh"
-lockscreen_command = "i3lock.sh"
+suspend_command = scripts_path .. "i3lock.sh && systemctl suspend"
+shutdown_command = scripts_path .. "myshutdown.sh"
+reboot_command = scripts_path .. "myreboot.sh"
+lockscreen_command = scripts_path .. "i3lock.sh"
 -- sxhkd_restart_command = "pkill sxhkd; sxhkd &; notify-send 'sxhkd' 'sxhkd restarted'"
 redshift_restart_command = "pkill redshift; /usr/bin/redshift"
 mpd_restart_command = "pkill mpd; mpd &; notify-send 'mpd' 'mpd restarted'"

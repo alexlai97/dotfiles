@@ -6,14 +6,16 @@ usage() {
 
 result=""
 
+BAT="BAT1"
+
 getstatus() {
-  case $(cat /sys/class/power_supply/BAT0/status) in 
+  case $(cat /sys/class/power_supply/$BAT/status) in 
     Full) status="?" ;;
     Charging) status="+" ;;
     Dischargin) status="-" ;;
   esac
 
-  capacity=$(cat /sys/class/power_supply/BAT0/capacity)
+  capacity=$(cat /sys/class/power_supply/$BAT/capacity)
 
   if [ $capacity -ge 100 ];then 
     icon=" "

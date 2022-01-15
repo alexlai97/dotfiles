@@ -230,7 +230,10 @@ return require('packer').startup(function()
 
     --{{{ simplenote.vim
     -- https://github.com/simplenote-vim/simplenote.vim
-    use { 'simplenote-vim/simplenote.vim', config = [[vim.cmd("source ~/.vim/config/plugins/nvim/simplenote-credentials.vim")]]}
+    use { 'simplenote-vim/simplenote.vim',
+        config = [[vim.cmd("source ~/.vim/config/plugins/nvim/simplenote-credentials.vim")]],
+        disable = true,
+    }
     --}}} 
     
     --{{{ nvim-luapad
@@ -250,7 +253,8 @@ return require('packer').startup(function()
     --{{{ vim-startify
     use {
         'mhinz/vim-startify',
-        config = [[require('config.vim-startify')]]
+        config = [[require('config.vim-startify')]],
+        disable = true,
     }
     --}}}
 
