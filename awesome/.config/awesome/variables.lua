@@ -10,6 +10,7 @@ cache_path = home_path .. '.cache/'
 wallpaper_path = home_path .. "Pictures/Wallpaper/"
 config_path = home_path .. '.config/'
 icon_path = home_path .. '.local/share/icons/'
+pass_store_path = home_path .. '.local/share/password-store'
 --}}}
 
 --{{{ termial and editor
@@ -21,7 +22,7 @@ editor_cmd = terminal_cmd .. editor
 
 --{{{ icons for archlinux/terminal
 -- gentoo_icon = my_icon_path .. "gentoo/gentoo.png"
-arch_icon = icon_path .. "hicolor/16x16/apps/example-archlinux_icon.png"
+arch_icon = "/usr/share/pixmaps/archlinux-logo.png"
 terminal_icon = "/usr/share/icons/Adwaita/16x16/legacy/utilities-terminal.png"
 --}}}
 
@@ -30,8 +31,8 @@ terminal_icon = "/usr/share/icons/Adwaita/16x16/legacy/utilities-terminal.png"
 -- suspend_command = dbus_consolekit_prefix .. "Suspend  boolean:true"
 -- shutdown_command = dbus_consolekit_prefix .. "Stop"
 -- reboot_command = dbus_consolekit_prefix .. "Restart"
--- suspend_command = "systemctl suspend; i3lock.sh"
-suspend_command = scripts_path .. "i3lock.sh && systemctl suspend"
+suspend_command = "systemctl suspend"
+-- suspend_command = scripts_path .. "i3lock.sh && systemctl suspend"
 shutdown_command = scripts_path .. "myshutdown.sh"
 reboot_command = scripts_path .. "myreboot.sh"
 lockscreen_command = scripts_path .. "i3lock.sh"

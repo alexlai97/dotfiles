@@ -64,7 +64,7 @@ wk.register({
             R = {"<cmd>lua vim.lsp.buf.rename()<CR>", "Rename all references of the symbol"},
             a = {"<cmd>lua vim.lsp.buf.code_action()<CR>", "Select a code action"},
             i = { "<cmd>lua vim.lsp.buf.implementation()<CR>", "List implementations"},
-            s = { "<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", "List implementations"},
+            s = { "<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>", "List Symbols"},
         },
         --}}}
         --{{{ <leader>s "+session/startify"

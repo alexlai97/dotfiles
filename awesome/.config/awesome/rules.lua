@@ -54,13 +54,13 @@ awful.rules.rules = {
 
     --[[ { rule = { class = "firefox" },
       properties = { tag = icons.firefox } }, ]]
-    { rule_any = { class = {  "Zim" } } ,
+    { rule_any = { class = {  "Zim", "notion", "obsidian" } } ,
       properties = { screen = 1, tag = icons.notebook } },
     { rule = { class = "mpv" },
       properties = { tag = icons.play } },
     { rule_any = { class = { "VirtualBox", "jetbrains-studio", "jetbrains-idea-ce"} },
       properties = { tag = icons.leaf } },
-    { rule_any = { class = { "Signal", "Mail", "Telegram" } },
+    { rule_any = { class = { "Signal", "Mail", "telegram", "discord" } },
       properties = { screen = 1, tag = icons.wechat } },
     { rule = { class = "Thunar" },
       properties = { screen = 1, tag = icons.document } },

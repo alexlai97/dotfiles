@@ -173,9 +173,7 @@ return require('packer').startup(function()
     use {
         "blackCauldron7/surround.nvim",
         config = function()
-            -- vim.g.surround_prefix = 'S'
-            vim.g.surround_mappings_style = 'surround'
-            require "surround".setup {}
+            require "surround".setup { mapping_stype = "surround" }
         end
     }
     --}}}
@@ -231,8 +229,8 @@ return require('packer').startup(function()
     --{{{ simplenote.vim
     -- https://github.com/simplenote-vim/simplenote.vim
     use { 'simplenote-vim/simplenote.vim',
-        config = [[vim.cmd("source ~/.vim/config/plugins/nvim/simplenote-credentials.vim")]],
-        disable = true,
+        config = [[vim.cmd("source ~/.config/nvim/simplenote-credentials.vim")]],
+        disable = false,
     }
     --}}} 
     

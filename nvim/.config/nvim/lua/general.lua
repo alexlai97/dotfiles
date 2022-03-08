@@ -35,3 +35,11 @@ vim.g.maplocalleader = ','
 
 -- clipboard
 vim.o.clipboard = "unnamedplus"
+
+-- fcitx input disable
+-- vim.cmd([[
+-- autocmd InsertLeave * :silent !fcitx-remote -c " 退出插入模式时禁用输入法
+-- autocmd BufCreate *  :silent !fcitx-remote -c " 创建 Buf 时禁用输入法
+-- autocmd BufEnter *  :silent !fcitx-remote -c " 进入 Buf 时禁用输入法
+-- autocmd BufLeave *  :silent !fcitx-remote -c " 离开 Buf 时禁用输入法
+-- ]])

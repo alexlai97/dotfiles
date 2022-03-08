@@ -62,6 +62,10 @@ globalkeys = gears.table.join(
 
     awful.key({ super_key },            "w",     function () awful.spawn("rofi -show window") end,
               {description = "rofi switch program", group = "client"}),
+    awful.key({ super_key, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
+              {description = "swap with next client by index", group = "client"}),
+    awful.key({ super_key, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end,
+              {description = "swap with previous client by index", group = "client"}),
     --}}}
 
     -- {{{ function key (PowerOff, Volume, Media, Brightness, Screenshot, LED)
@@ -76,14 +80,14 @@ globalkeys = gears.table.join(
       awful.key({}, "XF86AudioMute", function() awful.spawn("amixer -D pulse set Master 1+ toggle") end,
           {description = "mute", group = "XF86 keys"}),
       -- Media Keys
-      awful.key({}, "XF86AudioPlay", function() awful.spawn("mpc toggle") end,
+      --[[ awful.key({}, "XF86AudioPlay", function() awful.spawn("mpc toggle") end,
           {description = "mpc play", group = "XF86 keys"}),
       awful.key({}, "XF86AudioStop", function() awful.spawn("mpc stop") end,
           {description = "mpc stop", group = "XF86 keys"}),
       awful.key({}, "XF86AudioNext", function() awful.spawn("mpc next") end,
           {description = "mpc next", group = "XF86 keys"}),
       awful.key({}, "XF86AudioPrev", function() awful.spawn("mpc prev") end,
-          {description = "mpc prev", group = "XF86 keys"}),
+          {description = "mpc prev", group = "XF86 keys"}), ]]
       -- Screen Brightness Control
       awful.key({}, "XF86MonBrightnessDown", function() awful.spawn("light -U 5") end,
           {description = "brightness -5%", group = "XF86 keys"}),
@@ -97,10 +101,10 @@ globalkeys = gears.table.join(
       -- end),
 
       -- Keyboard LED 
-      awful.key({}, "Scroll_Lock", function()  awful.spawn("xset led 3") end,
+      --[[ awful.key({}, "Scroll_Lock", function()  awful.spawn("xset led 3") end,
           {description = "keyboard led on", group = "XF86 keys"}),
       awful.key({"Shift"}, "Scroll_Lock", function()  awful.spawn("xset -led 3") end,
-          {description = "keyboard led off", group = "XF86 keys"}),
+          {description = "keyboard led off", group = "XF86 keys"}), ]]
       -- Touchpad Toggle
       awful.key({}, "XF86TouchpadToggle", function()  awful.spawn(scripts_path .. "toggletouchpad.sh") end,
           {description = "touchpad toggle", group = "XF86 keys"}),
@@ -148,14 +152,10 @@ globalkeys = gears.table.join(
     --}}}
 
     --{{{ screen group
-    awful.key({ super_key, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
-              {description = "swap with next client by index", group = "client"}),
-    awful.key({ super_key, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end,
-              {description = "swap with previous client by index", group = "client"}),
-    awful.key({ super_key, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
+    awful.key({ super_key }, ".", function () awful.screen.focus_relative( 1) end,
               {description = "focus the next screen", group = "screen"}),
-    awful.key({ super_key, "Control" }, "k", function () awful.screen.focus_relative(-1) end,
-              {description = "focus the previous screen", group = "screen"}),
+    --[[ awful.key({ super_key, "Control" }, "k", function () awful.screen.focus_relative(-1) end,
+              {description = "focus the previous screen", group = "screen"}), ]]
     --}}}
 
     --{{{ programs group
@@ -191,9 +191,9 @@ globalkeys = gears.table.join(
               {description = "run org-capture in emacs", group = "programs"}),
     awful.key({ super_key, alt_key }, "x", function () awful.spawn("emacsclient -nc") end,
               {description = "run emacsclient gui", group = "programs"}),
-    awful.key({ super_key, alt_key }, "e", function () awful.spawn("rofiunicode") end,
+    awful.key({ super_key, alt_key }, "e", function () awful.spawn(scripts_path .. "rofiunicode") end,
               {description = "select unicode/emojis", group = "programs"}),
-    awful.key({ super_key, alt_key }, "p", function () awful.spawn("passmenu") end,
+    awful.key({ super_key, alt_key }, "p", function () awful.spawn("env PASSWORD_STORE_DIR=".. pass_store_path .." passmenu") end,
               {description = "select passwords", group = "programs"}),
     awful.key({ super_key, alt_key }, "c", function () awful.spawn("clipmenu") end,
               {description = "select from clipboards", group = "programs"}),
@@ -207,7 +207,7 @@ globalkeys = gears.table.join(
     --{{{ system group
     awful.key({ super_key, "Shift" }, "Page_Down", function () awful.spawn("oblogout") end,
     {description = "run oblogout", group = "system"}),
-    awful.key({ super_key, "Shift" }, "s", function () awful.spawn.easy_async_with_shell(suspend_command) end,
+    awful.key({ super_key, "Shift" }, "s", function () awful.spawn(suspend_command) end,
     {description = "suspend the system", group = "system"}
     ),
     awful.key({ super_key, "Shift" }, "l", function () awful.spawn(lockscreen_command) end,
@@ -344,7 +344,7 @@ root.keys(globalkeys)
 root.buttons(gears.table.join(
     awful.button({ }, 1, function () mymainmenu:toggle() end),
     awful.button({ }, 2, function () awful.spawn("sxiv " .. wallpaper_path) end),
-    awful.button({ }, 3, function () awful.spawn("rightclickmenu") end),
+    awful.button({ }, 3, function () awful.spawn(scripts_path .. "rightclickmenu") end),
     awful.button({ }, 4, awful.tag.viewprev),
     awful.button({ }, 5, awful.tag.viewnext)
 ))

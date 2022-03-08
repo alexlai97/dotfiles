@@ -26,8 +26,10 @@ require("variables")
 
 --{{{ programs to spawn on start
 awful.spawn.once(home_path .. ".fehbg")
+awful.spawn.once("libinput-gestures-setup start")
 -- awful.spawn.once(scripts_path .. "weather show")
 awful.spawn.single_instance("fcitx")
+awful.spawn.single_instance("xss-lock -- " .. lockscreen_command)
 awful.spawn.single_instance("picom -b")
 -- awful.spawn.single_instance("zim")
 awful.spawn.single_instance("nextcloud --background")

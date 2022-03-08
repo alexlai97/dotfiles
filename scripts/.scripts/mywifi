@@ -3,10 +3,12 @@ usage() {
   echo "Usage: $0 (help|update)"
 }
 
-CARD="wlan0"
+INTERFACE="wlan0"
 result=""
 getstatus() {
-  status=$(wpa_cli -i $CARD status | grep "^ssid" | cut -d '=' -f 2)
+  # status=$(wpa_cli -i $INTERFACE status | grep "^ssid" | cut -d '=' -f 2)
+  # status=$(iwctl station $INTERFACE show | awk '/Connected network/ {print $3}')
+  status=$(iwctl station $INTERFACE show | awk '/Connected network/ {for (i=3;i<=NF;i++) print $i""FS}')
   if [ status != "" ]; then
      result=" $status"
   fi

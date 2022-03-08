@@ -82,6 +82,12 @@ set -xg EMAIL "alexlai97@outlook.com"
 bind -M insert \cf forward-char
 #}}}
 
+#{{{ enable conda
+source /opt/miniconda3/etc/fish/conf.d/conda.fish
+#}}}
+
 #{{{ start using starship
 starship init fish | source
 #}}}
+
+# vim: ft=fish
