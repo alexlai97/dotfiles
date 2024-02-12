@@ -1,4 +1,5 @@
 # dotfiles
+**Update: Further updates will be managed by chemoi at https://gitlab.com/alexlai97/dotfiles**
 
 **Just copy whatever you need.** 
 
